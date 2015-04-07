@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FergD Writings</title>
+    <description></description>
+    <link>http://christanfergus.com/</link>
+    <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 06 Apr 2015 12:27:58 -0600</pubDate>
+    <lastBuildDate>Mon, 06 Apr 2015 12:27:58 -0600</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>welcome</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 06 Apr 2015 02:07:15 -0600</pubDate>
+        <link>http://christanfergus.com/state/of/the/web/2015/04/06/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://christanfergus.com/state/of/the/web/2015/04/06/welcome-to-jekyll.html</guid>
+        
+        
+        <category>state</category>
+        
+        <category>of</category>
+        
+        <category>the</category>
+        
+        <category>web</category>
+        
+      </item>
+    
+      <item>
+        <title>Reviving Craftsmanship</title>
+        <description>&lt;h2 id=&quot;so-many-things&quot;&gt;So Many Things&lt;/h2&gt;
+
+&lt;p&gt;Let me make one thing clear right off the bat: I know I’m about to sound like an old geezer. Now that’s out of the way, I’m going to continue ignoring what I will sound like completely.&lt;/p&gt;
+
+&lt;p&gt;The wonderful thing about doing web development with a team (opposed to working alone in my basement) is the conversations we have about the industry. The conversations, sometimes spirited, range from the technical to the philosophical, yet the one thing each topic has in common is the fact that what may be “current” and “interesting” today is not what was yesterday, and certainly is not going to be tomorrow. The tech world-a world I have chosen to be a part of-moves so quickly. Reining that into what I do on the front-end of the web, the pace of change can be dizzying. No sooner had I grasped Grunt than Gulp came along as the hipster’s favourite way of getting out of doing things manually. Which javaScript framework should I go with? Damned if I know! And then we have the latest languages, meta languages named after facial hair. When SoulPatch.io hits GitHub (and you know it will), I’m going to take a long vacation.&lt;/p&gt;
+
+&lt;p&gt;I love how quickly we can get an app up and running with tools like Meteor. This fairly new stage in development has such a low bar of entry that very nearly anyone with a computer and a desire to do so can create a web page or app and even be successful. That, dear reader, ultimately leads me to my gripe. We have so much we can do, and sometimes bounce so quickly from tool to tool, that we forget a little thing called craftsmanship. Or perhaps it’s not even forgotten, perhaps-actually likely-people never had it in the first place.&lt;/p&gt;
+
+&lt;p&gt;Craftsmanship manifests in my world in two major areas: design and code. &lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+&lt;p&gt;Let it be known, I have a degree in graphic design. Don’t get me started on how many colleges are phasing that degree out! In my day (that’s right, I said it) design was a pretty slow thing. For a comprehensive design degree, one had to learn the breadth of the visual: the fine arts encompassing painting (you name the type), pastel, pencil, film photography, and mixed media. Of those mediums, the areas of figure study, still life, landscape, industrial, and more where explored. These were physical mediums-mediums done in tandem with the digital where we did all the usual things in the Adobe suite: advertising and marketing design, web design, posters, etc. These mediums did not have an undo. I was forced to hone my craft and grow my skills one mistake and success at a time. I had to plan, coordinate and execute nearly flawlessly to even hope to get a good grade. &lt;/p&gt;
+
+&lt;p&gt;In addition, I took two technical writing classes to craft and learn how to clearly communicate. In all this, I took one whole HTML class where I wrote the markup in Window’s Notepad and did all my layout in tables (this was before Zeldman’s seminole Designing for Web Standards).  &lt;/p&gt;
+
+&lt;p&gt;What am I saying? I suppose I’m saying that I see lots of stuff being put out there by talented and un-alike, that lacks that certain crafted polish. Lest I be the first to cast a stone, be aware I’m pointing some fingers right back at myself on this one. It’s precisely because it’s so easy to crank stuff out that I hop on the bandwagon too. With little concern for architecture or standards, I can churn out something pretty powerful pretty quickly. Yes, there is a benefit to that. If you approach something in a lean manor, you get something out quickly and iterate the shit out of it. If you have the discipline to do so, I say continue on, good sir/madame. But do we? When we’re doing our own thing, do we finely craft our architecture? Do we take the time to really truly understand our users and craft an experience to their needs? Do we spend time on the finer points of visual design all for the hope that the user never notices our finely adjusted line-height, but subconsciously has an easier time navigating and finding the information they need?&lt;/p&gt;
+
+&lt;p&gt;It’s true, we could spend so much time “crafting” that we never ship, and I agree with Jobs that great artists ship, but crafting doesn’t mean not shipping, it means refining our process to allow room for it. &lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Apr 2015 02:07:15 -0600</pubDate>
+        <link>http://christanfergus.com/state/of/the/web/2015/04/06/Reviving-Craftsmanship.html</link>
+        <guid isPermaLink="true">http://christanfergus.com/state/of/the/web/2015/04/06/Reviving-Craftsmanship.html</guid>
+        
+        
+        <category>state</category>
+        
+        <category>of</category>
+        
+        <category>the</category>
+        
+        <category>web</category>
+        
+      </item>
+    
+  </channel>
+</rss>
