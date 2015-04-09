@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 # Case Study 1: Recipe & Meal Planning Site #
