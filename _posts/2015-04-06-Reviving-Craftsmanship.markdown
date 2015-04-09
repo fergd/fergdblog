@@ -20,7 +20,7 @@ What am I saying? I suppose I’m saying that I see lots of stuff being put out 
 
 Lest I be the first to cast a stone, be aware I’m pointing some fingers right back at myself on this one. It’s precisely because it’s so easy to crank stuff out that I too hop on the bandwagon. With little concern for architecture or standards, I can churn out something pretty powerful pretty quickly. Yes, there is a benefit to that. If you approach something in a lean manor, you get something out quickly and iterate the shit out of it. If you have the discipline to do so, I say continue on, good sir/madame and we shall clean and refactor as we go. But do we? When we’re doing our own thing, do we finely craft our architecture? Do we take the time to truly understand our users and craft an experience to their needs? Do we spend time on the finer points of visual design all for the hope that the user never notices our finely adjusted line-height, but subconsciously has an easier time navigating and finding the information they need? I think we should&mdash;at least more than we currently do.
 
-![Chinese version of the Mini](/http://i.kinja-img.com/gawker-media/image/upload/s--S2Y1CUFy--/18lg3mkpt0h8cjpg.jpg)
+![Chinese version of the Mini](http://i.kinja-img.com/gawker-media/image/upload/s--S2Y1CUFy--/18lg3mkpt0h8cjpg.jpg)
 
 ## Get Crafty ##
  A distinction should be made here, however. There's stuff you ship, and there's stuff you experiment with. It’s true, we could spend so much time “crafting” that we never ship, and I agree with Jobs that great artists ship, but crafting doesn’t mean not shipping. It means refining our process to allow room for it. 
