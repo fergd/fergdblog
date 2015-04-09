@@ -3,7 +3,7 @@ layout: post
 title: Reviving Craftsmanship
 date: {}
 categories: State of the web
-published: true
+published: false
 ---
 
 ## Try All The Things! ##
