@@ -1,0 +1,78 @@
+<header>
+	<h1>Case Study 1: Recipe & Meal Planning Site</h1>
+</header>
+
+<h2 class="section-title">Project Overview</h2>
+
+<h3>Company Background</h3>
+<p>Door To Door Organics is an online organic produce and market delivery service that covers five locations nationwide.</p>
+
+<h3>Project Goal</h3>
+<p>As part of the company's commitment to their customers eating good food, Door To Door Organics decided to launch a recipe and meal planning “wing” to the website that would ultimately be incorporated into the future website shopping flow. The recipe site would bring the customer’s grocery box, with all of its ingredients, together with recipes to help provide inspiration in the kitchen and reduce food waste. This project would require:
+	<ul class="content-list disc">
+		<li>A brand new design and code infrastructure</li>
+		<li>An engaging user experience that would be easy to use and make people want to come back</li>
+		<li>Ultimately growth in customer engagement, retention, and sales.</li>
+	</ul>
+</p>
+
+<h3>Project Role</h3>
+<p>I was the designer on a three person team that also included a web developer and product manager.</p>
+
+<h3>Team</h3>
+	<ul class="content-list disc">
+		<li>Kristin Lindquist - Product Manager</li>
+		<li>David Rudder - Senior Software Developer</li>
+		<li>Christan Fergus - Senior Web Designer</li>
+	</ul>
+
+<h2 class="section-title">Process</h2>
+
+<h3>Useability Design</h3>
+<p>This project was an added feature that was not necessary to our customer’s core experience of modifying their orders and buying products. It was therefore important we make the recipe site extremely easy to use as a valuable enhancement to an existing shopping experience. We achieved this by endeavouring to only show the user relevant and meaningful information. Discovering the line between too little and too much was and is an on-going process.</p>
+
+<h3>Visual &amp; Front-end Design</h3>
+<p>The design process started quickly based on the product manager's wireframes and design briefs.  Moving quickly into this phase allowed us to get a good feel for how the design was going to work very early on. Working in an Agile environment provided the needed flexibility to revisit, test, and is some cases do away with concepts and designs throughout the entire process.</p>
+
+<p>The front end leveraged HTML5 and some newer elements of CSS3, however the requirement of supporting Internet Explorer 7 and up prohibited anything too fancy. Javascript was used a fair amount and necessary for not only enhancing the visual experience, but also as a conduit to serve up content via Ajax in some cases. Great care was taken to only use Javascript when absolutely necessary.</p>
+
+<h3>Back-end Design</h3>
+<p>David Rudder handled the software development, and we worked together through the whole project. The back end of the site was built utilizing the Java framework, Play. This, of course, was the core of the web site. Some requirements and complexities included:
+	<ul class="content-list disc">
+						<li>The ability to quickly sift through the user’s customer data, thus showing them relevant recipes based on their order and seasonal factors</li>
+						<li>The ability to purchase products directly from recipes</li>
+						<li>Provide a custom CMS for easy recipe input by the Door To Door team. </li>
+					</ul>
+
+				</p>
+
+				<h3>User Testing</h3>
+				<p>User testing was implemented late in the process, something that since has been modified in our team’s creative process, but we did do live user testing, think-aloud, and A/B testing and continue to perform tests even after release.</p>
+
+				<h3>Challenges</h3>
+				<p>This wasn’t a static recipe site, this was a recipe site that recommended recipes to you based on items that were in your weekly order. Because of this we needed to be able to detect which ingredients you had and didn’t have, and give you the ability to modify your order based on this information. The marriage of sales and recipes was a great one, but a concept full of complexity that had to be distilled and offered up quickly for the customer’s benefit. Knowing what data to give, when to give it, and most importantly, <em>how</em>, was a major challenge.</p>
+
+				<p>We also had a fair amount of information we needed to convey to the user in a very limited space. Part of the space limitation was because the recipe site was built as an evolutionary branch off of the existing site. That design presented limitations primarily because we didn't want each area of the site looking drastically different to the user. We handled this challenge by reigning the design back in some places, removing elements that weren't expressly needed, and also modifying some visual elements the existing site in minor ways.</p>
+
+				<h2 class="section-title">Results &amp; Beyond Release</h2>
+
+				<p>Feedback and site usage were extremely positive and we successfully created a fun and meaningful way for customers to plan their week in recipes. As a result we experienced 
+					<ul class="content-list disc">
+						<li>Overall customer retention increased with a 17% increased customer conversion rate</li>
+						<li>On average 13% larger basket size.</li>
+					</ul>
+				</p>
+
+				<p>As the Door To Door Organics recipe site has been live and active now for some time, we continue to respond to the data we receive and adjust accordingly. Since the original release, we have had a V1.5 release where we fixed some bugs and polished some functionality.</p>
+
+			</article>
+						
+		</section>
+
+		<section class="l-col-right l-col-40 case-study-1-aside">
+			<aside class="l-col-left side-info">
+				<h2>Recipe Planning Site Results</h2>
+				<blockquote>Overall customer retention increased with a 17% increased customer conversion rate</blockquote>
+				<blockquote>On average 13% larger basket size</blockquote>
+			</aside>
+		</section>
