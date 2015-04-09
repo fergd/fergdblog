@@ -6,6 +6,8 @@ baseurl: "/fergdblog" # the subpath of your site, e.g. /blog/
 url: "http://christanfergus.com" # the base hostname & protocol for your site
 twitter_username: christanfergus
 github_username:  fergd
+sass: 
+	style: compressed
 
 # Build settings
 markdown: kramdown
