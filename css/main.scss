@@ -42,14 +42,14 @@ $on-laptop:        800px;
 
 
 //Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+// @import
+//         "base",
+//         "layout",
+//         "syntax-highlighting"
+// ;
 
-// html{
-// 	font-family: "freight-text-pro", serif;
-// 	font-style: normal;
-// 	font-weight: 500;
-// }
+html{
+	font-family: "freight-text-pro", serif;
+	font-style: normal;
+	font-weight: 500;
+}
