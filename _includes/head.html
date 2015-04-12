@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% elseif %}{{ site.title }}{% endelseif %}{% else %}{{ "The work and profile of Christan Fergus, web designer." %}}{% endelse %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -13,7 +13,7 @@
 
   <link rel="author" href="{{ "/humans.txt" | prepend: site.baseurl }}">
 
-
+  <script src="{{"/_scripts/_js/modernizr-2.6.2-respond-1.1.0.min.js" | prepend: site.baseurl }}"></script>
 </head>
 
 
