@@ -7,9 +7,51 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <script src="//use.typekit.net/oui5tsc.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <link rel="author" href="{{ "/humans.txt" | prepend: site.baseurl }}">
+
+
 </head>
+
+
+
+
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="The work and profile of Christan Fergus, web designer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christan Fergus, Web Designer</title>
+    <link rel="stylesheet" href="../../public/stylesheets/css/base.css">
+    <link rel="stylesheet" href="../../public/stylesheets/css/vendors/bjqs.css">
+  
+      <link rel="shortcut icon" href="../../public/img/favicon.ico">
+      <link rel="apple-touch-icon" href="../../public/img/apple-touch-icon.png">
+
+      <script src="../../public/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+  </head>
+  <body>
+
+    <?php include_once("resources/analyticstracking.php") ?>
+
+      <!--[if lte IE 8]>
+          <p class="chromeframe">You are using an <strong>outed</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+
+    <span class="icn-menu-36-right menu-button" offclass="icn-menu-36-left menu-button">Menu</span>
+
+    <div class="page-wrap l-col-left l-col-full">
+
+    <?php
+      include_once 'nav.php';
+    ?>
+
+
