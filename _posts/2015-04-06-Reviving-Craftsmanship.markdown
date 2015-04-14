@@ -2,7 +2,7 @@
 layout: post
 title: Reviving Craftsmanship
 date: 04/05/15
-categories: State of the web
+categories: Web
 published: true
 ---
 
