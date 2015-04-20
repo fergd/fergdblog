@@ -1,51 +1,34 @@
 /*--CORE--*/
-@import "core/_reset", "core/base", "core/_helpers", "core/_icons", "core/_theme", "core/_typography", "core/_layout", "core/_animation";
+@import 
+	"core/reset", 
+	"core/base", 
+	"core/helpers", 
+	"core/icons", 
+	"core/theme", 
+	"core/typography", 
+	"core/layout", 
+	"core/animation";
 
 /*--Specific Modules--*/
-@import "modules/_media_queries", "modules/_header", "modules/_footer", "modules/_navigation", "modules/_index", "modules/_base_work", "modules/_base_profile", "modules/_cv";
+@import 
+	"modules/media_queries", 
+	"modules/header", 
+	"modules/footer", 
+	"modules/navigation", 
+	"modules/index", 
+	"modules/base_work", 
+	"modules/base_profile", 
+	"modules/cv";
 
 body{
 	padding:0 1em;
-	color:$black-grey;
+	color: $black-grey;
 	min-width:270px;
 	overflow-x:hidden;
 	-moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
 }
-
-// @keyframes fadein {
-//     from {
-//         opacity:0;
-//     }
-//     to {
-//         opacity:1;
-//     }
-// }
-// @-moz-keyframes fadein { 
-//     from {
-//         opacity:0;
-//     }
-//     to {
-//         opacity:1; 
-//     }
-// }
-// @-webkit-keyframes fadein { 
-//     from {
-//         opacity:0;
-//     }
-//     to {
-//         opacity:1;
-//     }
-// }
-// @-o-keyframes fadein { 
-//     from {
-//         opacity:0;
-//     }
-//     to {
-//         opacity: 1;
-//     }
-// }​
 
 .page-wrap{
 	min-height:100%;
@@ -73,7 +56,7 @@ p a{display:inline !important;}
 }
 
 .main-nav-shadow{
-	background:url(/public/img/vertical-right-shadow.png) left repeat-y;
+	background:url(/img/vertical-right-shadow.png) left repeat-y;
 }
 
 /*====================================================================================================

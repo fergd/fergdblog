@@ -3,6 +3,13 @@
 ---
 @charset "utf-8";
 
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
 @import
 	"base"
 ;
+
