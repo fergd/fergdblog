@@ -1,0 +1,32 @@
+.nav-col{
+	// background:url(../../img/gears.png) bottom center;
+
+	.mast{
+		@include th-grey-border-bottom;
+		height:8em;
+		text-align:center;
+
+		h1{
+			@include center-all-things;
+			text-align: center;
+			width:100%;
+			white-space:nowrap;
+		}
+	}
+
+}
+
+@media all and (max-width: 500px){
+
+	.nav-col{
+
+		.mast{
+
+			h1{
+				white-space:wrap;
+				font-size:1.25em;
+				font-family:$sofia-regular;
+			}
+		}
+	}
+}

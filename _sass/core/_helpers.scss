@@ -1,0 +1,31 @@
+.clearfix:after { /* clearfix */
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*  Hidden Text (replaces text-indent:-9999px;)  */
+%hide-text{
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.hide-text{
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.ie7 .hide-text{text-indent:-9999px;} /*--Overrides browser zoom issue--*/
+
+/* Easing */
+@mixin ease{
+	transition:.2s all ease;
+}
+%ease{
+	transition:.2s all ease;
+}.ease{
+	transition:.2s all ease;
+}

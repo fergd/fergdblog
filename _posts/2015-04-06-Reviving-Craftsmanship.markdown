@@ -2,7 +2,7 @@
 layout: post
 title:  "Reviving Craftsmanship"
 date:   2015-04-06 08:07:15
-categories: State of the web
+categories: Web
 ---
 ## So Many Things ##
 

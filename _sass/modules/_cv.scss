@@ -1,0 +1,212 @@
+/* Header
+--------------------------------------------------- */
+section.cv{
+	@include l-float(left);
+	font-size:20px;
+	margin-bottom:2em;
+
+	#contact-details{
+		@include l-float(left);
+		margin-bottom:1em;
+
+		.header_1 {
+			@include l-float(left);
+			@extend .l-col-30;
+
+		}
+
+		.header_1 img {
+			@include l-float(right);
+			max-width:100%;
+			padding: 1em;
+			background:$black-grey; 
+		}
+
+		.header_2 {
+			@include l-float(left);
+			@extend .l-col-70;
+			@include box;
+			padding:1em;
+
+			h1, h2{
+				@extend .l-col-full;
+			}
+
+			h1{margin-bottom:0.5em}
+			h2{margin-bottom:1.5em;}
+		}
+
+		ul.info_2{
+
+			a{
+
+				&:hover{
+					color:$orange;
+				}
+			}
+		}
+
+		li.address,
+		li.email, 
+		li.site_url,
+		li.twitter{
+			display:block;
+			margin:0 0 0.5em 0 ;
+		}
+
+		li.address	{
+		    span {
+		    	display:inline;
+		    }
+		}
+	}
+
+
+	/* Main Content
+	--------------------------------------------------- */
+
+	dl	{
+		margin-bottom:1em;
+	}
+
+
+	dt	{
+		@include l-float(left);
+		@include box;
+		padding-right:1em;
+		width:20%;
+		font-size: 1.5em;
+		text-align: right;
+	}
+
+	dd	{
+		@include l-float(left);
+		width:80%; 
+	}
+
+	section#skills{
+
+		ul{
+			@include l-float(left);
+			width:25%;
+
+			li{
+				margin-bottom:0.5em;
+			}
+
+		}
+	}
+
+	section#experience,
+	section#education{
+
+		.experience,
+		.education{
+		
+			p.bus1,
+			p.summary{
+				width:100%;
+				display:inline-block;
+
+				&::first-child{
+					margin:0.5em 0 ;
+				}
+
+				span{
+					display:inline;
+
+					&:last-child:before{
+						content:'|';
+						padding:0 1em;
+						display:inline-block;
+					}
+				}
+			}
+
+			p[itemprop=description]{
+				line-height:1.5em;
+				margin:0 0 1.5em 0;
+			}
+		}
+	}
+
+}
+
+
+@media all and (max-width: 1230px){
+
+	section.cv{
+
+		dl{
+			dt{
+				@include l-float(left);
+				@include box;
+				padding:0;
+				width:100%;
+				font-size: 1.5em;
+				text-align:left;
+			}
+		}
+
+
+
+	}
+
+}
+
+
+@media all and (max-width: 800px){
+
+	section.cv{
+
+		section#contact-details{
+
+			.header_1{
+				display: none;
+			}
+				
+			.header_2 {
+				@include l-float(left);
+				width:100%;
+				@include box;
+				padding:0.5em 0;
+
+				ul.info_1{
+					@include l-float(left);
+					width:100%;
+
+					li{
+						width:100%;
+					}
+				}
+			}
+		}
+
+		dt{
+			margin-bottom:0.5em;
+			margin-top:1em;
+		}
+
+	}
+}
+
+@media all and (max-width: 750px){
+
+	section.cv{
+		font-size:1.2em;
+
+		section#skills{
+			ul.list1,ul.list2{
+				width:100%;
+			}
+		}
+		dt{
+			margin-top:0;
+			margin-bottom:0.5em;
+		}
+		dd	{
+			width:100%; 
+		}
+
+	}
+}
