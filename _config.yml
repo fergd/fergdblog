@@ -1,7 +1,7 @@
 # Site settings
 title: FergD Writings
 email: fergusdesignllc@gmail.com
-description: > # A blog for Christan Fergus, web developer. Writings, musings, how-tos, and maybe more.
+description: > # The work, writings, and profile of Christan Fergus, a web designer.
 baseurl: "/fergdblog" # the subpath of your site, e.g. /blog/
 url: "http://christanfergus.com" # the base hostname & protocol for your site
 twitter_username: christanfergus

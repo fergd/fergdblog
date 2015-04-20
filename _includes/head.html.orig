@@ -10,7 +10,14 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<<<<<<< HEAD
    <script src="{{"/js/vendors/modernizr-2.6.2-respond-1.1.0.min.js" | prepend: site.baseurl }}"></script>
+=======
+
+  <link rel="author" href="{{ "/humans.txt" | prepend: site.baseurl }}">
+
+  <script src="{{"/scripts/js/modernizr-2.6.2-respond-1.1.0.min.js" | prepend: site.baseurl }}"></script>
+>>>>>>> 90d563d26d7584e5a25b22a5e5b1fef2ba3d49fd
 </head>
 
 

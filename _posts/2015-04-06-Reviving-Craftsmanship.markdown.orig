@@ -1,8 +1,15 @@
 ---
 layout: post
+<<<<<<< HEAD
 title:  "Reviving Craftsmanship"
 date:   2015-04-06 08:07:15
 categories: Web
+=======
+title: Reviving Craftsmanship
+date: 04/05/15
+categories: Web
+published: true
+>>>>>>> 90d563d26d7584e5a25b22a5e5b1fef2ba3d49fd
 ---
 
 ## Try All The Things! ##
