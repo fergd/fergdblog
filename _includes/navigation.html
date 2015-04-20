@@ -7,6 +7,7 @@
 		<ul>
 			<li class="home-respond"><a href="/">Home</a></li>
 			<li><a href="{{ site.baseurl }}/work.html">Work Samples</a></li>
+			<li><a href="{{ site.baseurl }}/posts.html">Posts</a></li>
 			{% for page in site.pages %}
 			{% if page.title %}
 			<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>

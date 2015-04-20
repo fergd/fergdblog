@@ -1,9 +1,9 @@
 @mixin img-sprite-path{
-	background:url( ../img/sprites.png) no-repeat;
+	background:url( ../../img/sprites.png) no-repeat;
 }
 
 %img-sprite-path{
-	background:url(../img/sprites.png) no-repeat;
+	background:url(../../img/sprites.png) no-repeat;
 }
 
 %icn-18,%icn-24,%icn-36,%icn-48{
