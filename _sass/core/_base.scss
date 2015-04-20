@@ -1,47 +1,47 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
+// body, h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre, hr,
+// dl, dd, ol, ul, figure {
+//     margin: 0;
+//     padding: 0;
+// }
 
 
 /**
  * Images
  */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
+// img {
+//     max-width: 100%;
+//     vertical-align: middle;
+// }
 
 /**
  * Code formatting
  */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid #999;
-    border-radius: 3px;
-    background-color: #eef;
-}
+// pre,
+// code {
+//     font-size: 15px;
+//     border: 1px solid #999;
+//     border-radius: 3px;
+//     background-color: #eef;
+// }
 
-code {
-    padding: 1px 5px;
-}
+// code {
+//     padding: 1px 5px;
+// }
 
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+// pre {
+//     padding: 8px 12px;
+//     overflow-x: scroll;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
+//     > code {
+//         border: 0;
+//         padding-right: 0;
+//         padding-left: 0;
+//     }
+// }
 
 
 /**
@@ -76,65 +76,65 @@ pre {
 }
 
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+// .site-nav {
+//     float: right;
+//     line-height: 56px;
 
-    .menu-icon {
-        display: none;
-    }
+//     .menu-icon {
+//         display: none;
+//     }
 
-    .page-link {
-        color: #333;
-        line-height: 1.2;
+//     .page-link {
+//         color: #333;
+//         line-height: 1.2;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
+//         // Gaps between nav items, but not on the first one
+//         &:not(:first-child) {
+//             margin-left: 20px;
+//         }
+//     }
 
-    @include media-query(320px) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: black;
-        border: 1px solid #CCC;
-        border-radius: 5px;
-        text-align: right;
+//     @include media-query(320px) {
+//         position: absolute;
+//         top: 9px;
+//         right: 30px;
+//         background-color: black;
+//         border: 1px solid #CCC;
+//         border-radius: 5px;
+//         text-align: right;
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+//         .menu-icon {
+//             display: block;
+//             float: right;
+//             width: 36px;
+//             height: 26px;
+//             line-height: 0;
+//             padding-top: 10px;
+//             text-align: center;
 
-            > svg {
-                width: 18px;
-                height: 15px;
+//             > svg {
+//                 width: 18px;
+//                 height: 15px;
 
-                path {
-                    fill: #999;
-                }
-            }
-        }
+//                 path {
+//                     fill: #999;
+//                 }
+//             }
+//         }
 
-        .trigger {
-            clear: both;
-            display: none;
-        }
+//         .trigger {
+//             clear: both;
+//             display: none;
+//         }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
+//         &:hover .trigger {
+//             display: block;
+//             padding-bottom: 5px;
+//         }
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-}
+//         .page-link {
+//             display: block;
+//             padding: 5px 10px;
+//         }
+//     }
+// }
