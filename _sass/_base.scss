@@ -53,7 +53,7 @@ p a{display:inline !important;}
 }
 
 .main-nav-shadow{
-	background:url(/img/vertical-right-shadow.png) left repeat-y;
+	background:url( '{{ "/img/vertical-right-shadow.png" | prepend: site.baseurl }}') left repeat-y;
 }
 
 /*====================================================================================================
