@@ -8,7 +8,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SofiaProRegular';
     src: url('../../fonts/27EB80_1_0.eot');
@@ -18,7 +17,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SofiaProBold';
     src: url('../../fonts/27EB80_0_0.eot');
@@ -28,37 +26,28 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-$sofia-light:'SofiaProlight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
-$sofia-regular:'SofiaProRegular', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
-$sofia-bold:'SofiaProBold', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
+$sofia-light: 'SofiaProlight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
+$sofia-regular: 'SofiaProRegular', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
+$sofia-bold: 'SofiaProBold', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
 
 body{
-	font-family:$sofia-light;
+	font-family: $sofia-light;
 	font-size: 85%/1.5em;
    	font-weight: 300;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
-
-h1,h2{font-family:$sofia-bold;}
-
-h3{font-family:$sofia-regular;}
-
-h4,h5,h6{font-family:$sofia-light;}
-
+h1,h2{ font-family:$sofia-bold;}
+h3,h4,h5,h6{ font-family:$sofia-regular;}
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal; 
-	display:inline-block;
+	display: inline-block;
 }
-
-h1{font-size:2em;}
-h2,h3{font-size:1.5em;}
-h4{font-size:1em;}
+h1{ font-size:2em; }
+h2,h3{ font-size:1.5em; }
+h4{ font-size:1em; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; font-color: inherit;}
 .subheader { color: #777777; }
-
 /*	Blockquotes  */
 blockquote, blockquote p { font-size: 1.125em;}
 cite{font-size:0.75em;}
@@ -101,7 +90,3 @@ code,kbd,samp {
 figcaption{
     font-family:$sofia-light;
 }
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }

@@ -9,3 +9,7 @@ github_username:  fergd
 
 # Build settings
 markdown: kramdown
+sass:
+ sourcemap: true
+ output_style: compressed
+ line_comments: true

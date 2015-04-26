@@ -1,79 +1,58 @@
 /*============================================================
 Colors
 =============================================================*/
-$light-grey:#f2f2f2;
-$med-grey:#C2c2c2;
-$dark-grey:#727272;
-$black-grey:#414141;
-$white:#ffffff;
-$red:#E13B3B;
-$yellow:#EFF249;
-$orange:#EA960F;
-.white-alpha8{
-	background-color:rgba(255,255,255,.8);
-}
+$light-grey:		#f2f2f2;
+$med-grey:			#C2c2c2;
+$dark-grey:			#727272;
+$black-grey:		#414141;
+$white:				#ffffff;
+$red:				#E13B3B;
+$yellow:			#EFF249;
+$orange:			#EA960F;
 
-/*============================================================
-Borders
-=============================================================*/
-$border-solidify:1px solid;
+.white-alpha{ background-color: rgba(255,255,255,.8); }
+
+$border-solidify: 1px solid;
 
 html{
-	border-bottom:0.5em $black-grey solid;
-	min-height:100%;
-	background-color:$white;
+	border-bottom: 0.5em $black-grey solid;
+	min-height: 100%;
+	background-color: $white;
 }
-
-body{
-	
-	h1,h2,h3,h4,h5,h6,p,a{
-		text-shadow:0 1px 0 $white;
-	}
-}
-
 %th-border-bottom{
-	border-bottom:$border-solidify;
+	border-bottom: $border-solidify;
 }
-
 %th-border-top{
-	border-top:$border-solidify;
+	border-top: $border-solidify;
 }
-
 @mixin th-grey-border-bottom{
-	border-color:$med-grey;
+	border-color: $med-grey;
 	@extend %th-border-bottom;
 	box-shadow:inset 0 2px #f0f0f0;
 }
-
 @mixin th-grey-border-top{
-	border-color:$med-grey;
+	border-color: $med-grey;
 	@extend %th-border-top;
 	box-shadow:inset 0 2px #f0f0f0;
 }
-
 @mixin th-ltgrey-border-bottom{
-	border-color:$light-grey;
+	border-color: $light-grey;
 	@extend %th-border-bottom;
-	box-shadow:inset 0 2px #f0f0f0;
+	box-shadow: inset 0 2px #f0f0f0;
 }
-
 hr { 
 	@include th-grey-border-top;
 	height: 0; 
 }
-
 %white-shadow{
-	text-shadow:0 1px 0 $white;
+	text-shadow: 0 1px 0 $white;
 }
-
 %light-shadow-top{
-	box-shadow:0 0 2px 2px rgba(100,100,100,0.1);
+	box-shadow: 0 0 2px 2px rgba(100,100,100,0.1);
 }
-
 @mixin gen-shadow($x-shad, $y-shad, $spread-shad, $feather-shad, $r, $g, $b, $alpha-shad){
-	box-shadow:$x-shad $y-shad $spread-shad $feather-shad, rgba($r,$g,$b,$alpha-shad);
+	box-shadow: $x-shad $y-shad $spread-shad $feather-shad, rgba($r,$g,$b,$alpha-shad);
 }
-
 @mixin border-radius($radius){
-	border-radius:$radius;
+	border-radius: $radius;
 }

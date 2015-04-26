@@ -1,7 +1,10 @@
 .nav-col{
 	min-height:100%;
-
+	
 	nav{
+		h2{
+			@extend %hide-text;
+		}
 		ul{
 			@include center-horiz-only;
 			top:0;
@@ -13,7 +16,8 @@
 				display:block;
 				float:left;
 				height:3em;
-				width:50%;
+				width:100%;
+				border-bottom: 1px $med-grey solid;
 				
 				&.home-respond{
 					display:none;

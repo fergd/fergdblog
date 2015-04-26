@@ -1,4 +1,5 @@
 /*--CORE--*/
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @import 
 	"core/reset", 
 	"core/base", 
@@ -48,7 +49,7 @@ p a{display:inline !important;}
 	@extend .l-col-30;
 }
 
-main{
+[role="main"]{
 	@extend .l-col-70;
 }
 
@@ -68,12 +69,12 @@ Compilation of styles inside all media queries
 	.icn-menu-36,
 	.icn-menu-36-right,
 	.icn-menu-36-left{
-		display:block;
-		position:absolute;
-		top:0.5em;
-		left:1em;
-		cursor:pointer;
-		z-index:1000;
+		display: block;
+		position: absolute;
+		top: 2.7em;
+		left: 1em;
+		cursor: pointer;
+		z-index: 1000;
 	}
 
 	[role="navigation"]{
@@ -86,7 +87,7 @@ Compilation of styles inside all media queries
 	[role="main"]{
 		margin-left: 0;
 		float: left;
-		width:100%;
+		width: 100%;
 	}
 
 	.active-nav [role="navigation"] {	
@@ -107,5 +108,17 @@ Compilation of styles inside all media queries
 		margin-left: 0;	
 		width: 50%;
 	}
-}
 
+	.icn-menu-36,
+	.icn-menu-36-right,
+	.icn-menu-36-left{		
+		top: 2.7em;
+	}
+}
+@media all and (max-width: 480px){
+	.icn-menu-36,
+	.icn-menu-36-right,
+	.icn-menu-36-left{		
+		top: 1.5em;
+	}
+}
