@@ -1,15 +1,19 @@
 footer{
-	@include th-grey-border-top;
-	background: $white;
+	@include l-float(left);
+	border-top: 3em solid $yellow;
+	width: 100%;
+	overflow: auto;
 
 	div.footer-inner-wrap{
-		max-width:80em;
-		position: relative;
-		margin:0 auto;
+		width: 80%;
+		overflow: auto;
+		margin: 0 0 0 20%;
 	}
 
-	div.footer-social{
-		padding:3em 2em 1em 0;
+	div.footer-inner-wrap > div{
+		@include l-float(left);
+		width: 33.33%;
+		padding: 1em;
 		
 		h2{
 			margin:0 0 1em 0;

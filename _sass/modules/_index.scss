@@ -1,18 +1,16 @@
 main{
 	@include l-float(left);
-	padding: 1em;
 	border-top: 3em solid $yellow;
 }
 
-@media all and (max-width: 370px){
-	border-top: none !important;
-}
 .big-square-lead{
-	padding:1em 0;
-	position: relative;
+	@extend .l-col-left;
+	@extend .l-col-full;
 
 	div{
-		margin:5% 1.5% 5% 1.5%;
+		@extend .l-col-left;
+		width: 33.33%;
+		padding: 2em;
 
 		span{
 			margin:2% 0 5% 0;
@@ -20,14 +18,9 @@ main{
 			left:50%;
 			margin-left:-24px;
 		}
-
 		h2{
 			width:100%;
 			text-align:center;
-		}
-
-		p{
-			line-height:24px;
 		}
 	}
 
@@ -38,22 +31,54 @@ main{
 }
 
 .secondary-info{
-	padding:1em 0;
-	position: relative;
+	@extend .l-col-left;
+	@extend .l-col-full;
+	padding: 2em;
+}
+
+.post-list{
+	@extend .l-col-left;
+	width: 100%;
+	li{
+		width: 100%;
+		margin-bottom: 1em;
+		background: #F2F2F2;
+		padding: 2em;
+	}
+}
+@media all and (max-width: 1230px){
+	.big-square-lead{
+		h2{
+			font-size: $ms-2;
+		}
+	}
+}
+
+@media all and (min-width: 960px) and (max-width: 1110px){
+	.big-square-lead{
+		div{
+			margin:1%;
+			width:100%;
+		}
+	}
 }
 
 @media all and (max-width: 768px){
 	.big-square-lead{
 		div{
 			margin:1%;
-
-			&.l-col-30{
-				width:100%;
-			}
+			width:100%;
 		}
 	}
 
 }
 
+@media all and (max-width: 370px){
+	border-top: none !important;
+}
 
-
+@media all and (max-width: 480px){
+	main{
+		border-top: none;
+	}
+}

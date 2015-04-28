@@ -1,7 +1,4 @@
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-@import
-	"tools/base_tools"
-;
 @import 
 	"core/reset", 
 	"core/base", 
@@ -13,6 +10,7 @@
 	"core/animation"
 ;
 @import 
+	"modules/off_canvas",
 	"modules/media_queries", 
 	"modules/header", 
 	"modules/footer", 
@@ -28,93 +26,14 @@
 
 body{
 	color: $black-grey;
-	overflow-x:hidden;
+	overflow-x: hidden;
 }
 
 .page-wrap{
-	height:100%;
+	height: auto;
 	@extend %l-float-l;
 	@extend .l-col-full;
+	@extend %clearfix;
 }
 
 p a{display:inline !important;}
-
-.icn-menu-36,
-.icn-menu-36-right,
-.icn-menu-36-left{
-	display:none;
-}
-
-[role="navigation"],
-[role="main"]{
-	transition:.2s all ease;
-}
-
-[role="navigation"]{
-	@extend .l-col-30;
-}
-
-[role="main"]{
-	@extend .l-col-70;
-}
-
-.main-nav-shadow{
-	background:url( /fergdblog/img/vertical-right-shadow.png) left repeat-y;
-}
-
-/*====================================================================================================
-Compilation of styles inside all media queries
-====================================================================================================*/
-
-@media all and (max-width: 960px){
-	
-	[role="navigation"]{
-		margin-left: -100%;
-		float: left;
-
-		nav{display:none !important;}
-	}
-
-	[role="main"]{
-		margin-left: 0;
-		float: left;
-		width: 100%;
-	}
-
-	.active-nav [role="navigation"] {	
-		margin-left: 0;	
-		width: 40%;
-
-		nav{display:inline-block !important;}
-	}
-
-	.active-nav [role="main"]{
-		margin-right: -100%;
-	}
-
-}
-@media all and (min-width: 481px) and (max-width: 680px){
-.active-nav [role="navigation"] {	
-		margin-left: 0;	
-		width: 50%;
-	}
-}
-@media all and (max-width: 480px){
-	.active-nav [role="navigation"] {	
-		margin-left: 0;	
-		width: 80%;
-	}
-
-	// .icn-menu-36,
-	// .icn-menu-36-right,
-	// .icn-menu-36-left{		
-	// 	top: 2.7em;
-	// }
-}
-@media all and (max-width: 480px){
-	// .icn-menu-36,
-	// .icn-menu-36-right,
-	// .icn-menu-36-left{		
-	// 	top: 1.5em;
-	// }
-}
