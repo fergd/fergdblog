@@ -25,7 +25,7 @@ section.cv{
 		.header_2 {
 			@include l-float(left);
 			@extend .l-col-70;
-			@include box;
+			
 			padding:1em;
 
 			h1, h2{
@@ -72,7 +72,7 @@ section.cv{
 
 	dt	{
 		@include l-float(left);
-		@include box;
+		
 		padding-right:1em;
 		width:20%;
 		font-size: 1.5em;
@@ -140,7 +140,7 @@ section.cv{
 		dl{
 			dt{
 				@include l-float(left);
-				@include box;
+				
 				padding:0;
 				width:100%;
 				font-size: 1.5em;
@@ -168,7 +168,7 @@ section.cv{
 			.header_2 {
 				@include l-float(left);
 				width:100%;
-				@include box;
+				
 				padding:0.5em 0;
 
 				ul.info_1{

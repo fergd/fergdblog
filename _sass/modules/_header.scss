@@ -1,32 +1,70 @@
-.nav-col{
-	// background:url(../../img/gears.png) bottom center;
+.header-website{
+	@include th-grey-border-bottom;
+	padding: 0 1em;
 
-	.mast{
-		@include th-grey-border-bottom;
-		height:8em;
-		text-align:center;
+	.heading-website{
+		margin-top: 0.5em;
+		width: 100%;
 
-		h1{
-			@include center-all-things;
-			text-align: center;
-			width:100%;
-			white-space:nowrap;
+	}
+	.subheading-website{
+		width: 100%;
+		line-height: 36px;
+		margin-bottom: 0.5em;
+
+		span.icn-logo-36{
+			margin-left: 0.7em;
+			
+		}
+
+		span:first-of-type{
+			font-family: $sofia-bold;
+			display: inline-block;
 		}
 	}
+}
 
+@media all and (min-width: 960px){
+	.heading-website{
+		text-align: center;
+		font-size: 3em;
+	}
+	.subheading-website{
+		text-align: center;
+
+		span.icn-logo-36{
+			display: none;
+		}
+	}
+}
+
+@media all and (min-width: 371px) and (max-width: 959px){
+	.heading-website{
+		width: auto;
+		text-align: right;
+		float: right;
+	}
+	.subheading-website{
+		width: auto;
+		text-align: right;
+		float: right;
+
+		.icn-logo-36{
+			float: right;
+		}
+	}
 }
 
 @media all and (max-width: 500px){
-
-	.nav-col{
-
-		.mast{
-
-			h1{
-				white-space:wrap;
-				font-size:1.25em;
-				font-family:$sofia-regular;
-			}
+	.subheading-website{
+		span:nth-of-type(2){
+			display:none;
 		}
+	}
+}
+
+@media all and (max-width: 370px){
+	.header-website{
+		text-align: center;
 	}
 }

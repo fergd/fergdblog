@@ -1,85 +1,87 @@
 .nav-col{
-	min-height:100%;
-	
-	nav{
-		h2{
-			@extend %hide-text;
-		}
-		ul{
-			@include center-horiz-only;
-			top:0;
-			display:inline-block;
-			width:60%;
-			overflow:hidden;
+	@extend %l-float-l;
+	height: 100%;
+	box-shadow: 0px 15px 6px 2px rgba(0, 0, 0, 0.1);
+	border-top: 3em solid $yellow;
 
+	nav{
+		@extend .l-col-full;
+		@extend %l-float-l;
+
+		h2{ @extend %is-visually-hidden; }
+
+		ul{
 			li{
-				display:block;
-				float:left;
-				height:3em;
-				width:100%;
+				display: block;
+				height: 3em;
+				@extend .l-col-full;
 				border-bottom: 1px $med-grey solid;
 				
-				&.home-respond{
-					display:none;
-				}
+				&.home-respond{ display:none; }
 
 				a{
-					height:100%;
-					width:100%;
-					line-height:3em;
-					display:inline-block;
+					font-family: $sofia-bold;
+					display: inline-block;
+					height: 100%;
+					@extend .l-col-full;
+					line-height: 3em;
 					vertical-align: middle;
-					text-align:center;
+					text-align: center;
 					@include bg-col-trans(0.5s);
 
 					&:hover,
 					&.active:hover{
-						background:$yellow;
-						text-shadow:none;
-						color:$dark-grey;
+						background: $yellow;
+						text-shadow: none;
+						color: $dark-grey;
 					}
 					
 					&.active{
-						background:$light-grey;
+						background: $light-grey;
 					}
 				}
 			}
 		}
 	}
 }
-
-@media all and (max-width: 1100px){
-	
-	.nav-col{
-	
-		nav{
-
-			ul{
-				@include center-horiz-only;
-				@include box;
-				padding-right:0.5em !important;	
-				width:100%;
-				top:1.05em;
-				
-				li{
-					height:4em;
-					width:100%;
-
-					a{
-						line-height:4em;
-					}
-
-				}
-			}
-		}
+@media all and (min-width: 960px){
+	.menu-button{
+		position: absolute; 
+		overflow: hidden; 
+		clip: rect(0 0 0 0); 
+		height: 1px; width: 1px; 
+		margin: -1px; padding: 0; border: 0; 
 	}
 }
 
-@media all and (max-width: 940px){
+@media all and (min-width: 371px) and (max-width: 959px){
+	.menu-button{
+		display: block;
+		padding: 0 0.7em 0 1.7em;
+		position: absolute;
+		top: 3em;
+		left: 0;
+		line-height: 50px;	
+		vertical-align: middle;
+		background: $black-grey;
+		color: $yellow;
+		cursor: pointer;
+		text-align: center;
+		z-index: 2;
+	}
+}
 
-	.mast{
-		h1{
-			display:none;
-		}
+@media all and (max-width: 370px){
+	.menu-button{
+		display: block;
+		width: 100%;
+		float: left;
+		line-height: 50px;	
+		vertical-align: middle;
+		padding: 0 9px;
+		background: $black-grey;
+		color: $yellow;
+		cursor: pointer;
+		text-align: center;
 	}
 }

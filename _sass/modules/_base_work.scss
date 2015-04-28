@@ -14,8 +14,8 @@
 	height:250px ;
 
 	figure.work-thumb{
-		@include box;
-		@include l-float-l;
+		
+		@extend %l-float-l;
 		width:100%;
 		height:100%;
 		cursor:pointer;
@@ -103,7 +103,7 @@
 	}
 
 	.l-cont-box-work{
-		@include box;
+		
 		width:100%;
 		padding:0 4% 0 0;
 		margin-bottom:15%;
@@ -159,12 +159,12 @@ a.back-to-work{
 }
 
 ul.tags{
-	@include l-float-l;
+	@extend %l-float-l;
 	@extend .l-col-full;
 	margin-top:1em;
 
 	li{
-		@include l-float-l;
+		@extend %l-float-l;
 		@extend %tag;
 		height:2em;
 		margin-right:3%;
@@ -261,7 +261,7 @@ Door To Door Organics Work
 }
 
 aside.side-info{
-	@include box;
+	
 	padding-left:1.5em;
 
 	h2{
@@ -269,7 +269,7 @@ aside.side-info{
 	}
 
 	blockquote{
-		@include box;
+		
 		background:$light-grey;
 		padding:1em;
 		margin:34px 0 0 0;

@@ -48,8 +48,9 @@ div.small-show{
 	}
 
 	figure.profile-img{
-		@include l-float-r;
-		@include box;
+		position: relative;
+		float: right;
+		
 		padding:2%;
 		display:inline-block;
 		max-width:50%;

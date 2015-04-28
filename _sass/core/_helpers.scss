@@ -1,24 +1,31 @@
-.clearfix:after { /* clearfix */
-	content: " ";
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	clear: both;
-	height: 0;
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
-/*  Hidden Text (replaces text-indent:-9999px;)  */
 %hide-text{
 	text-indent: 1000%;
 	white-space: nowrap;
 	overflow: hidden;
 }
-.ie7 .hide-text{text-indent:-9999px;} /*--Overrides browser zoom issue--*/
-/* Easing */
-@mixin ease{
-	transition:.2s all ease;
+%is-visually-hidden{
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
+}
+@mixin is-visually-hidden{
+	@extend %is-visually-hidden;
 }
 %ease{
 	transition:.2s all ease;
-}.ease{
+}
+@mixin ease{
+	@extend %ease;
+}
+.ease{
 	transition:.2s all ease;
 }

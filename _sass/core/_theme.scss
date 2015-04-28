@@ -56,3 +56,6 @@ hr {
 @mixin border-radius($radius){
 	border-radius: $radius;
 }
+@mixin alpha-bg($red, $green, $blue, $ab-alpha){
+	background-color: rgba($red, $green, $blue, $ab-alpha);
+}

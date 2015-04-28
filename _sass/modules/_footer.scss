@@ -1,5 +1,6 @@
 footer{
 	@include th-grey-border-top;
+	background: $white;
 
 	div.footer-inner-wrap{
 		max-width:80em;

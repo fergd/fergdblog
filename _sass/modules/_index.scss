@@ -1,25 +1,11 @@
-.home{
-	height:300%;
+main{
+	@include l-float(left);
+	padding: 1em;
+	border-top: 3em solid $yellow;
 }
 
-.title-logo{
-	@include th-grey-border-bottom;
-	height:8em;
-
-	h3{
-		@include center-vert-only;
-		right:0;
-		line-height:36px;
-
-		span.icn-logo-36{
-			margin-left:0.5em;
-		}
-
-		span:first-of-type{
-			font-family:$sofia-bold;
-			margin-right:0.5em;
-		}
-	}
+@media all and (max-width: 370px){
+	border-top: none !important;
 }
 .big-square-lead{
 	padding:1em 0;
@@ -69,38 +55,5 @@
 
 }
 
-@media all and (min-width: 940px){
-	
-	h3{
-		span:first-of-type{
-			display:none;
-		}
-	}
-}
-
-@media all and (max-width: 480px){
-
-	.title-logo{
-
-		h3{
-			width:100%;
-			text-align: right;
 
 
-			span:first-of-type{
-				font-size:1.3em;
-				width:100%;
-				display:inline-block;
-			}
-
-			span:nth-of-type(2){
-				width:100%;
-				display:inline-block;
-			}
-
-			span:nth-of-type(3){
-				display:none;
-			}
-		}
-	}
-}
