@@ -1,18 +1,24 @@
 ---
 layout: default
+title: Posts
+permalink: /posts/
+published: true
 ---
-<section class="big-square-lead l-col-left l-col-full">
-	<h1 class="page-heading">Posts</h1>
-	<ul class="post-list">
-		{% for post in site.posts %}
-		<li>
-			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-			<h2>
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h2>
-		</li>
-		{% endfor %}
-	</ul>
+<div class="post">
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title }}</h1>
+	</header>
+	<article class="post-content">
+		<ul class="post-list">
+			{% for post in site.posts %}
+			<li>
+				<h2>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</h2>
+				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			</li>
+			{% endfor %}
+		</ul>
 	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</section>
+	</article>
+</div>

@@ -69,7 +69,7 @@ h3, h4, h5, h6{
 }
 p{ 
 	font-size: $ms-1;
-	line-height: 1.4; 
+	line-height: 1.5; 
 }
 blockquote, 
 blockquote p { 
@@ -88,16 +88,20 @@ cite{
 	h3, h4, h5, h6{ 
 		font-size: $ms-1; 
 	}
-	p{ 
-		font-size: $ms-0;
-		line-height: 1.4; 
-	}
+	
 	blockquote, 
 	blockquote p { 
 		font-size: $ms-1;
 	}
 	cite{
 		font-size: $ms--1;
+	}
+}
+
+@media all and (max-width: 600px){
+	p{ 
+		font-size: $ms-0;
+		line-height: 1.5; 
 	}
 }
 

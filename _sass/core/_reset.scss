@@ -15,7 +15,6 @@ Reset & Basics (Inspired by E. Meyers)
 	    -webkit-text-size-adjust: 100%; /* 2 */
 	    -ms-text-size-adjust: 100%; /* 2 */
 	}
-
 	html, body{
 		height:100%;
 		width: 100%;
@@ -44,11 +43,9 @@ Reset & Basics (Inspired by E. Meyers)
 	    *display: inline;
 	    *zoom: 1;
 	}
-
 	code, em, pre{
 		display:inline-block;
 	}
-
 	/**
 	 * Prevent modern browsers from displaying `audio` without controls.
 	 * Remove excess height in iOS 5 devices.
@@ -57,22 +54,17 @@ Reset & Basics (Inspired by E. Meyers)
 	    display: none;
 	    height: 0;
 	}
-
 	[hidden] {
 	    display: none;
 	}
-
 	::-moz-selection{ background: #EFF249; color:#444; text-shadow: none; }
 	::selection { background:#EFF249; color:#444; text-shadow: none; } 
-
 /* #Links
 ================================================== */
 	a, a:visited { color:#4b4b4d; text-decoration: none; outline: 0; }
 	a:focus {outline: none;}
 	p a, p a:visited { line-height: inherit; }
 	a:active,a:hover {outline: 0;}
-
-
 /* #Lists
 ================================================== */
 	ol { list-style: decimal; }
@@ -81,18 +73,13 @@ Reset & Basics (Inspired by E. Meyers)
 	ul.disc { list-style: disc inside; }
 	//For Firefox to display the list images
 	ul.squre li, ul.circle li, ul.disc li{display:list-item}
-
 /* #Images
 ================================================== */
-
 	img.scale-with-grid {
 		max-width: 100%;
 		height: auto; }
-
-
 /* #Buttons
 ================================================== */
-
 	.button,
 	button,
 	input[type="submit"],
@@ -122,7 +109,6 @@ Reset & Basics (Inspired by E. Meyers)
 		padding: 8px 10px;
 		font-family:'sofia', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif; 
 	}
-
 	.button:hover,
 	button:hover,
 	input[type="submit"]:hover,
@@ -173,7 +159,6 @@ Reset & Basics (Inspired by E. Meyers)
 
 /* #Misc
 ================================================== */
-
 	/**
 	 * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
 	 * 2. Improve image quality when scaled in IE 7.
@@ -189,7 +174,6 @@ Reset & Basics (Inspired by E. Meyers)
 
 	table {border-collapse: collapse;border-spacing: 0;
 	}
-
 // *{
 // 	@include layout-labels;
 // }
