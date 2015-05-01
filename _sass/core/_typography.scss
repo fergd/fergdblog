@@ -1,28 +1,28 @@
 @font-face {
 	font-family: 'SofiaProlight';
-	src: url( '../../fonts/sofiaprolight-webfont.eot?#iefix');
-	src: url('../../fonts/sofiaprolight-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../../fonts/sofiaprolight-webfont.woff') format('woff'),
-		 url('../../fonts/sofiaprolight-webfont.ttf') format('truetype'),
-		 url('../../fonts/sofiaprolight-webfont.svg#sofia_prolight') format('svg');
+	src: url( '../fonts/sofiaprolight-webfont.eot?#iefix');
+	src: url('../fonts/sofiaprolight-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/sofiaprolight-webfont.woff') format('woff'),
+		 url('../fonts/sofiaprolight-webfont.ttf') format('truetype'),
+		 url('../fonts/sofiaprolight-webfont.svg#sofia_prolight') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'SofiaProRegular';
-	src: url('../../fonts/27EB80_1_0.eot');
-	src: url('../../fonts/27EB80_1_0.eot?#iefix') format('embedded-opentype'),
-		url('../../fonts/27EB80_1_0.woff') format('woff'),
-		url('../../fonts/27EB80_1_0.ttf') format('truetype');
+	src: url('../fonts/27EB80_1_0.eot');
+	src: url('../fonts/27EB80_1_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/27EB80_1_0.woff') format('woff'),
+		url('../fonts/27EB80_1_0.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'SofiaProBold';
-	src: url('../../fonts/27EB80_0_0.eot');
-	src: url('../../fonts/27EB80_0_0.eot?#iefix') format('embedded-opentype'),
-		url('../../fonts/27EB80_0_0.woff') format('woff'),
-		url('../../fonts/27EB80_0_0.ttf') format('truetype');
+	src: url('../fonts/27EB80_0_0.eot');
+	src: url('../fonts/27EB80_0_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/27EB80_0_0.woff') format('woff'),
+		url('../fonts/27EB80_0_0.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -47,7 +47,8 @@ Family Groups
 =========================================*/
 h1,h2{ font-family: $sofia-bold; }
 h3, h4, h5, h6{ font-family: $sofia-regular; }
-p{ font-family: $sofia-light;}
+// p{ font-family: $sofia-light;}
+p{ font-family: serif;}
 /*=========================================
 Typographic Styling and Scales
 =========================================*/
@@ -100,7 +101,6 @@ cite{
 
 @media all and (max-width: 600px){
 	p{ 
-		font-size: $ms-0;
 		line-height: 1.5; 
 	}
 }
