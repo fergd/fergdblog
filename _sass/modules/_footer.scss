@@ -1,6 +1,6 @@
 footer{
 	@include l-float(left);
-	border-top: 3em solid $yellow;
+	
 	width: 100%;
 	overflow: auto;
 
@@ -48,6 +48,10 @@ footer{
 			}
 		}
 	}
+}
+
+body > footer{
+	border-top: 1em solid $yellow;
 }
 
 @media all and (max-width: 940px){

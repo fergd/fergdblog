@@ -1,14 +1,15 @@
 ---
 layout: post
 title:  "Reviving Craftsmanship"
-date:   2015-04-06 08:07:15
+date:   2015-04-06
 categories: Web
 author: Christan Fergus
+published: true
 ---
 ## Try All The Things! ##
 The wonderful thing about doing web development with a team (opposed to working alone in my musty basement) is the conversations we have about the industry. The conversations, often spirited, range from the technical to the philosophical. The one thing most topics have in common is the fact that what may be “current” and “interesting” today is not what was yesterday, and certainly is not going to be tomorrow. The tech world&mdash;a world I have chosen to be a part of&mdash;moves at a dizzying pace. No sooner had I grasped Grunt than Gulp came along as the hipster designer's favourite way of getting out of doing things manually. Which javaScript framework should I go with? Damned if I know! And then we have the latest languages, meta languages named after various facial hair configurations. When SoulPatch.io hits GitHub (and you know it will), I’m going to take a long vacation.
 
-Please don't misunderstand, I love this ([appropriately illustrated here](http://www.commitstrip.com/en/2014/11/25/west-side-project-story/ "Web Comic on CommitStrip called Side Project")).I love how quickly we can get an app up and running with tools like Meteor. This fairly new stage in development has such a low bar of entry that very nearly anyone with a computer and desire can create a web page or app and even be successful. Success, however, in no way means quality. That, dear reader, ultimately leads me to my gripe. We have so much we can do, and sometimes bounce so quickly from tool to tool, that we forget a little thing called craftsmanship. Or perhaps it’s not even forgotten, perhaps&mdash;actually likely&mdash;people never had it in the first place.
+Please don't misunderstand, I love this ([appropriately illustrated here](http://www.commitstrip.com/en/2014/11/25/west-side-project-story/ "Web Comic on CommitStrip called Side Project")). I love how quickly we can get an app up and running with tools like Meteor. This fairly new stage in development has such a low bar of entry that very nearly anyone with a computer and desire can create a web page or app and even be successful. Success, however, in no way means quality. That, dear reader, ultimately leads me to my gripe. We have so much we can do, and sometimes bounce so quickly from tool to tool, that we forget a little thing called craftsmanship. Or perhaps it’s not even forgotten, perhaps&mdash;actually likely&mdash;people never had it in the first place.
 
 ## Get Physical ##
 I have a degree in graphic design. In my day (that’s right, I said it) design was a pretty slow thing. For a comprehensive design degree, one had to learn the breadth of the visual: the fine arts encompassed painting, pastel, pencil, film photography, and mixed media. Of those mediums, the areas of figure study, still life, landscape, industrial, and more where explored. These were physical mediums. These mediums did not have an undo. I was forced to hone my craft and grow my skills one mistake and success at a time. I had to plan, coordinate and execute nearly flawlessly to even hope to get a good grade. Of course, this wasn't _all_ that long ago. We did the physical in tandem with the digital where we did all the usual things in the Corel, the Adobe suite: advertising and marketing design, web design, posters, etc. 
