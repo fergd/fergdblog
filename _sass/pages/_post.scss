@@ -1,5 +1,5 @@
 .post{
-	padding: 1em;
+	padding: 2em;
 	font-size: 16px;
 }
 
@@ -17,9 +17,12 @@
 .post-footer{
 	margin: 2em 0;
 	border-top: 1px solid $med-grey;
+	@include l-float(left);
+	width: 100%;
+	overflow: auto;
 }
 
-.post-content{
+.post-article .post-content{
 	@extend .l-col-full;
 
 	h2{
@@ -49,12 +52,14 @@
 	}
 	ul{
 		display: block;
+		width: 100%;
 		border-left: 60px solid $med-grey;
 		font-size: $ms-1;
 		line-height: 1.4; 
 		
 		li{
 			padding: 0 0 0 1em;
+			width: 100%;
 		}
 	}
 
@@ -66,6 +71,21 @@
 		margin-top: 35px;
 	}
 }
+
+.post-list{
+	@extend .l-col-left;
+	width: 100%;
+	li{
+		width: 100%;
+		margin-bottom: 1em;
+		padding: 2em 2em 0 0;
+
+		&:first-of-type{
+			padding: 0 2em 0 0; 
+		}
+	}
+}
+
 @media all and (min-width: 1120px) and (max-width: 1380px){
 	.post-content{
 		max-width: 80%;

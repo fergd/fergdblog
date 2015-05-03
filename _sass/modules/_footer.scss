@@ -1,6 +1,6 @@
-footer{
+footer.website-footer{
 	@include l-float(left);
-	
+	border-top: 1em solid $med-grey;
 	width: 100%;
 	overflow: auto;
 
@@ -8,16 +8,29 @@ footer{
 		width: 80%;
 		overflow: auto;
 		margin: 0 0 0 20%;
-	}
-
-	div.footer-inner-wrap > div{
+		padding: 2em;
 		@include l-float(left);
-		width: 33.33%;
-		padding: 1em;
+
 		
 		h2{
-			margin:0 0 1em 0;
+			margin:0 0 16px 0;
 		}
+
+		ul.social-media-list{
+			@extend .l-col-left;	
+			width: 100%;
+
+			li{
+				width: 100%;
+				margin-bottom: $ms-0;
+				// padding: 2em 2em 0 0;
+
+				// &:first-of-type{
+				// 	padding: 0 2em 0 0; 
+				// }
+			}
+
+				}
 
 		.soc-icon{
 			@include l-float(left);
@@ -50,45 +63,11 @@ footer{
 	}
 }
 
-body > footer{
-	border-top: 1em solid $yellow;
-}
-
 @media all and (max-width: 940px){
-	
-	footer{
 
-		div.footer-social{
-			padding:5% 0;
-
-			&:first-of-type{
-				width:40%;
-			}
-		}
-	}
-}
-
-@media all and (max-width: 768px){
-	footer{
-
-		div.footer-social{
-
-			&:first-of-type{
-				width:50%;
-			}
-		}
-	}
-}
-
-@media all and (max-width:440px){
-
-	footer{
-
-		div.footer-social{
-
-			&:first-of-type{
-				width:100%;
-			}
-		}
+		div.footer-inner-wrap{
+			width: 100% !important;
+			margin: 0 !important;
+			padding: 2em;			
 	}
 }

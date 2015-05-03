@@ -1,6 +1,6 @@
 main{
 	@include l-float(left);
-	border-top: 3em solid $yellow;
+	// border-top: 3em solid $yellow;
 }
 
 .big-square-lead{
@@ -36,16 +36,7 @@ main{
 	padding: 2em;
 }
 
-.post-list{
-	@extend .l-col-left;
-	width: 100%;
-	li{
-		width: 100%;
-		margin-bottom: 1em;
-		background: #F2F2F2;
-		padding: 2em;
-	}
-}
+
 @media all and (max-width: 1230px){
 	.big-square-lead{
 		h2{

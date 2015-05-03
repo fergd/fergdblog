@@ -1,0 +1,41 @@
+.page{
+	padding: 2em;
+	font-size: 16px;
+}
+
+.page-header{
+	@extend %l-float-l;
+	@extend .l-col-full;
+	// margin: 0 0 2em 0;
+
+	h1{
+		margin: 0;
+	}
+}
+
+.page-footer{
+	margin: 2em 0;
+	border-top: 1px solid $med-grey;
+	@include l-float(left);
+	width: 100%;
+	overflow: auto;
+}
+
+.page-content{
+	@extend .l-col-full;
+
+}
+
+
+
+@media all and (min-width: 1120px) and (max-width: 1380px){
+	.page-content{
+		max-width: 80%;
+	}
+}
+
+@media all and (min-width: 1381px){
+	.page-content{
+		max-width: 760px;
+	}
+}

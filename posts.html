@@ -19,6 +19,9 @@ published: true
 			</li>
 			{% endfor %}
 		</ul>
-	<p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	
 	</article>
+	<footer class="post-footer">
+		<a class="button" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>
+	</footer>
 </div>
