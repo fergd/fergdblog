@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: work
 title: Work
 permalink: /work/
 published: true
@@ -8,24 +8,24 @@ published: true
 <div class="big-square-lead work-page">
 
 	<section class="l-cont-box work" onclick="location.href = '/work/cfws'">
-		<h2><a href="/work/cfws">About This Website</a></h2>
+		<h2><a href="/work/cfws/">About This Website</a></h2>
 		<figure class="work-thumb">
-			<img src="../public/img/this-site/deminishing.png" />
+			<img src="../img/this-site/deminishing.png" />
 		</figure>
 	</section>
 
 	<section class="l-cont-box work" onclick="location.href = '/work/door-to-door-organics'">
 		<h2><a href="/work/door-to-door-organics">Door To Door Organics</a></h2>
 		<figure class="work-thumb">
-			<img src="../public/img/dtdo/mon-dtdo.png" />
+			<img src="../img/dtdo/mon-dtdo.png" />
 			<figcaption>Front-end web design</figcaption>
 		</figure>
 	</section>
 
 	<section class="l-cont-box work" onclick="location.href = '/work/fresh-designs'">
-		<h2><a href="/work/rebario">Fresh Designs</a></h2>
+		<h2><a href="{{ fresh-designs | prepend: site.baseurl }}">Fresh Designs</a></h2>
 		<figure class="work-thumb">
-			<img src="../public/img/fresh/mon_fresh.png" />
+			<img src="../img/fresh/mon_fresh.png" />
 			<figcaption>Website, logo, blog design</figcaption>
 		</figure>
 	</section>
@@ -33,13 +33,12 @@ published: true
 	<section class="l-cont-box work" onclick="location.href = '/work/beer'">
 		<h2><a href="/work/beer">Beer Labels </a></h2>
 		<figure class="work-thumb" onclick="ajax_request()">
-			<img src="../public/img/beer/mon_beer.png" />
+			<img src="../img/beer/mon_beer.png" />
 			<figcaption>Personal design</figcaption>
 		</figure>
 	</section>
 
 	<footer>
-		<a href="http://www.fergusdesign.com" class="button" target="_blank">The old Fergus Design website</a>
 	</footer>
 
 </div>

@@ -5,6 +5,7 @@
 	.heading-website{
 		margin-top: 0.5em;
 		width: 100%;
+		@extend %long-shadow;
 
 	}
 	.subheading-website{
