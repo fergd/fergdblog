@@ -1,6 +1,7 @@
 footer.website-footer{
 	@include l-float(left);
-	border-top: 1em solid $med-grey;
+	background: $yellow;
+	// border-top: 1em solid $med-grey;
 	width: 100%;
 	overflow: auto;
 

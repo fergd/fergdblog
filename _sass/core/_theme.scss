@@ -4,20 +4,20 @@ Colors
 $light-grey:		#f2f2f2;
 $med-grey:			#C2c2c2;
 $dark-grey:			#727272;
-$black-grey:		#414141;
+$black-grey:		#3E4651;
 $white:				#ffffff;
 $red:				#E13B3B;
-$yellow:			#EFF249;
-$orange:			#EA960F;
+$yellow:			#EEE657;
+$orange:			#FCB941;
+$green:				#2CC990;
+$blue:				#2C82C9;
 
 .white-alpha{ background-color: rgba(255,255,255,.8); }
 
 $border-solidify: 1px solid;
 
 html{
-	border-bottom: 0.5em $black-grey solid;
 	min-height: 100%;
-	background-color: $white;
 }
 %th-border-bottom{
 	border-bottom: $border-solidify;
@@ -80,23 +80,23 @@ http://www.youtube.com/watch?v=umDr0mPuyQc */
 	    rgb(230, 230, 230) 10px 10px,
 	    rgb(230, 230, 230) 11px 11px,
 	    rgb(230, 230, 230) 12px 12px,
-	    rgb(231, 231, 231) 13px 13px,
-	    rgb(232, 232, 232) 14px 14px,
-	    rgb(234, 234, 234) 15px 15px,
-	    rgb(235, 235, 235) 16px 16px,
-	    rgb(236, 236, 236) 17px 17px,
-	    rgb(238, 238, 238) 18px 18px,
-	    rgb(239, 239, 239) 19px 19px,
-	    rgb(241, 241, 241) 20px 20px,
-	    rgb(242, 242, 242) 21px 21px,
-	    rgb(243, 243, 243) 22px 22px,
-	    rgb(245, 245, 245) 23px 23px,
-	    rgb(246, 246, 246) 24px 24px,
-	    rgb(248, 248, 248) 25px 25px,
-	    rgb(249, 249, 249) 26px 26px,
-	    rgb(250, 250, 250) 27px 27px,
-	    rgb(252, 252, 252) 28px 28px,
-	    rgb(253, 253, 253) 29px 29px,
-	    rgb(255, 255, 255) 30px 30px;
-   		background-color: rgb(255, 255, 255);
+	    rgb(230, 230, 230) 13px 13px,
+	    rgb(230, 230, 230) 14px 14px,
+	    rgb(230, 230, 230) 15px 15px,
+	    rgb(230, 230, 230) 16px 16px,
+	    rgb(230, 230, 230) 17px 17px,
+	    rgb(230, 230, 230) 18px 18px,
+	    rgb(230, 230, 230) 19px 19px,
+	    rgb(230, 230, 230) 20px 20px,
+	    rgb(230, 230, 230) 21px 21px,
+	    rgb(230, 230, 230) 22px 22px,
+	    rgb(230, 230, 230) 23px 23px,
+	    rgb(230, 230, 230) 24px 24px,
+	    rgb(230, 230, 230) 25px 25px,
+	    rgb(230, 230, 230) 26px 26px,
+	    rgb(230, 230, 230) 27px 27px,
+	    rgb(230, 230, 230) 28px 28px,
+	    rgb(230, 230, 230) 29px 29px,
+	    rgb(230, 230, 230) 30px 30px;
+   		// background-color: rgb(255, 255, 255);
 }

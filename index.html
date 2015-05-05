@@ -4,24 +4,20 @@ layout: default
 
 <section class="big-square-lead">
 	<div>
-		<span class="icn-web-design"></span>
-		<h2>Front-end Code</h2>
-		<p>It’s paramount that the code running a site is light-weight, elegantly written, and accessible to all users and platforms. My passion resides in standards-based design, HTML, CSS (by way of Sass), DRY coding principles, and the utilization of pattern libraries.</p>
-	</div>
-	<div>
-		<span class="icn-pencil"></span>
-		<h2>Web Design</h2>
-		<p>Great web design means understanding the user's needs and coupling that with a beautiful, useable interface. I believe beauty is nothing without clear content, which is why I design interfaces that speak not only to beauty, but also interfaces that tell a story.</p>
-	</div>
-	<div>
 		<span class="icn-ux"></span>
-		<h2>User Experience</h2>
-		<p>Navigating a web site should not feel like a scavenger hunt. I determine the user’s needs through user testing and research. I then use that information to provide the best, most informative, and painless experience on the website.</p>
+		<h2>The User's Experience</h2>
+		<p>Great web design means understanding the user's needs and coupling that with a beautiful, useable interface. Navigating a web site should not feel like a scavenger hunt. I determine the user’s needs through user testing and research. I then use that information to provide the best, most informative, and painless experience on the website.</p>
+	</div>
+
+	<div>
+		<span class="icn-web-design"></span>
+		<h2>The Front End</h2>
+		<p>It’s paramount that the code running a site is light-weight, elegantly written, and accessible to all users and platforms. My passion resides in standards-based design, HTML, CSS (by way of Sass), DRY coding principles, and the utilization of pattern libraries. </p>
 	</div>
 </section>
+
 <section class="secondary-info">
 	<h1 class="page-heading">Recent Posts</h1>
-	<p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 	<ul class="post-list">
 		{% for post in site.posts %}
 		<li>
@@ -32,5 +28,4 @@ layout: default
 		</li>
 		{% endfor %}
 	</ul>
-	
 </section>

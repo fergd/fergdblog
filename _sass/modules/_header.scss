@@ -1,12 +1,12 @@
 .header-website{
 	@include th-grey-border-bottom;
 	padding: 0 1em;
+	background: $white;
 
 	.heading-website{
 		margin-top: 0.5em;
 		width: 100%;
 		@extend %long-shadow;
-
 	}
 	.subheading-website{
 		width: 100%;

@@ -9,18 +9,19 @@ main{
 
 	div{
 		@extend .l-col-left;
-		width: 33.33%;
+		width: 50%;
 		padding: 2em;
 
 		span{
-			margin:2% 0 5% 0;
+			margin: 0 0 20.8px 0;
 			position: relative;
-			left:50%;
-			margin-left:-24px;
+			left: 50%;
+			margin-left: -24px;
 		}
 		h2{
 			width:100%;
 			text-align:center;
+			margin: 0 0 20.8px 0;
 		}
 	}
 
@@ -34,8 +35,13 @@ main{
 	@extend .l-col-left;
 	@extend .l-col-full;
 	padding: 2em;
-}
 
+	h1{
+		margin-bottom: 16px;
+		margin-left: -70px;
+		@extend %long-shadow;
+	}
+}
 
 @media all and (max-width: 1230px){
 	.big-square-lead{

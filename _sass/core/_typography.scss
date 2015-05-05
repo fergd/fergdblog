@@ -67,13 +67,13 @@ p{ font-family: $vollkornregular; }
 /*=========================================
 Typographic Styling and Scales
 =========================================*/
-$ms-5:      3.713em;
-$ms-4:      2.856em; 
-$ms-3:      2.197em; 
-$ms-2:      1.69em;
-$ms-1:      1.3em;
-$ms-0: 		1em;
-$ms--1:		0.769em;
+$ms-5:      3.713em;		// 59.407px
+$ms-4:      2.856em; 		// 45.698px 
+$ms-3:      2.197em; 		// 35.152px
+$ms-2:      1.69em;			// 27.04px
+$ms-1:      1.3em;			// 20.8px
+$ms-0: 		1em;			// 16px
+$ms--1:		0.769em; 		// 12.308px
 h1{ 
 	font-size: $ms-5; 
 }
@@ -85,18 +85,19 @@ h3, h4, h5, h6{
 }
 p{ 
 	font-size: $ms-1;
-	line-height: 1.4; 
+	line-height: 1.3; 
 }
 blockquote, 
 blockquote p { 
 	font-size: $ms-2;
+	line-height: 1.3; 
 }
 cite{
 	font-size: $ms--1;
 }
 @media all and (max-width: 960px){
 	h1{ 
-	font-size: $ms-4; 
+		font-size: $ms-4; 
 	}
 	h2{ 
 		font-size: $ms-2; 
@@ -105,7 +106,7 @@ cite{
 		font-size: $ms-1; 
 	}
 	p{ 
-		font-size: $ms-0;
+		font-size: $ms-1;
 		line-height: 1.4; 
 	}
 	blockquote, 
@@ -114,12 +115,6 @@ cite{
 	}
 	cite{
 		font-size: $ms--1;
-	}
-}
-
-@media all and (max-width: 600px){
-	p{ 
-		line-height: 1.5; 
 	}
 }
 /*=========================================
@@ -132,7 +127,7 @@ h1,h2,h3,h4,h5,h6{
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
 	font-weight: inherit; font-color: inherit;
 }
-.subheader { color: #777777; }
+.subheader { color: $green; }
 /*	Blockquotes  */
 
 blockquote cite { display: block; font-size: 0.75em;}
@@ -166,7 +161,7 @@ sub {bottom: -0.25em;}
 
 code,kbd,samp {
 	font-family: monospace, serif;
-	_font-family: 'courier new', monospace;
+	font-family: 'courier new', monospace;
 	font-size: 1em;
 }
 

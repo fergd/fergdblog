@@ -14,7 +14,7 @@ sass:
  output_style: compressed
  line_comments: true
 
-
+ 
 #
 # Plugin: jekyll-assets
 #

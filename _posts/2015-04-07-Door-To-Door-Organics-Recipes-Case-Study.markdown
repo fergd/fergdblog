@@ -2,7 +2,7 @@
 layout: post
 title: Door To Door Organics Recipe Site Case Study
 date: 2013/05/06 
-categories: Case_Studies
+categories: Case-Studies
 author: Christan Fergus
 published: true
 ---

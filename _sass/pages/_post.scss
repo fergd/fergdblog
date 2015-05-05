@@ -38,13 +38,14 @@
 	}
 	p > a{
 		font-style: italic;
-		color: $orange;
+		color: $blue;
 	}
 	p + p {
 		margin-top: 16px;
 	}
 	img{
-		border: 1px solid $med-grey;
+		border: 1px dashed $med-grey;
+		border-radius: 0 0 60px 0 ;
 		padding: $ms--1;
 		max-width: 90%;
 		float: right;
@@ -75,13 +76,13 @@
 .post-list{
 	@extend .l-col-left;
 	width: 100%;
+	
 	li{
 		width: 100%;
-		margin-bottom: 1em;
-		padding: 2em 2em 0 0;
+		padding: 1em 0;
 
-		&:first-of-type{
-			padding: 0 2em 0 0; 
+		&:last-of-type{
+			margin-bottom: 0;
 		}
 	}
 }

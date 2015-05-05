@@ -1,15 +1,17 @@
 <h2 class="menu-button" offclass="menu-button">
 	Menu
 </h2>
+{% assign current = page.url | downcase | split: '/' %}
 <div class="nav-col off-canvas-navigation" role="navigation">
 	<nav>
 		<ul>
 			<li class="home-respond"><a href="/">Home</a></li>
 			{% for page in site.pages %}
 			{% if page.title %}
-			<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+			<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}" {% if current[1] == page.url %} class='active' {% endif %}>{{ page.title }}</a></li>
 			{% endif %}
 			{% endfor %}
 		</ul>
 	</nav>
 </div>
+

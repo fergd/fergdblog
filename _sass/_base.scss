@@ -28,7 +28,8 @@
 body{
 	color: $black-grey;
 	overflow-x: hidden;
-	// background: url('../img/mistyhills.jpg');
+	background-color: $yellow;
+	// background: url('../img/poly.jpg');
 	// background-size: cover;
 }
 
@@ -37,6 +38,7 @@ body{
 	@extend %l-float-l;
 	@extend .l-col-full;
 	@extend %clearfix;
+	background: $white;
 }
 
 p a{display:inline !important;}
