@@ -1,17 +1,20 @@
 .post{
-	padding: 2em;
+	padding: 0 2em 2em 2em;
 	font-size: 16px;
+	overflow: auto;
 }
 
 .post-header{
 	@extend %l-float-l;
 	@extend .l-col-full;
 	margin: 0 0 2em 0;
+	padding-top: 8px;
+}
 
-	p.post-meta{
-		font-size: $ms-0;
-		margin: 0;
-	}
+.post-meta{
+	font-size: $ms-0;
+	margin: 0;
+	color: $green;
 }
 
 .post-footer{

@@ -6,7 +6,7 @@ $med-grey:			#C2c2c2;
 $dark-grey:			#727272;
 $black-grey:		#3E4651;
 $white:				#ffffff;
-$red:				#E13B3B;
+$red:				#FF646A; //#E13B3B;
 $yellow:			#EEE657;
 $orange:			#FCB941;
 $green:				#2CC990;
@@ -67,36 +67,16 @@ http://www.youtube.com/watch?v=umDr0mPuyQc */
   padding: 100px;
   background: #222D3A;
 }
-%long-shadow {
-  		text-shadow: rgb(230, 230, 230) 1px 1px,
-	    rgb(230, 230, 230) 2px 2px,
-	    rgb(230, 230, 230) 3px 3px,
-	    rgb(230, 230, 230) 4px 4px,
-	    rgb(230, 230, 230) 5px 5px,
-	    rgb(230, 230, 230) 6px 6px,
-	    rgb(230, 230, 230) 7px 7px,
-	    rgb(230, 230, 230) 8px 8px,
-	    rgb(230, 230, 230) 9px 9px,
-	    rgb(230, 230, 230) 10px 10px,
-	    rgb(230, 230, 230) 11px 11px,
-	    rgb(230, 230, 230) 12px 12px,
-	    rgb(230, 230, 230) 13px 13px,
-	    rgb(230, 230, 230) 14px 14px,
-	    rgb(230, 230, 230) 15px 15px,
-	    rgb(230, 230, 230) 16px 16px,
-	    rgb(230, 230, 230) 17px 17px,
-	    rgb(230, 230, 230) 18px 18px,
-	    rgb(230, 230, 230) 19px 19px,
-	    rgb(230, 230, 230) 20px 20px,
-	    rgb(230, 230, 230) 21px 21px,
-	    rgb(230, 230, 230) 22px 22px,
-	    rgb(230, 230, 230) 23px 23px,
-	    rgb(230, 230, 230) 24px 24px,
-	    rgb(230, 230, 230) 25px 25px,
-	    rgb(230, 230, 230) 26px 26px,
-	    rgb(230, 230, 230) 27px 27px,
-	    rgb(230, 230, 230) 28px 28px,
-	    rgb(230, 230, 230) 29px 29px,
-	    rgb(230, 230, 230) 30px 30px;
-   		// background-color: rgb(255, 255, 255);
+
+.markup-wrap{
+	display: inline-block;
+
+	&:before{
+		content: '\003C';
+		color: $red;
+	}
+	&:after{
+		content: '\003E';
+		color: $red;
+	}
 }

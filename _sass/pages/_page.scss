@@ -1,11 +1,13 @@
 .page{
-	padding: 2em;
+	padding: 0 2em 2em 2em;
 	font-size: 16px;
+	overflow: auto;
 }
 
 .page-header{
 	@extend %l-float-l;
 	@extend .l-col-full;
+	padding-top: 8px;
 
 	h1{
 		margin: 0;

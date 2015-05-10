@@ -6,7 +6,6 @@
 	.heading-website{
 		margin-top: 0.5em;
 		width: 100%;
-		@extend %long-shadow;
 	}
 	.subheading-website{
 		width: 100%;
@@ -26,9 +25,6 @@
 }
 
 @media all and (min-width: 960px){
-	.heading-website{
-		// font-size: 3em;
-	}
 	.subheading-website{
 		span.icn-logo-36{
 			display: none;
@@ -40,6 +36,7 @@
 		h1, h2{
 			margin-left: 20%;
 			width: 80%;
+			padding-left: 26px;
 		}
 	}
 }

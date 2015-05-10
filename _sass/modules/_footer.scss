@@ -1,9 +1,10 @@
 footer.website-footer{
 	@include l-float(left);
-	background: $yellow;
+	background: $black-grey;
 	// border-top: 1em solid $med-grey;
 	width: 100%;
 	overflow: auto;
+	color: $yellow;
 
 	div.footer-inner-wrap{
 		width: 80%;
@@ -22,13 +23,14 @@ footer.website-footer{
 			width: 100%;
 
 			li{
-				width: 100%;
+				width: 25%;
 				margin-bottom: $ms-0;
-				// padding: 2em 2em 0 0;
+				color: $green;
+				float: left;
 
-				// &:first-of-type{
-				// 	padding: 0 2em 0 0; 
-				// }
+				&:nth-of-type(odd){
+					clear: left;
+				}
 			}
 
 				}
