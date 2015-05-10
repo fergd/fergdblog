@@ -1,27 +1,10 @@
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 @import 
-	"core/reset", 
-	"core/base", 
-	"core/helpers", 
-	"core/icons", 
-	"core/theme", 
-	"core/typography", 
-	"core/layout", 
-	"core/animation"
-;
-@import 
-	"modules/off_canvas",
-	"modules/media_queries", 
-	"modules/header", 
-	"modules/footer", 
-	"modules/navigation", 
-	"modules/index", 
-	"modules/base_work", 
-	"modules/base_profile", 
-	"modules/cv",
-	"modules/buttons"
-;
-@import 
+	"tools/base_tools",
+	"core/base_core",
+	"modules/base_modules",
+	"templates/base_templates",
 	"pages/base_pages"
 ;
 
@@ -32,9 +15,9 @@ body{
 }
 
 .page-wrap{
-	height: auto;
 	@extend %l-float-l;
 	@extend .l-col-full;
+	height: auto;
 	@extend %clearfix;
 	background: $white;
 }

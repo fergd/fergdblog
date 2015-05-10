@@ -1,0 +1,338 @@
+.work-landing{
+	@extend %l-float-l;
+	@extend .l-col-full;
+	padding-top: 16px;
+}
+
+.work-thumbs-wrapper{	
+	@extend %l-float-l;
+	width: 50%;
+	margin: 0 0 16px 0;
+	min-width: 320px;
+	text-align: center;
+
+	.work-thumb figcaption {
+		position: absolute;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.9);
+		z-index: 100;
+		padding: 16px;
+		font-size: $ms-1;
+		bottom: 0;
+		left: 0;
+		color: $green;
+	}
+
+	h2{
+		font-size: $ms-2;
+		text-align: left;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: auto;
+		padding: 16px;
+		color: $yellow;
+		background: $black-grey;
+		z-index: 100;
+	}
+
+	.work-thumb{
+		@extend %l-float-l;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+
+		img{
+			display: inline-block;
+			max-height: 75%;
+			margin: 21px 0;
+		}
+
+		&:hover:after{
+			content: '';
+			position: absolute;
+			@include center-all-things;
+			width: 100%;
+			height: 100%;
+			background: $yellow;
+			opacity: 0.5;
+
+		}
+
+		&:hover:before{
+			content: '';
+			@include center-all-things;
+			@extend .icn-mag-glass-24;
+			position: absolute;
+			z-index: 1000;
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+
+// .work-examples{
+// 	padding:1em 0;
+
+// 	.work-examples-text{
+// 		padding-right:1em;
+		
+// 		p{
+// 			line-height:1.4em;
+
+// 			span{
+// 				display:inline;
+// 			}
+// 		}
+
+// 		h3,
+// 		a.back-to-work{
+// 			margin-top:8%;
+// 		}
+
+// 		h3{
+// 			font-family:$sofia-regular;
+// 		}
+// 	}
+// }
+// %tag{
+// 	@extend %white-shadow;
+// 	background:$light-grey;
+// 	padding:0 0.5em;
+// 	display:inline-block;
+// 	float:left;
+// 	vertical-align:middle;
+// 	line-height:2em;
+// }
+
+// .tag{
+// 	margin-right:3%;
+// 	margin-bottom:3%;
+// }
+
+// ul.tags{
+// 	@extend %l-float-l;
+// 	@extend .l-col-full;
+// 	margin-top:1em;
+
+// 	li{
+// 		@extend %l-float-l;
+// 		@extend %tag;
+// 		height:2em;
+// 		margin-right:3%;
+// 		margin-bottom:3%;
+// 		white-space: nowrap;
+// 	}
+// }
+
+/*=====================================================================
+Work Content Pages
+=====================================================================*/
+// .copy-content{
+// 	padding-top:1em;
+
+// 	h1,h2,h3{ width:100%;}
+// 	h1{	margin:0 0 1em 0;}
+// 	h2{	margin:0 0 0.5em 0;}
+
+// 	h3{	margin:0;}
+
+// 	p{
+// 		display:inline-block;
+// 		margin:0 0 1.3em 0;
+// 		position: relative;
+// 		float:left;
+// 		line-height: 1.4em;
+
+// 		span{
+// 			display:inline;
+// 		}
+
+// 		strong{
+// 			display:inline !important;
+// 		}
+
+// 		a{
+// 			display:inline;
+// 			color:$orange;
+// 			outline:none;
+
+// 			&:hover{
+// 				text-decoration:underline;
+// 			}
+// 		}
+
+// 	}
+// }
+// /*=====================================================================
+// Door To Door Organics Work
+// =====================================================================*/
+// .dtdo-content.copy-content{
+// 	padding-top:0;
+// }
+
+// .dtdo-content{
+
+// 	.slider{
+// 		margin-bottom:1em;
+// 		background:$dark-grey;
+// 	}
+	
+// 	p.bjqs-caption{
+// 		display:block;
+// 		width:96%;
+// 		margin:0;
+// 		padding:3%;
+// 		position:absolute;
+// 		bottom:0; 
+// 		background:rgba(0,0,0,0.5);
+// 		color:$white;
+// 		text-shadow:none; 
+// 	}
+
+// 	.section-title{
+// 		background:$dark-grey url(/img/black_thread.png);
+// 		color:$white;
+// 		text-shadow:none;
+// 		padding:1em 0;
+// 		text-indent:16px;
+// 	}
+
+// 	ul.content-list{
+// 		display:inline-block;
+// 		margin:0 0 1.3em 0;
+// 		float:left;
+// 		width:100%;
+
+// 		li{
+// 			position: relative;
+// 			line-height:22px;
+// 			width:100%;
+// 		}
+// 	}
+// }
+
+// aside.side-info{
+	
+// 	padding-left:1.5em;
+
+// 	h2{
+// 		margin-top:26px;
+// 	}
+
+// 	blockquote{
+		
+// 		background:$light-grey;
+// 		padding:1em;
+// 		margin:34px 0 0 0;
+
+// 		&:nth-of-type(2){
+// 			margin:1em 0 0 0;
+// 		}
+// 	}
+
+// }
+
+// /*=====================================================================
+// Fresh Designs Work
+// =====================================================================*/
+// .tech-aside{
+// 	margin-top:2em;
+// }
+
+// /*=====================================================================
+// Beer Work
+// =====================================================================*/
+// .beer-content{
+
+// 	figure.l-cont-box{
+// 		height:300px;
+
+// 		img{
+// 			@include center-custom(-50%, -50%);
+// 			max-height:100%;
+// 		}
+// 	}
+// }
+
+// @media all and (min-width: 1400px){
+// 	.work-page{
+// 		.work.l-cont-box{
+// 			height:400px;
+
+// 			figure{
+// 				img{
+// 					max-width:65%;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media all and (max-width: 1024px){
+
+// 	.work-examples-text.l-col-half{
+// 		width:100%;
+// 	}
+
+// 	.l-col-half{
+// 		width:100%;
+// 	}
+
+// 	.dtdo-case-studies.l-col-60{
+// 		width:100% !important;
+// 	}
+
+// 	.case-study-1-aside{
+// 		display:none;
+// 	}
+// }
+
+// @media all and (max-width: 760px){
+// 	.dtdo-content{
+			
+// 		.section-title{
+// 			left:0;
+// 			text-align:left;
+// 		}
+// 	}
+// }
+
+// @media all and (max-width: 768px){
+// 	.l-col-60,
+// 	.l-col-40{
+// 		width:100%;
+// 	}
+
+// 	aside.side-info{
+// 		padding-left:0;
+// 	}
+// }
+
+// @media all and (max-width: 450px){
+	
+// 	.work-page{
+// 		.work.l-cont-box{
+// 			figure{
+// 				img{
+// 					min-width:75%;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	.beer-content{
+
+// 		figure.l-cont-box{
+// 			height:200px;
+// 		}
+// 	}
+
+// 	section.work-page{
+		
+// 		article.work{
+// 			margin:0.5em 0;
+// 		}
+// 	}
+// }
