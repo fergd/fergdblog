@@ -96,13 +96,6 @@
 		line-height:160%;
 	}
 }
-
-.l-cont-box-work{
-	@include l-float(left);
-	margin:0.2%;
-	overflow:hidden;
-}
-
 .l-cont-box{
 	padding:1em;
 	background:$light-grey;

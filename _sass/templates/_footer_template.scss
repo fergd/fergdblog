@@ -66,6 +66,22 @@ footer.website-footer{
 	}
 }
 
+@media all and (max-width: 450px){
+	ul.social-media-list{
+		li{
+			width: 100% !important;
+		}
+	}
+}
+
+@media all and (min-width: 451px) and (max-width: 850px){
+	ul.social-media-list{
+		li{
+			width: 50% !important;
+		}
+	}
+}
+
 @media all and (max-width: 940px){
 	div.footer-inner-wrap{
 		width: 100% !important;

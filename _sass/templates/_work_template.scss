@@ -1,8 +1,9 @@
 .work{
+	float: left;
+	@extend .l-col-full;
 	padding: 0 2em 2em 2em;
 	font-size: 16px;
 	overflow: auto;
-	z-index:1001;
 }
 
 .work-header{
@@ -21,20 +22,4 @@
 	@include l-float(left);
 	width: 100%;
 	overflow: auto;
-}
-
-.work-content{
-	@extend .l-col-full;
-}
-
-@media all and (min-width: 1120px) and (max-width: 1380px){
-	// .work-content{
-	// 	max-width: 80%;
-	// }
-}
-
-@media all and (min-width: 1381px){
-	// .work-content{
-	// 	max-width: 760px;
-	// }
 }

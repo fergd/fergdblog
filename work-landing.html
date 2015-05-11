@@ -1,40 +1,47 @@
 ---
 layout: work
-title: Work
+title: A few selected works
 permalink: /work/
 published: true
 ---
-<h2>A few selected works</h2>
-<div class="work-landing">
-	
-	<section class="work-thumbs-wrapper" onclick="location.href = '/case-studies/2013/05/06/Door-To-Door-Organics-Recipes-Case-Study.html'">
-		<h2>
-			<a href="/case-studies/2013/05/06/Door-To-Door-Organics-Recipes-Case-Study.html">Door To Door Organics</a>
-		</h2>
-		<figure class="work-thumb">
-			<img src="../img/dtdo/mon-dtdo.png" />
-			<figcaption>User experience &amp; interface design</figcaption>
-		</figure>
-	</section>
+<section class="work-thumbs-wrapper layout-a" onclick="location.href = '/case-studies/2013/05/06/Door-To-Door-Organics-Recipes-Case-Study.html'">
+	<div class="work-teaser">
+		<h2><a href="/case-studies/2013/05/06/Door-To-Door-Organics-Recipes-Case-Study.html">Door To Door Organics</a></h2>
+		<ul>
+			<li>Case Study</li>
+			<li>Useability Design</li>
+			<li>Web Design</li>
+		</ul>
+	</div>
 
-	<section class="work-thumbs-wrapper" onclick="location.href = '/work/fresh-designs'">
-		<h2>
-			<a href="{{ fresh-designs | prepend: site.baseurl }}">Fresh Designs</a>
-		</h2>
-		<figure class="work-thumb">
-			<img src="../img/fresh/mon_fresh.png" />
-			<figcaption>Website, logo, blog design</figcaption>
-		</figure>
-	</section>
+	<div class="work-bg-dtdo">
+		
+	</div>
+</section>
 
-	<section class="work-thumbs-wrapper" onclick="location.href = '/work/beer'">
-		<h2>
-			<a href="/work/beer">Beer Labels </a>
-		</h2>
-		<figure class="work-thumb" onclick="ajax_request()">
-			<img src="../img/beer/mon_beer.png" />
-			<figcaption>Graphic design</figcaption>
-		</figure>
-	</section>
+<section class="work-thumbs-wrapper layout-b" onclick="location.href = '/work/fresh-designs'">
+	<div class="work-teaser">
+		<h2><a href="{{ fresh-designs | prepend: site.baseurl }}">Fresh Designs</a></h2>
+		<ul>
+			<li>Web Design</li>
+			<li>Wordpress</li>
+		</ul>
+	</div>
+	<div class="work-bg-fresh">
+		
+	</div>
+</section>
 
-</div>
+<section class="work-thumbs-wrapper layout-c" onclick="location.href = '/work/beer'">
+	<div class="work-teaser">
+		<h2><a href="/work/beer">Beer Labels</a></h2>
+		<ul>
+			<li>Graphic Design</li>
+			<li>Homebrew</li>
+		</ul>
+	</div>
+	<div class="work-bg-beer">
+		
+	</div>
+</section>
+
