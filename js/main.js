@@ -233,6 +233,6 @@ $(document).ready(function(){
 });
 
 //Sticky stats 
-$(document).ready(function(){
-	$("aside.side-info").sticky({topSpacing:0});
-});
+// $(document).ready(function(){
+// 	$("aside.side-info").sticky({topSpacing:0});
+// });

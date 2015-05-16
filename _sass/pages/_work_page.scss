@@ -32,20 +32,6 @@
 		}
 	}
 
-	ul{
-		width: 100%;
-		display: inline-block;
-
-		li{
-			background: $green;
-			font-family: $sofia-regular;
-			font-size: $ms-1;
-			display: inline-block;
-			width: auto;
-			padding: $ms--1 $ms--2;
-		}
-	}
-
 	// &.layout-b{
 	// 	.work-teaser{
 	// 		width: 40%;
@@ -75,6 +61,21 @@
 		text-align: center;
 	}
 }
+
+ul.tech-tech-list{
+	width: 100%;
+	display: inline-block;
+
+	li{
+		background: $green;
+		font-family: $sofia-regular;
+		font-size: $ms-1;
+		display: inline-block;
+		width: auto;
+		padding: 12px 9px;
+	}
+}
+
 
 @media all and (max-width: 600px){
 	.work-thumbs-wrapper{
