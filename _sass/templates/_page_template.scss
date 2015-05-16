@@ -26,6 +26,12 @@
 	@extend .l-col-full;
 }
 
+@media all and (max-width: 960px){
+	.page{
+		padding: 2em;
+	}
+}
+
 @media all and (min-width: 1120px) and (max-width: 1380px){
 	.page-content{
 		max-width: 80%;

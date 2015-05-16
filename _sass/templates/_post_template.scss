@@ -90,6 +90,12 @@
 	}
 }
 
+@media all and (max-width: 960px){
+	.post{
+		padding: 2em;
+	}
+}
+
 @media all and (min-width: 1120px) and (max-width: 1380px){
 	.post-content{
 		max-width: 80%;

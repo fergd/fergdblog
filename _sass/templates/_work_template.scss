@@ -23,3 +23,9 @@
 	width: 100%;
 	overflow: auto;
 }
+
+@media all and (max-width: 960px){
+	.work{
+		padding: 2em;
+	}
+}

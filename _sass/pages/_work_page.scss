@@ -1,77 +1,94 @@
-$colors: $red $green $yellow $blue ;
+// $colors: $yellow $red $green $blue ;
 
-@for $i from 1 through length($colors) {
-	.work-thumbs-wrapper:nth-child(#{length($colors)}n+#{$i}) {
-		background: nth($colors, $i);
-	}
-}
+// @for $i from 1 through length($colors) {
+// 	.work-thumbs-wrapper:nth-child(#{length($colors)}n+#{$i}) {
+// 		background: nth($colors, $i);
+// 	}
+// }
 
 .work-thumbs-wrapper{
 	width: 100%;
 	overflow: auto;
+	padding: $ms-1 0;
+	background-color: $white;
 	float: left;
-
-	&:first-child{
-		margin-top: 59px;
-	}
+	cursor: pointer;
 	
-	&[class*="layout-"]{
+	h2{
+		margin-bottom: $ms--1;
+	}
+
+	.work-teaser{
+		width: 40%;
+		float: left;
+	}
+
+	.work-teaser + div{
+		width: 60%;
+		float: left;
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	ul{
+		width: 100%;
+		display: inline-block;
+
+		li{
+			background: $green;
+			font-family: $sofia-regular;
+			font-size: $ms-1;
+			display: inline-block;
+			width: auto;
+			padding: $ms--1 $ms--2;
+		}
+	}
+
+	// &.layout-b{
+	// 	.work-teaser{
+	// 		width: 40%;
+	// 		float: left;
+	// 	}
+	// 	.work-teaser + div{
+	// 		width: 60%;
+	// 		float: left;
+	// 	}
+	// }
+
+	// &.layout-c{
+	// 	.work-teaser{
+	// 		width: 70%;
+	// 		float: left;
+	// 	}
+	// 	.work-teaser + div{
+	// 		width: 30%;
+	// 		float: left;
+	// 	}
+	// }
+
+	.work-teaser + div{
+		img{ 
+			display: inline-block; 
+		}
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 600px){
+	.work-thumbs-wrapper{
 		.work-teaser,
 		.work-teaser + div{
-			height: 100%;
-		}
-	}
-
-
-	&.layout-a{
-		height: 320px;
-
-		.work-teaser{
-			width: 40%;
-			float: right;
-		}
-		.work-teaser + div{
-			width: 60%;
-			float: left;
-		}
-	}
-
-	&.layout-b{
-		height: 400px;
-
-		.work-teaser{
-			width: 40%;
-			float: left;
-		}
-		.work-teaser + div{
-			width: 60%;
-			float: right;
-		}
-	}
-
-	&.layout-c{
-		height: 320px;
-
-		.work-teaser{
-			width: 70%;
-			float: right;
-		}
-		.work-teaser + div{
-			width: 30%;
-			float: left;
+			width: 100%;
 		}
 	}
 }
 
-.work-bg-dtdo{
-	background-image: url('http://lorempixel.com/400/200');
-	background-size: cover;
-}
-.work-bg-fresh{
-	background-image: url('http://lorempixel.com/400/200');
-	background-size: cover;
-}
-.work-bg-beer{
-	background-image: url('http://lorempixel.com/400/200');
-	background-size: cover;
+@media all and (min-width: 1700px){
+	.work-thumbs-wrapper{
+		.work-teaser + div{
+			text-align: left;
+		}
+	}
 }
