@@ -2,7 +2,7 @@
 title: FergD Writings
 email: fergusdesignllc@gmail.com
 description: > # The work, writings, and profile of Christan Fergus, a web designer.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "/fergdblog" # the subpath of your site, e.g. /blog/
 url: "http://christanfergus.com" # the base hostname & protocol for your site
 twitter_username: christanfergus
 github_username:  fergd
