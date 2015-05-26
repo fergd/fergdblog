@@ -98,9 +98,10 @@
 	right: 0;
 	max-width: 30%;
 	font-size: $ms-0;
-	background: lighten($green, 20%);
+	background: lighten($orange, 20%);
 	padding: 16px;
-	border-right: 60px solid $green;
+	border-right: 60px solid $orange;
+	z-index: 9999;
 }
 
 @media all and (max-width: 960px){
@@ -131,9 +132,9 @@
 		left: 0;
 		max-width: 20%;
 		font-size: $ms-0;
-		background: lighten($green, 20%);
+		background: lighten($orange, 20%);
 		padding: 7px;
-		border-left: 7px solid $green;
+		border-left: 7px solid $orange;
 		border-right: none;
 	}
 
@@ -144,6 +145,6 @@
 		right: 0;
 		max-width: 20%;
 		padding: 7px;
-		border-right: 21px solid $green;
+		border-right: 21px solid $orange;
 	}
 }
