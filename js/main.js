@@ -221,9 +221,9 @@ $(document).ready(function() {
 //DTDO slideshow
 $(document).ready(function(){
     $('.slider').bjqs({
-        'height' : 600,
-        'width' :900,
-        'responsive' : true,
+        'width':      960,
+        'height':     600,
+        'responsive': true,
         animtype: 'fade',
         automatic : false,
         showmarkers: false,
