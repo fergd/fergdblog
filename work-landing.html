@@ -4,58 +4,65 @@ title: Work
 permalink: /work/
 published: true
 ---
-<section class="work-thumbs-wrapper" onclick="location.href = '{% post_url 2012-05-06-Door-To-Door-Organics-Recipes-Case-Study %}'">
-	<div class="work-teaser">
-		<h2><a href="{% post_url 2012-05-06-Door-To-Door-Organics-Recipes-Case-Study %}">Door To Door Organics</a></h2>
-		<ul class="tech-tech-list">
-			<li>Case Study</li>
-			<li>Useability Design</li>
-			<li>Web Design</li>
-		</ul>
-	</div>
-
-	<div>
-		<img src="../img/dtdo/mon-dtdo.png" alt="Door To Door Organics Recipes Page" />
-	</div>
+<section class="work-thumbs-wrapper">
+	<a href="{% post_url 2012-05-06-Door-To-Door-Organics-Recipes-Case-Study %}">
+		<div class="work-teaser">
+			<h2><a href="{% post_url 2012-05-06-Door-To-Door-Organics-Recipes-Case-Study %}">Door To Door Organics</a></h2>
+			<ul class="tech-tech-list">
+				<li>Case Study</li>
+				<li>Useability Design</li>
+				<li>Web Design</li>
+			</ul>
+		</div>
+		<div>
+			<img src="../img/dtdo/mon-dtdo.png" alt="Door To Door Organics Recipes Page" />
+		</div>
+	</a>
 </section>
 
-<section class="work-thumbs-wrapper" onclick="location.href = '{{ tpi | prepend: site.baseurl }}'">
-	<div class="work-teaser">
-		<h2><a href="{{ tpi | prepend: site.baseurl }}">Time Products, Inc.</a></h2>
-		<ul class="tech-tech-list">
-			<li>Web Design</li>
-			<li>Responsive</li>
-		</ul>
-	</div>
-	<div>
-		<img src="../img/tpi/mon-tpi.png" alt="TPI Page design" />
-	</div>
+<section class="work-thumbs-wrapper">
+	<a href="{{ site.baseurl }}/work/tpi/">
+		<div class="work-teaser">
+			<h2><a href="{{ site.baseurl }}/work/tpi/">Time Products, Inc.</a></h2>
+			<ul class="tech-tech-list">
+				<li>Web Design</li>
+				<li>Responsive</li>
+			</ul>
+		</div>
+		<div>
+			<img src="{{ site.baseurl }}/img/tpi/mon-tpi.png" alt="TPI Page design" />
+		</div>
+	</a>
 </section>
 
-<section class="work-thumbs-wrapper" onclick="location.href = '/work/fresh-designs'">
-	<div class="work-teaser">
-		<h2><a href="{{ fresh-designs | prepend: site.baseurl }}">Fresh Designs</a></h2>
-		<ul class="tech-tech-list">
-			<li>Web Design</li>
-			<li>Wordpress</li>
-			<li>Logo Design</li>
-		</ul>
-	</div>
-	<div>
-		<img src="../img/fresh/mon_fresh.png" alt="The Fresh Designs Home Design" />
-	</div>
+<section class="work-thumbs-wrapper">
+	<a href="{{ fresh-designs | prepend: site.baseurl }}">
+		<div class="work-teaser">
+			<h2><a href="{{ fresh-designs | prepend: site.baseurl }}">Fresh Designs</a></h2>
+			<ul class="tech-tech-list">
+				<li>Web Design</li>
+				<li>Wordpress</li>
+				<li>Logo Design</li>
+			</ul>
+		</div>
+		<div>
+			<img src="../img/fresh/mon_fresh.png" alt="The Fresh Designs Home Design" />
+		</div>
+	</a>
 </section>
 
-<section class="work-thumbs-wrapper" onclick="location.href = '/work/beer'">
-	<div class="work-teaser">
-		<h2><a href="/work/beer">Beer Illustrations</a></h2>
-		<ul class="tech-tech-list">
-			<li>Graphic Design</li>
-			<li>Homebrewing</li>
-		</ul>
-	</div>
-	<div>
-		<img src="../img/beer/mon_beer.png" alt="Beer Imagery" />
-	</div>
+<section class="work-thumbs-wrapper">
+	<a href="{{ beer | prepend: site.baseurl }}">
+		<div class="work-teaser">
+			<h2><a href="/work/beer">Beer Illustrations</a></h2>
+			<ul class="tech-tech-list">
+				<li>Graphic Design</li>
+				<li>Homebrewing</li>
+			</ul>
+		</div>
+		<div>
+			<img src="../img/beer/mon_beer.png" alt="Beer Imagery" />
+		</div>
+	</a>
 </section>
 
