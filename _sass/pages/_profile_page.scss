@@ -2,6 +2,10 @@
 	p{
 		margin-bottom: 1em;
 
+		&:first-of-type{
+			margin-top: 16px;
+		}
+
 		&:last-of-type{
 			margin-bottom: 0;
 		}

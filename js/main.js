@@ -212,11 +212,11 @@ $(function(){
 });
 
 //Current navigation set .active link
-$(document).ready(function() {
-    if(location.pathname != "/") {
-    $('nav ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-    } else $('nav ul li a:eq(0)').addClass('active');
-});
+// $(document).ready(function() {
+//     if(location.pathname != "/") {
+//     $('nav ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+//     } else $('nav ul li a:eq(0)').addClass('active');
+// });
 
 //DTDO slideshow
 $(document).ready(function(){
@@ -232,7 +232,7 @@ $(document).ready(function(){
     });
 });
 
-//Sticky stats 
+// Sticky stats 
 // $(document).ready(function(){
-// 	$("aside.side-info").sticky({topSpacing:0});
+// 	$(".pulled-blockquote").sticky({topSpacing:0});
 // });

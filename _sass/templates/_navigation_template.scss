@@ -14,7 +14,7 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 			li{
 				display: block;
 				@extend .l-col-full;
-				border-bottom: 1px $med-grey solid;
+				// border-bottom: 1px $med-grey solid;
 				
 				&.home-respond{ display:none; }
 
@@ -28,15 +28,23 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 					vertical-align: middle;
 					text-align: center;
 					@include bg-col-trans(0.5s);
+					background: $yellow;
 
 					&:hover,
 					&.active,
 					&.active:hover{
-						background: $yellow;
 						text-shadow: none;
-						color: $black-grey;
+						background: $black-grey;
+						color: $yellow;
 					}
 				}
+			}
+			&:after{
+				content: '';
+				display: block;
+				height: 70px;
+				width: 100%;
+				background: linear-gradient(to bottom, $yellow, $white);
 			}
 		}
 	}

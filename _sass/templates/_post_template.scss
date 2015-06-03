@@ -40,8 +40,7 @@
 		margin-top: 35px;
 	}
 	p > a{
-		font-style: italic;
-		color: $blue;
+		@extend .underlined;
 	}
 	p + p {
 		margin-top: 16px;
@@ -49,7 +48,7 @@
 	img.post-image{
 		border: 1px dashed $med-grey;
 		padding: $ms--1;
-		max-width: 80%;
+		max-width: 100%;
 		margin: $ms-0 0;
 	}
 	ul.post-unordered-list{
@@ -91,18 +90,18 @@
 	margin: $ms-0 0;
 }
 
-.pulled-blockquote{
-	position: fixed;
-	top: 50%;
-	transform: translate-y(-50%);
-	right: 0;
-	max-width: 30%;
-	font-size: $ms-0;
-	background: lighten($orange, 20%);
-	padding: 16px;
-	border-right: 60px solid $orange;
-	z-index: 9999;
-}
+// .pulled-blockquote{
+// 	position: fixed;
+// 	top: 50%;
+// 	transform: translate-y(-50%);
+// 	right: 0;
+// 	max-width: 30%;
+// 	font-size: $ms-0;
+// 	background: lighten($orange, 20%);
+// 	padding: 16px;
+// 	border-right: 60px solid $orange;
+// 	z-index: 9999;
+// }
 
 @media all and (max-width: 960px){
 	.post{

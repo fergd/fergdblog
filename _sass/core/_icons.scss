@@ -7,7 +7,7 @@
 }
 %icn-18,%icn-24,%icn-36,%icn-48{
 	@extend %hide-text;
-	@extend %img-sprite-path;
+	// @extend %img-sprite-path;
 }
 
 %icn-18{width:18px; height:18px;}
@@ -22,52 +22,52 @@
 Specific Icons
 ======================================================================*/
 
-.icn-logo-36{
-	@extend %icn-36;
-	background-position:0 -48px;
-}
+// .icn-logo-36{
+// 	@extend %icn-36;
+// 	background-position:0 -48px;
+// }
 
-.icn-menu-36-right,
-.icn-menu-36-left{
-	@extend %icn-36;
-}
+// .icn-menu-36-right,
+// .icn-menu-36-left{
+// 	@extend %icn-36;
+// }
 
-.icn-menu-36-right{
-	background-position:-36px -48px;
+// .icn-menu-36-right{
+// 	background-position:-36px -48px;
 
-	&:hover,
-	&.active{
-		background-position:-180px -48px;
-	}
-}
+// 	&:hover,
+// 	&.active{
+// 		background-position:-180px -48px;
+// 	}
+// }
 
-.icn-menu-36-left{
-	background-position:-72px -48px;
+// .icn-menu-36-left{
+// 	background-position:-72px -48px;
 
-	&:hover,
-	&.active{
-		background-position:-216px -48px;
-	}
-}
+// 	&:hover,
+// 	&.active{
+// 		background-position:-216px -48px;
+// 	}
+// }
 
-.icn-menu-36x72{
-	@extend %icn-36;
-	background-position:-36px -72px;
-}
+// .icn-menu-36x72{
+// 	@extend %icn-36;
+// 	background-position:-36px -72px;
+// }
 
-.icn-mag-glass-24{
-	@extend %icn-24;
-	background-position:0 -84px;
-}
+// .icn-mag-glass-24{
+// 	@extend %icn-24;
+// 	background-position:0 -84px;
+// }
 
-.icn-close-36{
-	@extend %icn-36;
-	background-position:-108px -48px;
+// .icn-close-36{
+// 	@extend %icn-36;
+// 	background-position:-108px -48px;
 
-	&:hover{
-		background-position:-144px -48px;
-	}
-}
+// 	&:hover{
+// 		background-position:-144px -48px;
+// 	}
+// }
 
 @mixin social-icon($bg-pos){
 	@extend %img-sprite-path;
@@ -75,24 +75,20 @@ Specific Icons
 	background-position:$bg-pos;
 }
 
-.icon-soc-twitter:hover{background-position:-48px 0;}
-.icon-soc-fb:hover{background-position:-144px 0;}
-.icon-soc-in:hover{background-position:-240px 0;}
+// .icon-soc-twitter:hover{background-position:-48px 0;}
+// .icon-soc-fb:hover{background-position:-144px 0;}
+// .icon-soc-in:hover{background-position:-240px 0;}
 
-.icn-ux, .icn-pencil, .icn-web-design{
-	@extend %icn-48;
+.icon-ux,.icon-gears{
+	width: 70px;	
+	height: 70px;
 }
 
-.icn-ux{
-	background-position:-384px 0;
+.icon-ux{
+
 }
 
-.icn-pencil{
-	background-position:-336px 0;
-}
-
-.icn-web-design{
-	background-position:-288px 0;
+.icon-gears{
 }
 
 .icon {

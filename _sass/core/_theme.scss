@@ -73,10 +73,41 @@ http://www.youtube.com/watch?v=umDr0mPuyQc */
 
 	&:before{
 		content: '\003C';
-		color: $red;
+		color: $green;
 	}
 	&:after{
 		content: '\003E';
-		color: $red;
+		color: $green;
 	}
+}
+/*--inspired by the New Yorker--*/
+.underlined{
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: 
+		0.03em 0 rgb(255,255,255), 
+		-0.03em 0 rgb(255,255,255), 
+		0 0.03em rgb(255,255,255), 
+		0 -0.03em rgb(255,255,255), 
+		0.05em 0 rgb(255,255,255), 
+		-0.05em 0 rgb(255,255,255), 
+		0.07em 0 rgb(255,255,255), 
+		-0.07em 0 rgb(255,255,255), 
+		4px 0 rgb(255,255,255), 
+		-4px 0 rgb(255,255,255), 
+		2px 0 rgb(255,255,255), 
+		-2px 0 rgb(255,255,255);
+	background-image:
+		linear-gradient(
+  			rgb(255, 255, 255), rgb(255, 255, 255)
+		), 
+ 		linear-gradient(
+   			rgb(255, 255, 255), rgb(255, 255, 255)
+		), 
+		linear-gradient(
+            rgb(62, 70, 81), rgb(62, 70, 81)
+        );
+	background-size: 2px 1px, 2px 1px, 1px 1px;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: 0% 90%, 100% 90%, 0% 90%;
 }

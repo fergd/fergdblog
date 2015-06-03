@@ -67,12 +67,23 @@ ul.tech-tech-list{
 	display: inline-block;
 
 	li{
-		background: $green;
+		// background: $green;
+		color: $green;
 		font-family: $sofia-regular;
 		font-size: $ms-1;
 		display: inline-block;
 		width: auto;
-		padding: 12px 9px;
+		// padding: 12px 9px;
+		padding: 0 12px;
+		border-right: 1px solid $med-grey;
+		
+		&:first-of-type{
+			padding: 0 12px 0 0;
+		}
+
+		&:last-of-type{
+			border-right: none;
+		}
 	}
 }
 
