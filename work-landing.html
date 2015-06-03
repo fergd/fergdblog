@@ -19,7 +19,7 @@ published: true
 	</div>
 </section>
 
-<section class="work-thumbs-wrapper" onclick="location.href = '/work/tpi'">
+<section class="work-thumbs-wrapper" onclick="location.href = '{{ tpi | prepend: site.baseurl }}'">
 	<div class="work-teaser">
 		<h2><a href="{{ tpi | prepend: site.baseurl }}">Time Products, Inc.</a></h2>
 		<ul class="tech-tech-list">
