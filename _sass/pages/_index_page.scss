@@ -3,20 +3,49 @@ main{
 	// border-top: 3em solid $yellow;
 }
 
+.top-leader{
+	@extend .l-col-left;
+	@extend .l-col-full;
+	text-align: center;
+
+	& > div > p{
+		font-family: $sofia-bold;
+		font-size: $ms-4;
+		text-align: left;
+		padding: 32px;
+	}
+	
+	span{
+		font-size: $ms-3;
+		font-family: $sofia-bold;
+	}
+
+	div > div {
+		background: linear-gradient(to top, $light-grey, #FFF);
+		padding: 32px 0;
+		@extend .l-col-left;
+		@extend .l-col-full;
+	}
+
+	a.button{
+		margin-top: 16px;
+	}
+}
+
 .big-square-lead{
 	@extend .l-col-left;
 	@extend .l-col-full;
 
-	div{
+	section{
 		@extend .l-col-left;
 		width: 50%;
-		padding: 2em;
+		padding: 64px 32px;
 
 		span{
 			margin: 0 0 20.8px 0;
 			position: relative;
 			left: 50%;
-			margin-left: -24px;
+			transform: translate(-50%, 0);
 		}
 		h2{
 			width:100%;
@@ -34,7 +63,8 @@ main{
 .secondary-info{
 	@extend .l-col-left;
 	@extend .l-col-full;
-	padding: 2em;
+	padding: 32px 32px 64px 32px;
+	background: linear-gradient(to bottom, $light-grey, #FFF);
 
 	h1{
 		margin-bottom: 16px;
@@ -51,21 +81,36 @@ main{
 
 @media all and (min-width: 960px) and (max-width: 1110px){
 	.big-square-lead{
-		div{
+		section{
 			margin:1%;
 			width:100%;
+			padding: 16px;
 		}
 	}
 }
 
 @media all and (max-width: 768px){
 	.big-square-lead{
-		div{
+		section{
 			margin:1%;
+			padding: 16px;
 			width:100%;
 		}
 	}
 
+}
+
+@media all and (max-width: 640px){
+	.top-leader{
+		& > div > p{
+			font-size: $ms-2;
+			padding: 32px 32px 0 32px;
+		}
+
+		div > div {
+			padding: 16px 0;
+		}
+	}
 }
 
 @media all and (max-width: 370px){
