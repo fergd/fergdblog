@@ -90,18 +90,18 @@
 	margin: $ms-0 0;
 }
 
-// .pulled-blockquote{
-// 	position: fixed;
-// 	top: 50%;
-// 	transform: translate-y(-50%);
-// 	right: 0;
-// 	max-width: 30%;
-// 	font-size: $ms-0;
-// 	background: lighten($orange, 20%);
-// 	padding: 16px;
-// 	border-right: 60px solid $orange;
-// 	z-index: 9999;
-// }
+.pulled-blockquote{
+	position: fixed;
+	top: 50%;
+	transform: translate-y(-50%);
+	right: 0;
+	max-width: 30%;
+	font-size: $ms-0;
+	background: lighten($orange, 20%);
+	padding: 16px;
+	border-right: 60px solid $orange;
+	z-index: 9999;
+}
 
 @media all and (max-width: 960px){
 	.post{
