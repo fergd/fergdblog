@@ -66,6 +66,10 @@ footer.website-footer{
 	}
 }
 
+.footer-underlined{
+	@include underlined-colors($uc-set-mask: $black-grey, $uc-set-underline: $yellow);
+}
+
 @media all and (max-width: 450px){
 	ul.social-media-list{
 		li{

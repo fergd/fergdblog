@@ -105,7 +105,37 @@ http://www.youtube.com/watch?v=umDr0mPuyQc */
    			rgb(255, 255, 255), rgb(255, 255, 255)
 		), 
 		linear-gradient(
-            rgb(62, 70, 81), rgb(62, 70, 81)
+            rgb(255, 255, 255), rgb(255, 255, 255)
+        );
+	background-size: 2px 1px, 2px 1px, 1px 1px;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: 0% 90%, 100% 90%, 0% 90%;
+}
+@mixin underlined-colors($uc-set-mask, $uc-set-underline){
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: 
+		0.03em 0 $uc-set-mask, 
+		-0.03em 0 $uc-set-mask, 
+		0 0.03em $uc-set-mask, 
+		0 -0.03em $uc-set-mask, 
+		0.05em 0 $uc-set-mask, 
+		-0.05em 0 $uc-set-mask, 
+		0.07em 0 $uc-set-mask, 
+		-0.07em 0 $uc-set-mask, 
+		4px 0 $uc-set-mask, 
+		-4px 0 $uc-set-mask, 
+		2px 0 $uc-set-mask, 
+		-2px 0 $uc-set-mask;
+	background-image:
+		linear-gradient(
+  			$uc-set-mask, $uc-set-mask
+		), 
+ 		linear-gradient(
+   			$uc-set-mask, $uc-set-mask
+		), 
+		linear-gradient(
+            $uc-set-underline, $uc-set-underline
         );
 	background-size: 2px 1px, 2px 1px, 1px 1px;
 	background-repeat: no-repeat, no-repeat, repeat-x;
