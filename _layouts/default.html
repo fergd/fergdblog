@@ -2,10 +2,11 @@
 <html>
 	{% include head.html %}
 	<body>
+		<a href="#content" class="skip">Skip to main content</a>
 		<div class="page-wrap">	
 			{% include header.html %}
 			{% include navigation.html %}
-			<main class="home" role="main">
+			<main id="content" class="home" role="main">
 				{{ content }}	
 			</main>	
 		</div>

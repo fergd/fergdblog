@@ -6,3 +6,7 @@
 	"post_template",
 	"work_template"
 ;
+
+.skip{
+	@extend %is-visually-hidden;
+}
