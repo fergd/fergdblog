@@ -5,7 +5,7 @@ published: false
 ## Converting christanfergus.com To Jekyll
 I had been needing to add a blog component to my site for quite a while, but did not want to go the Wordpress route. Jekyll was the logical choice. 
 
-I like Jekyll because the approach you use is how I like to think about how I make my sites. Beyond that, it's relatively straight-forward and keeps you in control of just about every aspect of your website. 
+I like Jekyll because the approach you use is how I like to think about how I make my sites. Beyond that, it's relatively straight-forward and keeps you in control of just about every aspect of your website.
 
 ### Tools
 * prose.io 
