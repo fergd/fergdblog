@@ -1,4 +1,10 @@
 ---
+layout: post
+title:  "Converting christanfergus.com To Jekyll"
+permalink: converting-to-jekyll/
+date: 2015-04-06
+categories: Web
+author: Christan Fergus
 published: false
 ---
 
