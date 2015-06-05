@@ -15,9 +15,20 @@ main{
 		padding: 32px;
 	}
 	
+	.keep-visible{
+		transition: color 0.4s 0.5s ease;
+
+		&:nth-of-type(odd){
+			transition: color 1.4s ease;
+		}
+		&:nth-child(3n-3){
+			transition: color 0.3s 0.8s ease;
+		}
+	}
+
+
 	span{
-		font-size: $ms-3;
-		font-family: $sofia-bold;
+		display: inline-block;
 	}
 
 	div > div {
@@ -29,6 +40,23 @@ main{
 
 	a.button{
 		margin-top: 16px;
+	}
+
+	&:hover{
+		.will-fade{
+			.keep-visible{
+				color: $red;
+				&:nth-of-type(2n-2){
+					color: $green;
+				}
+				&:nth-of-type(3n-3){
+					color: $orange;
+				}
+				&:nth-of-type(4n-4){
+					color: $blue;
+				}
+			}
+		}
 	}
 }
 
