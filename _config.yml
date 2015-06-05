@@ -6,10 +6,11 @@ description: > # The work, writings, and profile of Christan Fergus, a web desig
 url: "http://christanfergus.com" # the base hostname & protocol for your site
 twitter_username: christanfergus
 github_username:  fergd
+linkedin_username: christanfergus
 
 # Build settings
 markdown: kramdown
 sass:
- sourcemap: true
- output_style: compressed
- line_comments: true
+ sourcemap: false
+ output_style: :compressed
+ line_comments: false

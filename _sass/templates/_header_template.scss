@@ -3,6 +3,7 @@
 	border-bottom: 1px solid $yellow;
 	padding: 0 1em;
 	background: $white;
+	position: relative;
 
 	.heading-website{
 		margin-top: 0.5em;
@@ -25,8 +26,20 @@
 			display: inline-block;
 		}
 	}
-}
+	img{
+		height: 80px;
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
 
+}
+@media all and (max-width: 959px){
+	.header-website img{
+		display: none;
+	}
+}
 @media all and (min-width: 960px){
 	.subheading-website{
 		span.icn-logo-36{

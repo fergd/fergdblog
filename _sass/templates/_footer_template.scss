@@ -65,7 +65,9 @@ footer.website-footer{
 		}
 	}
 }
-
+.current-status{
+	font-size: $ms-0;
+}
 .footer-underlined{
 	@include underlined-colors($uc-set-mask: $black-grey, $uc-set-underline: $yellow);
 }
