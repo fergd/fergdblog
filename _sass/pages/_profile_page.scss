@@ -1,3 +1,12 @@
+.profile-aside{
+	position: absolute; 
+	right: 0;
+	bottom: 0;
+	width: 30%;
+	img{
+		max-width: 100%;
+	}
+}
 .profile{
 	p{
 		margin-bottom: 1em;
@@ -12,87 +21,22 @@
 	}
 }
 
-.profile-lead{
-	padding:1em 0;
 
-	.subhead-wrap{
-		padding-right:1em;
-		
-		code{
-			word-spacing:-12px;
-		}
-
-		p{
-			line-height:1.4em;
-		}
-	}
-
-	.l-cont-box-full{
-
+@media all and (max-width: 1630px){
+	.profile-aside{
+		position: absolute; 
+		right: 0;
+		bottom: 0;
+		width: 25%;
 		img{
-			display:inline-block;
-			text-align:center;
-			max-width:100%;
-		}
-	}
-}
-
-figure.profile-img,
-div.small-show{
-	display:none;
-}
-
-.profile-img-wrap{
-	@include th-ltgrey-border-bottom;
-}
-
-@media all and (max-width: 1024px){
-
-	.subhead-wrap.l-col-half{
-		width:100%;
-		padding-right:0;
-	}
-
-	.profile-hide{
-		display:none;
-	}
-
-	div.small-show{
-		display:block;
-	}
-
-	figure.profile-img{
-		position: relative;
-		float: right;
-		
-		padding:2%;
-		display:inline-block;
-		max-width:50%;
-		background:$white;
-
-		img.mobile-face{
-			display:block;
-			max-width:100%;
-		}
-	}
-}
-
-@media all and (max-width: 550px){
-	figure.profile-img{
-		max-width:100%;
-		width:100% !important;
-	}
-}
-
-@media all and (max-width: 450px){
-
-	.subhead-wrap{
-		code{
-			display:none;
+			max-width: 100%;
 		}
 	}
 
-	figure.profile-img{
-		margin-bottom:1em;
+}
+
+@media all and (max-width: 1384px){
+.profile-aside{
+		display: none;
 	}
 }
