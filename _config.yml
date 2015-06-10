@@ -7,7 +7,8 @@ url: "http://christanfergus.com" # the base hostname & protocol for your site
 twitter_username: christanfergus
 github_username:  fergd
 linkedin_username: christanfergus
-
+cdn_image: "http://static.christanfergus.com/images/"
+cdn_root: "http://static.christanfergus.com/"
 # Build settings
 markdown: kramdown
 sass:

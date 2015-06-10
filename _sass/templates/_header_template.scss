@@ -23,6 +23,10 @@
 	}
 }
 @media all and (max-width: 959px){
+	.header-website{
+		float: left;
+		width: 100%;
+	}
 	.header-website img{
 		display: none;
 	}

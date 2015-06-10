@@ -18,3 +18,4 @@ I like Jekyll because the approach you use is how I like to think about how I ma
 * jekyll bootstrap (reference only)
 * [This guy's blog](http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/) to help me configure the DNS correctly
 * github pages (of course)
+* Used Google Drive as CDN (modded all host records in domain for shorter urls), custom variable site.cdn_image
