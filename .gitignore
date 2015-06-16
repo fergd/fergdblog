@@ -1,5 +1,4 @@
 .sass-cache
+_site
 node_modules
-gulpfile.js
-package.json
-_site/
+.DS_Store

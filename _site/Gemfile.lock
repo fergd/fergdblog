@@ -67,7 +67,6 @@ GEM
     html-pipeline (1.9.0)
       activesupport (>= 2)
       nokogiri (~> 1.4)
-    htmlcompressor (0.2.0)
     i18n (0.7.0)
     image-optimizer (0.2.2)
       hash-utils (>= 2.0.0)
@@ -94,10 +93,6 @@ GEM
     jekyll-mentions (0.2.1)
       html-pipeline (~> 1.9.0)
       jekyll (~> 2.0)
-    jekyll-minifier (0.0.1)
-      htmlcompressor (>= 0.1.2)
-      jekyll
-      yui-compressor (>= 0.12.0)
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.6.2)
       jekyll (~> 2.0)
@@ -168,7 +163,6 @@ GEM
     yaop (0.2.0)
       hash-utils (>= 2.0.0)
       types (>= 0.1.0)
-    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
@@ -179,7 +173,6 @@ DEPENDENCIES
   compass
   github-pages
   image-optimizer
-  jekyll-minifier
   modular-scale
   sass
   singularitygs

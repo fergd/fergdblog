@@ -1,0 +1,143 @@
+/*============================================================
+Colors
+=============================================================*/
+$light-grey:		#f2f2f2;
+$med-grey:			#C2c2c2;
+$dark-grey:			#727272;
+$black-grey:		#3E4651;
+$white:				#ffffff;
+$red:				#FF646A; //#E13B3B;
+$yellow:			#EEE657;
+$orange:			#FCB941;
+$green:				#2CC990;
+$blue:				#2C82C9;
+
+.white-alpha{ background-color: rgba(255,255,255,.8); }
+
+$border-solidify: 1px solid;
+
+html{
+	min-height: 100%;
+}
+%th-border-bottom{
+	border-bottom: $border-solidify;
+}
+%th-border-top{
+	border-top: $border-solidify;
+}
+@mixin th-grey-border-bottom{
+	border-color: $med-grey;
+	@extend %th-border-bottom;
+	box-shadow:inset 0 2px #f0f0f0;
+}
+@mixin th-grey-border-top{
+	border-color: $med-grey;
+	@extend %th-border-top;
+	box-shadow:inset 0 2px #f0f0f0;
+}
+@mixin th-ltgrey-border-bottom{
+	border-color: $light-grey;
+	@extend %th-border-bottom;
+	box-shadow: inset 0 2px #f0f0f0;
+}
+hr { 
+	@include th-grey-border-top;
+	height: 0; 
+}
+%white-shadow{
+	text-shadow: 0 1px 0 $white;
+}
+%light-shadow-top{
+	box-shadow: 0 0 2px 2px rgba(100,100,100,0.1);
+}
+@mixin gen-shadow($x-shad, $y-shad, $spread-shad, $feather-shad, $r, $g, $b, $alpha-shad){
+	box-shadow: $x-shad $y-shad $spread-shad $feather-shad, rgba($r,$g,$b,$alpha-shad);
+}
+@mixin border-radius($radius){
+	border-radius: $radius;
+}
+@mixin alpha-bg($red, $green, $blue, $ab-alpha){
+	background-color: rgba($red, $green, $blue, $ab-alpha);
+}
+
+/* you do realize this makes no sense, right?
+don't use this.
+http://www.youtube.com/watch?v=umDr0mPuyQc */
+.container {
+  padding: 100px;
+  background: #222D3A;
+}
+
+.markup-wrap{
+	display: inline-block;
+
+	&:before{
+		content: '\003C';
+		color: $green;
+	}
+	&:after{
+		content: '\003E';
+		color: $green;
+	}
+}
+/*--inspired by the New Yorker--*/
+.underlined{
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: 
+		0.03em 0 rgb(255,255,255), 
+		-0.03em 0 rgb(255,255,255), 
+		0 0.03em rgb(255,255,255), 
+		0 -0.03em rgb(255,255,255), 
+		0.05em 0 rgb(255,255,255), 
+		-0.05em 0 rgb(255,255,255), 
+		0.07em 0 rgb(255,255,255), 
+		-0.07em 0 rgb(255,255,255), 
+		4px 0 rgb(255,255,255), 
+		-4px 0 rgb(255,255,255), 
+		2px 0 rgb(255,255,255), 
+		-2px 0 rgb(255,255,255);
+	background-image:
+		linear-gradient(
+  			rgb(255, 255, 255), rgb(255, 255, 255)
+		), 
+ 		linear-gradient(
+   			rgb(255, 255, 255), rgb(255, 255, 255)
+		), 
+		linear-gradient(
+            rgb(255, 255, 255), rgb(255, 255, 255)
+        );
+	background-size: 2px 1px, 2px 1px, 1px 1px;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: 0% 90%, 100% 90%, 0% 90%;
+}
+@mixin underlined-colors($uc-set-mask, $uc-set-underline){
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: 
+		0.03em 0 $uc-set-mask, 
+		-0.03em 0 $uc-set-mask, 
+		0 0.03em $uc-set-mask, 
+		0 -0.03em $uc-set-mask, 
+		0.05em 0 $uc-set-mask, 
+		-0.05em 0 $uc-set-mask, 
+		0.07em 0 $uc-set-mask, 
+		-0.07em 0 $uc-set-mask, 
+		4px 0 $uc-set-mask, 
+		-4px 0 $uc-set-mask, 
+		2px 0 $uc-set-mask, 
+		-2px 0 $uc-set-mask;
+	background-image:
+		linear-gradient(
+  			$uc-set-mask, $uc-set-mask
+		), 
+ 		linear-gradient(
+   			$uc-set-mask, $uc-set-mask
+		), 
+		linear-gradient(
+            $uc-set-underline, $uc-set-underline
+        );
+	background-size: 2px 1px, 2px 1px, 1px 1px;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: 0% 90%, 100% 90%, 0% 90%;
+}

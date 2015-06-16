@@ -15,7 +15,5 @@ markdown: kramdown
 #  sourcemap: false
 #  output_style: :compressed
 #  line_comments: false
-# gems:
-#     - jekyll-minifier
 
 exclude: ["node_modules", "gulpfile.js", "package.json"]
