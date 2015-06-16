@@ -3,6 +3,8 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var	minifyCSS 	= require('gulp-minify-css');
+var	htmlmin 	= require('gulp-htmlmin');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -15,6 +17,11 @@ gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
+  	
+  	return gulp.src('_site/css/*.css')
+    	.pipe(minifyCss({compatibility: 'ie8'}))
+    	.pipe(gulp.dest('dist'));
+
 });
 
 /**
@@ -55,8 +62,8 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_sass/*.scss', ['sass']);
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('_sass/**/*', ['sass']);
+    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_site/**/*'], ['jekyll-rebuild']);
 });
 
 /**
@@ -64,3 +71,21 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
+
+//Deploy
+var deploy = require("gulp-gh-pages");
+
+gulp.task("deploy", ["jekyll-build"], function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy());
+    return gulp.src('_site/css/*.css')
+	    .pipe(minifyCSS({compatibility: 'ie8'}))
+	    .pipe(gulp.dest("_site/css"));
+});
+
+gulp.task('mini', function() {
+	return gulp.src('_site/css/*.css')
+	    .pipe(minifyCSS({compatibility: 'ie8'}))
+	    .pipe(gulp.dest("_site/css"));
+});
+	
