@@ -37,3 +37,6 @@ Initially I just got something up and pushed live, but it didn't take care of im
 *[install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) 
 *[install bower](http://bower.io/)
 *[install poole](https://github.com/iamcarrico/generator-poole)
+
+### Gulp
+This guy helped https://github.com/shakyShane/jekyll-gulp-sass-browser-sync

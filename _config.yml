@@ -11,7 +11,11 @@ cdn_image: "http://static.christanfergus.com/images/"
 cdn_root: "http://static.christanfergus.com/"
 # Build settings
 markdown: kramdown
-sass:
- sourcemap: false
- output_style: :compressed
- line_comments: false
+# sass:
+#  sourcemap: false
+#  output_style: :compressed
+#  line_comments: false
+# gems:
+#     - jekyll-minifier
+
+exclude: ["node_modules", "gulpfile.js", "package.json"]
