@@ -1,0 +1,20 @@
+    /* TEAM */
+    Title: Christan Fergus
+    Site: christanfergus.com & fergusdesign.com
+    Twitter: @ChristanFergus
+    Location: Denver, Colorado, USA
+						
+
+    /* THANKS */
+    Name: Jason Weaver, http://jasonweaver.name for offcanvas inspiration; HTML5 Boilerplate for some nice base-lines
+    Name: Anthony Garand, http://stickyjs.com for sticky elements
+                        
+
+    /* SITE */
+    Last update: 02/2014
+    Standards: HTML5, CSS3,..
+    Components: Modernizr, jQuery.
+    Software: Sass, Compass Framework
+
+
+                    

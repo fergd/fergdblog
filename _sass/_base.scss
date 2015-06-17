@@ -1,0 +1,25 @@
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@import 
+	"tools/base_tools",
+	"core/base_core",
+	"modules/base_modules",
+	"templates/base_templates",
+	"pages/base_pages"
+;
+
+body{
+	color: $black-grey;
+	overflow-x: hidden;
+	background-color: $black-grey;
+}
+
+.page-wrap{
+	@extend %l-float-l;
+	@extend .l-col-full;
+	height: auto;
+	@extend %clearfix;
+	background: $white;
+}
+
+p a{display:inline !important;}

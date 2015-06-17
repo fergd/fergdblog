@@ -1,0 +1,111 @@
+@mixin img-sprite-path{
+	// background: url(asset_path('sprites.png')) no-repeat;
+	background: url('../img/sprites.png') no-repeat;
+}
+%img-sprite-path{
+	background: url('../img/sprites.png') no-repeat;
+}
+%icn-18,%icn-24,%icn-36,%icn-48{
+	@extend %hide-text;
+	// @extend %img-sprite-path;
+}
+
+%icn-18{width:18px; height:18px;}
+
+%icn-24{width:24px; height:24px;}
+
+%icn-36{width:36px;	height:36px;}
+
+%icn-48{width:48px;	height:48px;}
+
+/*======================================================================
+Specific Icons
+======================================================================*/
+
+// .icn-logo-36{
+// 	@extend %icn-36;
+// 	background-position:0 -48px;
+// }
+
+// .icn-menu-36-right,
+// .icn-menu-36-left{
+// 	@extend %icn-36;
+// }
+
+// .icn-menu-36-right{
+// 	background-position:-36px -48px;
+
+// 	&:hover,
+// 	&.active{
+// 		background-position:-180px -48px;
+// 	}
+// }
+
+// .icn-menu-36-left{
+// 	background-position:-72px -48px;
+
+// 	&:hover,
+// 	&.active{
+// 		background-position:-216px -48px;
+// 	}
+// }
+
+// .icn-menu-36x72{
+// 	@extend %icn-36;
+// 	background-position:-36px -72px;
+// }
+
+// .icn-mag-glass-24{
+// 	@extend %icn-24;
+// 	background-position:0 -84px;
+// }
+
+// .icn-close-36{
+// 	@extend %icn-36;
+// 	background-position:-108px -48px;
+
+// 	&:hover{
+// 		background-position:-144px -48px;
+// 	}
+// }
+
+@mixin social-icon($bg-pos){
+	@extend %img-sprite-path;
+	@extend %icn-48;
+	background-position:$bg-pos;
+}
+
+// .icon-soc-twitter:hover{background-position:-48px 0;}
+// .icon-soc-fb:hover{background-position:-144px 0;}
+// .icon-soc-in:hover{background-position:-240px 0;}
+
+.icon-ux,.icon-gears{
+	width: 70px;	
+	height: 70px;
+}
+
+.icon-ux{
+
+}
+
+.icon-gears{
+}
+
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: #999;
+        }
+    }
+}
+
+.username,
+.icon{
+    display: inline-block;
+}

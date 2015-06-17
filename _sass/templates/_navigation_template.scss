@@ -1,0 +1,97 @@
+/*========================================================
+NOTE: Layout related to off-canvas nav in _off_canvas.scss
+========================================================*/
+.nav-col{
+	@extend %l-float-l;
+
+	nav{
+		@extend .l-col-full;
+		@extend %l-float-l;
+
+		h2{ @extend %is-visually-hidden; }
+
+		ul{
+			li{
+				display: block;
+				@extend .l-col-full;
+				// border-bottom: 1px $med-grey solid;
+				
+				&.home-respond{ display:none; }
+
+				a{
+					font-family: $sofia-bold;
+					font-size: 1.3em;
+					display: inline-block;
+					height: 100%;
+					padding: 1em 0;
+					@extend .l-col-full;
+					vertical-align: middle;
+					text-align: center;
+					@include bg-col-trans(0.5s);
+					background: $yellow;
+
+					&:hover,
+					&.active,
+					&.active:hover{
+						text-shadow: none;
+						background: $black-grey;
+						color: $yellow;
+					}
+				}
+			}
+			&:after{
+				content: '';
+				display: block;
+				height: 420px;
+				width: 100%;
+				background: linear-gradient(to bottom, $yellow, $white);
+			}
+		}
+	}
+}
+
+@media all and (min-width: 960px){
+	.menu-button{
+		position: absolute; 
+		overflow: hidden; 
+		clip: rect(0 0 0 0); 
+		height: 1px; width: 1px; 
+		margin: -1px; padding: 0; border: 0; 
+	}
+}
+
+@media all and (min-width: 371px) and (max-width: 959px){
+	.menu-button{
+		display: block;
+		padding: 0 0.7em 0 1em;
+		position: absolute;
+		top: 3.3em;
+		left: 0;
+		line-height: 50px;	
+		vertical-align: middle;
+		background: $black-grey;
+		color: $yellow;
+		cursor: pointer;
+		text-align: center;
+		z-index: 2;
+	}
+}
+@media all and (max-width: 480px){
+	.nav-col{
+		border-top: none;
+	}
+}
+@media all and (max-width: 370px){
+	.menu-button{
+		display: block;
+		width: 100%;
+		float: left;
+		line-height: 50px;	
+		vertical-align: middle;
+		padding: 0 9px;
+		background: $black-grey;
+		color: $yellow;
+		cursor: pointer;
+		text-align: center;
+	}
+}

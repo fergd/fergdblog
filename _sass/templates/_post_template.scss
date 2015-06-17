@@ -1,0 +1,149 @@
+.post{
+	padding: 0 2em 2em 2em;
+	font-size: 16px;
+	overflow: auto;
+}
+
+.post-header{
+	@extend %l-float-l;
+	@extend .l-col-full;
+	margin: 0 0 2em 0;
+	padding-top: 8px;
+}
+
+.post-meta{
+	font-size: $ms-0;
+	margin: 0;
+	color: $green;
+}
+
+.post-footer{
+	margin: 2em 0;
+	border-top: 1px solid $med-grey;
+	@include l-float(left);
+	width: 100%;
+	overflow: auto;
+}
+
+.post-article .post-content{
+	@extend .l-col-full;
+
+	h2{
+		margin-bottom: 16px;
+	}
+	h2 + h3{
+		margin: 0;
+		display: block;
+	}
+	p + h2,
+	p + h3{
+		margin-top: 35px;
+	}
+	p > a{
+		@extend .underlined;
+	}
+	p + p {
+		margin-top: 16px;
+	}
+	img.post-image{
+		border: 1px dashed $med-grey;
+		padding: $ms--1;
+		max-width: 100%;
+		margin: $ms-0 0;
+	}
+	ul.post-unordered-list{
+		display: block;
+		width: 100%;
+		border-left: 60px solid $med-grey;
+		font-size: $ms-1;
+		line-height: 1.4; 
+		
+		li{
+			padding: 0 0 0 1em;
+			width: 100%;
+		}
+	}
+	ul + p{
+		margin-top: 16px;
+	}
+	ul + h2,
+	ul + h3{			
+		margin-top: 35px;
+	}
+}
+
+.post-list{
+	@extend .l-col-left;
+	width: 100%;
+	
+	li{
+		width: 100%;
+		padding: 1em 0;
+
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.slider{
+	margin: $ms-0 0;
+}
+
+.pulled-blockquote{
+	position: fixed;
+	top: 50%;
+	transform: translate-y(-50%);
+	right: 0;
+	max-width: 30%;
+	font-size: $ms-0;
+	background: lighten($orange, 20%);
+	padding: 16px;
+	border-right: 60px solid $orange;
+	z-index: 9999;
+}
+
+@media all and (max-width: 960px){
+	.post{
+		padding: 2em;
+	}
+	.pulled-blockquote{
+		display: none;
+	}
+}
+
+@media all and (min-width: 1120px) and (max-width: 1380px){
+	.post-content{
+		max-width: 80%;
+	}
+}
+
+@media all and (min-width: 1381px){
+	.post-content{
+		max-width: 760px;
+	}
+}
+
+@media all and (min-width: 960px) and (max-width: 1420px){
+
+	.pulled-blockquote{
+		transform: translate-y(-50%);
+		left: 0;
+		max-width: 20%;
+		font-size: $ms-0;
+		background: lighten($orange, 20%);
+		padding: 7px;
+		border-left: 7px solid $orange;
+		border-right: none;
+	}
+
+}
+
+@media all and (min-width: 1421px) and (max-width: 1620px){
+	.pulled-blockquote{
+		right: 0;
+		max-width: 20%;
+		padding: 7px;
+		border-right: 21px solid $orange;
+	}
+}

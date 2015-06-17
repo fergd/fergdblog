@@ -1,0 +1,23 @@
+.fresh-wrap{
+	padding: 16px 0 0 0;
+	text-align: center !important;
+	img{
+		&:first-of-type{
+			max-width: 50% !important;
+		}
+		max-width: 80% !important;
+		display: inline !important;
+
+	}
+}
+
+@media all and (max-width: 500px) {
+	.fresh-wrap{
+		img{
+			&:first-of-type{
+				max-width: 100% !important;
+			}
+			max-width: 100% !important;
+		}
+	}
+}
