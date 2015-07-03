@@ -25,6 +25,12 @@
 	overflow: auto;
 }
 
+.foo{
+	li{
+		list-style-position: inside !important;
+	}
+}
+
 .post-article .post-content{
 	@extend .l-col-full;
 
@@ -40,7 +46,8 @@
 		margin-top: 35px;
 	}
 	p > a{
-		@extend .underlined;
+		// @extend .underlined;
+		text-decoration: underline;
 	}
 	p + p {
 		margin-top: 16px;
@@ -72,17 +79,35 @@
 	}
 }
 
-.post-list{
+ul.post-list{
 	@extend .l-col-left;
 	width: 100%;
+	margin-bottom: 32px;
 	
 	li{
 		width: 100%;
-		padding: 1em 0;
+		padding: 0 1em;
+		font-size: 1.3em;
+		line-height: 1.4;
 
 		&:last-of-type{
 			margin-bottom: 0;
 		}
+	}
+}
+
+ol.post-list{
+	// @extend .l-col-left;
+	// width: 100%;
+	margin-bottom: 35px;
+
+	li{
+		// width: 100%;
+		// padding: 0 1em 0 20px;
+		font-size: 1.3em;
+		line-height: 1.4;
+		list-style-position: inside !important;
+		// margin-left: 2em;
 	}
 }
 
