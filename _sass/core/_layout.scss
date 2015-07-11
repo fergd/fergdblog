@@ -11,6 +11,14 @@
 	@include l-float(right);
 }
 
+.pull-left{
+	@include l-float(left);
+}
+
+.pull-right{
+	@include l-float(right);
+}
+
 .l-col-left{ @include l-float(left); }
 
 .l-col-right{ @include l-float(right); }

@@ -39,9 +39,32 @@ There a many ways I could go with this. A framework? Nah. All Node? Maybe. Try o
 
 ### What's my process? ###
 
-1. I will design out a couple ideas first. I'll be as creative as I want. 
+1. I will design out a couple ideas first in Illustrator. I'll be as creative as I want. 
 2. I'll put the designs away and focus on the data next. How do I want to structure it? A Google Sheets spreadsheet is the perfect place to test this out.
+3. There are many things I'd like this app to be, but I think the best idea is to crank out a minimum viable product and iterate on that. Bare minimum: search capability, search results display, data entry (just entry for now, I'll worry about editing existing collections and adding images later)
+4. Hop in Sublime text, grab a few tutorials, and have at the code. Get the code aspect to MVP stage.
+5. Now, make semantic markup and add CSS. Here's where I can take a really modular approach so I can lift and replace components without messing with the rest of the design. 
+6. Deploy (most likely to Heroku)
 {: .post-list}
+
+## Getting the Data ##
+
+I have already undergone the arduous process of not only recording all the cars I have in a Google Sheets file, but I've photographed the cars as well. I'm not about to re-record everything, even though I do have a fairly nice interface. What I really need is a JSON dump. Here's how I got all that Sheets data into something MongoDB can deal with. Also, this worked the first time. That NEVER happens. [Exporting a Google Spreadsheet as JSON](http://blog.pamelafox.org/2013/06/exporting-google-spreadsheet-as-json.html) 
+
+After a few tests the copy/paste of JSON data in the console has it's limitations. I'm not going to worry about getting all the data in to the app quite yet, I have bigger fish to fry, like actually making this thing work. 
+
+## Entry 4: Adding Some Valuable Style ##
+
+### MVP ###
+
+Minimum Viable Product, you rube. I tend to spin out of control with projects like this and because there is so much to learn, I dip my toes in twenty things and don't actually learn anything. I have so many browser tabs open at the moment it's the digital version of hoarding. I have to focus, so here's where I'm going to land: get the absolute bare minimum working. This will means I will incorporate single-page templating, a solid way of recording data, a solid way of displaying that data, and a solid way of searching through that data. 
+
+So I got that far and I couldn't handle the plain markup display any longer. It was time to actually style the thing. Again, focusing on the MVP, I took a view at a time and skinned it up. Below are the results. 
+
+![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_landing.jpg){: .post-image .pull-left}
+![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_find.jpg){: .post-image .pull-left}
+![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_list.jpg){: .post-image .pull-left}
+![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_record.jpg){: .post-image .pull-left}
 
 ## Stay Tuned... ##
 
