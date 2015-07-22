@@ -66,6 +66,34 @@ So I got that far and I couldn't handle the plain markup display any longer. It 
 ![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_list.jpg){: .post-image .pull-left}
 ![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_record.jpg){: .post-image .pull-left}
 
+## Entry 5: Security ##
+
+Remove autopublish (this made it easier to mess around with, but is insecure for the real world)
+Also remove insecure(?)
+
+allowing users to insert into database https://www.discovermeteor.com/blog/meteor-methods-client-side-operations/
+
+To view database results, you MUST publish the db on the server and subscript to that collection on the client! This took me TEN YEARS to figure out!! https://www.meteor.com/tutorials/blaze/publish-and-subscribe
+
+You then must, in the server.js file, allow the users to update the fields http://docs.meteor.com/#/full/allow
+
+## Entry 6: The Build ##
+
+This was hard. First off, you can deploy your project to <yourappnamehere>.meteor.com by running 
+{% highlight bash %}
+$ meteor deploy <yourappnamehere>
+{% endhighlight %}
+That's pretty nice, but at some point, you want it a little more, well, somewhere else. Deploying 
+
+Before I stepped out on my own with Cloudfront, I bridged the gap to independence by deploying to Heroku. 
+
+I did this http://www.growthux.com/ux-html-css-js-growth-hack/installing-meteor-on-heroku install but used this https://github.com/jordansissel/heroku-buildpack-meteor buildpack (very important). Note: depending on when you read this, the buildpack may have changed. If you have problems building, this is one of the first things to check. 
+
+Requirements: an external MongoDb account, Heroku account, github account. 
+
+After doing all the steps, I connected my heroku app to my git repo so that any time I push to origin master, there was a hook that fired a build on Heroku. This is a nice thing to have. There are options when you connect accounts. I opted for the automatic deploy, since no one really was going to look at this, but you may not want to do that.
+
+
 ## Stay Tuned... ##
 
 I'm updating this as I go along. 
