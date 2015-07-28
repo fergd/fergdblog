@@ -1,22 +1,25 @@
+.post-list{
+	list-style-type: none;
+	li{
+		margin-bottom: 16px;
+	}
+}
 .post{
 	padding: 0 2em 2em 2em;
 	font-size: 16px;
 	overflow: auto;
 }
-
 .post-header{
 	@extend %l-float-l;
 	@extend .l-col-full;
 	margin: 0 0 2em 0;
 	padding-top: 8px;
 }
-
 .post-meta{
 	font-size: $ms-0;
 	margin: 0;
 	color: $green;
 }
-
 .post-footer{
 	margin: 2em 0;
 	border-top: 1px solid $med-grey;
@@ -24,97 +27,48 @@
 	width: 100%;
 	overflow: auto;
 }
-
-.foo{
-	li{
-		list-style-position: inside !important;
-	}
-}
-
 .post-article .post-content{
 	@extend .l-col-full;
-
-	h2{
-		margin-bottom: 16px;
+	a {
+		text-decoration: underline;
 	}
+	ul, ol{
+		font-size: $ms-1;
+		line-height: 1.4;
+	}
+
 	h2 + h3{
-		margin: 0;
+		margin: 16px 0 0 0;
 		display: block;
 	}
 	p + h2,
-	p + h3{
+	p + h3,
+	ul + h2,
+	ul + h3,
+	ol + h2,
+	ol + h3{
 		margin-top: 35px;
 	}
 	p > a{
-		// @extend .underlined;
 		text-decoration: underline;
 	}
 	p + p {
 		margin-top: 16px;
 	}
+	p + ul,
+	p + ol{
+		margin-top: 16px;
+	}
 	img.post-image{
 		border: 1px dashed $med-grey;
-		padding: $ms--1;
+		padding: $ms--2;
 		max-width: 100%;
 		margin: $ms-0 0;
 	}
-	ul.post-unordered-list{
-		display: block;
-		width: 100%;
-		border-left: 60px solid $med-grey;
-		font-size: $ms-1;
-		line-height: 1.4; 
-		
-		li{
-			padding: 0 0 0 1em;
-			width: 100%;
-		}
-	}
-	ul + p{
-		margin-top: 16px;
-	}
-	ul + h2,
-	ul + h3{			
-		margin-top: 35px;
-	}
 }
-
-ul.post-list{
-	@extend .l-col-left;
-	width: 100%;
-	margin-bottom: 32px;
-	
-	li{
-		width: 100%;
-		padding: 0 1em;
-		font-size: 1.3em;
-		line-height: 1.4;
-
-		&:last-of-type{
-			margin-bottom: 0;
-		}
-	}
-}
-
-ol.post-list{
-	// @extend .l-col-left;
-	// width: 100%;
-	margin-bottom: 35px;
-
-	li{
-		// width: 100%;
-		// padding: 0 1em 0 20px;
-		font-size: 1.3em;
-		line-height: 1.4;
-		list-style-position: inside !important;
-		// margin-left: 2em;
-	}
-}
-
 .slider{
 	margin: $ms-0 0;
 }
-
 .pulled-blockquote{
 	position: fixed;
 	top: 50%;
@@ -150,7 +104,6 @@ ol.post-list{
 }
 
 @media all and (min-width: 960px) and (max-width: 1420px){
-
 	.pulled-blockquote{
 		transform: translate-y(-50%);
 		left: 0;
@@ -161,7 +114,6 @@ ol.post-list{
 		border-left: 7px solid $orange;
 		border-right: none;
 	}
-
 }
 
 @media all and (min-width: 1421px) and (max-width: 1620px){

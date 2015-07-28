@@ -16,9 +16,11 @@ Door To Door Organics is an online organic produce and market delivery service t
 ### Project Goal ###
 
 As part of the company's commitment to their customers eating good food, Door To Door Organics decided to launch a recipe and meal planning “wing” to the website that would ultimately be incorporated into the future website shopping flow. The recipe site would bring the customer’s grocery box, with all of its ingredients, together with recipes to help provide inspiration in the kitchen and reduce food waste. This project would require:
+
 - A brand new design and code infrastructure
 - An engaging user experience that would be easy to use and make people want to come back
 - Ultimately growth in customer engagement, retention, and sales.
+{: .disc}
 
 > Overall customer retention increased with a 17% increased customer conversion rate and an average 13% larger basket size.
 {: .pulled-blockquote}
@@ -32,7 +34,7 @@ I was the designer on a three person team that also included a web developer and
 - Kristin Lindquist - Product Manager
 - David Rudder - Senior Software Developer
 - Christan Fergus - Senior Web Designer
-{: .post-unordered-list}
+{: .disc}
 
 ## Process ##
 
@@ -48,9 +50,11 @@ The front end leveraged HTML5 and some newer elements of CSS3, however the requi
 ### Back-end Design ###
 
 David Rudder handled the software development, and we worked together through the whole project. The back end of the site was built utilizing the Java framework, Play. This, of course, was the core of the web site. Some requirements and complexities included:
+
 - The ability to quickly sift through the user’s customer data, thus showing them relevant recipes based on their order and seasonal factors
 - The ability to purchase products directly from recipes
 - Provide a custom CMS for easy recipe input by the Door To Door team.
+{: .disc}
 
 ### User Testing ###
 
@@ -65,8 +69,10 @@ We also had a fair amount of information we needed to convey to the user in a ve
 ## Results &amp; Beyond Release ##
 
 Feedback and site usage were extremely positive and we successfully created a fun and meaningful way for customers to plan their week in recipes. As a result we experienced 
+
 - Overall customer retention increased with a 17% increased customer conversion rate
 - On average 13% larger basket size.
+{: .disc}
 
 As the Door To Door Organics recipe site has been live and active now for some time, we continue to respond to the data we receive and adjust accordingly. Since the original release, we have had a V1.5 release where we fixed some bugs and polished some functionality.
 

@@ -11,6 +11,9 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 		h2{ @extend %is-visually-hidden; }
 
 		ul{
+			display: block;
+			margin: 0;
+			padding: 0;
 			li{
 				display: block;
 				@extend .l-col-full;

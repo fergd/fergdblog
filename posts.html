@@ -16,10 +16,10 @@ published: true
 					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 				</h2>
 				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				
 			</li>
 			{% endfor %}
 		</ul>
-	
 	</article>
 	<footer class="post-footer">
 		<a class="button" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>

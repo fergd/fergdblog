@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Diary Of A Meteor App Project
+subtitle: Or, A really good excuse to try out Meteor and keep track of my ridiculous habit of buying Hot Wheels cars
 permalink: diary-of-a-meteor-app-projects
 date: 2015/07/03 
 categories: Web Development
 author: Christan Fergus
 published: true
 ---
-<small>Or, A really good excuse to try out Meteor and keep track of my ridiculous habit of buying Hot Wheels cars.</small>
 
->See the project on [Github](https://github.com/fergd/diecasttracker).
+>See the project on [Github](https://github.com/fergd/diecasttracker) and live on [Heroku](http://diecasttracker.herokuapp.com).
 {: .pulled-blockquote}
 
 ## Entry 1: Coming to terms ##
@@ -26,16 +26,17 @@ There a many ways I could go with this. A framework? Nah. All Node? Maybe. Try o
 - [The Meteor website (of course)](https://www.meteor.com/)
 - [This talk helped me understand just what the hell is going on](https://www.youtube.com/watch?v=SYqyWff6iMQ)
 - [Deployment](https://www.youtube.com/watch?v=6xdHYMddtIw)
-{: .post-unordered-list}
+{: .disc}
 
 ## Entry 3: What Am I Actually Building? ##
 
 ### What's my end goal? ###
+
 1. I must be able to quickly and easily search for a car (with or without a data connection) 
 2. I want to record a car if I don't have it and I buy it
 3. I'd like to see all the cars I own
 4. Perhaps I'll allow other people to use this, so a log in system is necessary
-{: .post-list}
+{: .decimal}
 
 ### What's my process? ###
 
@@ -61,10 +62,7 @@ Minimum Viable Product, you rube. I tend to spin out of control with projects li
 
 So I got that far and I couldn't handle the plain markup display any longer. It was time to actually style the thing. Again, focusing on the MVP, I took a view at a time and skinned it up. Below are the results. 
 
-![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_landing.jpg){: .post-image .pull-left}
-![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_find.jpg){: .post-image .pull-left}
-![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_list.jpg){: .post-image .pull-left}
-![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_record.jpg){: .post-image .pull-left}
+![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_landing.jpg){: .post-image .pull-left} ![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_find.jpg){: .post-image .pull-left} ![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_list.jpg){: .post-image .pull-left} ![Diecast Tracker Home Page]({{ site.cdn_image }}/dc_record.jpg){: .post-image .pull-left}
 
 ## Entry 5: Security ##
 
