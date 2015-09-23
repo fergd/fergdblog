@@ -5,78 +5,187 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Jul 2015 20:41:36 -0600</pubDate>
-    <lastBuildDate>Fri, 10 Jul 2015 20:41:36 -0600</lastBuildDate>
+    <pubDate>Tue, 22 Sep 2015 21:46:03 -0600</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2015 21:46:03 -0600</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Diary Of A Meteor App Project</title>
-        <description>&lt;p&gt;&lt;small&gt;Or, A really good excuse to try out Meteor and keep track of my ridiculous habit of buying Hot Wheels cars.&lt;/small&gt;&lt;/p&gt;
+        <description>&lt;h2 id=&quot;for-starters&quot;&gt;For Starters…&lt;/h2&gt;
 
-&lt;blockquote class=&quot;pulled-blockquote&quot;&gt;
-  &lt;p&gt;See the project on &lt;a href=&quot;https://github.com/fergd/diecasttracker&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This post is more of a case-study and chronicle of my experience with Meteor, and less of a how-to. The nice thing about Meteor is that the community is quite large and there are tens if not hundreds of tutorials out there. I thought it might be good to describe my experience more than the technical side in hope that it can help paint a broader picture of the Meteor experience. &lt;/p&gt;
 
-&lt;h2 id=&quot;entry-1-coming-to-terms&quot;&gt;Entry 1: Coming to terms&lt;/h2&gt;
+&lt;h2 id=&quot;why-make-an-app&quot;&gt;Why Make An App?&lt;/h2&gt;
 
-&lt;p&gt;I am actually very anti-materialism. I like to live my life as simply as possible. The accumulation of “things” is something that quite frankly is disgusting to me. I’m a complete hypocrite, though, because I collect worthless, pointless Hot Wheels cars. I love them because I love cars, and I know it’s most likely as close as I’ll ever get to owning an Aston Martin V12 Vantage, or better yet, a V8-powered toilet. &lt;/p&gt;
+&lt;p&gt;I am actually very anti-materialism. I like to live my life as simply as possible. The accumulation of stuff is something that disgusts me. I’m a complete hypocrite, however. I collect worthless, pointless, Hot Wheels cars. I love them because I love cars, I like toys, and I know it’s most likely as close as I’ll ever get to owning an &lt;a href=&quot;http://static.christanfergus.com/images/diecast/IMG_20150630_CFH15.JPG&quot;&gt;Aston Martin Vantage&lt;/a&gt;, or better yet, a &lt;a href=&quot;http://static.christanfergus.com/images/diecast/DSC00760.jpg&quot;&gt;four cylinder Radio Flyer wagon&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I have a lot of cars. I must figure out a way to not buy duplicate cars. I may have a problem, but having multiples is over the line, even for me. I need a solution. Clearly, it must be a digital solution. I must be able to easily use it with my non-descript handheld device. I’m sure a simple database app, or even a Hot Wheels app exists for this purpose. I should—shut your filthy face, Fergus. You’re a developer, it doesn’t matter if there are a hundred apps doing exactly what you want, you make your own damn app because that’s what developers do! &lt;/p&gt;
+&lt;p&gt;Whenever I’m out and about, I always check a store’s toy section and poke around to see if there is a car that piques my interest. I have hundreds of cars, which means that’s a lot to remember. I have purchased a lot of duplicate cars because I often forget which cars I already have. It became clear I needed a way to keep track of all this nonsense.&lt;/p&gt;
 
-&lt;h2 id=&quot;entry-2-how-the-hell-do-i-make-an-app&quot;&gt;Entry 2: How the Hell Do I Make An App?&lt;/h2&gt;
+&lt;h2 id=&quot;what-technology-do-i-use&quot;&gt;What Technology Do I Use?&lt;/h2&gt;
 
-&lt;p&gt;There a many ways I could go with this. A framework? Nah. All Node? Maybe. Try out react? Not yet. I’ll ask around on Twitter. A few people have mentioned Meteor. Okay, I’ll give it a try. * Google Google Google Google Google Google * So here are some resources I’ve found useful, right off the bat. Perhaps if someone finds this diary entry, they will to.&lt;/p&gt;
+&lt;p&gt;Let’s put aside for a moment the probability that something like this already exists. Whether it’s specific to a Hot Wheels collector, or just a simple form of db recording and retrieval, I’m sure it’s out there. The point here, though, is that I wanted to make an app all by m’self, so why not apply it to a direct need I have? To be honest, I’ve still not looked to see if anything like this exists. Not really much of a point now. &lt;/p&gt;
 
-&lt;ul class=&quot;post-unordered-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;http://meteortips.com/first-meteor-tutorial/&quot;&gt;This Meteor book&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.meteor.com/&quot;&gt;The Meteor website (of course)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SYqyWff6iMQ&quot;&gt;This talk helped me understand just what the hell is going on&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6xdHYMddtIw&quot;&gt;Deployment&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;I poked around to see what sort of technology or language I wanted to work in. In all honesty, it was always going to be something javascriptish. Angular? Nah. All Node? Maybe. Try out React? Not yet. I shot the question out on the Twitters and immediately got people hailing the wonders of Meteor. So, after much Googling, I thought it was worth going with. &lt;/p&gt;
+
+&lt;p&gt;Here’s a breakdown of the resources that got me started, but not nearly a complete list of all the sites I hit looking for answers. Like every good developer, at any given time I had about fifteen tabs open split across Meteor docs and Stack Overflow. &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://meteortips.com/first-meteor-tutorial/&quot;&gt;Your First Meteor Application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meteor.com/&quot;&gt;The Meteor website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SYqyWff6iMQ&quot;&gt;This talk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6xdHYMddtIw&quot;&gt;How to deploy&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;entry-3-what-am-i-actually-building&quot;&gt;Entry 3: What Am I Actually Building?&lt;/h2&gt;
+&lt;h2 id=&quot;the-process&quot;&gt;The Process&lt;/h2&gt;
 
-&lt;h3 id=&quot;whats-my-end-goal&quot;&gt;What’s my end goal?&lt;/h3&gt;
-&lt;ol class=&quot;post-list&quot;&gt;
-  &lt;li&gt;I must be able to quickly and easily search for a car (with or without a data connection) &lt;/li&gt;
-  &lt;li&gt;I want to record a car if I don’t have it and I buy it&lt;/li&gt;
-  &lt;li&gt;I’d like to see all the cars I own&lt;/li&gt;
-  &lt;li&gt;Perhaps I’ll allow other people to use this, so a log in system is necessary&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;determining-the-minimum-viable-product-mvp&quot;&gt;Determining the Minimum Viable Product (MVP)&lt;/h3&gt;
 
-&lt;h3 id=&quot;whats-my-process&quot;&gt;What’s my process?&lt;/h3&gt;
+&lt;p&gt;There were and still are many things I’d like this app to be, but I decided the best idea is to crank out an MVP and iterate on that.  I felt pretty comfortable with the basic tenants of Meteor, but if I didn’t define boundaries it would have been very easy for me to follow exciting or interesting rabbit trails of functionality, bells, and especially whistles. I always do this, by the way. &lt;/p&gt;
 
-&lt;ol class=&quot;post-list&quot;&gt;
-  &lt;li&gt;I will design out a couple ideas first in Illustrator. I’ll be as creative as I want. &lt;/li&gt;
-  &lt;li&gt;I’ll put the designs away and focus on the data next. How do I want to structure it? A Google Sheets spreadsheet is the perfect place to test this out.&lt;/li&gt;
-  &lt;li&gt;There are many things I’d like this app to be, but I think the best idea is to crank out a minimum viable product and iterate on that. Bare minimum: search capability, search results display, data entry (just entry for now, I’ll worry about editing existing collections and adding images later)&lt;/li&gt;
-  &lt;li&gt;Hop in Sublime text, grab a few tutorials, and have at the code. Get the code aspect to MVP stage.&lt;/li&gt;
-  &lt;li&gt;Now, make semantic markup and add CSS. Here’s where I can take a really modular approach so I can lift and replace components without messing with the rest of the design. &lt;/li&gt;
-  &lt;li&gt;Deploy (most likely to Heroku)&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h4 id=&quot;in-scope-for-mvp&quot;&gt;In scope for MVP&lt;/h4&gt;
 
-&lt;h2 id=&quot;getting-the-data&quot;&gt;Getting the Data&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;I must be able to easily use the application on even the most basic handheld device&lt;/li&gt;
+  &lt;li&gt;It must do one thing really well: quickly search a database of cars and tell me if I have it&lt;/li&gt;
+  &lt;li&gt;It has to look good (I’m a designer first)&lt;/li&gt;
+  &lt;li&gt;It must be web-based. Nothing proprietary here.&lt;/li&gt;
+  &lt;li&gt;Simple text-only data input to record new cars&lt;/li&gt;
+  &lt;li&gt;A page that displays a dump of all the cars in my collection&lt;/li&gt;
+  &lt;li&gt;Basic accounts (keep my data safe)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;I have already undergone the arduous process of not only recording all the cars I have in a Google Sheets file, but I’ve photographed the cars as well. I’m not about to re-record everything, even though I do have a fairly nice interface. What I really need is a JSON dump. Here’s how I got all that Sheets data into something MongoDB can deal with. Also, this worked the first time. That NEVER happens. &lt;a href=&quot;http://blog.pamelafox.org/2013/06/exporting-google-spreadsheet-as-json.html&quot;&gt;Exporting a Google Spreadsheet as JSON&lt;/a&gt; &lt;/p&gt;
+&lt;h4 id=&quot;in-scope-for-future&quot;&gt;In scope for future&lt;/h4&gt;
 
-&lt;p&gt;After a few tests the copy/paste of JSON data in the console has it’s limitations. I’m not going to worry about getting all the data in to the app quite yet, I have bigger fish to fry, like actually making this thing work. &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Offline storage ability to access database in areas of low reception (big box stores have terrible cell reception)&lt;/li&gt;
+  &lt;li&gt;Display single-car records enabling me to see specific car data including a photo&lt;/li&gt;
+  &lt;li&gt;Enable device camera access to photograph cars when recording the data&lt;/li&gt;
+  &lt;li&gt;Edit existing records&lt;/li&gt;
+  &lt;li&gt;Sort and filter fields&lt;/li&gt;
+  &lt;li&gt;Open app up to other users (wrap as Android app?)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;entry-4-adding-some-valuable-style&quot;&gt;Entry 4: Adding Some Valuable Style&lt;/h2&gt;
+&lt;h3 id=&quot;ui-design&quot;&gt;UI Design&lt;/h3&gt;
 
-&lt;h3 id=&quot;mvp&quot;&gt;MVP&lt;/h3&gt;
+&lt;p&gt;I had the design kicking around in illustrator for a while. It was important that I explore interesting concepts. This was the first time in quite a while that I’d had the opportunity to  design for myself and I wanted to really break out of what everyone else was doing. Ever notice how everything looks the same?  &lt;/p&gt;
 
-&lt;p&gt;Minimum Viable Product, you rube. I tend to spin out of control with projects like this and because there is so much to learn, I dip my toes in twenty things and don’t actually learn anything. I have so many browser tabs open at the moment it’s the digital version of hoarding. I have to focus, so here’s where I’m going to land: get the absolute bare minimum working. This will means I will incorporate single-page templating, a solid way of recording data, a solid way of displaying that data, and a solid way of searching through that data. &lt;/p&gt;
+&lt;p&gt;Knowing the end result was going to be used primarily on a phone, I stuck to a restricted palette that skinned large, tappable content regions. The content and features themselves were purposefully kept to a minimum. &lt;/p&gt;
 
-&lt;p&gt;So I got that far and I couldn’t handle the plain markup display any longer. It was time to actually style the thing. Again, focusing on the MVP, I took a view at a time and skinned it up. Below are the results. &lt;/p&gt;
+&lt;p&gt;While the design does of course scale up to desktop, I took the time to ensure the UI was useable across the spectrum. The design needs were accounted for up through contextual breakpoints. The breakpoints were determined by how each component reacted to the window size. This resulted in emphasized or deemphasized elements depending on anticipated scenarios. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://static.christanfergus.com/images//dc_landing.jpg&quot; alt=&quot;Diecast Tracker Home Page&quot; class=&quot;post-image pull-left&quot; /&gt;
-&lt;img src=&quot;http://static.christanfergus.com/images//dc_find.jpg&quot; alt=&quot;Diecast Tracker Home Page&quot; class=&quot;post-image pull-left&quot; /&gt;
-&lt;img src=&quot;http://static.christanfergus.com/images//dc_list.jpg&quot; alt=&quot;Diecast Tracker Home Page&quot; class=&quot;post-image pull-left&quot; /&gt;
-&lt;img src=&quot;http://static.christanfergus.com/images//dc_record.jpg&quot; alt=&quot;Diecast Tracker Home Page&quot; class=&quot;post-image pull-left&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;For instance, if I use the app on my desktop computer, I’m more interested in entering data and browsing cars. If I hit the app on my mobile device, I most likely need to quickly/easily look up a car to make sure I’m not buying a duplicate.  &lt;/p&gt;
 
-&lt;h2 id=&quot;stay-tuned&quot;&gt;Stay Tuned…&lt;/h2&gt;
+&lt;h3 id=&quot;data-design&quot;&gt;Data Design&lt;/h3&gt;
 
-&lt;p&gt;I’m updating this as I go along. &lt;/p&gt;
+&lt;p&gt;Understanding that the core of this project is the car information, it was important I got that piece pretty nailed at the beginning. I created a spreadsheet in Google Docs and played around with the type of data I wanted to record. The end result were these fields: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Toy number&lt;/li&gt;
+  &lt;li&gt;Image URL&lt;/li&gt;
+  &lt;li&gt;Car model name&lt;/li&gt;
+  &lt;li&gt;Storage bin location&lt;/li&gt;
+  &lt;li&gt;Series title&lt;/li&gt;
+  &lt;li&gt;Main color&lt;/li&gt;
+  &lt;li&gt;Year&lt;/li&gt;
+  &lt;li&gt;Series number&lt;/li&gt;
+  &lt;li&gt;Collector number&lt;/li&gt;
+  &lt;li&gt;Favourite (boolean)&lt;/li&gt;
+  &lt;li&gt;Notes&lt;/li&gt;
+  &lt;li&gt;Treasure hunt (boolean)&lt;/li&gt;
+  &lt;li&gt;Date added to db&lt;/li&gt;
+  &lt;li&gt;Created by (user ID supplied by Meteor)&lt;/li&gt;
+  &lt;li&gt;Record object ID (by MongoDB)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;collecting-the-data&quot;&gt;Collecting the Data&lt;/h4&gt;
+
+&lt;p&gt;To make sure I was satisfied with the type of data I wanted to collect, I recorded a handful of cars in Sheets first. I made a few tweaks to what would be the final fields, but for the most part, the final list you see above is what I started with. &lt;/p&gt;
+
+&lt;p&gt;Out of this little spreadsheet came a massive project that even included me recruiting my wife for help in recording and organizing everything. I recorded all my cars on this spreadsheet with the intent of exporting the data to my app as a JSON file. This, however, ultimately proved problematic. While (through the use of an addon) I was able to export the sheet to a JSON file, MongoDB, my Meteor project, or a combination of the two never played well with it and I was never able to get the data import to work correctly. I solved this by exporting the data as a CSV. This worked swimmingly, however by doing so, MongoDB created objectIDs as opposed to _id for each document. This would later be an issue when trying to retrieve single documents from the collection. That’s another story. Hey, ultimately, it worked though and saved me from having to input 300+ cars twice. &lt;/p&gt;
+
+&lt;h2 id=&quot;challenges--observations&quot;&gt;Challenges &amp;amp; Observations&lt;/h2&gt;
+
+&lt;p&gt;It worked out that what I wanted to accomplish was fairly similar to some of the tutorials out there, so I found it very easy to translate what they were doing into my project. Initially, I just followed the tutorials, not worrying about my stuff, which I do recommend doing. Once I finally got to my project,  I was able to make better decisions that ultimately saved me time had I not had the initial experience. This was all good. &lt;/p&gt;
+
+&lt;p&gt;There are a couple cautions, however. I have a foundational understanding and knowledge of JavaScript and, as advertised, found the barrier of entry very low. This was encouraging and exciting, but I feel also a little dangerous. Because you can crank something out so quickly and “easily”, one may not really know and understand what’s actually going on. It’s always dangerous when you don’t know the “why’s” behind what you’re doing since that usually leads to poor code quality, makes it hell to debug issues,  and even opens you up to performance and security issues. The latter reason is why even at the time of writing this, I’m hesitant to open my project up to other users until I have even more depth of understanding into how Meteor is handling things. &lt;/p&gt;
+
+&lt;p&gt;So, if you find yourself starting out with Meteor, read up on how it handles publish and subscribe. I recommend you get your head around how this is handled. It’s easy to overlook that the reason Meteor is so easy to work with in the beginning is that it ships insecure. If you want to do anything other than mess around, you’ll need to take steps to get Meteor to a secure state. See this on &lt;a href=&quot;http://joshowens.me/meteor-security-101&quot;&gt;security.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;packages--features&quot;&gt;Packages &amp;amp; Features&lt;/h2&gt;
+
+&lt;p&gt;My project only uses a handful of packages, but that’s not to say there is a myriad of freaking sweet packages out there. You can see a full list at my &lt;a href=&quot;https://github.com/fergd/diecasttracker/blob/master/.meteor/packages&quot;&gt;Github&lt;/a&gt;. Here’s a highlight: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/matteodem/meteor-easy-search&quot;&gt;matteodem:easy-search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/iron-meteor/iron-router&quot;&gt;iron:router&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://atmospherejs.com/meteor/accounts-base&quot;&gt;accounts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fourseven/meteor-scss&quot;&gt;fourseven:scss&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;no-platform-is-an-island&quot;&gt;No Platform is an Island&lt;/h2&gt;
+
+&lt;p&gt;In addition to creating the app, a couple other pieces became important: GitHub (vital for any project), Heroku, Mongolab. &lt;/p&gt;
+
+&lt;h3 id=&quot;heroku&quot;&gt;Heroku&lt;/h3&gt;
+
+&lt;p&gt;While Meteor kindly offers a free dev deployment, I quickly realized I needed more than that. Ultimately, I want to host the app myself on Digital Ocean, but until then, spinning up a service on Heroku was the best choice. By doing so, I incorporated a git hook that enabled me to push to Heroku whenever I had something stable enough make public. &lt;/p&gt;
+
+&lt;h4 id=&quot;more-info&quot;&gt;More Info&lt;/h4&gt;
+
+&lt;p&gt;It’s not an extremely easy process to get up and running on Heroku, and I had to push on it a little. Ultimately, I did &lt;a href=&quot;http://www.growthux.com/ux-html-css-js-growth-hack/installing-meteor-on-heroku&quot;&gt;this&lt;/a&gt; install but used &lt;a href=&quot;https://github.com/jordansissel/heroku-buildpack-meteor&quot;&gt;this buildpack&lt;/a&gt; (very important). Note: depending on when you read this, the buildpack may have changed. If you have problems building, this is one of the first things to check. &lt;/p&gt;
+
+&lt;h3 id=&quot;mongolab&quot;&gt;Mongolab&lt;/h3&gt;
+
+&lt;p&gt;I had never worked with an external database before this project and have to say I really like what Mongolab offers. Their free service is all I needed to get this project kicked off, and they supply all the important commands right there in the dashboard! So, when it came time to upload my CSV, I just copy/pasted their template, modded it, and voila! &lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;At the time of writing this, I have successfully achieved MVP status. Whoot! That means my car collection is accessible to me wherever I happen across Hot Wheels cars and I’ve been very pleased with the performance of the app. The lovely nature of the easy search plug in allows me to begin typing the car code and instantly I can see if there are any matches. In other words, the app is doing exactly what I want it to do. &lt;/p&gt;
+
+&lt;p&gt;But this is only the first step. I’ve really gotten a taste for the project, and really enjoy working in the Meteor ecosystem. While searching, data entry and document retrieval are all working, I will be integrating the app with camera phones and bolstering my accounts and security to create an app that I ultimately want to share. &lt;/p&gt;
+
+&lt;p&gt;There’s a lot more learning and coding to do, but I’m game and I’ll continue working in the fantastic Meteor platform. &lt;/p&gt;
+
+&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+
+&lt;h2 id=&quot;the-project&quot;&gt;The Project&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fergd/diecasttracker&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://diecasttracker.herokuapp.com&quot;&gt;Live project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;general-architecture-meteor-use--tutorials&quot;&gt;General Architecture, Meteor Use, &amp;amp; Tutorials&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://heroku.com&quot;&gt;Heroku&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mongolab.com/&quot;&gt;Mongolab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://meteortips.com/first-meteor-tutorial&quot;&gt;Your First Meteor Application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meteor.com&quot;&gt;The Meteor website&lt;/a&gt; (These docs are fantastic, well done Meteor!)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SYqyWff6iMQ&quot;&gt;This talk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;publish-and-subscribe-information&quot;&gt;Publish and subscribe information&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meteor.com/tutorials/blaze/publish-and-subscribe&quot;&gt;Pub &amp;amp; Sub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.meteor.com/#/full/allow&quot;&gt;Allow&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.discovermeteor.com/blog/meteor-methods-client-side-operations/&quot;&gt;Allow users to insert to a database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;security&quot;&gt;Security&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://joshowens.me/meteor-security-101&quot;&gt;Security 101&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;deployment&quot;&gt;Deployment&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6xdHYMddtIw&quot;&gt;How to deploy &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.growthux.com/ux-html-css-js-growth-hack/installing-meteor-on-heroku&quot;&gt;Heroku installation of Meteor &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jordansissel/heroku-buildpack-meteor buildpack&quot;&gt;Heroku buildpack (check for updates) &lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 03 Jul 2015 00:00:00 -0600</pubDate>
         <link>http://christanfergus.com/diary-of-a-meteor-app-projects</link>
@@ -104,7 +213,7 @@
 &lt;p&gt;In addition, I took two technical writing classes to craft and learn how to clearly communicate. In all this, I took one whole HTML class where I wrote the markup in Windows 98’s Notepad and did all my layout in tables and frames (this was before Zeldman’s seminole &lt;a href=&quot;http://en.wikipedia.org/wiki/Designing_with_Web_Standards&quot;&gt;Designing with Web Standards&lt;/a&gt;).  &lt;/p&gt;
 
 &lt;h2 id=&quot;get-real&quot;&gt;Get Real&lt;/h2&gt;
-&lt;p&gt;What am I saying? I suppose I’m saying that I see lots of stuff being put out there by talented designers, and the un-alike, that lacks craft. It may look good on the surface, but a slightly closer look shows that stuff just isn’t quite right. A physical example of this is illustrated so well by the Chinese knock-off industry. Devices, Cars… 
+&lt;p&gt;What am I saying? I suppose I’m saying that I see lots of stuff being put out there by talented designers, and the un-alike, that lacks craft. It may look good on the surface, but a slightly closer look shows that stuff just isn’t quite right. A physical example of this is illustrated so well by the Chinese knock-off industry. Devices, Cars… &lt;br /&gt;
 &lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/f/fa/Mini_Coopi%E2%84%A2.jpg&quot; alt=&quot;Chinese version of the Mini&quot; class=&quot;post-image&quot; /&gt; What about that massive image at the top of a website with a big fat arrow pointing down—really? This is good design? &lt;/p&gt;
 
 &lt;p&gt;Lest I be the first to cast a stone, be aware I’m pointing some fingers right back at myself on this one. It’s precisely because it’s so easy to crank stuff out that I, too, hop on the bandwagon. With little concern for architecture or standards, I can churn out something pretty powerful, pretty quickly. Yes, there is a benefit to that. If you approach something in a lean manor, you get something out quickly and iterate the shit out of it. If you have the discipline to do so, I say continue on, good sir/madame, and we shall clean and refactor as we go. But do we? When we’re doing our own thing, do we finely craft our architecture? Do we take the time to truly understand our users and craft an experience to their needs? Do we spend time on the finer points of visual design—all for the hope that the user never notices our finely adjusted, viewport-width-appropriate line-height, but subconsciously has an easier time navigating and finding the information they need? I think we should—at least more than we currently do.&lt;/p&gt;
@@ -114,7 +223,7 @@
 &lt;p&gt;I’m not going to craft an experimental app I’m working on that no one will ever see. I am, however, going to craft anything anyone other than my wife is going to see. I owe that to you, the user. If you dein me worthy enough to show you anything I have worked on, it’s the least I can do to craft, tailor, and make your experience in my design as useful and lovely as possible.&lt;/p&gt;
 
 &lt;h2 id=&quot;get-crafty&quot;&gt;Get Crafty&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/img/post-images/crafted-compressor.jpg&quot; alt=&quot;Some stuff on a table that looks kinda crafty&quot; class=&quot;post-image&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/img/post-images/crafted-compressor.jpg&quot; alt=&quot;Some stuff on a table that looks kinda crafty&quot; class=&quot;post-image&quot; /&gt;&lt;br /&gt;
 We shouldn’t stop everything, shut out the world, and spend the next ten years becoming the very best in, well, whatever. I’m saying we should be conscious of an area we tend to slack off in, and work on that. Slowly ratchet up your discipline in color theory or cleaner, more performant JavaScript. Take the time to read some books on design theory and practice particular techniques. If you’ve never had formal training, take it upon yourself to improve the fundamentals. If you have had formal training, revisit the disciplines and techniques you learned all those years ago. &lt;/p&gt;
 
 &lt;p&gt;With just a little extra effort, we can keep above the riff-raff and distinguish ourselves as attractive, crafty professionals.&lt;/p&gt;
@@ -138,10 +247,13 @@ We shouldn’t stop everything, shut out the world, and spend the next ten years
 
 &lt;h3 id=&quot;project-goal&quot;&gt;Project Goal&lt;/h3&gt;
 
-&lt;p&gt;As part of the company’s commitment to their customers eating good food, Door To Door Organics decided to launch a recipe and meal planning “wing” to the website that would ultimately be incorporated into the future website shopping flow. The recipe site would bring the customer’s grocery box, with all of its ingredients, together with recipes to help provide inspiration in the kitchen and reduce food waste. This project would require:
-- A brand new design and code infrastructure
-- An engaging user experience that would be easy to use and make people want to come back
-- Ultimately growth in customer engagement, retention, and sales.&lt;/p&gt;
+&lt;p&gt;As part of the company’s commitment to their customers eating good food, Door To Door Organics decided to launch a recipe and meal planning “wing” to the website that would ultimately be incorporated into the future website shopping flow. The recipe site would bring the customer’s grocery box, with all of its ingredients, together with recipes to help provide inspiration in the kitchen and reduce food waste. This project would require:&lt;/p&gt;
+
+&lt;ul class=&quot;disc&quot;&gt;
+  &lt;li&gt;A brand new design and code infrastructure&lt;/li&gt;
+  &lt;li&gt;An engaging user experience that would be easy to use and make people want to come back&lt;/li&gt;
+  &lt;li&gt;Ultimately growth in customer engagement, retention, and sales.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;blockquote class=&quot;pulled-blockquote&quot;&gt;
   &lt;p&gt;Overall customer retention increased with a 17% increased customer conversion rate and an average 13% larger basket size.&lt;/p&gt;
@@ -153,7 +265,7 @@ We shouldn’t stop everything, shut out the world, and spend the next ten years
 
 &lt;h3 id=&quot;team&quot;&gt;Team&lt;/h3&gt;
 
-&lt;ul class=&quot;post-unordered-list&quot;&gt;
+&lt;ul class=&quot;disc&quot;&gt;
   &lt;li&gt;Kristin Lindquist - Product Manager&lt;/li&gt;
   &lt;li&gt;David Rudder - Senior Software Developer&lt;/li&gt;
   &lt;li&gt;Christan Fergus - Senior Web Designer&lt;/li&gt;
@@ -172,10 +284,13 @@ We shouldn’t stop everything, shut out the world, and spend the next ten years
 
 &lt;h3 id=&quot;back-end-design&quot;&gt;Back-end Design&lt;/h3&gt;
 
-&lt;p&gt;David Rudder handled the software development, and we worked together through the whole project. The back end of the site was built utilizing the Java framework, Play. This, of course, was the core of the web site. Some requirements and complexities included:
-- The ability to quickly sift through the user’s customer data, thus showing them relevant recipes based on their order and seasonal factors
-- The ability to purchase products directly from recipes
-- Provide a custom CMS for easy recipe input by the Door To Door team.&lt;/p&gt;
+&lt;p&gt;David Rudder handled the software development, and we worked together through the whole project. The back end of the site was built utilizing the Java framework, Play. This, of course, was the core of the web site. Some requirements and complexities included:&lt;/p&gt;
+
+&lt;ul class=&quot;disc&quot;&gt;
+  &lt;li&gt;The ability to quickly sift through the user’s customer data, thus showing them relevant recipes based on their order and seasonal factors&lt;/li&gt;
+  &lt;li&gt;The ability to purchase products directly from recipes&lt;/li&gt;
+  &lt;li&gt;Provide a custom CMS for easy recipe input by the Door To Door team.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;user-testing&quot;&gt;User Testing&lt;/h3&gt;
 
@@ -189,9 +304,12 @@ We shouldn’t stop everything, shut out the world, and spend the next ten years
 
 &lt;h2 id=&quot;results-amp-beyond-release&quot;&gt;Results &amp;amp; Beyond Release&lt;/h2&gt;
 
-&lt;p&gt;Feedback and site usage were extremely positive and we successfully created a fun and meaningful way for customers to plan their week in recipes. As a result we experienced 
-- Overall customer retention increased with a 17% increased customer conversion rate
-- On average 13% larger basket size.&lt;/p&gt;
+&lt;p&gt;Feedback and site usage were extremely positive and we successfully created a fun and meaningful way for customers to plan their week in recipes. As a result we experienced &lt;/p&gt;
+
+&lt;ul class=&quot;disc&quot;&gt;
+  &lt;li&gt;Overall customer retention increased with a 17% increased customer conversion rate&lt;/li&gt;
+  &lt;li&gt;On average 13% larger basket size.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;As the Door To Door Organics recipe site has been live and active now for some time, we continue to respond to the data we receive and adjust accordingly. Since the original release, we have had a V1.5 release where we fixed some bugs and polished some functionality.&lt;/p&gt;
 

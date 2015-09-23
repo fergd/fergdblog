@@ -8,7 +8,7 @@ CREDITS
 Christan Fergus copyright 2013
 Reset & Basics (Inspired by E. Meyers)
 =============================================================================*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -93,7 +93,8 @@ a:active, a:hover {
 /* #Lists
 ================================================== */
 ol {
-  list-style: decimal; }
+  list-style: decimal inside;
+  padding: 0; }
 
 ul.square {
   list-style: square inside; }
@@ -273,11 +274,15 @@ body {
 /*=========================================
 Family Groups
 =========================================*/
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: "SofiaProBold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif; }
 
-h3, h4, h5, h6 {
-  font-family: "SofiaProRegular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif; }
+h4 {
+  color: #727272; }
+
+h5, h6 {
+  font-family: "SofiaProRegular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
+  text-decoration: underline; }
 
 p {
   font-family: "vollkornregular", "SofiaProRegular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif; }
@@ -291,8 +296,14 @@ h1 {
 h2 {
   font-size: 2.197em; }
 
-h3, h4, h5, h6 {
+h3 {
   font-size: 1.69em; }
+
+h4 {
+  font-size: 1.3em; }
+
+h5, h6 {
+  font-size: 1em; }
 
 p {
   font-size: 1.3em;
@@ -311,10 +322,16 @@ cite {
     font-size: 2.856em; }
 
   h2 {
+    font-size: 2.197em; }
+
+  h3 {
     font-size: 1.69em; }
 
-  h3, h4, h5, h6 {
+  h4 {
     font-size: 1.3em; }
+
+  h5, h6 {
+    font-size: 1em; }
 
   p {
     font-size: 1.3em;
@@ -331,7 +348,8 @@ Typographic Weights & Styles
 =========================================*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  display: inline-block; }
+  display: block;
+  margin: 0.8em 0 0.5em 0; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
@@ -414,7 +432,7 @@ figcaption {
   position: relative;
   float: right; }
 
-.l-col-left, footer.website-footer div.footer-inner-wrap ul.social-media-list, ul.post-list, .top-leader, .top-leader div > div, .big-square-lead, .big-square-lead section, .secondary-info {
+.l-col-left, footer.website-footer div.footer-inner-wrap ul.social-media-list, .top-leader, .top-leader div > div, .big-square-lead, .big-square-lead section, .secondary-info {
   position: relative;
   float: left; }
 
@@ -500,8 +518,6 @@ figcaption {
 
   .resize-hide {
     display: none; } }
-/* #Buttons
-================================================== */
 .button {
   height: 50px;
   padding: 0 4%;
@@ -632,7 +648,8 @@ footer.website-footer {
         width: 25%;
         margin-bottom: 1em;
         color: #2CC990;
-        float: left; }
+        float: left;
+        list-style: none; }
         footer.website-footer div.footer-inner-wrap ul.social-media-list li:nth-of-type(odd) {
           clear: left; }
     footer.website-footer div.footer-inner-wrap .soc-icon {
@@ -740,30 +757,34 @@ footer.website-footer {
 /*========================================================
 NOTE: Layout related to off-canvas nav in _off_canvas.scss
 ========================================================*/
-.nav-col nav ul li {
-  display: block; }
-  .nav-col nav ul li.home-respond {
-    display: none; }
-  .nav-col nav ul li a {
-    font-family: "SofiaProBold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
-    font-size: 1.3em;
-    display: inline-block;
-    height: 100%;
-    padding: 1em 0;
-    vertical-align: middle;
-    text-align: center;
-    transition: background-color 0.5s ease;
-    background: #EEE657; }
-    .nav-col nav ul li a:hover, .nav-col nav ul li a.active, .nav-col nav ul li a.active:hover {
-      text-shadow: none;
-      background: #3E4651;
-      color: #EEE657; }
-.nav-col nav ul:after {
-  content: '';
+.nav-col nav ul {
   display: block;
-  height: 420px;
-  width: 100%;
-  background: linear-gradient(to bottom, #EEE657, #ffffff); }
+  margin: 0;
+  padding: 0; }
+  .nav-col nav ul li {
+    display: block; }
+    .nav-col nav ul li.home-respond {
+      display: none; }
+    .nav-col nav ul li a {
+      font-family: "SofiaProBold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
+      font-size: 1.3em;
+      display: inline-block;
+      height: 100%;
+      padding: 1em 0;
+      vertical-align: middle;
+      text-align: center;
+      transition: background-color 0.5s ease;
+      background: #EEE657; }
+      .nav-col nav ul li a:hover, .nav-col nav ul li a.active, .nav-col nav ul li a.active:hover {
+        text-shadow: none;
+        background: #3E4651;
+        color: #EEE657; }
+  .nav-col nav ul:after {
+    content: '';
+    display: block;
+    height: 420px;
+    width: 100%;
+    background: linear-gradient(to bottom, #EEE657, #ffffff); }
 
 @media all and (min-width: 960px) {
   .menu-button {
@@ -831,6 +852,11 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 @media all and (min-width: 1381px) {
   .page-content {
     max-width: 760px; } }
+.post-list {
+  list-style-type: none; }
+  .post-list li {
+    margin-bottom: 16px; }
+
 .post {
   padding: 0 2em 2em 2em;
   font-size: 16px;
@@ -853,58 +879,23 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   width: 100%;
   overflow: auto; }
 
-.foo li {
-  list-style-position: inside !important; }
-
-.post-article .post-content h2 {
-  margin-bottom: 16px; }
-.post-article .post-content h2 + h3 {
-  margin: 0;
-  display: block; }
-.post-article .post-content p + h2,
-.post-article .post-content p + h3 {
-  margin-top: 35px; }
+.post-article .post-content a {
+  text-decoration: underline; }
+.post-article .post-content ul, .post-article .post-content ol {
+  font-size: 1.3em;
+  line-height: 1.4; }
 .post-article .post-content p > a {
   text-decoration: underline; }
 .post-article .post-content p + p {
   margin-top: 16px; }
+.post-article .post-content p + ul,
+.post-article .post-content p + ol {
+  margin-top: 16px; }
 .post-article .post-content img.post-image {
   border: 1px dashed #C2c2c2;
-  padding: 0.769em;
+  padding: 0.5em;
   max-width: 100%;
   margin: 1em 0; }
-.post-article .post-content ul.post-unordered-list {
-  display: block;
-  width: 100%;
-  border-left: 60px solid #C2c2c2;
-  font-size: 1.3em;
-  line-height: 1.4; }
-  .post-article .post-content ul.post-unordered-list li {
-    padding: 0 0 0 1em;
-    width: 100%; }
-.post-article .post-content ul + p {
-  margin-top: 16px; }
-.post-article .post-content ul + h2,
-.post-article .post-content ul + h3 {
-  margin-top: 35px; }
-
-ul.post-list {
-  width: 100%;
-  margin-bottom: 32px; }
-  ul.post-list li {
-    width: 100%;
-    padding: 0 1em;
-    font-size: 1.3em;
-    line-height: 1.4; }
-    ul.post-list li:last-of-type {
-      margin-bottom: 0; }
-
-ol.post-list {
-  margin-bottom: 35px; }
-  ol.post-list li {
-    font-size: 1.3em;
-    line-height: 1.4;
-    list-style-position: inside !important; }
 
 .slider {
   margin: 1em 0; }
