@@ -27,6 +27,7 @@ footer.website-footer{
 				margin-bottom: $ms-0;
 				color: $green;
 				float: left;
+				list-style: none;
 
 				&:nth-of-type(odd){
 					clear: left;
