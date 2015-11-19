@@ -57,18 +57,16 @@ Reset & Basics (Inspired by E. Meyers)
 	::selection { background:#EFF249; color:#444; text-shadow: none; } 
 /* #Links
 ================================================== */
-	a, a:visited { color: inherit; text-decoration: none; outline: 0; }
-	a:focus {outline: none;}
+	a, a:visited { color: inherit; text-decoration: none; }
 	p a, p a:visited { line-height: inherit; }
-	a:active,a:hover {outline: 0;}
 /* #Lists
 ================================================== */
-	ol { list-style: decimal inside; padding: 0;}
-	ul.square { list-style: square inside; }
-	ul.circle { list-style: circle inside; }
-	ul.disc { list-style: disc inside; }
-	//For Firefox to display the list images
-	ul.squre li, ul.circle li, ul.disc li{display:list-item}
+	// ol { list-style: decimal inside; padding: 0;}
+	// ul.square { list-style: square inside; }
+	// ul.circle { list-style: circle inside; }
+	// ul.disc { list-style: disc inside; }
+	// //For Firefox to display the list images
+	// ul.squre li, ul.circle li, ul.disc li{display:list-item}
 /* #Images
 ================================================== */
 	img.scale-with-grid {

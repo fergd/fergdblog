@@ -2,8 +2,8 @@
 	height: 50px;
 	padding: 0 4%;
 	
-	background: $yellow;
-	transition: background-color 0.5s ease; 
+	background: linear-gradient( to top, $yellow, lighten($yellow, 10%));
+	transition: all 0.5s ease; 
 
 	font-family: $sofia-bold;
 	line-height: 50px;
@@ -12,9 +12,19 @@
 	vertical-align: middle;
 	text-align: center;
 
+	border-radius: 5px;
+	border: 2px solid darken($yellow, 10%);
+
 	&:hover,
-	&:active{
-		background: $black-grey;
-		color: $yellow;
+	&:active,
+	&:focus{
+		background: linear-gradient(to top, darken($yellow, 15%), darken($yellow, 5%));
+		border: 2px solid darken($yellow, 20%);
+	}
+
+
+	&.no-top{
+		border-top: none;
+		border-radius: 0 0 5px 5px;
 	}
 }
