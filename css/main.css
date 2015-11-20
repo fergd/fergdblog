@@ -78,36 +78,13 @@ audio:not([controls]) {
 ================================================== */
 a, a:visited {
   color: inherit;
-  text-decoration: none;
-  outline: 0; }
-
-a:focus {
-  outline: none; }
+  text-decoration: none; }
 
 p a, p a:visited {
   line-height: inherit; }
 
-a:active, a:hover {
-  outline: 0; }
-
 /* #Lists
 ================================================== */
-ol {
-  list-style: decimal inside;
-  padding: 0; }
-
-ul.square {
-  list-style: square inside; }
-
-ul.circle {
-  list-style: circle inside; }
-
-ul.disc {
-  list-style: disc inside; }
-
-ul.squre li, ul.circle li, ul.disc li {
-  display: list-item; }
-
 /* #Images
 ================================================== */
 img.scale-with-grid {
@@ -521,17 +498,22 @@ figcaption {
 .button {
   height: 50px;
   padding: 0 4%;
-  background: #EEE657;
-  transition: background-color 0.5s ease;
+  background: linear-gradient(to top, #EEE657, #f3ed85);
+  transition: all 0.5s ease;
   font-family: "SofiaProBold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif;
   line-height: 50px;
   font-size: 21px;
   display: inline-block;
   vertical-align: middle;
-  text-align: center; }
-  .button:hover, .button:active {
-    background: #3E4651;
-    color: #EEE657; }
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #e9df29; }
+  .button:hover, .button:active, .button:focus {
+    background: linear-gradient(to top, #e2d717, #ece340);
+    border: 2px solid #cbc114; }
+  .button.no-top {
+    border-top: none;
+    border-radius: 0 0 5px 5px; }
 
 @media all and (max-width: 1100px) {
   [role="navigation"] {
