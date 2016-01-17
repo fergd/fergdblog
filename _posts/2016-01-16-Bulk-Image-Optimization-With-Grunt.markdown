@@ -87,6 +87,7 @@ The primary techniques followed here are shamelessly from [this Smashing Magazin
 * [Imagemagick](http://www.imagemagick.org/script/index.php)
 * [Smashing Mag article](https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick)
 * [Grunt task featured in the above article](https://github.com/nwtn/grunt-respimg)
+* [My Github page for experimenting with this](https://github.com/fergd/ImageResize)
 
 
 
