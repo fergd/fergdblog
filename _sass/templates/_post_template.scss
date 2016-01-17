@@ -36,19 +36,6 @@
 		font-size: $ms-1;
 		line-height: 1.4;
 	}
-
-	// h2 + h3{
-	// 	margin: 16px 0 0 0;
-	// 	display: block;
-	// }
-	// p + h2,
-	// p + h3,
-	// ul + h2,
-	// ul + h3,
-	// ol + h2,
-	// ol + h3{
-	// 	margin-top: 35px;
-	// }
 	p > a{
 		text-decoration: underline;
 	}
@@ -64,6 +51,9 @@
 		padding: $ms--2;
 		max-width: 100%;
 		margin: $ms-0 0;
+	}
+	li a{
+		display: inline;
 	}
 }
 .slider{

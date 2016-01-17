@@ -30,7 +30,7 @@
 @font-face {
     font-family: 'vollkornregular';
     src: url('vollkorn-regular-webfont.eot');
-    }
+}
 
 @font-face {
     font-family: 'vollkornregular';
@@ -178,8 +178,9 @@ sub {bottom: -0.25em;}
 
 code,kbd,samp {
 	font-family: monospace, serif;
-	font-family: 'courier new', monospace;
-	font-size: 1em;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	line-height: 1.2;
 }
 
 figcaption{
