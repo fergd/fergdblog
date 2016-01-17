@@ -5,11 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="wot-verification" content="090d1039ef90475268b1"/>
-	<title>Profile</title>
+	<title>Automated Image Optimization</title>
 	
 	<meta name="description" content="Web design with a passion for the user and data">
 	<link rel="stylesheet" href="/css/main.css" media="(min-width: 319px)">
-	<link rel="canonical" href="http://christanfergus.com/profile/">
+	<link rel="canonical" href="http://christanfergus.com/bulk-image-optimization-with-grunt">
 	<link rel="alternate" type="application/rss+xml" title="Christan Fergus Web Designer" href="http://christanfergus.com/feed.xml" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:500' rel='stylesheet' type='text/css'>
 	<script src="/js/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -83,34 +83,112 @@
 
 
 			<main id="content" class="home" role="main">
-				<div class="page">
-	<header class="page-header">
-		<h1 class="page-title">Profile</h1>
+				<div class="post post-article">
+	<header class="post-header">
+		<h1 class="post-title">Automated Image Optimization</h1>
+		<p class="post-meta">Jan 16, 2016 • Christan Fergus</p>
 	</header>
-	<article class="page-content">
-		<aside class="profile-aside">
-	<img src="http://static.christanfergus.com/images/face_34_cropped.jpg" alt="" />
-</aside>
+	<article class="post-content">
+		<h2 id="identifying-the-need">Identifying the Need</h2>
+<p>We find ourselves heading further down the road of our web pages and apps being served up on varying and often sketchy devices and networks. The importance of serving up lean applications has become not a luxury, but necessity. In this arena, images are one of the biggest and easiest areas a web designer can hack off kilobytes and boost page load times. Furthermore, with responsive applications, we are often serving up the same image in varying sizes to leverage screen sizes, data connections, etc.</p>
 
-<div class="profile">
-	<h2>The Man Behind The <span class="markup-wrap">Markup</span></h2>
+<p>Handling all this image resizing manually is no way to go, and only for those who enjoy a little self-inflicted pain. While there are dedicated tools that can do this, especially server side, often it makes sense to deal with the optimization locally. This is where task runners come in super handy. In our case, Grunt.</p>
 
-	<p>I'm a front-end web designer based in the Denver metro area of beautiful Colorado. Armed with degrees in both graphic and web design (not to mention years of real world experience), I know a thing or two about creating effective designs, usable interfaces, and prim and proper markup.</p>
+<h2 id="only-use-it-when-you-need-it">Only Use It When You Need It</h2>
+<p>Recently, the need for such image optimization arose. It’s worth noting at this point that, philosophically, I don’t ever add a tool until I need it—helps keep the cruft down. However, staring at over 500 images requiring at least two different size variations quickly launched me head-first into optimization world.</p>
 
-	<p>It's not all work, though. I'm a big fan of sports car endurance racing (think pinnacle of automotive engineering and tracks with a lot of twisty bits). I dabble in audio production, hike the hilly hills of the Rocky Mountains, and fancy myself a bit of a coffee connoisseur (I co-created and ran a coffee shop in my early days). "Wow," you say, "what does this fellow not do?" Well, I don't ski, surf, or eat flan. I really, really don't like flan.</p>
+<p>The following is my optimization workflow on Mac. I also assume creating a project from complete scratch. This is what works for me, but it may not be what you want. I included my sources below (I didn’t come up with any of this) so you can figure a workflow out for yourself that suits your needs.</p>
 
-	<p>When it comes to my work, however, I'm truly passionate. I love writing beautiful and clean HTML and CSS. I'm constantly looking for ways to achieve the most efficient design&mdash;both visually and in the code. I believe having access to the web is a human right, and we should remove any barriers that exist between any user&mdash;regardless of ability&mdash;and the power of the web. Because of this, I relentlessly test and scrutinize my designs so I know the user will always be able to achieve their goals, which in turn, enables the business achieve theirs.</p>
+<h3 id="ingredients-youll-need">Ingredients You’ll Need</h3>
+<ol>
+  <li>OSX</li>
+  <li>Node</li>
+  <li>Grunt</li>
+  <li>Homebrew</li>
+  <li>Imagemagick</li>
+  <li>Patience</li>
+</ol>
 
-	<p>Giving back is also important to me, which is why I teach web design at community college. Not only do I get to share my experiences, I’m forced to keep learning from the industry and even my students.</p>
+<h3 id="install-grunt">Install Grunt</h3>
+<ol>
+  <li>Ensure you have installed Node, and are inside the directory in which you wish to optimize images.</li>
+  <li>Install Grunt.
+    <pre><code><span class="prompt">$</span> <span>npm install -g grunt-cli</span></code></pre>
+  </li>
+  <li>Install the Grunt initializer tool to create Gruntfile.js and packages.json (very handy but optional).
+    <pre><code><span class="prompt">$</span> <span>npm install -g grunt-init</span></code></pre>
+  </li>
+  <li>Now initialize the files.
+    <pre><code><span class="prompt">$</span> <span>grunt-init-gruntfile</span></code></pre>
+  </li>
+</ol>
 
-	<p>If you’d like to reach out to me or find out more, check out the links below and in the footer to find me across the internets.</p>
-</div>
+<p>You now have Grunt prepped and ready, but you’ll need to modify the Gruntfile.js before it works. You may want to strip out everything the initializer did at first to just get your image optimization task working correctly. Further down is an example.</p>
 
-<footer class="post-footer">
-	<a class="button no-top" href="http://linkedin.com/in/christanfergus" target="_blank">Linkedin</a>
-	<a class="button no-top" href="/work/">View Work</a>
-</footer>
+<h3 id="install-image-sizing-tasks">Install Image Sizing Tasks</h3>
+<p>The primary techniques followed here are shamelessly from <a href="https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick">this Smashing Magazine article</a>. You will want to learn a bit more about what’s actually happening when you start optimizing your images. You will also want to know how to configure the out-of-the-box installation. Do that <a href="https://github.com/nwtn/grunt-respimg">here</a>.</p>
+
+<ol>
+  <li>Install Grunt image sizing
+    <pre><code><span class="prompt">$</span> <span>npm install grunt-respimg --save-dev</span></code></pre>
+  </li>
+  <li>Install ImageMagick (with homebrew)
+    <pre><code><span class="prompt">$</span> <span>brew install imagemagick</span></code></pre>
+  </li>
+  <li>Edit your Gruntfile.js. In this case we are not using the additional image sizing tools. <a href="https://github.com/nwtn/grunt-respimg">Reference</a> for more information.</li>
+  <li>Run your task
+    <pre><code><span class="prompt">$</span> <span>grunt</span></code></pre>
+  </li>
+</ol>
+
+<h3 id="example-grunfilejs">Example Grunfile.js</h3>
+
+<pre><code>/*global module:false*/
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    // Task configuration.
+    respimg: {
+      nooptim: {
+        options: {
+          optimize: false,
+          widths: [960, 420]
+        },
+        files: [{
+          expand: true,
+          // Be sure to get your own paths correct
+          cwd: 'images/source/',
+          src: ['**.{gif,jpg,png,svg}'],
+          // Be sure to get your own paths correct
+          dest: 'images/output/'
+        }]
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-respimg'); 
+
+  // Default task.
+  grunt.registerTask('default', ['respimg']);
+};
+</code></pre>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="http://www.imagemagick.org/script/index.php">Imagemagick</a></li>
+  <li><a href="https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick">Smashing Mag article</a></li>
+  <li><a href="https://github.com/nwtn/grunt-respimg">Grunt task featured in the above article</a></li>
+  <li><a href="https://github.com/fergd/ImageResize">My Github page for experimenting with this</a></li>
+</ul>
+
+
 	</article>
+	<footer class="post-footer">
+		<a class="button no-top" href="/posts/">See More Posts</a>
+		<a class="button no-top" href="/work/">See Professional Work</a>
+	</footer>
 </div>	
 			</main>	
 		</div>

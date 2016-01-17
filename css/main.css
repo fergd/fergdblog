@@ -50,7 +50,7 @@ audio, canvas, video {
   *display: inline;
   *zoom: 1; }
 
-code, em, pre {
+em {
   display: inline-block; }
 
 /**
@@ -388,8 +388,9 @@ sub {
 
 code, kbd, samp {
   font-family: monospace, serif;
-  font-family: 'courier new', monospace;
-  font-size: 1em; }
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  line-height: 1.2; }
 
 figcaption {
   font-family: "vollkornregular", "SofiaProRegular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "sofia", "Lucida Grande", sans-serif; }
@@ -495,6 +496,20 @@ figcaption {
 
   .resize-hide {
     display: none; } }
+pre, pre code, code {
+  background: #3E4651;
+  color: #2CC990; }
+
+pre code {
+  display: block;
+  padding: 16px; }
+  pre code span {
+    display: inline; }
+  pre code span.prompt {
+    color: #FCB941; }
+  pre code span.comment {
+    color: #C2c2c2; }
+
 .button {
   height: 50px;
   padding: 0 4%;
@@ -878,6 +893,8 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   padding: 0.5em;
   max-width: 100%;
   margin: 1em 0; }
+.post-article .post-content li a {
+  display: inline; }
 
 .slider {
   margin: 1em 0; }

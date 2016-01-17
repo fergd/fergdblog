@@ -5,15 +5,133 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Nov 2015 11:29:20 -0700</pubDate>
-    <lastBuildDate>Thu, 26 Nov 2015 11:29:20 -0700</lastBuildDate>
+    <pubDate>Sat, 16 Jan 2016 22:05:41 -0700</pubDate>
+    <lastBuildDate>Sat, 16 Jan 2016 22:05:41 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Automated Image Optimization</title>
+        <description>&lt;h2 id=&quot;identifying-the-need&quot;&gt;Identifying the Need&lt;/h2&gt;
+&lt;p&gt;We find ourselves heading further down the road of our web pages and apps being served up on varying and often sketchy devices and networks. The importance of serving up lean applications has become not a luxury, but necessity. In this arena, images are one of the biggest and easiest areas a web designer can hack off kilobytes and boost page load times. Furthermore, with responsive applications, we are often serving up the same image in varying sizes to leverage screen sizes, data connections, etc.&lt;/p&gt;
+
+&lt;p&gt;Handling all this image resizing manually is no way to go, and only for those who enjoy a little self-inflicted pain. While there are dedicated tools that can do this, especially server side, often it makes sense to deal with the optimization locally. This is where task runners come in super handy. In our case, Grunt.&lt;/p&gt;
+
+&lt;h2 id=&quot;only-use-it-when-you-need-it&quot;&gt;Only Use It When You Need It&lt;/h2&gt;
+&lt;p&gt;Recently, the need for such image optimization arose. It’s worth noting at this point that, philosophically, I don’t ever add a tool until I need it—helps keep the cruft down. However, staring at over 500 images requiring at least two different size variations quickly launched me head-first into optimization world.&lt;/p&gt;
+
+&lt;p&gt;The following is my optimization workflow on Mac. I also assume creating a project from complete scratch. This is what works for me, but it may not be what you want. I included my sources below (I didn’t come up with any of this) so you can figure a workflow out for yourself that suits your needs.&lt;/p&gt;
+
+&lt;h3 id=&quot;ingredients-youll-need&quot;&gt;Ingredients You’ll Need&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;OSX&lt;/li&gt;
+  &lt;li&gt;Node&lt;/li&gt;
+  &lt;li&gt;Grunt&lt;/li&gt;
+  &lt;li&gt;Homebrew&lt;/li&gt;
+  &lt;li&gt;Imagemagick&lt;/li&gt;
+  &lt;li&gt;Patience&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;install-grunt&quot;&gt;Install Grunt&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Ensure you have installed Node, and are inside the directory in which you wish to optimize images.&lt;/li&gt;
+  &lt;li&gt;Install Grunt.
+    &lt;pre&gt;&lt;code&gt;&lt;span class=&quot;prompt&quot;&gt;$&lt;/span&gt; &lt;span&gt;npm install -g grunt-cli&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install the Grunt initializer tool to create Gruntfile.js and packages.json (very handy but optional).
+    &lt;pre&gt;&lt;code&gt;&lt;span class=&quot;prompt&quot;&gt;$&lt;/span&gt; &lt;span&gt;npm install -g grunt-init&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now initialize the files.
+    &lt;pre&gt;&lt;code&gt;&lt;span class=&quot;prompt&quot;&gt;$&lt;/span&gt; &lt;span&gt;grunt-init-gruntfile&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You now have Grunt prepped and ready, but you’ll need to modify the Gruntfile.js before it works. You may want to strip out everything the initializer did at first to just get your image optimization task working correctly. Further down is an example.&lt;/p&gt;
+
+&lt;h3 id=&quot;install-image-sizing-tasks&quot;&gt;Install Image Sizing Tasks&lt;/h3&gt;
+&lt;p&gt;The primary techniques followed here are shamelessly from &lt;a href=&quot;https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick&quot;&gt;this Smashing Magazine article&lt;/a&gt;. You will want to learn a bit more about what’s actually happening when you start optimizing your images. You will also want to know how to configure the out-of-the-box installation. Do that &lt;a href=&quot;https://github.com/nwtn/grunt-respimg&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install Grunt image sizing
+    &lt;pre&gt;&lt;code&gt;&lt;span class=&quot;prompt&quot;&gt;$&lt;/span&gt; &lt;span&gt;npm install grunt-respimg --save-dev&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install ImageMagick (with homebrew)
+    &lt;pre&gt;&lt;code&gt;&lt;span class=&quot;prompt&quot;&gt;$&lt;/span&gt; &lt;span&gt;brew install imagemagick&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Edit your Gruntfile.js. In this case we are not using the additional image sizing tools. &lt;a href=&quot;https://github.com/nwtn/grunt-respimg&quot;&gt;Reference&lt;/a&gt; for more information.&lt;/li&gt;
+  &lt;li&gt;Run your task
+    &lt;pre&gt;&lt;code&gt;&lt;span class=&quot;prompt&quot;&gt;$&lt;/span&gt; &lt;span&gt;grunt&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;example-grunfilejs&quot;&gt;Example Grunfile.js&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;/*global module:false*/
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    // Task configuration.
+    respimg: {
+      nooptim: {
+        options: {
+          optimize: false,
+          widths: [960, 420]
+        },
+        files: [{
+          expand: true,
+          // Be sure to get your own paths correct
+          cwd: &#39;images/source/&#39;,
+          src: [&#39;**.{gif,jpg,png,svg}&#39;],
+          // Be sure to get your own paths correct
+          dest: &#39;images/output/&#39;
+        }]
+      }
+    }
+  });
+
+  grunt.loadNpmTasks(&#39;grunt-respimg&#39;); 
+
+  // Default task.
+  grunt.registerTask(&#39;default&#39;, [&#39;respimg&#39;]);
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.imagemagick.org/script/index.php&quot;&gt;Imagemagick&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick&quot;&gt;Smashing Mag article&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nwtn/grunt-respimg&quot;&gt;Grunt task featured in the above article&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fergd/ImageResize&quot;&gt;My Github page for experimenting with this&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 16 Jan 2016 00:00:00 -0700</pubDate>
+        <link>http://christanfergus.com/bulk-image-optimization-with-grunt</link>
+        <guid isPermaLink="true">http://christanfergus.com/bulk-image-optimization-with-grunt</guid>
+        
+        <category>grunt,</category>
+        
+        <category>image</category>
+        
+        <category>optimization,</category>
+        
+        <category>images,</category>
+        
+        <category>imagemagick</category>
+        
+        
+        <category>web</category>
+        
+        <category>development</category>
+        
+      </item>
     
       <item>
         <title>Diary Of A Meteor App Project</title>
         <description>&lt;h2 id=&quot;for-starters&quot;&gt;For Starters…&lt;/h2&gt;
 
-&lt;p&gt;This post is more of a case-study and chronicle of my experience with Meteor, and less of a how-to. The nice thing about Meteor is that the community is quite large and there are tens if not hundreds of tutorials out there. I thought it might be good to describe my experience more than the technical side in hope that it can help paint a broader picture of the Meteor experience. &lt;/p&gt;
+&lt;p&gt;This post is more of a case-study and chronicle of my experience with Meteor, and less of a how-to. The nice thing about Meteor is that the community is quite large and there are tens if not hundreds of tutorials out there. I thought it might be good to describe my experience more than the technical side in hope that it can help paint a broader picture of the Meteor experience.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-make-an-app&quot;&gt;Why Make An App?&lt;/h2&gt;
 
@@ -23,11 +141,11 @@
 
 &lt;h2 id=&quot;what-technology-do-i-use&quot;&gt;What Technology Do I Use?&lt;/h2&gt;
 
-&lt;p&gt;Let’s put aside for a moment the probability that something like this already exists. Whether it’s specific to a Hot Wheels collector, or just a simple form of db recording and retrieval, I’m sure it’s out there. The point here, though, is that I wanted to make an app all by m’self, so why not apply it to a direct need I have? To be honest, I’ve still not looked to see if anything like this exists. Not really much of a point now. &lt;/p&gt;
+&lt;p&gt;Let’s put aside for a moment the probability that something like this already exists. Whether it’s specific to a Hot Wheels collector, or just a simple form of db recording and retrieval, I’m sure it’s out there. The point here, though, is that I wanted to make an app all by m’self, so why not apply it to a direct need I have? To be honest, I’ve still not looked to see if anything like this exists. Not really much of a point now.&lt;/p&gt;
 
-&lt;p&gt;I poked around to see what sort of technology or language I wanted to work in. In all honesty, it was always going to be something javascriptish. Angular? Nah. All Node? Maybe. Try out React? Not yet. I shot the question out on the Twitters and immediately got people hailing the wonders of Meteor. So, after much Googling, I thought it was worth going with. &lt;/p&gt;
+&lt;p&gt;I poked around to see what sort of technology or language I wanted to work in. In all honesty, it was always going to be something javascriptish. Angular? Nah. All Node? Maybe. Try out React? Not yet. I shot the question out on the Twitters and immediately got people hailing the wonders of Meteor. So, after much Googling, I thought it was worth going with.&lt;/p&gt;
 
-&lt;p&gt;Here’s a breakdown of the resources that got me started, but not nearly a complete list of all the sites I hit looking for answers. Like every good developer, at any given time I had about fifteen tabs open split across Meteor docs and Stack Overflow. &lt;/p&gt;
+&lt;p&gt;Here’s a breakdown of the resources that got me started, but not nearly a complete list of all the sites I hit looking for answers. Like every good developer, at any given time I had about fifteen tabs open split across Meteor docs and Stack Overflow.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://meteortips.com/first-meteor-tutorial/&quot;&gt;Your First Meteor Application&lt;/a&gt;&lt;/li&gt;
@@ -40,7 +158,7 @@
 
 &lt;h3 id=&quot;determining-the-minimum-viable-product-mvp&quot;&gt;Determining the Minimum Viable Product (MVP)&lt;/h3&gt;
 
-&lt;p&gt;There were and still are many things I’d like this app to be, but I decided the best idea is to crank out an MVP and iterate on that.  I felt pretty comfortable with the basic tenants of Meteor, but if I didn’t define boundaries it would have been very easy for me to follow exciting or interesting rabbit trails of functionality, bells, and especially whistles. I always do this, by the way. &lt;/p&gt;
+&lt;p&gt;There were and still are many things I’d like this app to be, but I decided the best idea is to crank out an MVP and iterate on that.  I felt pretty comfortable with the basic tenants of Meteor, but if I didn’t define boundaries it would have been very easy for me to follow exciting or interesting rabbit trails of functionality, bells, and especially whistles. I always do this, by the way.&lt;/p&gt;
 
 &lt;h4 id=&quot;in-scope-for-mvp&quot;&gt;In scope for MVP&lt;/h4&gt;
 
@@ -67,17 +185,17 @@
 
 &lt;h3 id=&quot;ui-design&quot;&gt;UI Design&lt;/h3&gt;
 
-&lt;p&gt;I had the design kicking around in illustrator for a while. It was important that I explore interesting concepts. This was the first time in quite a while that I’d had the opportunity to  design for myself and I wanted to really break out of what everyone else was doing. Ever notice how everything looks the same?  &lt;/p&gt;
+&lt;p&gt;I had the design kicking around in illustrator for a while. It was important that I explore interesting concepts. This was the first time in quite a while that I’d had the opportunity to  design for myself and I wanted to really break out of what everyone else was doing. Ever notice how everything looks the same?&lt;/p&gt;
 
-&lt;p&gt;Knowing the end result was going to be used primarily on a phone, I stuck to a restricted palette that skinned large, tappable content regions. The content and features themselves were purposefully kept to a minimum. &lt;/p&gt;
+&lt;p&gt;Knowing the end result was going to be used primarily on a phone, I stuck to a restricted palette that skinned large, tappable content regions. The content and features themselves were purposefully kept to a minimum.&lt;/p&gt;
 
-&lt;p&gt;While the design does of course scale up to desktop, I took the time to ensure the UI was useable across the spectrum. The design needs were accounted for up through contextual breakpoints. The breakpoints were determined by how each component reacted to the window size. This resulted in emphasized or deemphasized elements depending on anticipated scenarios. &lt;/p&gt;
+&lt;p&gt;While the design does of course scale up to desktop, I took the time to ensure the UI was useable across the spectrum. The design needs were accounted for up through contextual breakpoints. The breakpoints were determined by how each component reacted to the window size. This resulted in emphasized or deemphasized elements depending on anticipated scenarios.&lt;/p&gt;
 
-&lt;p&gt;For instance, if I use the app on my desktop computer, I’m more interested in entering data and browsing cars. If I hit the app on my mobile device, I most likely need to quickly/easily look up a car to make sure I’m not buying a duplicate.  &lt;/p&gt;
+&lt;p&gt;For instance, if I use the app on my desktop computer, I’m more interested in entering data and browsing cars. If I hit the app on my mobile device, I most likely need to quickly/easily look up a car to make sure I’m not buying a duplicate.&lt;/p&gt;
 
 &lt;h3 id=&quot;data-design&quot;&gt;Data Design&lt;/h3&gt;
 
-&lt;p&gt;Understanding that the core of this project is the car information, it was important I got that piece pretty nailed at the beginning. I created a spreadsheet in Google Docs and played around with the type of data I wanted to record. The end result were these fields: &lt;/p&gt;
+&lt;p&gt;Understanding that the core of this project is the car information, it was important I got that piece pretty nailed at the beginning. I created a spreadsheet in Google Docs and played around with the type of data I wanted to record. The end result were these fields:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Toy number&lt;/li&gt;
@@ -99,21 +217,21 @@
 
 &lt;h4 id=&quot;collecting-the-data&quot;&gt;Collecting the Data&lt;/h4&gt;
 
-&lt;p&gt;To make sure I was satisfied with the type of data I wanted to collect, I recorded a handful of cars in Sheets first. I made a few tweaks to what would be the final fields, but for the most part, the final list you see above is what I started with. &lt;/p&gt;
+&lt;p&gt;To make sure I was satisfied with the type of data I wanted to collect, I recorded a handful of cars in Sheets first. I made a few tweaks to what would be the final fields, but for the most part, the final list you see above is what I started with.&lt;/p&gt;
 
-&lt;p&gt;Out of this little spreadsheet came a massive project that even included me recruiting my wife for help in recording and organizing everything. I recorded all my cars on this spreadsheet with the intent of exporting the data to my app as a JSON file. This, however, ultimately proved problematic. While (through the use of an addon) I was able to export the sheet to a JSON file, MongoDB, my Meteor project, or a combination of the two never played well with it and I was never able to get the data import to work correctly. I solved this by exporting the data as a CSV. This worked swimmingly, however by doing so, MongoDB created objectIDs as opposed to _id for each document. This would later be an issue when trying to retrieve single documents from the collection. That’s another story. Hey, ultimately, it worked though and saved me from having to input 300+ cars twice. &lt;/p&gt;
+&lt;p&gt;Out of this little spreadsheet came a massive project that even included me recruiting my wife for help in recording and organizing everything. I recorded all my cars on this spreadsheet with the intent of exporting the data to my app as a JSON file. This, however, ultimately proved problematic. While (through the use of an addon) I was able to export the sheet to a JSON file, MongoDB, my Meteor project, or a combination of the two never played well with it and I was never able to get the data import to work correctly. I solved this by exporting the data as a CSV. This worked swimmingly, however by doing so, MongoDB created objectIDs as opposed to _id for each document. This would later be an issue when trying to retrieve single documents from the collection. That’s another story. Hey, ultimately, it worked though and saved me from having to input 300+ cars twice.&lt;/p&gt;
 
 &lt;h2 id=&quot;challenges--observations&quot;&gt;Challenges &amp;amp; Observations&lt;/h2&gt;
 
-&lt;p&gt;It worked out that what I wanted to accomplish was fairly similar to some of the tutorials out there, so I found it very easy to translate what they were doing into my project. Initially, I just followed the tutorials, not worrying about my stuff, which I do recommend doing. Once I finally got to my project,  I was able to make better decisions that ultimately saved me time had I not had the initial experience. This was all good. &lt;/p&gt;
+&lt;p&gt;It worked out that what I wanted to accomplish was fairly similar to some of the tutorials out there, so I found it very easy to translate what they were doing into my project. Initially, I just followed the tutorials, not worrying about my stuff, which I do recommend doing. Once I finally got to my project,  I was able to make better decisions that ultimately saved me time had I not had the initial experience. This was all good.&lt;/p&gt;
 
-&lt;p&gt;There are a couple cautions, however. I have a foundational understanding and knowledge of JavaScript and, as advertised, found the barrier of entry very low. This was encouraging and exciting, but I feel also a little dangerous. Because you can crank something out so quickly and “easily”, one may not really know and understand what’s actually going on. It’s always dangerous when you don’t know the “why’s” behind what you’re doing since that usually leads to poor code quality, makes it hell to debug issues,  and even opens you up to performance and security issues. The latter reason is why even at the time of writing this, I’m hesitant to open my project up to other users until I have even more depth of understanding into how Meteor is handling things. &lt;/p&gt;
+&lt;p&gt;There are a couple cautions, however. I have a foundational understanding and knowledge of JavaScript and, as advertised, found the barrier of entry very low. This was encouraging and exciting, but I feel also a little dangerous. Because you can crank something out so quickly and “easily”, one may not really know and understand what’s actually going on. It’s always dangerous when you don’t know the “why’s” behind what you’re doing since that usually leads to poor code quality, makes it hell to debug issues,  and even opens you up to performance and security issues. The latter reason is why even at the time of writing this, I’m hesitant to open my project up to other users until I have even more depth of understanding into how Meteor is handling things.&lt;/p&gt;
 
 &lt;p&gt;So, if you find yourself starting out with Meteor, read up on how it handles publish and subscribe. I recommend you get your head around how this is handled. It’s easy to overlook that the reason Meteor is so easy to work with in the beginning is that it ships insecure. If you want to do anything other than mess around, you’ll need to take steps to get Meteor to a secure state. See this on &lt;a href=&quot;http://joshowens.me/meteor-security-101&quot;&gt;security.&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;packages--features&quot;&gt;Packages &amp;amp; Features&lt;/h2&gt;
 
-&lt;p&gt;My project only uses a handful of packages, but that’s not to say there is a myriad of freaking sweet packages out there. You can see a full list at my &lt;a href=&quot;https://github.com/fergd/diecasttracker/blob/master/.meteor/packages&quot;&gt;Github&lt;/a&gt;. Here’s a highlight: &lt;/p&gt;
+&lt;p&gt;My project only uses a handful of packages, but that’s not to say there is a myriad of freaking sweet packages out there. You can see a full list at my &lt;a href=&quot;https://github.com/fergd/diecasttracker/blob/master/.meteor/packages&quot;&gt;Github&lt;/a&gt;. Here’s a highlight:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/matteodem/meteor-easy-search&quot;&gt;matteodem:easy-search&lt;/a&gt;&lt;/li&gt;
@@ -124,27 +242,27 @@
 
 &lt;h2 id=&quot;no-platform-is-an-island&quot;&gt;No Platform is an Island&lt;/h2&gt;
 
-&lt;p&gt;In addition to creating the app, a couple other pieces became important: GitHub (vital for any project), Heroku, Mongolab. &lt;/p&gt;
+&lt;p&gt;In addition to creating the app, a couple other pieces became important: GitHub (vital for any project), Heroku, Mongolab.&lt;/p&gt;
 
 &lt;h3 id=&quot;heroku&quot;&gt;Heroku&lt;/h3&gt;
 
-&lt;p&gt;While Meteor kindly offers a free dev deployment, I quickly realized I needed more than that. Ultimately, I want to host the app myself on Digital Ocean, but until then, spinning up a service on Heroku was the best choice. By doing so, I incorporated a git hook that enabled me to push to Heroku whenever I had something stable enough make public. &lt;/p&gt;
+&lt;p&gt;While Meteor kindly offers a free dev deployment, I quickly realized I needed more than that. Ultimately, I want to host the app myself on Digital Ocean, but until then, spinning up a service on Heroku was the best choice. By doing so, I incorporated a git hook that enabled me to push to Heroku whenever I had something stable enough make public.&lt;/p&gt;
 
 &lt;h4 id=&quot;more-info&quot;&gt;More Info&lt;/h4&gt;
 
-&lt;p&gt;It’s not an extremely easy process to get up and running on Heroku, and I had to push on it a little. Ultimately, I did &lt;a href=&quot;http://www.growthux.com/ux-html-css-js-growth-hack/installing-meteor-on-heroku&quot;&gt;this&lt;/a&gt; install but used &lt;a href=&quot;https://github.com/jordansissel/heroku-buildpack-meteor&quot;&gt;this buildpack&lt;/a&gt; (very important). Note: depending on when you read this, the buildpack may have changed. If you have problems building, this is one of the first things to check. &lt;/p&gt;
+&lt;p&gt;It’s not an extremely easy process to get up and running on Heroku, and I had to push on it a little. Ultimately, I did &lt;a href=&quot;http://www.growthux.com/ux-html-css-js-growth-hack/installing-meteor-on-heroku&quot;&gt;this&lt;/a&gt; install but used &lt;a href=&quot;https://github.com/jordansissel/heroku-buildpack-meteor&quot;&gt;this buildpack&lt;/a&gt; (very important). Note: depending on when you read this, the buildpack may have changed. If you have problems building, this is one of the first things to check.&lt;/p&gt;
 
 &lt;h3 id=&quot;mongolab&quot;&gt;Mongolab&lt;/h3&gt;
 
-&lt;p&gt;I had never worked with an external database before this project and have to say I really like what Mongolab offers. Their free service is all I needed to get this project kicked off, and they supply all the important commands right there in the dashboard! So, when it came time to upload my CSV, I just copy/pasted their template, modded it, and voila! &lt;/p&gt;
+&lt;p&gt;I had never worked with an external database before this project and have to say I really like what Mongolab offers. Their free service is all I needed to get this project kicked off, and they supply all the important commands right there in the dashboard! So, when it came time to upload my CSV, I just copy/pasted their template, modded it, and voila!&lt;/p&gt;
 
 &lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
 
-&lt;p&gt;At the time of writing this, I have successfully achieved MVP status. Whoot! That means my car collection is accessible to me wherever I happen across Hot Wheels cars and I’ve been very pleased with the performance of the app. The lovely nature of the easy search plug in allows me to begin typing the car code and instantly I can see if there are any matches. In other words, the app is doing exactly what I want it to do. &lt;/p&gt;
+&lt;p&gt;At the time of writing this, I have successfully achieved MVP status. Whoot! That means my car collection is accessible to me wherever I happen across Hot Wheels cars and I’ve been very pleased with the performance of the app. The lovely nature of the easy search plug in allows me to begin typing the car code and instantly I can see if there are any matches. In other words, the app is doing exactly what I want it to do.&lt;/p&gt;
 
-&lt;p&gt;But this is only the first step. I’ve really gotten a taste for the project, and really enjoy working in the Meteor ecosystem. While searching, data entry and document retrieval are all working, I will be integrating the app with camera phones and bolstering my accounts and security to create an app that I ultimately want to share. &lt;/p&gt;
+&lt;p&gt;But this is only the first step. I’ve really gotten a taste for the project, and really enjoy working in the Meteor ecosystem. While searching, data entry and document retrieval are all working, I will be integrating the app with camera phones and bolstering my accounts and security to create an app that I ultimately want to share.&lt;/p&gt;
 
-&lt;p&gt;There’s a lot more learning and coding to do, but I’m game and I’ll continue working in the fantastic Meteor platform. &lt;/p&gt;
+&lt;p&gt;There’s a lot more learning and coding to do, but I’m game and I’ll continue working in the fantastic Meteor platform.&lt;/p&gt;
 
 &lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
 
@@ -169,7 +287,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.meteor.com/tutorials/blaze/publish-and-subscribe&quot;&gt;Pub &amp;amp; Sub&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://docs.meteor.com/#/full/allow&quot;&gt;Allow&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.meteor.com/#/full/allow&quot;&gt;Allow&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.discovermeteor.com/blog/meteor-methods-client-side-operations/&quot;&gt;Allow users to insert to a database&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -184,7 +302,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6xdHYMddtIw&quot;&gt;How to deploy &lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.growthux.com/ux-html-css-js-growth-hack/installing-meteor-on-heroku&quot;&gt;Heroku installation of Meteor &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jordansissel/heroku-buildpack-meteor buildpack&quot;&gt;Heroku buildpack (check for updates) &lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jordansissel/heroku-buildpack-meteor buildpack&quot;&gt;Heroku buildpack (check for updates) &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 03 Jul 2015 00:00:00 -0600</pubDate>
@@ -203,28 +321,28 @@
         <description>&lt;h2 id=&quot;try-all-the-things&quot;&gt;Try All The Things!&lt;/h2&gt;
 &lt;p&gt;The wonderful thing about doing web development with a team (as opposed to working alone in my musty basement) is the conversations we have about the industry. The conversations, often spirited, range from the technical to the philosophical. The one thing most topics have in common is the fact that what may be “current” and “interesting” today is not what was yesterday, and certainly will not be tomorrow. The tech world—a world I have chosen to be a part of—moves at a dizzying pace. No sooner had I grasped Grunt than Gulp came along as the hipster designer’s favourite way of getting out of doing things manually. Which javaScript framework should I go with? Damned if I know!&lt;/p&gt;
 
-&lt;p&gt;Please don’t misunderstand, I love this (&lt;a href=&quot;http://www.commitstrip.com/en/2014/11/25/west-side-project-story/&quot; title=&quot;Web Comic on CommitStrip called Side Project&quot;&gt;appropriately illustrated here&lt;/a&gt;). I love how quickly we can get an app up and running with tools like Meteor. This stage in development has such a low bar of entry that very nearly anyone with a computer and desire can create a web page or app and even be successful. &lt;/p&gt;
+&lt;p&gt;Please don’t misunderstand, I love this (&lt;a href=&quot;http://www.commitstrip.com/en/2014/11/25/west-side-project-story/&quot; title=&quot;Web Comic on CommitStrip called Side Project&quot;&gt;appropriately illustrated here&lt;/a&gt;). I love how quickly we can get an app up and running with tools like Meteor. This stage in development has such a low bar of entry that very nearly anyone with a computer and desire can create a web page or app and even be successful.&lt;/p&gt;
 
 &lt;p&gt;Success, however, in no way means quality. It’s that, dear reader, which ultimately leads me to my gripe. We have so much we can do, and sometimes bounce so quickly from tool to tool, that we forget a little thing called &lt;em&gt;craftsmanship&lt;/em&gt;. Or perhaps it’s not even forgotten, perhaps—actually likely—people never had it in the first place.&lt;/p&gt;
 
 &lt;h2 id=&quot;getting-physical&quot;&gt;Getting Physical&lt;/h2&gt;
-&lt;p&gt;I have a degree in graphic design. In my day (that’s right, I said it), design was a comparatively slow thing. For a comprehensive design degree, one had to learn the breadth of the visual: the fine arts encompassed painting, pastel, pencil, film photography, and mixed media. Of those mediums, the areas of figure study, still life, landscape, industrial, and more where explored. These were physical mediums. These mediums did not have an undo. I was forced to hone my craft and grow my skills one mistake and success at a time. I had to plan, coordinate and execute near flawlessness to even hope for a good grade. Of course, this wasn’t &lt;em&gt;all&lt;/em&gt; that long ago. We did the physical in tandem with the digital where we did all the usual things in the Corel, the Adobe suite: advertising and marketing design, web design, posters, etc. &lt;/p&gt;
+&lt;p&gt;I have a degree in graphic design. In my day (that’s right, I said it), design was a comparatively slow thing. For a comprehensive design degree, one had to learn the breadth of the visual: the fine arts encompassed painting, pastel, pencil, film photography, and mixed media. Of those mediums, the areas of figure study, still life, landscape, industrial, and more where explored. These were physical mediums. These mediums did not have an undo. I was forced to hone my craft and grow my skills one mistake and success at a time. I had to plan, coordinate and execute near flawlessness to even hope for a good grade. Of course, this wasn’t &lt;em&gt;all&lt;/em&gt; that long ago. We did the physical in tandem with the digital where we did all the usual things in the Corel, the Adobe suite: advertising and marketing design, web design, posters, etc.&lt;/p&gt;
 
-&lt;p&gt;In addition, I took two technical writing classes to craft and learn how to clearly communicate. In all this, I took one whole HTML class where I wrote the markup in Windows 98’s Notepad and did all my layout in tables and frames (this was before Zeldman’s seminole &lt;a href=&quot;http://en.wikipedia.org/wiki/Designing_with_Web_Standards&quot;&gt;Designing with Web Standards&lt;/a&gt;).  &lt;/p&gt;
+&lt;p&gt;In addition, I took two technical writing classes to craft and learn how to clearly communicate. In all this, I took one whole HTML class where I wrote the markup in Windows 98’s Notepad and did all my layout in tables and frames (this was before Zeldman’s seminole &lt;a href=&quot;http://en.wikipedia.org/wiki/Designing_with_Web_Standards&quot;&gt;Designing with Web Standards&lt;/a&gt;).&lt;/p&gt;
 
 &lt;h2 id=&quot;get-real&quot;&gt;Get Real&lt;/h2&gt;
 &lt;p&gt;What am I saying? I suppose I’m saying that I see lots of stuff being put out there by talented designers, and the un-alike, that lacks craft. It may look good on the surface, but a slightly closer look shows that stuff just isn’t quite right. A physical example of this is illustrated so well by the Chinese knock-off industry. Devices, Cars… &lt;br /&gt;
-&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/f/fa/Mini_Coopi%E2%84%A2.jpg&quot; alt=&quot;Chinese version of the Mini&quot; class=&quot;post-image&quot; /&gt; What about that massive image at the top of a website with a big fat arrow pointing down—really? This is good design? &lt;/p&gt;
+&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/f/fa/Mini_Coopi%E2%84%A2.jpg&quot; alt=&quot;Chinese version of the Mini&quot; class=&quot;post-image&quot; /&gt; What about that massive image at the top of a website with a big fat arrow pointing down—really? This is good design?&lt;/p&gt;
 
 &lt;p&gt;Lest I be the first to cast a stone, be aware I’m pointing some fingers right back at myself on this one. It’s precisely because it’s so easy to crank stuff out that I, too, hop on the bandwagon. With little concern for architecture or standards, I can churn out something pretty powerful, pretty quickly. Yes, there is a benefit to that. If you approach something in a lean manor, you get something out quickly and iterate the shit out of it. If you have the discipline to do so, I say continue on, good sir/madame, and we shall clean and refactor as we go. But do we? When we’re doing our own thing, do we finely craft our architecture? Do we take the time to truly understand our users and craft an experience to their needs? Do we spend time on the finer points of visual design—all for the hope that the user never notices our finely adjusted, viewport-width-appropriate line-height, but subconsciously has an easier time navigating and finding the information they need? I think we should—at least more than we currently do.&lt;/p&gt;
 
-&lt;p&gt;A distinction should be made here, however. There’s stuff you ship, and there’s stuff you experiment with. It’s true, we could spend so much time “crafting” that we never ship, and I agree with Jobs that great artists ship, but crafting doesn’t mean not shipping. It means refining our process to allow room for it. &lt;/p&gt;
+&lt;p&gt;A distinction should be made here, however. There’s stuff you ship, and there’s stuff you experiment with. It’s true, we could spend so much time “crafting” that we never ship, and I agree with Jobs that great artists ship, but crafting doesn’t mean not shipping. It means refining our process to allow room for it.&lt;/p&gt;
 
 &lt;p&gt;I’m not going to craft an experimental app I’m working on that no one will ever see. I am, however, going to craft anything anyone other than my wife is going to see. I owe that to you, the user. If you dein me worthy enough to show you anything I have worked on, it’s the least I can do to craft, tailor, and make your experience in my design as useful and lovely as possible.&lt;/p&gt;
 
 &lt;h2 id=&quot;get-crafty&quot;&gt;Get Crafty&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/img/post-images/crafted-compressor.jpg&quot; alt=&quot;Some stuff on a table that looks kinda crafty&quot; class=&quot;post-image&quot; /&gt;&lt;br /&gt;
-We shouldn’t stop everything, shut out the world, and spend the next ten years becoming the very best in, well, whatever. I’m saying we should be conscious of an area we tend to slack off in, and work on that. Slowly ratchet up your discipline in color theory or cleaner, more performant JavaScript. Take the time to read some books on design theory and practice particular techniques. If you’ve never had formal training, take it upon yourself to improve the fundamentals. If you have had formal training, revisit the disciplines and techniques you learned all those years ago. &lt;/p&gt;
+We shouldn’t stop everything, shut out the world, and spend the next ten years becoming the very best in, well, whatever. I’m saying we should be conscious of an area we tend to slack off in, and work on that. Slowly ratchet up your discipline in color theory or cleaner, more performant JavaScript. Take the time to read some books on design theory and practice particular techniques. If you’ve never had formal training, take it upon yourself to improve the fundamentals. If you have had formal training, revisit the disciplines and techniques you learned all those years ago.&lt;/p&gt;
 
 &lt;p&gt;With just a little extra effort, we can keep above the riff-raff and distinguish ourselves as attractive, crafty professionals.&lt;/p&gt;
 </description>
@@ -300,11 +418,11 @@ We shouldn’t stop everything, shut out the world, and spend the next ten years
 
 &lt;p&gt;This wasn’t a static recipe site, this was a recipe site that recommended recipes to you based on items that were in your weekly order. Because of this we needed to be able to detect which ingredients you had and didn’t have, and give you the ability to modify your order based on this information. The marriage of sales and recipes was a great one, but a concept full of complexity that had to be distilled and offered up quickly for the customer’s benefit. Knowing what data to give, when to give it, and most importantly, &lt;em&gt;how&lt;/em&gt;, was a major challenge.&lt;/p&gt;
 
-&lt;p&gt;We also had a fair amount of information we needed to convey to the user in a very limited space. Part of the space limitation was because the recipe site was built as an evolutionary branch off of the existing site. That design presented limitations primarily because we didn’t want each area of the site looking drastically different to the user. We handled this challenge by reigning the design back in some places, removing elements that weren’t expressly needed, and also modifying some visual elements the existing site in minor ways. &lt;/p&gt;
+&lt;p&gt;We also had a fair amount of information we needed to convey to the user in a very limited space. Part of the space limitation was because the recipe site was built as an evolutionary branch off of the existing site. That design presented limitations primarily because we didn’t want each area of the site looking drastically different to the user. We handled this challenge by reigning the design back in some places, removing elements that weren’t expressly needed, and also modifying some visual elements the existing site in minor ways.&lt;/p&gt;
 
 &lt;h2 id=&quot;results-amp-beyond-release&quot;&gt;Results &amp;amp; Beyond Release&lt;/h2&gt;
 
-&lt;p&gt;Feedback and site usage were extremely positive and we successfully created a fun and meaningful way for customers to plan their week in recipes. As a result we experienced &lt;/p&gt;
+&lt;p&gt;Feedback and site usage were extremely positive and we successfully created a fun and meaningful way for customers to plan their week in recipes. As a result we experienced&lt;/p&gt;
 
 &lt;ul class=&quot;disc&quot;&gt;
   &lt;li&gt;Overall customer retention increased with a 17% increased customer conversion rate&lt;/li&gt;
