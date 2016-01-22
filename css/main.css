@@ -418,10 +418,10 @@ figcaption {
   position: relative;
   float: right; }
 
-.l-col-full, .nav-col nav, .nav-col nav ul li, .nav-col nav ul li a, .page-header, .page-content, .post-header, .post-article .post-content, .work, .work-header, section.cv #contact-details .header_2 h1, section.cv #contact-details .header_2 h2, .top-leader, .top-leader div > div, .big-square-lead, .secondary-info, .page-wrap {
+.l-col-full, .nav-col nav, .nav-col nav ul li, .nav-col nav ul li a, .page-header, .page-content, .post-header, .post-article .post-content, .work, .work-header, .top-leader, .top-leader div > div, .big-square-lead, .secondary-info, .page-wrap {
   width: 100%; }
 
-.l-col-30, section.cv #contact-details .header_1 {
+.l-col-30 {
   width: 30%; }
 
 .l-col-20, [role="navigation"] {
@@ -433,7 +433,7 @@ figcaption {
 .l-col-60 {
   width: 60%; }
 
-.l-col-70, section.cv #contact-details .header_2 {
+.l-col-70 {
   width: 70%; }
 
 .l-col-80, [role="main"] {
@@ -979,146 +979,6 @@ aside.side-info {
   aside.side-info {
     width: 100%;
     float: left; } }
-/* Header
---------------------------------------------------- */
-section.cv {
-  position: relative;
-  float: left;
-  font-size: 20px;
-  margin-bottom: 2em;
-  /* Main Content
-  --------------------------------------------------- */ }
-  section.cv #contact-details {
-    position: relative;
-    float: left;
-    margin-bottom: 1em; }
-    section.cv #contact-details .header_1 {
-      position: relative;
-      float: left; }
-    section.cv #contact-details .header_1 img {
-      position: relative;
-      float: right;
-      max-width: 100%;
-      padding: 1em;
-      background: #3E4651; }
-    section.cv #contact-details .header_2 {
-      position: relative;
-      float: left;
-      padding: 1em; }
-      section.cv #contact-details .header_2 h1 {
-        margin-bottom: 0.5em; }
-      section.cv #contact-details .header_2 h2 {
-        margin-bottom: 1.5em; }
-    section.cv #contact-details ul.info_2 a:hover {
-      color: #FCB941; }
-    section.cv #contact-details li.address,
-    section.cv #contact-details li.email,
-    section.cv #contact-details li.site_url,
-    section.cv #contact-details li.twitter {
-      display: block;
-      margin: 0 0 0.5em 0; }
-    section.cv #contact-details li.address span {
-      display: inline; }
-  section.cv dl {
-    margin-bottom: 1em; }
-  section.cv dt {
-    position: relative;
-    float: left;
-    padding-right: 1em;
-    width: 20%;
-    font-size: 1.5em;
-    text-align: right; }
-  section.cv dd {
-    position: relative;
-    float: left;
-    width: 80%; }
-  section.cv section#skills ul {
-    position: relative;
-    float: left;
-    width: 25%; }
-    section.cv section#skills ul li {
-      margin-bottom: 0.5em; }
-  section.cv section#experience .experience p.bus1,
-  section.cv section#experience .experience p.summary,
-  section.cv section#experience .education p.bus1,
-  section.cv section#experience .education p.summary,
-  section.cv section#education .experience p.bus1,
-  section.cv section#education .experience p.summary,
-  section.cv section#education .education p.bus1,
-  section.cv section#education .education p.summary {
-    width: 100%;
-    display: inline-block; }
-    section.cv section#experience .experience p.bus1::first-child,
-    section.cv section#experience .experience p.summary::first-child,
-    section.cv section#experience .education p.bus1::first-child,
-    section.cv section#experience .education p.summary::first-child,
-    section.cv section#education .experience p.bus1::first-child,
-    section.cv section#education .experience p.summary::first-child,
-    section.cv section#education .education p.bus1::first-child,
-    section.cv section#education .education p.summary::first-child {
-      margin: 0.5em 0; }
-    section.cv section#experience .experience p.bus1 span,
-    section.cv section#experience .experience p.summary span,
-    section.cv section#experience .education p.bus1 span,
-    section.cv section#experience .education p.summary span,
-    section.cv section#education .experience p.bus1 span,
-    section.cv section#education .experience p.summary span,
-    section.cv section#education .education p.bus1 span,
-    section.cv section#education .education p.summary span {
-      display: inline; }
-      section.cv section#experience .experience p.bus1 span:last-child:before,
-      section.cv section#experience .experience p.summary span:last-child:before,
-      section.cv section#experience .education p.bus1 span:last-child:before,
-      section.cv section#experience .education p.summary span:last-child:before,
-      section.cv section#education .experience p.bus1 span:last-child:before,
-      section.cv section#education .experience p.summary span:last-child:before,
-      section.cv section#education .education p.bus1 span:last-child:before,
-      section.cv section#education .education p.summary span:last-child:before {
-        content: '|';
-        padding: 0 1em;
-        display: inline-block; }
-  section.cv section#experience .experience p[itemprop=description],
-  section.cv section#experience .education p[itemprop=description],
-  section.cv section#education .experience p[itemprop=description],
-  section.cv section#education .education p[itemprop=description] {
-    line-height: 1.5em;
-    margin: 0 0 1.5em 0; }
-
-@media all and (max-width: 1230px) {
-  section.cv dl dt {
-    position: relative;
-    float: left;
-    padding: 0;
-    width: 100%;
-    font-size: 1.5em;
-    text-align: left; } }
-@media all and (max-width: 800px) {
-  section.cv section#contact-details .header_1 {
-    display: none; }
-  section.cv section#contact-details .header_2 {
-    position: relative;
-    float: left;
-    width: 100%;
-    padding: 0.5em 0; }
-    section.cv section#contact-details .header_2 ul.info_1 {
-      position: relative;
-      float: left;
-      width: 100%; }
-      section.cv section#contact-details .header_2 ul.info_1 li {
-        width: 100%; }
-  section.cv dt {
-    margin-bottom: 0.5em;
-    margin-top: 1em; } }
-@media all and (max-width: 750px) {
-  section.cv {
-    font-size: 1.2em; }
-    section.cv section#skills ul.list1, section.cv section#skills ul.list2 {
-      width: 100%; }
-    section.cv dt {
-      margin-top: 0;
-      margin-bottom: 0.5em; }
-    section.cv dd {
-      width: 100%; } }
 main {
   position: relative;
   float: left; }
