@@ -78,6 +78,14 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 		text-align: center;
 		z-index: 2;
 	}
+
+	.nav-col{
+		nav{
+			ul{
+				border-top: 32px solid $yellow;
+			}
+		}
+	}
 }
 @media all and (max-width: 480px){
 	.nav-col{
@@ -96,5 +104,6 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 		color: $yellow;
 		cursor: pointer;
 		text-align: center;
+		margin: 0;
 	}
 }
