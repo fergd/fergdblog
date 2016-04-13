@@ -50,10 +50,25 @@
 		border: 1px dashed $med-grey;
 		padding: $ms--2;
 		max-width: 100%;
-		margin: $ms-0 0;
+		margin: $ms-0 auto;
 	}
 	li a{
 		display: inline;
+	}
+	figure{
+		padding: $ms--2 0 $ms-0 0;
+		img, code, pre{
+			margin: 0 auto;
+			display: block;
+			max-width: 100%;
+		}
+		figcaption{
+			font-style: italic;
+			color: $dark-grey;
+		}
+		figcaption{
+			margin-top: $ms--1;
+		}
 	}
 }
 .slider{

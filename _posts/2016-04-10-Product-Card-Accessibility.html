@@ -18,8 +18,8 @@ tags: accessibility, user experience, screen readers, web development, user inte
 <h2>Challenge</h2>
 <p>The current design was perfectly fine for most of our customers. The product cards had an image, basic info, and gave the customer the ability to purchase the product directly from the card.</p>
 <figure>
-	<!-- <img src="" alt=""> -->
-	<figcaption>Product card display that was introduced in 2013</figcaption>
+	<img src="http://static.christanfergus.com/images/article-prod-card-accessibility/pa-original.jpg" alt="An example card display that was introduced in 2013">
+	<figcaption>Fig. 1 - The product card display that was introduced in early 2013 and has been largely unchanged since.</figcaption>
 </figure>
 
 <p>However, if you view the card as a screen reader might, it may read like this (I say, “may” here since in my experience with JAWS, NVDA, and OSX’s native reader all interpret pages a bit differently):</p>
@@ -34,6 +34,10 @@ tags: accessibility, user experience, screen readers, web development, user inte
 	<h2>Solution: Designing an Accessible Product Card</h2>
 	<p>As I have come to learn that as with many things, good accessibility is a journey, not a destination.</p>
 </header>
+<figure>
+	<img src="http://static.christanfergus.com/images/article-prod-card-accessibility/pa-updated.jpg" alt="The new card has an updated, more spacious design with less clutter">
+	<figcaption>Fig. 2 - The updated design gives more space to the UI, but also adds some additional, accessible benefits.</figcaption>
+</figure>
 <h3>All the "Hiddens" &amp; Shortcuts</h3>
 <p>To make the card easily consumable to users with and without a screen reader, yet minimize duplicated code, a few layout decisions were made. My team’s first idea was to give screen readers an overview of the product card before actually drilling down through it. To accomplish this, we set the product name and a “jump-to-next product card” link as the first markup for every card. The idea behind this was to alleviate the user having to navigate all the way through each card’s tree just to skip to the next product.</p>
 <figure>
@@ -49,7 +53,7 @@ tags: accessibility, user experience, screen readers, web development, user inte
 		<li>Item price</li>
 		<li>Item regular price (only visible if on sale)</li>
 	</ul>
-	<figcaption>A typical markup tree looks like this</figcaption>
+	<figcaption>Fig. 3 - A typical markup tree looks like this</figcaption>
 </figure>
 <p>Note that you don’t get to the product name until three nodes down. Then to move on to the next card, you’d need to continue tabbing through prices and potentially other buttons (given on the card’s purchasing state). The structure, while it makes sense from a visual point of view, does not make sense if you are reading linearly through the markup.</p>
 
@@ -71,7 +75,7 @@ tags: accessibility, user experience, screen readers, web development, user inte
 		<li>Item name [aria-hidden=”true”]</li>
 		<li>Item price</li>
 	</ul>
-	<figcaption>The new markup tree</figcaption>
+	<figcaption>Fig. 4 - The new markup tree</figcaption>
 </figure>
 <figure>
 	<pre>
@@ -86,11 +90,11 @@ tags: accessibility, user experience, screen readers, web development, user inte
 			width: 1px;
 		</code>
 	</pre>
-	<figcaption>Figure 4</figcaption>
+	<figcaption>Fig. 5</figcaption>
 </figure>
 <figure>
-	<img src="" alt="">
-	<figcaption>Figure 6 - Example of hidden links for screen readers</figcaption>
+	<img src="http://static.christanfergus.com/images/article-prod-card-accessibility/pa-hidden.jpg" alt="Normally hidden links are displayed to show how they are present on the card's markup">
+	<figcaption>Fig 6 - Example of links that are hidden from the UI (normally) but available to screen readers</figcaption>
 </figure>
 
 <h3>Navigation &amp; :focus</h3>
@@ -111,7 +115,7 @@ tags: accessibility, user experience, screen readers, web development, user inte
 		</div>	
 		</code>
 	</pre>
-	<figcaption>Figure 7</figcaption>
+	<figcaption>Fig. 7</figcaption>
 </figure>
 <p>In many cases, we were initially loading a minimal number of products for better performance. In that case we provided a “load more” button. Upon selecting the load more button, focus is placed immediately on the next product’s hidden link title, and the user is able to continue navigating the cards like they were previously. 
 </p>

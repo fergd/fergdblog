@@ -129,9 +129,13 @@ I had never worked with an external database before this project and have to say
 
 At the time of writing this, I have successfully achieved MVP status. Whoot! That means my car collection is accessible to me wherever I happen across Hot Wheels cars and I’ve been very pleased with the performance of the app. The lovely nature of the easy search plug in allows me to begin typing the car code and instantly I can see if there are any matches. In other words, the app is doing exactly what I want it to do. 
 
+![Overviews of using the app](http://static.christanfergus.com/images/quick-merc-find-gif.gif){: .post-image}
+
 But this is only the first step. I’ve really gotten a taste for the project, and really enjoy working in the Meteor ecosystem. While searching, data entry and document retrieval are all working, I will be integrating the app with camera phones and bolstering my accounts and security to create an app that I ultimately want to share. 
 
 There’s a lot more learning and coding to do, but I’m game and I’ll continue working in the fantastic Meteor platform. 
+
+![Overviews of using the app](http://static.christanfergus.com/images/quick-car-gif.gif){: .post-image}
 
 # Links #
  
