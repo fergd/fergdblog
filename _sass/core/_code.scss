@@ -1,9 +1,10 @@
-pre, pre code, code{
+figure pre, figure pre code, pre, pre code, code{
 	background: $black-grey;
-	color: $green;
+	color: $med-grey;
 }
 
-pre code{
+pre code,
+figure pre{
 	display: block;
 	padding: 16px;
 	span{display: inline;}

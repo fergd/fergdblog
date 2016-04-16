@@ -13,8 +13,8 @@ cdn_root: "http://static.christanfergus.com/"
 kramdown:
   input: GFM
 sass:
- sourcemap: false
+ sourcemap: true
  output_style: :compressed
- line_comments: false
+ line_comments: true
 
 exclude: ["node_modules", "gulpfile.js", "package.json"]

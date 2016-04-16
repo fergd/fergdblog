@@ -1,5 +1,9 @@
 [role="navigation"]{
 	@extend .l-col-20;
+
+	nav ul li{
+		border-bottom: 2px solid darken($yellow, 15%);
+	}
 }
 
 [role="main"]{
@@ -12,13 +16,6 @@
 
 	[role="main"]{
 		width: 70%;
-	}
-}
-
-@media all and (min-width: 481px) and (max-width: 960px){
-	[role="navigation"],
-	[role="main"]{
-		// transition: 1s all ease;
 	}
 }
 
