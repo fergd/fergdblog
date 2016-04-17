@@ -1,9 +1,12 @@
 %clearfix {
-    &:after {
+    &:after, &:before {
         content: "";
         display: table;
         clear: both;
     }
+}
+.clearfix{
+	@extend %clearfix;
 }
 %hide-text{
 	text-indent: 1000%;
