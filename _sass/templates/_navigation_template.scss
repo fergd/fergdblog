@@ -53,6 +53,15 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 	}
 }
 
+.menu-button{
+	border: none;
+	font-family: $sofia-bold;
+	line-height: 36px;
+	font-size: 1.8em;
+	bottom: -16px;
+
+}
+
 @media all and (min-width: 960px){
 	.menu-button{
 		position: absolute; 
@@ -66,9 +75,9 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
 @media all and (min-width: 371px) and (max-width: 959px){
 	.menu-button{
 		display: block;
+		margin: 0;
 		padding: 0 0.7em 0 1em;
 		position: absolute;
-		top: 3.3em;
 		left: 0;
 		line-height: 50px;	
 		vertical-align: middle;

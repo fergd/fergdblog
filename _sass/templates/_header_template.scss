@@ -1,19 +1,21 @@
 .header-website{
 	// @include th-grey-border-bottom;
 	border-bottom: 1px solid $yellow;
-	padding: 0 1em;
+	padding: 1em;
 	background: $white;
 	position: relative;
 
 	.heading-website{
-		margin-top: 0.5em;
+		margin: 0;
+		// margin-top: 0.5em;
 		width: 100%;
 		font-size: $ms-4;
 	}
 	.subheading-website{
 		width: 100%;
 		line-height: 36px;
-		margin-bottom: 0.5em;
+		margin: 0;
+		// margin-bottom: 0.5em;
 		font-size: $ms-2;
 
 		span:first-of-type{
@@ -33,7 +35,7 @@
 }
 @media all and (min-width: 960px){
 	.header-website img{
-		height: 80px;
+		height: 80%;
 		position: absolute;
 		right: 16px;
 		top: 50%;
@@ -80,6 +82,7 @@
 		margin: 0;
 
 		img{
+			position: static;
 			height: 60px;
 			display: inline;
 			text-align: center;
