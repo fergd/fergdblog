@@ -2,6 +2,13 @@
 	list-style-type: none;
 	li{
 		margin-bottom: 16px;
+		ul{
+			margin-left: 1em;
+		}
+	}
+	.category-title{
+		color: $blue;
+		text-transform: capitalize;
 	}
 }
 .post{
@@ -14,6 +21,9 @@
 	@extend .l-col-full;
 	margin: 0 0 2em 0;
 	padding-top: 8px;
+	h1{
+		margin: 0;
+	}
 }
 .post-meta{
 	font-size: $ms-0;

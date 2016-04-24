@@ -4,7 +4,7 @@ title: Diary Of A Meteor App Project
 subtitle: A case study chronicling my first experience with Meteor
 permalink: diary-of-a-meteor-app-projects
 date: 2015/07/03 
-categories: Web Development
+category: Web & App Development
 author: Christan Fergus
 published: true
 ---

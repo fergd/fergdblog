@@ -3,7 +3,7 @@ layout: post
 title:  "Reviving Craftsmanship"
 permalink: reviving-craftsmanship/
 date: 2015-04-06
-categories: Web
+category: UX Design
 author: Christan Fergus
 published: true
 ---

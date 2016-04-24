@@ -4,7 +4,7 @@ title: Automated Image Optimization
 subtitle: How to optimize your images with Grunt, Imagemagick, and the command line on OSX
 permalink: bulk-image-optimization-with-grunt
 date: 2016/01/16 
-categories: Web Development
+category: Web & App Development
 author: Christan Fergus
 published: true
 tags: grunt, image optimization, images, imagemagick

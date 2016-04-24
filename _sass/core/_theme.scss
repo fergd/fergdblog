@@ -59,7 +59,10 @@ hr {
 @mixin alpha-bg($red, $green, $blue, $ab-alpha){
 	background-color: rgba($red, $green, $blue, $ab-alpha);
 }
-
+a:hover:not(.button){
+	transition: color ease 0.2s;
+	color: $orange;
+}
 /* you do realize this makes no sense, right?
 don't use this.
 http://www.youtube.com/watch?v=umDr0mPuyQc */
