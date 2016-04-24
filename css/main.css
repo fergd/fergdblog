@@ -218,28 +218,33 @@ hr {
   box-shadow: inset 0 2px #f0f0f0;
   height: 0; }
 
+/* line 62, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
+a:hover:not(.button) {
+  transition: color ease 0.2s;
+  color: #FCB941; }
+
 /* you do realize this makes no sense, right?
 don't use this.
 http://www.youtube.com/watch?v=umDr0mPuyQc */
-/* line 66, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
+/* line 69, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
 .container {
   padding: 100px;
   background: #222D3A; }
 
-/* line 71, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
+/* line 74, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
 .markup-wrap {
   display: inline-block; }
-  /* line 74, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
+  /* line 77, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
   .markup-wrap:before {
     content: '\003C';
     color: #2CC990; }
-  /* line 78, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
+  /* line 81, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
   .markup-wrap:after {
     content: '\003E';
     color: #2CC990; }
 
 /*--inspired by the New Yorker--*/
-/* line 84, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
+/* line 87, /Users/christanfergus/Projects/fergdblog/_sass/core/_theme.scss */
 .underlined {
   text-decoration: none;
   background-color: transparent;
@@ -1066,25 +1071,35 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   /* line 3, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-list li {
     margin-bottom: 16px; }
+    /* line 5, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+    .post-list li ul {
+      margin-left: 1em; }
+  /* line 9, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  .post-list .category-title {
+    color: #2C82C9;
+    text-transform: capitalize; }
 
-/* line 7, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 14, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post {
   padding: 0 2em 2em 2em;
   font-size: 16px;
   overflow: auto; }
 
-/* line 12, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 19, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-header {
   margin: 0 0 2em 0;
   padding-top: 8px; }
+  /* line 24, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  .post-header h1 {
+    margin: 0; }
 
-/* line 18, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 28, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-meta {
   font-size: 1em;
   margin: 0;
   color: #2CC990; }
 
-/* line 23, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 33, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-footer {
   margin: 2em 0;
   border-top: 1px solid #C2c2c2;
@@ -1093,53 +1108,53 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   width: 100%;
   overflow: auto; }
 
-/* line 32, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 42, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content a {
   text-decoration: underline; }
-/* line 35, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 45, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content ul, .post-article .post-content ol {
   font-size: 1.3em;
   line-height: 1.4; }
-/* line 39, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 49, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content p > a {
   text-decoration: underline; }
-/* line 42, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 52, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content p + p {
   margin-top: 16px; }
-/* line 45, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 55, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content p + ul,
 .post-article .post-content p + ol {
   margin-top: 16px; }
-/* line 49, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 59, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content img.post-image {
   border: 1px dashed #C2c2c2;
   padding: 0.5em;
   max-width: 100%;
   margin: 1em auto; }
-/* line 55, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 65, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content li a {
   display: inline; }
-/* line 58, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 68, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content figure {
   padding: 2.197em 0; }
-  /* line 60, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 70, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-article .post-content figure img, .post-article .post-content figure code, .post-article .post-content figure pre {
     margin: 0 auto;
     display: block;
     max-width: 100%; }
-  /* line 65, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 75, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-article .post-content figure figcaption {
     font-style: italic;
     color: #727272; }
-  /* line 69, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 79, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-article .post-content figure figcaption {
     margin-top: 0.769em; }
 
-/* line 74, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 84, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .slider {
   margin: 1em 0; }
 
-/* line 77, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 87, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .pulled-blockquote {
   position: fixed;
   top: 50%;
@@ -1153,23 +1168,23 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   z-index: 9999; }
 
 @media all and (max-width: 960px) {
-  /* line 91, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 101, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post {
     padding: 2em; }
 
-  /* line 94, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 104, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     display: none; } }
 @media all and (min-width: 1120px) and (max-width: 1380px) {
-  /* line 100, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 110, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-content {
     max-width: 80%; } }
 @media all and (min-width: 1381px) {
-  /* line 106, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 116, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-content {
     max-width: 760px; } }
 @media all and (min-width: 960px) and (max-width: 1420px) {
-  /* line 112, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 122, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     transform: translate-y(-50%);
     left: 0;
@@ -1180,7 +1195,7 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
     border-left: 7px solid #FCB941;
     border-right: none; } }
 @media all and (min-width: 1421px) and (max-width: 1620px) {
-  /* line 125, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 135, /Users/christanfergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     right: 0;
     max-width: 20%;
@@ -1239,7 +1254,7 @@ aside.side-info {
 @media all and (max-width: 600px) {
   /* line 1, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap {
-    padding: 3em 0.5em; }
+    padding: 8px 0.5em 3em 0.5em; }
     /* line 4, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
     .cv-wrap h1 {
       font-size: 2.197em; }
@@ -1604,25 +1619,24 @@ ul.tech-tech-list {
   float: left;
   width: 33.33%;
   height: 320px;
-  overflow: auto;
   margin-top: 16px; }
-  /* line 10, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
+  /* line 9, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
   .beer-wrap figure img {
     max-height: 70%; }
-  /* line 14, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
+  /* line 13, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
   .beer-wrap figure figcaption {
     padding: 9px; }
 
 @media all and (max-width: 840px) {
-  /* line 23, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
+  /* line 22, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
   .beer-wrap figure {
     width: 50%; } }
 @media all and (max-width: 500px) {
-  /* line 32, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
+  /* line 31, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
   .beer-wrap figure {
     width: 100%;
     text-align: center; }
-    /* line 36, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
+    /* line 35, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_beer.scss */
     .beer-wrap figure img {
       display: inline !important; } }
 /* line 1, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_fresh.scss */
