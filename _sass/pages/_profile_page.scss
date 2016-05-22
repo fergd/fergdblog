@@ -1,10 +1,12 @@
 .profile-aside{
 	position: absolute; 
-	right: 0;
-	bottom: 0;
+	right: 5%;
+	top: 5%;
 	width: 30%;
 	img{
 		max-width: 100%;
+		border-radius: 100%;
+		border: 2px dashed $med-grey;
 	}
 }
 .profile{
