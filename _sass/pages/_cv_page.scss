@@ -82,11 +82,21 @@
 			padding: $ms--2 0;
 		}
 	}
-
+	.cv-spectrum {
+		display: none;
+	}
+	@media screen and (min-width: 640px) {
+		.cv-spectrum {
+			display: block;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
 	.cv-overall-wrapper{
 		@media all and (min-width: 600px){
 			h2{
-				height: $ms-2;
+				min-height: $ms-2;
 			}
 		}
 		.row{
