@@ -1346,76 +1346,86 @@ aside.side-info {
 .cv-wrap .cv-skills li {
   border-bottom: 1px solid #f2f2f2;
   padding: 0.5em 0; }
+/* line 85, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+.cv-wrap .cv-spectrum {
+  display: none; }
+@media screen and (min-width: 640px) {
+  /* line 89, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  .cv-wrap .cv-spectrum {
+    display: block; }
+    /* line 91, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    .cv-wrap .cv-spectrum img {
+      max-width: 100%; } }
 @media all and (min-width: 600px) {
-  /* line 88, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 98, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .cv-overall-wrapper h2 {
-    height: 1.69em; } }
-/* line 93, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    min-height: 1.69em; } }
+/* line 103, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
 .cv-wrap .cv-overall-wrapper .row .overall-skills {
   padding: 0.769em 0; }
   @media all and (min-width: 600px) {
-    /* line 93, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    /* line 103, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
     .cv-wrap .cv-overall-wrapper .row .overall-skills {
       float: left;
       text-align: left; } }
   @media all and (min-width: 1551px) {
-    /* line 93, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    /* line 103, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
     .cv-wrap .cv-overall-wrapper .row .overall-skills {
       width: 25%; }
-      /* line 103, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+      /* line 113, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
       .cv-wrap .cv-overall-wrapper .row .overall-skills h2 {
         height: 3.713em; } }
   @media all and (min-width: 600px) and (max-width: 1550px) {
-    /* line 93, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    /* line 103, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
     .cv-wrap .cv-overall-wrapper .row .overall-skills {
       width: 50%; } }
 @media all and (min-width: 600px) and (max-width: 1550px) {
-  /* line 113, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 123, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .cv-overall-wrapper .row .overall-skills:last-child {
     padding-left: 1em; } }
 @media all and (min-width: 1551px) {
-  /* line 92, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 102, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .cv-overall-wrapper .row {
     width: 50%;
     float: left; }
-    /* line 122, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    /* line 132, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
     .cv-wrap .cv-overall-wrapper .row .overall-skills {
       padding: 0 1.3em;
       width: 50%; }
-    /* line 126, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    /* line 136, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
     .cv-wrap .cv-overall-wrapper .row:first-child.overall-skills:first-child {
       padding-left: 0; }
-    /* line 129, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+    /* line 139, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
     .cv-wrap .cv-overall-wrapper .row:last-child.overall-skills:last-child {
       padding-right: 0; } }
 @media all and (min-width: 600px) and (max-width: 1550px) {
-  /* line 138, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 148, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .row:after, .cv-wrap .row:before {
     content: "";
     display: table;
     clear: both; } }
-/* line 146, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+/* line 156, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
 .cv-wrap .exp-column {
   width: 100%; }
-  /* line 148, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 158, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .exp-column h3 {
     margin-bottom: 0; }
 @media all and (min-width: 600px) {
-  /* line 154, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 164, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .exp-column.span_1_of_2 {
     width: 50%;
     float: left;
     padding: 0 1.3em; }
-  /* line 159, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 169, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .exp-column:nth-child(1).span_1_of_2 {
     padding-left: 0; }
-  /* line 162, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 172, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .exp-column:last-of-type.span_1_of_2 {
     padding-right: 0; }
-  /* line 165, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+  /* line 175, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
   .cv-wrap .exp-column.span_1_of_1 {
     max-width: 50%; } }
-/* line 169, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
+/* line 179, /Users/christanfergus/Projects/fergdblog/_sass/pages/_cv_page.scss */
 .cv-wrap .cv-organization {
   margin-bottom: 2.856em; }
 
@@ -1683,17 +1693,27 @@ ul.tech-tech-list {
   /* line 4, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
   .ws-wrap img {
     display: inline-block;
-    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.63);
     margin-bottom: 20px;
-    max-width: 100%; }
+    max-width: 100%;
+    vertical-align: top;
+    max-width: 800px; }
+  /* line 11, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
+  .ws-wrap > img {
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.63); }
     @media all and (min-width: 430px) {
-      /* line 4, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
-      .ws-wrap img {
+      /* line 11, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
+      .ws-wrap > img {
         max-width: 360px; } }
-  /* line 14, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
+  /* line 17, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
   .ws-wrap p {
     text-align: left;
     margin-bottom: 40px; }
+  /* line 21, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
+  .ws-wrap h2 {
+    text-align: left; }
+  /* line 24, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
+  .ws-wrap figcaption {
+    text-align: left; }
 
 /* line 11, /Users/christanfergus/Projects/fergdblog/_sass/_base.scss */
 body {
