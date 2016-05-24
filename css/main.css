@@ -1713,7 +1713,8 @@ ul.tech-tech-list {
     text-align: left; }
   /* line 24, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_ws.scss */
   .ws-wrap figcaption {
-    text-align: left; }
+    text-align: left;
+    font-size: 1.3em; }
 
 /* line 11, /Users/christanfergus/Projects/fergdblog/_sass/_base.scss */
 body {
