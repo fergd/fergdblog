@@ -1,0 +1,53 @@
+.dtdo-wrap{
+	padding: 16px 0 0 0;
+
+	img{
+		max-width: 100%;
+	}
+	.bullets{
+		li{
+			list-style-position: inside;
+			line-height: 1.4;
+		}
+	}
+	div p{
+		font-size: 16px;
+	}
+	.row{
+		@extend %clearfix;
+		margin: 0 0 12px 0;
+	}
+	
+	figure{
+		margin-bottom: 16px;
+
+		img{
+			max-width: 60%;
+			margin: 0 auto;
+		}
+		figcaption{
+			background: $light-grey;
+			border-left: 5px solid $med-grey;
+			padding: 5px;
+		}
+	}
+	@media screen and (min-width: 600px){
+		.span_1_of_3{
+			width: 33.33%;
+			float: left;
+		}
+		.stats{
+			padding: 0 12px;
+
+			&:first-of-type{
+				padding-left: 0;
+			}
+		}
+		figure{
+			img{
+				max-width: 100%;
+			}
+
+		}
+	}
+}
