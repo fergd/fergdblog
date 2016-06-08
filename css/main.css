@@ -139,7 +139,7 @@ table {
   border-spacing: 0; }
 
 /* line 2, /Users/christanfergus/Projects/fergdblog/_sass/core/_helpers.scss */
-.clearfix:after, .dtdo-wrap .row:after, .page-wrap:after, .clearfix:before, .dtdo-wrap .row:before, .page-wrap:before {
+.clearfix:after, .dtdo-section .row:after, .page-wrap:after, .clearfix:before, .dtdo-section .row:before, .page-wrap:before {
   content: "";
   display: table;
   clear: both; }
@@ -1715,47 +1715,60 @@ ul.tech-tech-list {
     text-align: left;
     font-size: 1.3em; }
 
-/* line 1, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-.dtdo-wrap {
+/* line 2, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+.dtdo-wrap p {
+  font-size: 16px; }
+
+/* line 6, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+.dtdo-section {
   padding: 16px 0 0 0; }
-  /* line 4, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-  .dtdo-wrap img {
+  /* line 9, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+  .dtdo-section img {
     max-width: 100%; }
-  /* line 8, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-  .dtdo-wrap .bullets li {
+  /* line 13, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+  .dtdo-section .bullets li {
     list-style-position: inside;
     line-height: 1.4; }
-  /* line 13, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-  .dtdo-wrap div p {
-    font-size: 16px; }
-  /* line 16, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-  .dtdo-wrap .row {
+  /* line 19, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+  .dtdo-section p + p {
+    margin-top: 1em; }
+  /* line 22, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+  .dtdo-section .row {
     margin: 0 0 12px 0; }
-  /* line 21, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-  .dtdo-wrap figure {
-    margin-bottom: 16px; }
-    /* line 24, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-    .dtdo-wrap figure img {
-      max-width: 60%;
+  /* line 27, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+  .dtdo-section figure {
+    margin-bottom: 16px;
+    padding: 5px; }
+    /* line 31, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+    .dtdo-section figure img {
       margin: 0 auto; }
-    /* line 28, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-    .dtdo-wrap figure figcaption {
+    /* line 34, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+    .dtdo-section figure figcaption {
       background: #f2f2f2;
       border-left: 5px solid #C2c2c2;
-      padding: 5px; }
+      padding: 5px;
+      line-height: 1.4;
+      margin-top: 21px; }
+  @media screen and (min-width: 1400px) {
+    /* line 49, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+    .dtdo-section.nav-section {
+      background: url("http://static.christanfergus.com/images/board.png") top right no-repeat; } }
+  /* line 54, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+  .dtdo-section.nav-section figure img {
+    max-width: 90%; }
   @media screen and (min-width: 600px) {
-    /* line 35, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-    .dtdo-wrap .span_1_of_3 {
+    /* line 60, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+    .dtdo-section .span_1_of_3 {
       width: 33.33%;
       float: left; }
-    /* line 39, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-    .dtdo-wrap .stats {
+    /* line 64, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+    .dtdo-section .stats {
       padding: 0 12px; }
-      /* line 42, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-      .dtdo-wrap .stats:first-of-type {
+      /* line 67, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+      .dtdo-section .stats:first-of-type {
         padding-left: 0; }
-    /* line 47, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
-    .dtdo-wrap figure img {
+    /* line 72, /Users/christanfergus/Projects/fergdblog/_sass/pages/_work_dtdo.scss */
+    .dtdo-section figure img {
       max-width: 100%; } }
 
 /* line 11, /Users/christanfergus/Projects/fergdblog/_sass/_base.scss */
