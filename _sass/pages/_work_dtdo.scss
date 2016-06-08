@@ -1,9 +1,13 @@
 .dtdo-wrap{
+	p{
+		font-size: 16px;
+	}
+}
+.dtdo-section{
 	padding: 16px 0 0 0;
 
 	img{
 		max-width: 100%;
-		padding: 5px;
 	}
 	.bullets{
 		li{
@@ -11,9 +15,7 @@
 			line-height: 1.4;
 		}
 	}
-	div p{
-		font-size: 16px;
-	}
+	
 	p + p {
 		margin-top: 1em;
 	}
@@ -24,15 +26,34 @@
 	
 	figure{
 		margin-bottom: 16px;
+		padding: 5px;
 
 		img{
-			max-width: 60%;
 			margin: 0 auto;
 		}
 		figcaption{
 			background: $light-grey;
 			border-left: 5px solid $med-grey;
 			padding: 5px;
+			line-height: 1.4;
+			margin-top: 21px;
+		}
+	}
+	// &.prod-card{
+	// 	figure{
+	// 		img{
+	// 			max-width: 60%;
+	// 		}
+	// 	}
+	// }
+	&.nav-section{
+		@media screen and (min-width: 1400px){
+			background: url("http://static.christanfergus.com/images/board.png") top right no-repeat;
+		}
+		figure{
+			img{
+				max-width: 90%;
+			}
 		}
 	}
 	@media screen and (min-width: 600px){
