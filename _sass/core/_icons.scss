@@ -109,3 +109,8 @@ Specific Icons
 .icon{
     display: inline-block;
 }
+
+.icon-ic_forward_24px {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20fill%3D%22%23FFFFFF%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M12%208V4l8%208-8%208v-4H4V8z%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22/%3E%0A%3C/svg%3E');
+	background-repeat: no-repeat;
+}

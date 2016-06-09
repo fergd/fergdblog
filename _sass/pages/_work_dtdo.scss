@@ -1,9 +1,12 @@
-.dtdo-wrap{
+.work-info-wrap{
 	p{
 		font-size: 16px;
 	}
+	.underlined{
+		@include underlined-colors($uc-set-mask: white, $uc-set-underline: $black-grey);
+	}
 }
-.dtdo-section{
+.work-section{
 	padding: 16px 0 0 0;
 
 	img{
@@ -73,6 +76,11 @@
 				max-width: 100%;
 			}
 
+		}
+		&.weatherstead .userflows{
+			img{
+				max-width: 50%;
+			}
 		}
 	}
 }
