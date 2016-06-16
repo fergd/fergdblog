@@ -5,9 +5,9 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Jun 2016 17:40:28 -0600</pubDate>
-    <lastBuildDate>Thu, 09 Jun 2016 17:40:28 -0600</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Thu, 16 Jun 2016 12:19:05 -0600</pubDate>
+    <lastBuildDate>Thu, 16 Jun 2016 12:19:05 -0600</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Product Card Accessibility</title>
@@ -146,9 +146,9 @@ width: 1px;&lt;/code&gt;&lt;/pre&gt;
         <category>interface</category>
         
         
-        <category>web &amp; app development</category>
+        <category>Web &amp; App Development</category>
         
-        <category>case studies</category>
+        <category>Case Studies</category>
         
       </item>
     
@@ -208,7 +208,7 @@ width: 1px;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;example-grunfilejs&quot;&gt;Example Grunfile.js&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;/*global module:false*/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*global module:false*/
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -238,6 +238,7 @@ module.exports = function(grunt) {
   grunt.registerTask(&#39;default&#39;, [&#39;respimg&#39;]);
 };
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -264,7 +265,7 @@ module.exports = function(grunt) {
         <category>imagemagick</category>
         
         
-        <category>web &amp; app development</category>
+        <category>Web &amp; App Development</category>
         
       </item>
     
@@ -455,7 +456,7 @@ module.exports = function(grunt) {
         <guid isPermaLink="true">http://christanfergus.com/diary-of-a-meteor-app-projects</guid>
         
         
-        <category>web &amp; app development</category>
+        <category>Web &amp; App Development</category>
         
       </item>
     
@@ -474,7 +475,7 @@ module.exports = function(grunt) {
 &lt;p&gt;In addition, I took two technical writing classes to craft and learn how to clearly communicate. In all this, I took one whole HTML class where I wrote the markup in Windows 98’s Notepad and did all my layout in tables and frames (this was before Zeldman’s seminole &lt;a href=&quot;http://en.wikipedia.org/wiki/Designing_with_Web_Standards&quot;&gt;Designing with Web Standards&lt;/a&gt;).&lt;/p&gt;
 
 &lt;h2 id=&quot;get-real&quot;&gt;Get Real&lt;/h2&gt;
-&lt;p&gt;What am I saying? I suppose I’m saying that I see lots of stuff being put out there by talented designers, and the un-alike, that lacks craft. It may look good on the surface, but a slightly closer look shows that stuff just isn’t quite right. A physical example of this is illustrated so well by the Chinese knock-off industry. Devices, Cars… &lt;br /&gt;
+&lt;p&gt;What am I saying? I suppose I’m saying that I see lots of stuff being put out there by talented designers, and the un-alike, that lacks craft. It may look good on the surface, but a slightly closer look shows that stuff just isn’t quite right. A physical example of this is illustrated so well by the Chinese knock-off industry. Devices, Cars… 
 &lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/f/fa/Mini_Coopi%E2%84%A2.jpg&quot; alt=&quot;Chinese version of the Mini&quot; class=&quot;post-image&quot; /&gt; What about that massive image at the top of a website with a big fat arrow pointing down—really? This is good design?&lt;/p&gt;
 
 &lt;p&gt;Lest I be the first to cast a stone, be aware I’m pointing some fingers right back at myself on this one. It’s precisely because it’s so easy to crank stuff out that I, too, hop on the bandwagon. With little concern for architecture or standards, I can churn out something pretty powerful, pretty quickly. Yes, there is a benefit to that. If you approach something in a lean manor, you get something out quickly and iterate the shit out of it. If you have the discipline to do so, I say continue on, good sir/madame, and we shall clean and refactor as we go. But do we? When we’re doing our own thing, do we finely craft our architecture? Do we take the time to truly understand our users and craft an experience to their needs? Do we spend time on the finer points of visual design—all for the hope that the user never notices our finely adjusted, viewport-width-appropriate line-height, but subconsciously has an easier time navigating and finding the information they need? I think we should—at least more than we currently do.&lt;/p&gt;
@@ -484,7 +485,7 @@ module.exports = function(grunt) {
 &lt;p&gt;I’m not going to craft an experimental app I’m working on that no one will ever see. I am, however, going to craft anything anyone other than my wife is going to see. I owe that to you, the user. If you dein me worthy enough to show you anything I have worked on, it’s the least I can do to craft, tailor, and make your experience in my design as useful and lovely as possible.&lt;/p&gt;
 
 &lt;h2 id=&quot;get-crafty&quot;&gt;Get Crafty&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/img/post-images/crafted-compressor.jpg&quot; alt=&quot;Some stuff on a table that looks kinda crafty&quot; class=&quot;post-image&quot; /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&quot;/img/post-images/crafted-compressor.jpg&quot; alt=&quot;Some stuff on a table that looks kinda crafty&quot; class=&quot;post-image&quot; /&gt;
 We shouldn’t stop everything, shut out the world, and spend the next ten years becoming the very best in, well, whatever. I’m saying we should be conscious of an area we tend to slack off in, and work on that. Slowly ratchet up your discipline in color theory or cleaner, more performant JavaScript. Take the time to read some books on design theory and practice particular techniques. If you’ve never had formal training, take it upon yourself to improve the fundamentals. If you have had formal training, revisit the disciplines and techniques you learned all those years ago.&lt;/p&gt;
 
 &lt;p&gt;With just a little extra effort, we can keep above the riff-raff and distinguish ourselves as attractive, crafty professionals.&lt;/p&gt;
@@ -494,7 +495,7 @@ We shouldn’t stop everything, shut out the world, and spend the next ten years
         <guid isPermaLink="true">http://christanfergus.com/reviving-craftsmanship/</guid>
         
         
-        <category>ux design</category>
+        <category>UX Design</category>
         
       </item>
     
@@ -589,7 +590,7 @@ We shouldn’t stop everything, shut out the world, and spend the next ten years
         <guid isPermaLink="true">http://christanfergus.com/door-to-door-organics-recipe-site-case-study</guid>
         
         
-        <category>case studies</category>
+        <category>Case Studies</category>
         
       </item>
     
