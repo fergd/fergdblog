@@ -17,4 +17,4 @@ sass:
  output_style: :compressed
  line_comments: true
 
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+# exclude: ["node_modules", "gulpfile.js", "package.json"]
