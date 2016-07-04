@@ -1223,16 +1223,17 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   float: left;
   padding: 0 2em 2em 2em;
   font-size: 16px;
-  overflow: auto; }
+  overflow: auto;
+  max-width: 1200px; }
 
-/* line 9, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+/* line 10, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
 .work-header {
   padding-top: 8px; }
-  /* line 14, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+  /* line 15, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
   .work-header h1 {
     margin: 0; }
 
-/* line 19, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+/* line 20, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
 .work-footer {
   margin: 2em 0;
   border-top: 1px solid #C2c2c2;
@@ -1241,30 +1242,30 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   width: 100%;
   overflow: auto; }
 
-/* line 27, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+/* line 28, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
 .example-work-wrap {
   width: 80%; }
 
-/* line 32, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+/* line 33, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
 aside.side-info {
   width: 20%;
   float: right;
   border-left: 1px solid #2CC990;
   padding-left: 9px; }
-  /* line 38, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+  /* line 39, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
   aside.side-info h3 {
     margin-bottom: 12px; }
 
 @media all and (max-width: 960px) {
-  /* line 44, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+  /* line 45, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
   .work {
     padding: 2em; } }
 @media all and (max-width: 1330px) {
-  /* line 50, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+  /* line 51, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
   .example-work-wrap {
     width: 100%; }
 
-  /* line 54, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
+  /* line 55, /Users/Fergus/Projects/fergdblog/_sass/templates/_work_template.scss */
   aside.side-info {
     width: 100%;
     float: left; } }
