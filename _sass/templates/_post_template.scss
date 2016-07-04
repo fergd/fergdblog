@@ -43,8 +43,9 @@
 		text-decoration: underline;
 	}
 	ul, ol{
-		font-size: $ms-1;
 		line-height: 1.4;
+		list-style-position: inside;
+		font-size: 21px;
 	}
 	p > a{
 		text-decoration: underline;
@@ -55,6 +56,14 @@
 	p + ul,
 	p + ol{
 		margin-top: 16px;
+	}
+	ul li > ul{
+		padding-left: 1em;
+		li{
+			font-size: inherit;
+			list-style-type: inherit;
+			list-style-type: inherit;
+		}
 	}
 	img.post-image{
 		border: 1px dashed $med-grey;

@@ -9,6 +9,7 @@ github_username:  fergd
 linkedin_username: christanfergus
 cdn_image: "http://static.christanfergus.com/images/"
 cdn_root: "http://static.christanfergus.com/"
+future: true
 # Build settings
 kramdown:
   input: GFM

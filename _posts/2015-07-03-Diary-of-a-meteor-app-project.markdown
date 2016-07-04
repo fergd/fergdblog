@@ -12,6 +12,9 @@ published: true
 
 This post is more of a case-study and chronicle of my experience with Meteor, and less of a how-to. The nice thing about Meteor is that the community is quite large and there are tens if not hundreds of tutorials out there. I thought it might be good to describe my experience more than the technical side in hope that it can help paint a broader picture of the Meteor experience. 
 
+![Overviews of using the app](http://static.christanfergus.com/images/quick-car-gif.gif){: .post-image}
+
+
 ## Why Make An App? ##
 
 I am actually very anti-materialism. I like to live my life as simply as possible. The accumulation of stuff is something that disgusts me. I'm a complete hypocrite, however. I collect worthless, pointless, Hot Wheels cars. I love them because I love cars, I like toys, and I know it's most likely as close as I'll ever get to owning an [Aston Martin Vantage](http://static.christanfergus.com/images/diecast/IMG_20150630_CFH15.JPG), or better yet, a [four cylinder Radio Flyer wagon](http://static.christanfergus.com/images/diecast/DSC00760.jpg).
@@ -134,8 +137,6 @@ At the time of writing this, I have successfully achieved MVP status. Whoot! Tha
 But this is only the first step. I’ve really gotten a taste for the project, and really enjoy working in the Meteor ecosystem. While searching, data entry and document retrieval are all working, I will be integrating the app with camera phones and bolstering my accounts and security to create an app that I ultimately want to share. 
 
 There’s a lot more learning and coding to do, but I’m game and I’ll continue working in the fantastic Meteor platform. 
-
-![Overviews of using the app](http://static.christanfergus.com/images/quick-car-gif.gif){: .post-image}
 
 # Links #
  
