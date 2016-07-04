@@ -1121,48 +1121,57 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   text-decoration: underline; }
 /* line 45, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content ul, .post-article .post-content ol {
-  font-size: 1.3em;
-  line-height: 1.4; }
-/* line 49, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  line-height: 1.4;
+  list-style-position: inside;
+  font-size: 21px; }
+/* line 50, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content p > a {
   text-decoration: underline; }
-/* line 52, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 53, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content p + p {
   margin-top: 16px; }
-/* line 55, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 56, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content p + ul,
 .post-article .post-content p + ol {
   margin-top: 16px; }
-/* line 59, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 60, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+.post-article .post-content ul li > ul {
+  padding-left: 1em; }
+  /* line 62, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  .post-article .post-content ul li > ul li {
+    font-size: inherit;
+    list-style-type: inherit;
+    list-style-type: inherit; }
+/* line 68, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content img.post-image {
   border: 1px dashed #C2c2c2;
   padding: 0.5em;
   max-width: 100%;
   margin: 1em auto; }
-/* line 65, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 74, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content li a {
   display: inline; }
-/* line 68, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 77, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .post-article .post-content figure {
   padding: 2.197em 0; }
-  /* line 70, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 79, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-article .post-content figure img, .post-article .post-content figure code, .post-article .post-content figure pre {
     margin: 0 auto;
     display: block;
     max-width: 100%; }
-  /* line 75, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 84, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-article .post-content figure figcaption {
     font-style: italic;
     color: #727272; }
-  /* line 79, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 88, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-article .post-content figure figcaption {
     margin-top: 0.769em; }
 
-/* line 84, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 93, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .slider {
   margin: 1em 0; }
 
-/* line 87, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+/* line 96, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
 .pulled-blockquote {
   position: fixed;
   top: 50%;
@@ -1176,23 +1185,23 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   z-index: 9999; }
 
 @media all and (max-width: 960px) {
-  /* line 101, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 110, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post {
     padding: 2em; }
 
-  /* line 104, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 113, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     display: none; } }
 @media all and (min-width: 1120px) and (max-width: 1380px) {
-  /* line 110, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 119, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-content {
     max-width: 80%; } }
 @media all and (min-width: 1381px) {
-  /* line 116, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 125, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-content {
     max-width: 760px; } }
 @media all and (min-width: 960px) and (max-width: 1420px) {
-  /* line 122, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 131, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     transform: translate-y(-50%);
     left: 0;
@@ -1203,7 +1212,7 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
     border-left: 7px solid #FCB941;
     border-right: none; } }
 @media all and (min-width: 1421px) and (max-width: 1620px) {
-  /* line 135, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 144, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     right: 0;
     max-width: 20%;
