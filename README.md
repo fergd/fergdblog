@@ -6,6 +6,7 @@ The website of Christan Fergus, UI Developer.
 - Ruby Gems
 - Node/NPM
 - Gulp
+- Cloudflare for SSL & CDN
 
 ## Install Jekyll
 `$ gem install jekyll`

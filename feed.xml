@@ -5,9 +5,9 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Jul 2016 16:44:52 -0600</pubDate>
-    <lastBuildDate>Mon, 04 Jul 2016 16:44:52 -0600</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <pubDate>Wed, 19 Oct 2016 21:11:29 -0600</pubDate>
+    <lastBuildDate>Wed, 19 Oct 2016 21:11:29 -0600</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Documenting Your Professional Life</title>
@@ -167,7 +167,7 @@ You can see that no one had the same process, but all were effective in their ow
 &lt;h2&gt;Challenge&lt;/h2&gt;
 &lt;p&gt;The current design was perfectly fine for most of our customers. The product cards had an image, basic info, and gave the customer the ability to purchase the product directly from the card.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;http://static.christanfergus.com/images/article-prod-card-accessibility/pa-original.jpg&quot; alt=&quot;An example card display that was introduced in 2013&quot;&gt;
+	&lt;img src=&quot;img/article-prod-card-accessibility/pa-original.jpg&quot; alt=&quot;An example card display that was introduced in 2013&quot;&gt;
 	&lt;figcaption&gt;Fig. 1 - The product card display that was introduced in early 2013 and has been largely unchanged since.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -184,7 +184,7 @@ You can see that no one had the same process, but all were effective in their ow
 	&lt;p&gt;As I have come to learn that as with many things, good accessibility is a journey, not a destination.&lt;/p&gt;
 &lt;/header&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;http://static.christanfergus.com/images/article-prod-card-accessibility/pa-updated.jpg&quot; alt=&quot;The new card has an updated, more spacious design with less clutter&quot;&gt;
+	&lt;img src=&quot;img/article-prod-card-accessibility/pa-updated.jpg&quot; alt=&quot;The new card has an updated, more spacious design with less clutter&quot;&gt;
 	&lt;figcaption&gt;Fig. 3 - The updated design gives more space to the UI, but also adds some additional, accessible benefits.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;h3&gt;All the &quot;Hiddens&quot; &amp;amp; Shortcuts&lt;/h3&gt;
@@ -221,7 +221,7 @@ You can see that no one had the same process, but all were effective in their ow
 &lt;figcaption&gt;Fig. 5 - The new markup tree&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;http://static.christanfergus.com/images/article-prod-card-accessibility/pa-hidden.jpg&quot; alt=&quot;Normally hidden links are displayed to show how they are present on the card&#39;s markup&quot;&gt;
+	&lt;img src=&quot;img/article-prod-card-accessibility/pa-hidden.jpg&quot; alt=&quot;Normally hidden links are displayed to show how they are present on the card's markup&quot;&gt;
 	&lt;figcaption&gt;Fig 6 - Example of links that are hidden from the UI (normally) but available to screen readers&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;	
@@ -370,19 +370,19 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           // Be sure to get your own paths correct
-          cwd: &#39;images/source/&#39;,
-          src: [&#39;**.{gif,jpg,png,svg}&#39;],
+          cwd: 'images/source/',
+          src: ['**.{gif,jpg,png,svg}'],
           // Be sure to get your own paths correct
-          dest: &#39;images/output/&#39;
+          dest: 'images/output/'
         }]
       }
     }
   });
 
-  grunt.loadNpmTasks(&#39;grunt-respimg&#39;); 
+  grunt.loadNpmTasks('grunt-respimg'); 
 
   // Default task.
-  grunt.registerTask(&#39;default&#39;, [&#39;respimg&#39;]);
+  grunt.registerTask('default', ['respimg']);
 };
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -422,11 +422,11 @@ module.exports = function(grunt) {
 
 &lt;p&gt;This post is more of a case-study and chronicle of my experience with Meteor, and less of a how-to. The nice thing about Meteor is that the community is quite large and there are tens if not hundreds of tutorials out there. I thought it might be good to describe my experience more than the technical side in hope that it can help paint a broader picture of the Meteor experience.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://static.christanfergus.com/images/quick-car-gif.gif&quot; alt=&quot;Overviews of using the app&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/quick-car-gif.gif&quot; alt=&quot;Overviews of using the app&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;why-make-an-app&quot;&gt;Why Make An App?&lt;/h2&gt;
 
-&lt;p&gt;I am actually very anti-materialism. I like to live my life as simply as possible. The accumulation of stuff is something that disgusts me. I’m a complete hypocrite, however. I collect worthless, pointless, Hot Wheels cars. I love them because I love cars, I like toys, and I know it’s most likely as close as I’ll ever get to owning an &lt;a href=&quot;http://static.christanfergus.com/images/diecast/IMG_20150630_CFH15.JPG&quot;&gt;Aston Martin Vantage&lt;/a&gt;, or better yet, a &lt;a href=&quot;http://static.christanfergus.com/images/diecast/DSC00760.jpg&quot;&gt;four cylinder Radio Flyer wagon&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am actually very anti-materialism. I like to live my life as simply as possible. The accumulation of stuff is something that disgusts me. I’m a complete hypocrite, however. I collect worthless, pointless, Hot Wheels cars. I love them because I love cars, I like toys, and I know it’s most likely as close as I’ll ever get to owning an &lt;a href=&quot;img/diecast/IMG_20150630_CFH15.JPG&quot;&gt;Aston Martin Vantage&lt;/a&gt;, or better yet, a &lt;a href=&quot;img/diecast/DSC00760.jpg&quot;&gt;four cylinder Radio Flyer wagon&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Whenever I’m out and about, I always check a store’s toy section and poke around to see if there is a car that piques my interest. I have hundreds of cars, which means that’s a lot to remember. I have purchased a lot of duplicate cars because I often forget which cars I already have. It became clear I needed a way to keep track of all this nonsense.&lt;/p&gt;
 
@@ -551,7 +551,7 @@ module.exports = function(grunt) {
 
 &lt;p&gt;At the time of writing this, I have successfully achieved MVP status. Whoot! That means my car collection is accessible to me wherever I happen across Hot Wheels cars and I’ve been very pleased with the performance of the app. The lovely nature of the easy search plug in allows me to begin typing the car code and instantly I can see if there are any matches. In other words, the app is doing exactly what I want it to do.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://static.christanfergus.com/images/quick-merc-find-gif.gif&quot; alt=&quot;Overviews of using the app&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/quick-merc-find-gif.gif&quot; alt=&quot;Overviews of using the app&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;But this is only the first step. I’ve really gotten a taste for the project, and really enjoy working in the Meteor ecosystem. While searching, data entry and document retrieval are all working, I will be integrating the app with camera phones and bolstering my accounts and security to create an app that I ultimately want to share.&lt;/p&gt;
 
