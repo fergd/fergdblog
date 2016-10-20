@@ -12,12 +12,12 @@ published: true
 
 This post is more of a case-study and chronicle of my experience with Meteor, and less of a how-to. The nice thing about Meteor is that the community is quite large and there are tens if not hundreds of tutorials out there. I thought it might be good to describe my experience more than the technical side in hope that it can help paint a broader picture of the Meteor experience. 
 
-![Overviews of using the app](http://static.christanfergus.com/images/quick-car-gif.gif){: .post-image}
+![Overviews of using the app]({{ site.cdn_image }}quick-car-gif.gif){: .post-image}
 
 
 ## Why Make An App? ##
 
-I am actually very anti-materialism. I like to live my life as simply as possible. The accumulation of stuff is something that disgusts me. I'm a complete hypocrite, however. I collect worthless, pointless, Hot Wheels cars. I love them because I love cars, I like toys, and I know it's most likely as close as I'll ever get to owning an [Aston Martin Vantage](http://static.christanfergus.com/images/diecast/IMG_20150630_CFH15.JPG), or better yet, a [four cylinder Radio Flyer wagon](http://static.christanfergus.com/images/diecast/DSC00760.jpg).
+I am actually very anti-materialism. I like to live my life as simply as possible. The accumulation of stuff is something that disgusts me. I'm a complete hypocrite, however. I collect worthless, pointless, Hot Wheels cars. I love them because I love cars, I like toys, and I know it's most likely as close as I'll ever get to owning an [Aston Martin Vantage]({{ site.cdn_image }}diecast/IMG_20150630_CFH15.JPG), or better yet, a [four cylinder Radio Flyer wagon]({{ site.cdn_image }}diecast/DSC00760.jpg).
 
 Whenever I’m out and about, I always check a store’s toy section and poke around to see if there is a car that piques my interest. I have hundreds of cars, which means that’s a lot to remember. I have purchased a lot of duplicate cars because I often forget which cars I already have. It became clear I needed a way to keep track of all this nonsense.
 
@@ -132,7 +132,7 @@ I had never worked with an external database before this project and have to say
 
 At the time of writing this, I have successfully achieved MVP status. Whoot! That means my car collection is accessible to me wherever I happen across Hot Wheels cars and I’ve been very pleased with the performance of the app. The lovely nature of the easy search plug in allows me to begin typing the car code and instantly I can see if there are any matches. In other words, the app is doing exactly what I want it to do. 
 
-![Overviews of using the app](http://static.christanfergus.com/images/quick-merc-find-gif.gif){: .post-image}
+![Overviews of using the app]({{ site.cdn_image }}quick-merc-find-gif.gif){: .post-image}
 
 But this is only the first step. I’ve really gotten a taste for the project, and really enjoy working in the Meteor ecosystem. While searching, data entry and document retrieval are all working, I will be integrating the app with camera phones and bolstering my accounts and security to create an app that I ultimately want to share. 
 

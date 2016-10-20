@@ -2,13 +2,13 @@
 title: Christan Fergus UX Designer & Developer
 email: christan.fergus@gmail.com
 description: > # The work, writings, and profile of Christan Fergus, a web designer.
-# baseurl: "/fergdblog" # the subpath of your site, e.g. /blog/
+# baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://christanfergus.com" # the base hostname & protocol for your site
 twitter_username: christanfergus
 github_username:  fergd
 linkedin_username: christanfergus
-cdn_image: "http://static.christanfergus.com/images/"
-cdn_root: "http://static.christanfergus.com/"
+cdn_image: "img/"
+cdn_root: "http://christanfergus.com/"
 future: true
 # Build settings
 kramdown:
