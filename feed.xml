@@ -5,9 +5,190 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Oct 2016 21:11:29 -0600</pubDate>
-    <lastBuildDate>Wed, 19 Oct 2016 21:11:29 -0600</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <pubDate>Sat, 31 Dec 2016 14:42:07 -0700</pubDate>
+    <lastBuildDate>Sat, 31 Dec 2016 14:42:07 -0700</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>RetroPi Setup</title>
+        <description>&lt;h2 id=&quot;nes-classic-vs-retropi&quot;&gt;NES Classic Vs. RetroPi&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg&quot; style=&quot;max-width: 100%;&quot; alt=&quot;Logos of NES and retropi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Like many of my fellow humans, I was excited when I heard Nintendo were putting out a purpose-built NES pre-packed with 30 games. The price was right, too. However, Nintendo only released a small amount to market, making the chances of getting one slim-to-none. Even worse, the scalpers were turning around and selling the things for insane amounts of money. I don’t have time or patience for that shit, so I decided to take matters into my own hands.&lt;/p&gt;
+
+&lt;p&gt;I have wanted to mess around with a Raspberry Pi for some time. This project seemed like the perfect excuse to get my hands on one. With the development of the robust RetroPie platform, it was now extremely easy to set up a retro gaming system. The more I thought about it, the better this option sounded than the original NES Classic. So, here’s what I did.&lt;/p&gt;
+
+&lt;p&gt;Note: I am using a Mac to format and grab ROMS. The process may vary for Windows and Linux users. If you’re on Linux, I’m pretty sure you know what’s up anyway.&lt;/p&gt;
+
+&lt;h2 id=&quot;pros--cons&quot;&gt;Pros &amp;amp; Cons&lt;/h2&gt;
+
+&lt;h3 id=&quot;retropi-pros&quot;&gt;RetroPi Pros&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cheaper than NES classic (if you already have a supported controller)&lt;/li&gt;
+  &lt;li&gt;You get to geek out&lt;/li&gt;
+  &lt;li&gt;There is an enormous amount of platforms and games at your disposal&lt;/li&gt;
+  &lt;li&gt;You can use a wide variety of controllers&lt;/li&gt;
+  &lt;li&gt;The system is highly configurable&lt;/li&gt;
+  &lt;li&gt;Large support community&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;retropi-cons&quot;&gt;RetroPi Cons&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You have to work to set it up, whereas the NES Classic is plug-n-play&lt;/li&gt;
+  &lt;li&gt;It’s possible you can encounter an issue that is not covered in documentation&lt;/li&gt;
+  &lt;li&gt;You have to seek out ROMS and manually install them which is tedious&lt;/li&gt;
+  &lt;li&gt;It doesn’t lend itself to intuitive use for the family room. On/off is plugging and unplugging the unit, and the OS makes it easy for my five-year-old to poke around and break stuff.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;kit&quot;&gt;Kit&lt;/h2&gt;
+
+&lt;h3 id=&quot;bare-minimum-required&quot;&gt;Bare-minimum Required&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Raspberry Pi 3&lt;/li&gt;
+  &lt;li&gt;Power supply&lt;/li&gt;
+  &lt;li&gt;Monitor&lt;/li&gt;
+  &lt;li&gt;USB keyboard&lt;/li&gt;
+  &lt;li&gt;SD card&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;my-kit&quot;&gt;My Kit&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Raspberry Pi 3&lt;/li&gt;
+  &lt;li&gt;1 Controller&lt;/li&gt;
+  &lt;li&gt;Power supply&lt;/li&gt;
+  &lt;li&gt;Case&lt;/li&gt;
+  &lt;li&gt;Heat syncs&lt;/li&gt;
+  &lt;li&gt;SD card&lt;/li&gt;
+  &lt;li&gt;USB Keyboard&lt;/li&gt;
+  &lt;li&gt;Monitor&lt;/li&gt;
+  &lt;li&gt;HDMI cable&lt;/li&gt;
+  &lt;li&gt;USB flash drive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-i-purchased&quot;&gt;What I Purchased&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/fergd/image/upload/v1483219754/kit.jpg&quot; class=&quot;post-image&quot; alt=&quot;All the boxes of the pieces of raspberry pi in prep for retropie&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;raspberry-pi-kit---4999&quot;&gt;Raspberry Pi Kit - $49.99&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/B01C6EQNNK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You could just get the board, but honestly, for just a few bucks more you can get a case, heat syncs, and a power supply. I was too lazy to go and see if I had the correct power supply laying about, and I knew that if this thing was going to be in the family space, it would need some sort of protection.&lt;/p&gt;
+
+&lt;h4 id=&quot;sd-card---16gb---699&quot;&gt;SD Card - 16gb - $6.99&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/B010Q57SEE/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Your SD card needs to be dedicated to the RetroPi, so I didn’t use any I already had. I’m also not planning on loading up every game known to man, so 16gb seemed appropriate. I’d say at least get a 4gb.&lt;/p&gt;
+
+&lt;h4 id=&quot;grand-total---5757&quot;&gt;Grand Total - $57.57&lt;/h4&gt;
+
+&lt;p&gt;The NES classic is $59.99&lt;/p&gt;
+
+&lt;p&gt;That’s it, that’s all I purchased. Of course, you can go as bare-bones or as far as you like. But, seeing that I have monitors, controllers, etc., that’s all that is necessary.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation-setup-process&quot;&gt;Installation, Setup Process&lt;/h2&gt;
+
+&lt;h3 id=&quot;time-elapsed-35-minutes&quot;&gt;Time Elapsed: 35 minutes&lt;/h3&gt;
+
+&lt;p&gt;It would have even been shorter, but I had to help my 2 year old go to the potty and hunt down an HDMI cable to hook up to a monitor.&lt;/p&gt;
+
+&lt;h3 id=&quot;download-the-software-image-file&quot;&gt;Download the Software Image File&lt;/h3&gt;
+
+&lt;p&gt;Easy to do, get it from the RetroPi site. I’m using the platform for Raspberry Pi 2/3. Link provided below in resources.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-an-extractionsetup-app&quot;&gt;Use an Extraction/Setup App&lt;/h3&gt;
+
+&lt;p&gt;I use a Mac, so I used RPI-sd Card Builder. It felt a tad shady, but everything seems to be okay. Nothing exploded. I have included the link in the resources section.&lt;/p&gt;
+
+&lt;p&gt;Make sure your SD card is plugged in. Launch the app and follow the steps. Choose the card as your destination, then be patient. There’s no UI to tell you progress. Trust that something is happening. You’ll get a prompt when it’s done.&lt;/p&gt;
+
+&lt;h3 id=&quot;plug-it-in&quot;&gt;Plug it in&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stick the SD card in the Pi&lt;/li&gt;
+  &lt;li&gt;Hook up a keyboard and controller (I did PS3 controller) to USB&lt;/li&gt;
+  &lt;li&gt;Plug in the power&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once the power is plugged in, the Pi will begin its initial boot-up process. It does not take very long, and since you have loaded up the SD card with RetroPi, it will automatically start.&lt;/p&gt;
+
+&lt;p&gt;DONE. It was that fast. So easy. However, you don’t have games yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/fergd/image/upload/v1483219189/setup.jpg&quot; alt=&quot;An example of the setup: pi, controllers, monitor&quot; style=&quot;max-height: 100%;&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;games&quot;&gt;Games&lt;/h3&gt;
+
+&lt;p&gt;The RetroPi isn’t much fun without games, so you have to get some. Take a look at the video links I provide below, and follow their detailed instructions.&lt;/p&gt;
+
+&lt;p&gt;In short, you need to format a USB stick to FAT-32, create a folder called “retropie” in the root, then plug the stick into your Raspberry Pi. It will set up everything it needs inside the retropie directory, prepping it for you to load up ROMS.&lt;/p&gt;
+
+&lt;p&gt;When you have your ROMS, load them into the appropriate folders in your prepped USB stick, then place it back in your Pi.  Allow the games to transfer to the SD card, reboot, and you are ready to go.&lt;/p&gt;
+
+&lt;p&gt;Again, watch the videos for important tips and processes for doing this.&lt;/p&gt;
+
+&lt;h2 id=&quot;tips&quot;&gt;Tips&lt;/h2&gt;
+
+&lt;h3 id=&quot;warning&quot;&gt;Warning!&lt;/h3&gt;
+
+&lt;p&gt;When prepping the RetroPi image, make sure you first extract your img.gz file with the Mac file system so that you are left with an &lt;em&gt;.img&lt;/em&gt; file. It will not work if you still have the .gz extension still there. I did not do that the first time around, and it bricked the SD card. I had to erase it and start over.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-exit-a-game&quot;&gt;How to exit a game&lt;/h3&gt;
+
+&lt;p&gt;Press Start and Select at the same time. My goodness this took me forever to figure out.&lt;/p&gt;
+
+&lt;h3 id=&quot;your-retropi-installation-will-probably-not-look-like-the-videos-online&quot;&gt;Your RetroPi installation will probably not look like the videos online&lt;/h3&gt;
+
+&lt;p&gt;After installation, the only screen available to me was the setup utility. When I looked at the videos, people had games and platforms automatically available to try. I really thought I had a bug. Everything was fine, however.&lt;/p&gt;
+
+&lt;p&gt;It turns out RetroPi is now being shipped completely stripped of platforms/games to make the initial file-size for download smaller. Just get some games loaded up and you’ll be off to the races.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;h3 id=&quot;guides-configurations--documentation&quot;&gt;Guides, Configurations, &amp;amp; Documentation&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Official site &amp;amp; download links: &lt;a href=&quot;https://retropie.org.uk/download/&quot;&gt;RetroPi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Github site: &lt;a href=&quot;https://github.com/RetroPie&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Lifehacker how-to: &lt;a href=&quot;http://lifehacker.com/how-to-turn-your-raspberry-pi-into-a-retro-game-console-498561192&quot;&gt;Lifehacker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;SD card setup app for Macs: &lt;a href=&quot;https://alltheware.wordpress.com/2012/12/11/easiest-way-sd-card-setup/&quot;&gt;SD Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Setup guide for a PS3 controller user: &lt;a href=&quot;https://www.youtube.com/watch?v=jLtlNMjtLt8&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Another detailed vid guide: &lt;a href=&quot;https://www.youtube.com/watch?v=xvYX_7iRRI0&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Controller configs: &lt;a href=&quot;https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration&quot;&gt;Configs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;products-i-purchased&quot;&gt;Products I Purchased&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/B01C6EQNNK/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;Raspberry Pi board&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/B010Q57SEE/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;SD card&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;roms&quot;&gt;ROMS&lt;/h3&gt;
+
+&lt;p&gt;I am not at all up on how to get ROMS and all the in’s and out’s. It took me a while to figure out what’s up. I also don’t torrent, which is apparently how most people do it. I found a few sites, but this one seems to have the best quality. I say best quality, because it’s a bit trial and error getting a good emulation, and I did download some pretty weird, buggy shit.
+&lt;a href=&quot;http://www.emuparadise.me/&quot;&gt;EMU Paradise&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;continuing-the-experience&quot;&gt;Continuing the experience&lt;/h2&gt;
+
+&lt;p&gt;So that was my overall process. There’s nothing in this article that hasn’t been outlined elsewhere, but hey, it’s a chronicle of my experience. The most frustrating part of the entire process was getting the SD card out of its packaging. Well, that and trying to figure out why I didn’t have any initial games to play. Okay, and being completely confounded on how to exit a game. That said, if you’re willing to put in a bit of effort, I think the RetroPi route is a far better one than NES Classic.&lt;/p&gt;
+
+&lt;p&gt;My next steps are to get more detailed in my configs. I plan on getting my wireless controller set up, to implement screen filters so the graphics look more like they “should” (scan lines, etc.), and ultimately set up the ability to get ROMS wirelessly directly to the Pi. All in good time, though, because I have some Star Fox to play.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Jun 2016 00:00:00 -0600</pubDate>
+        <link>http://christanfergus.com/RetroPi-Setup</link>
+        <guid isPermaLink="true">http://christanfergus.com/RetroPi-Setup</guid>
+        
+        <category>retropi,</category>
+        
+        <category>development,</category>
+        
+        <category>gaming</category>
+        
+        
+        <category>Misc</category>
+        
+      </item>
     
       <item>
         <title>Documenting Your Professional Life</title>
