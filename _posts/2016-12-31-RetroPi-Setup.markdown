@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Retro Gaming With a Retro Pie
+title: Retro Gaming With a RetroPie
 subtitle: Setting up a RetroPie gaming system because I couldn't get an NES Classic
 permalink: RetroPie-Gaming
 date: 2016/06/29 
@@ -9,7 +9,7 @@ author: Christan Fergus
 published: true
 tags: retropie, development, gaming
 ---
-## NES Classic Editions Vs. RetroPie
+## NES Classic Edition Vs. RetroPie
 <img src="https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg" style="max-width: 100%;" alt="Logos of NES and retropie" >
 
 Like many of my fellow humans, I was excited when I heard Nintendo were putting out a purpose-built NES pre-packed with 30 games. The price was right, too. However, Nintendo only released a small amount to market, making the chances of getting one slim-to-none. Even worse, the scalpers were turning around and selling the things for insane amounts of money. I don’t have time or patience for that shit, so I decided to take matters into my own hands. 
@@ -78,7 +78,7 @@ Your SD card needs to be dedicated to the RetroPie, so I didn’t use any I alre
 
 #### Grand Total - $57.57
 
-The NES classic is $59.99 
+The NES Classic Edition is $59.99 
 
 That’s it, that’s all I purchased. Of course, you can go as bare-bones or as far as you like. But, seeing that I have monitors, controllers, etc., that’s all that is necessary. 
 
