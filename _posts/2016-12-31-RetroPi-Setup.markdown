@@ -12,13 +12,15 @@ tags: retropie, development, gaming
 ## NES Classic Edition Vs. RetroPie
 <img src="https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg" style="max-width: 100%;" alt="Logos of NES and retropie" >
 
+### Skip to:<br>
+<a href="#Resources">Resources</a><br>
+<a href="#Tips">Tips</a>
+
 Like many of my fellow humans, I was excited when I heard Nintendo were putting out a purpose-built NES pre-packed with 30 games. The price was right, too. However, Nintendo only released a small amount to market, making the chances of getting one slim-to-none. Even worse, the scalpers were turning around and selling the things for insane amounts of money. I don’t have time or patience for that shit, so I decided to take matters into my own hands. 
 
 I have wanted to mess around with a Raspberry Pi for some time. This project seemed like the perfect excuse to get my hands on one. With the development of the robust RetroPie platform, it was now extremely easy to set up a retro gaming system. The more I thought about it, the better this option sounded than the original NES Classic. So, here’s what I did. 
 
 Note: I am using a Mac to format and prep the SD card, and grab ROMS. The process may vary for Windows and Linux users. Hey, if you’re on Linux, I’m pretty sure you know what’s up anyway. 
-
-<a href="#Resources">Skip to the resources</a>
 
 ## Pros & Cons
 
@@ -115,35 +117,19 @@ Aaaand DONE! It was that fast and easy.
 
 The RetroPie isn’t much fun without games, so you have to get some. Take a look at the video links I provide below, and follow their detailed instructions. 
 
+#### USB Stick: less than ideal
+
 In short, you need to format a USB stick to FAT-32, create a folder called "retropie" in the root, then plug the stick into your Raspberry Pi. It will set up everything it needs inside the retropie directory, prepping it for you to load up ROMS. 
 
 When you have your ROMS, load them into the appropriate folders in your prepped USB stick, then place it back in your Pi.  Allow the games to transfer to the SD card, reboot, and you are ready to go. 
 
+#### Wirelessly: ideal
+
+On a Mac, while in Finder select "Go" from the menu, then choose "Connect to Server". Enter 
+<pre><code>smb://retropie</code></pre>
+and hit enter. Sign in as a Guest, and you're off to the races. The only drawback is the time it takes to transfer. Depending on your wireless connection, larger files could take quite a while. Because I'm a glutton for punishment, the first games I transferred this way were for PS1, and my god were those big files. 
+
 Again, watch the videos for important tips and processes for doing this. 
-
-## Tips
-
-### Warning!
-
-When prepping the RetroPie image, make sure you first extract your img.gz file with the Mac file system so that you are left with an *.img* file. It will not work if you still have the .gz extension still there. I did not do that the first time around, and it bricked the SD card. I had to erase it and start over. 
-
-### Patience in Transferring ROMS
-
-Be patient when loading games, and pay attention to your flickering flash stick light. That's your only indication of progress. If it's flickering, leave it alone. Transferring ROMS can take a while. 
-
-### How to exit a game
-
-Press Start and Select at the same time. My goodness this took me forever to figure out. 
-
-### How to exit the command line
-
-Type "exit". The system will reboot and you will be back in the RetroPie service. 
-
-### Your RetroPie installation will probably not look like the videos online
-
-After installation, the only screen available to me was the setup utility. When I looked at the videos, people had games and platforms automatically available to try. I really thought I had a bug.  
-
-Everything was completely fine, however. It turns out RetroPie is now being shipped sans any platforms or games to make the initial file size for download smaller. Just get some games loaded up on the unit and you’ll be off to the races. 
 
 <h2 id="Resources">Resources</h2>
 
@@ -162,12 +148,76 @@ Everything was completely fine, however. It turns out RetroPie is now being ship
 
 ### ROMS
 
-I am not at all up on how to get ROMS and all the in’s and out’s. It took me a while to figure out what’s up. I also don’t torrent, which is apparently how most people do it. I found a few sites by Googling, "ROMS", "emulators", etc. Poke around and experiement for sites that provide a decent quality emulation. So far, for me, it’s been a bit trial and error getting a good emulation, and I did download some pretty weird, buggy shit.
+I am not at all up on how to get ROMS and all the in’s and out’s. It took me a while to figure out what’s up. I also don’t torrent, which is apparently how most people do it. But that's for people who don't already have the physical games cartridges, etc.  
 
-This is by far the biggest con for the whole RetroPie thing. I'm not a big gamer, and I'm not familiar at all with the emulation world, so that whole process has been tedious. 
+Simply Google what you're looking for. Poke around and experiement for sites that provide a descent quality emulation. So far, for me, it’s been a bit trial and error getting a good emulation, and I did download some pretty weird, buggy shit.
 
-## Continuing the experience
+This is by far the biggest con for the whole RetroPie thing. RetroPie cannot provide ROMs since laws vary from place to place regarding copyrights, and they can't just give games to people who don't already have the physical, legit versions. Because of these reasons, the whole process has been tedious. 
+
+<h2 id="Tips">Tips</h2>
+
+### Warning On Prepping SD Card!
+
+When prepping the RetroPie image, make sure you first extract your img.gz file with the Mac file system so that you are left with an *.img* file. It will not work if you still have the .gz extension still there. I did not do that the first time around, and it bricked the SD card. I had to erase it and start over. 
+
+### Patience in Transferring ROMS
+
+Be patient when loading games, and pay attention to your flickering flash stick light. That's your only indication of progress. If it's flickering, leave it alone. Transferring ROMS can take a while. 
+
+### Enter the Game's Config Menu
+From inside any game, press "select" + "x" to enter a config menu. From here you can do quite a lot, including configure <a href="#Shaders">shaders</a>.
+
+### How to exit a game
+
+Press Start and Select at the same time. My goodness this took me forever to figure out. 
+
+### To The Command Line!
+
+F4
+
+### How to exit the command line
+
+Type "exit". You will be taken back to RetroPie. 
+
+### Your RetroPie installation will probably not look like the videos online
+
+After installation, the only screen available to me was the setup utility. When I looked at the videos, people had games and platforms automatically available to try. I really thought I had a bug.  
+
+Everything was completely fine, however. It turns out RetroPie is now being shipped sans any platforms or games to make the initial file size for download smaller. Just get some games loaded up on the unit and you’ll be off to the races. 
+
+<h3 id="Shaders">Shaders</h3>
+In my opinion, this is a must. Most of the retro games were made for old CRT screens, not our fancy-pants HD screens. You can apply shaders to simulate the old screens which I find actually makes the gameplay more fun. 
+
+While you can set up the shaders per game by accessing "select" + "x" in a game, I went ahead and just applied a global shader via the command line. 
+
+- F4 to hit the terminal, then:
+
+<pre>
+<code>
+sudo nano /opt/retropie/configs/all/retroarch.cfg
+</code>
+</pre>
+
+- Find "video_shader" pretty far down the list, and here is where you choose your shader type. I have shown the one I like, which seems to be the typical one folks use. Delete the hash and fill in the deets:
+
+<pre>
+<code>
+video_shader = "/opt/retropie/emulators/retroarch/shader/crt-pi.glslp"
+</code>
+</pre>
+
+- Un-comment the video_shader_enable and set to "true"
+
+<pre>
+<code>
+video_shader_enable = true
+</code>
+</pre>
+
+- Now you're done. "Ctrl" + "x", "y" to save, "Enter" to confirm, then type "exit", then reboot. 
+
+## Continuing the Retro Experience
 
 There’s nothing in this article that hasn’t been outlined elsewhere, but hey, it’s a chronicle of my experience. The most frustrating part of the entire process was getting the SD card out of its packaging. Well, that and trying to figure out why I didn’t have any initial games to play. Okay, and being completely confounded on how to exit a game. That said, if you’re willing to put in a bit of effort, I think the RetroPie route is a far better one than NES Classic. 
 
-My next steps are to get more detailed in my configs. I plan on getting my wireless controller set up, implement screen filters so the graphics look more like they "should" (scan lines, etc.), and ultimately set up the ability to get ROMS wirelessly directly to the Pi. All in good time, though, because right now I have some Star Fox to play. 
+My next steps are to get more detailed in my configs. There are tons of tweaks to do both for fun and that are necessary. All in good time, though, because right now I have some Star Fox to play. 
