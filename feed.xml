@@ -5,22 +5,22 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jan 2017 16:04:44 -0700</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2017 16:04:44 -0700</lastBuildDate>
+    <pubDate>Mon, 02 Jan 2017 08:45:27 -0700</pubDate>
+    <lastBuildDate>Mon, 02 Jan 2017 08:45:27 -0700</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Retro Gaming With a RetroPie</title>
         <description>&lt;h2 id=&quot;nes-classic-edition-vs-retropie&quot;&gt;NES Classic Edition Vs. RetroPie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg&quot; style=&quot;max-width: 100%;&quot; alt=&quot;Logos of NES and retropie&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;h3 id=&quot;skip-tobr&quot;&gt;Skip to:&lt;br /&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;#Resources&quot;&gt;Resources&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;#Tips&quot;&gt;Tips&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Skip to: &lt;a href=&quot;#Resources&quot;&gt;Resources&lt;/a&gt; | &lt;a href=&quot;#Tips&quot;&gt;Tips&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;Like many of my fellow humans, I was excited when I heard Nintendo were putting out a purpose-built NES pre-packed with 30 games. The price was right, too. However, Nintendo only released a small amount to market, making the chances of getting one slim-to-none. Even worse, the scalpers were turning around and selling the things for insane amounts of money. I don’t have time or patience for that shit, so I decided to take matters into my own hands.&lt;/p&gt;
 
-&lt;p&gt;I have wanted to mess around with a Raspberry Pi for some time. This project seemed like the perfect excuse to get my hands on one. With the development of the robust RetroPie platform, it was now extremely easy to set up a retro gaming system. The more I thought about it, the better this option sounded than the original NES Classic. So, here’s what I did.&lt;/p&gt;
+&lt;p&gt;I have wanted to mess around with a Raspberry Pi for some time. This project seemed like the perfect excuse to get my hands on one. With the development of the robust RetroPie platform, it was now extremely easy to set up a retro gaming system. The more I thought about it, the better this option looked. Here’s what I did.&lt;/p&gt;
 
 &lt;p&gt;Note: I am using a Mac to format and prep the SD card, and grab ROMS. The process may vary for Windows and Linux users. Hey, if you’re on Linux, I’m pretty sure you know what’s up anyway.&lt;/p&gt;
 
@@ -171,6 +171,7 @@
 &lt;p&gt;This is by far the biggest con for the whole RetroPie thing. RetroPie cannot provide ROMs since laws vary from place to place regarding copyrights, and they can’t just give games to people who don’t already have the physical, legit versions. Because of these reasons, the whole process has been tedious.&lt;/p&gt;
 
 &lt;h2 id=&quot;Tips&quot;&gt;Tips&lt;/h2&gt;
+&lt;p&gt;This section is a compilation of all the niggly things I had to figure out along the way.&lt;/p&gt;
 
 &lt;h3 id=&quot;warning-on-prepping-sd-card&quot;&gt;Warning On Prepping SD Card!&lt;/h3&gt;
 
@@ -193,9 +194,9 @@
 
 &lt;h3 id=&quot;how-to-exit-the-command-line&quot;&gt;How to exit the command line&lt;/h3&gt;
 
-&lt;p&gt;Type “exit”. You will be taken back to RetroPie.&lt;/p&gt;
+&lt;p&gt;Type “exit”. Emulationstation will restart.&lt;/p&gt;
 
-&lt;h3 id=&quot;your-retropie-installation-will-probably-not-look-like-the-videos-online&quot;&gt;Your RetroPie installation will probably not look like the videos online&lt;/h3&gt;
+&lt;h3 id=&quot;your-retropie-installation-will-probably-emnotem-look-like-the-video-tutorials&quot;&gt;Your RetroPie installation will probably &lt;em&gt;not&lt;/em&gt; look like the video tutorials&lt;/h3&gt;
 
 &lt;p&gt;After installation, the only screen available to me was the setup utility. When I looked at the videos, people had games and platforms automatically available to try. I really thought I had a bug.&lt;/p&gt;
 
@@ -240,11 +241,15 @@ video_shader_enable = true
   &lt;li&gt;Now you’re done. “Ctrl” + “x”, “y” to save, “Enter” to confirm, then type “exit”, then reboot.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&quot;configuring-a-ps3-controller-for-wireless-operation&quot;&gt;Configuring a PS3 Controller for wireless operation&lt;/h3&gt;
+
+&lt;p&gt;https://github.com/retropie/retropie-setup/wiki/Setting-up-a-PS3-controller&lt;/p&gt;
+
 &lt;h2 id=&quot;continuing-the-retro-experience&quot;&gt;Continuing the Retro Experience&lt;/h2&gt;
 
 &lt;p&gt;There’s nothing in this article that hasn’t been outlined elsewhere, but hey, it’s a chronicle of my experience. The most frustrating part of the entire process was getting the SD card out of its packaging. Well, that and trying to figure out why I didn’t have any initial games to play. Okay, and being completely confounded on how to exit a game. That said, if you’re willing to put in a bit of effort, I think the RetroPie route is a far better one than NES Classic.&lt;/p&gt;
 
-&lt;p&gt;My next steps are to get more detailed in my configs. There are tons of tweaks to do both for fun and that are necessary. All in good time, though, because right now I have some Star Fox to play.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://media.nintendo.com/nintendo/bin/hbb2nukKIWGoR2--mOt82okOC2LgAddk/MS90nV2N-EyYb7EQgFTzZG0ZV3Tuf5Bh.png&quot; alt=&quot;Star Fox&quot; style=&quot;float: left;width:20%;margin-right: 2%;&quot; /&gt;My next steps are to get more detailed in my configs. There are tons of tweaks to do both for fun and that are necessary. All in good time, though, because right now I have some Star Fox to play.&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Jun 2016 00:00:00 -0600</pubDate>
         <link>http://christanfergus.com/RetroPie-Gaming</link>
