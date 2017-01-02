@@ -11,14 +11,12 @@ tags: retropie, development, gaming
 ---
 ## NES Classic Edition Vs. RetroPie
 <img src="https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg" style="max-width: 100%;" alt="Logos of NES and retropie" >
-
-### Skip to:<br>
-<a href="#Resources">Resources</a><br>
-<a href="#Tips">Tips</a>
-
+<hr>
+Skip to: <a href="#Resources">Resources</a> | <a href="#Tips">Tips</a>
+<hr>
 Like many of my fellow humans, I was excited when I heard Nintendo were putting out a purpose-built NES pre-packed with 30 games. The price was right, too. However, Nintendo only released a small amount to market, making the chances of getting one slim-to-none. Even worse, the scalpers were turning around and selling the things for insane amounts of money. I don’t have time or patience for that shit, so I decided to take matters into my own hands. 
 
-I have wanted to mess around with a Raspberry Pi for some time. This project seemed like the perfect excuse to get my hands on one. With the development of the robust RetroPie platform, it was now extremely easy to set up a retro gaming system. The more I thought about it, the better this option sounded than the original NES Classic. So, here’s what I did. 
+I have wanted to mess around with a Raspberry Pi for some time. This project seemed like the perfect excuse to get my hands on one. With the development of the robust RetroPie platform, it was now extremely easy to set up a retro gaming system. The more I thought about it, the better this option looked. Here’s what I did. 
 
 Note: I am using a Mac to format and prep the SD card, and grab ROMS. The process may vary for Windows and Linux users. Hey, if you’re on Linux, I’m pretty sure you know what’s up anyway. 
 
@@ -155,6 +153,7 @@ Simply Google what you're looking for. Poke around and experiement for sites tha
 This is by far the biggest con for the whole RetroPie thing. RetroPie cannot provide ROMs since laws vary from place to place regarding copyrights, and they can't just give games to people who don't already have the physical, legit versions. Because of these reasons, the whole process has been tedious. 
 
 <h2 id="Tips">Tips</h2>
+This section is a compilation of all the niggly things I had to figure out along the way. 
 
 ### Warning On Prepping SD Card!
 
@@ -177,9 +176,9 @@ F4
 
 ### How to exit the command line
 
-Type "exit". You will be taken back to RetroPie. 
+Type "exit". Emulationstation will restart. 
 
-### Your RetroPie installation will probably not look like the videos online
+### Your RetroPie installation will probably <em>not</em> look like the video tutorials
 
 After installation, the only screen available to me was the setup utility. When I looked at the videos, people had games and platforms automatically available to try. I really thought I had a bug.  
 
@@ -216,8 +215,12 @@ video_shader_enable = true
 
 - Now you're done. "Ctrl" + "x", "y" to save, "Enter" to confirm, then type "exit", then reboot. 
 
+### Configuring a PS3 Controller for wireless operation
+
+https://github.com/retropie/retropie-setup/wiki/Setting-up-a-PS3-controller
+
 ## Continuing the Retro Experience
 
 There’s nothing in this article that hasn’t been outlined elsewhere, but hey, it’s a chronicle of my experience. The most frustrating part of the entire process was getting the SD card out of its packaging. Well, that and trying to figure out why I didn’t have any initial games to play. Okay, and being completely confounded on how to exit a game. That said, if you’re willing to put in a bit of effort, I think the RetroPie route is a far better one than NES Classic. 
 
-My next steps are to get more detailed in my configs. There are tons of tweaks to do both for fun and that are necessary. All in good time, though, because right now I have some Star Fox to play. 
+<img src="http://media.nintendo.com/nintendo/bin/hbb2nukKIWGoR2--mOt82okOC2LgAddk/MS90nV2N-EyYb7EQgFTzZG0ZV3Tuf5Bh.png" alt="Star Fox" style="float: left;width:20%;margin-right: 2%;">My next steps are to get more detailed in my configs. There are tons of tweaks to do both for fun and that are necessary. All in good time, though, because right now I have some Star Fox to play. 
