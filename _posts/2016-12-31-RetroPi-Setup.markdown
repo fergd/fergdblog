@@ -8,6 +8,7 @@ category: Misc
 author: Christan Fergus
 published: true
 tags: retropie, development, gaming
+comments: true
 ---
 ## NES Classic Edition Vs. RetroPie
 <img src="https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg" style="max-width: 100%;" alt="Logos of NES and retropie" >

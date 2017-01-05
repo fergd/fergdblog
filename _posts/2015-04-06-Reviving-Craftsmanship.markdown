@@ -6,6 +6,7 @@ date: 2015-04-06
 category: UX Design
 author: Christan Fergus
 published: true
+comments: true
 ---
 ## Try All The Things! ##
 The wonderful thing about doing web development with a team (as opposed to working alone in my musty basement) is the conversations we have about the industry. The conversations, often spirited, range from the technical to the philosophical. The one thing most topics have in common is the fact that what may be “current” and “interesting” today is not what was yesterday, and certainly will not be tomorrow. The tech world&mdash;a world I have chosen to be a part of&mdash;moves at a dizzying pace. No sooner had I grasped Grunt than Gulp came along as the hipster designer's favourite way of getting out of doing things manually. Which javaScript framework should I go with? Damned if I know!

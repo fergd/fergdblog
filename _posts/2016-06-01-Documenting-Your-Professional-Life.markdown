@@ -8,6 +8,7 @@ category: UX Design
 author: Christan Fergus
 published: true
 tags: user experience, professional growth, web development, user interface
+comments: true
 ---
 
 ## Hello, The Unexpected
