@@ -12,23 +12,23 @@ comments: true
 ---
 <img src="http://res.cloudinary.com/fergd/image/upload/v1483660203/agundxz-vrw-klaas.jpg" class="post-image" alt="A typwriter and desk lamp are shown in a dimly lit room.">
 
+<blockquote><p>"I have no idea what lies in the future, but I do know I can <em>inform</em> that future."</p></blockquote>
+
 ## Hello, The Unexpected
 
-Recently, a friend and I met for coffee. While we chatted about many things, the inevitable topic landed upon my current job search. He and I had worked together in the past as web developers, and shared many of the same interests. Our careers, however, were taking us both in different directions. The realization that my career trajectory was shifting came on the heels of my time spent, in my basement, drinking endless cups of coffee, searching for jobs. 
+Recently, a friend and I met for coffee. While we chatted about various topics, the inevitable subject landed upon my current job search. He and I had worked together in the past, and shared many of the same interests. Our careers, however, were taking us both in different directions. The realization that my career trajectory was shifting came on the heels of my time spent, in my basement, drinking endless cups of coffee, searching for jobs. 
 
-My situation was not the most ideal. I wasn’t looking for a new position whilst comfortably plodding along at my day job. On the contrary, I and my team had been unexpectedly laid off. This landed me in a new job that I hated: searching for work.
+During this new, stressful, and mildly exciting job hunting phase, I began to gather assets and information about myself. For once in my life, I realized I had actually done something right: over the course of my career as a web developer,  I had kept notes, records, documentation, and writings on most of the work I’d done. Very little of this was formal, but it was a cache of resources upon which I could quickly draw, enabling me to rapidly ramp up my website, resume, and brand. 
 
-As I entered this new, stressful, mildly exciting phase, I began to gather assets and information about myself. For once in my life, I realized I had actually done something right: over the course of my web developer career,  I had kept notes, records, documentation, and writings of most of the work I’d done. Very little of this was formal, but it was a cache of resources upon which I could quickly draw, enabling me to rapidly ramp up my website, resume, and brand. 
-
-As I poured over the morgue of resources I’d compiled over the past eight years, an observation emerged about my professional self: I realized I wanted to shift my career trajectory to focus on what really ticked my boxes. Let’s explore this a bit further.
+As I poured over the morgue of resources I’d compiled over the past ten-or-so years, an observation emerged about my professional self: I realized I wanted to shift my career trajectory to focus on what really ticked my boxes. Let’s explore this a bit further.
 
 ## Unexpected Pudding
 
-I was actually perfectly happy doing my job. It was comfortable, I had a tight-knit team, I knew the product intimately, and I felt like I had accomplished something when the day was over. What I hadn't realized is that I wasn’t <em>really</em> doing what I was best at. In many areas I was being limited or stifled.
+I had been fairly happy doing my most recent job. It was comfortable, I had a tight-knit team, I knew the product intimately, and I felt like I had accomplished something when the day was over. What I hadn't realized is that I wasn’t really doing what I was <em>best</em> at. In many areas I was being limited or stifled.
 
 Enter my life’s documentation: the pudding in which I found my proof. As you know, wisdom and insight is attained by life experience. It is the ability to look back, learn from history, course correct when needed, then take those lessons into the next challenge. What I didn’t initially realize when I would bang out even the most mundane document, is that it would be another exhibit in my mounting career evidence.  
 
-So there, in my basement, deep in my job search, I sifted through my work and writings. As I did, I noticed certain themes emerge. I tended to write a lot about a particular angle on a particular subject. The design work I saved tended to also relate to a particular thing. Found within even the most mundane docs&mdash;notes on how I installed a particular framework, or the bloody tales of making an app&mdash;I was able to parse a bigger picture. 
+So there, in my basement, deep in my job search, I sifted through my work and writings. As I did, I noticed certain themes emerge. I tended to write a lot about a particular angle on a particular subject. The design work I saved tended to also relate to a particular "thing". Found within even the most mundane docs&mdash;notes on how I installed a particular framework, or the bloody tales of making an app&mdash;I was able to parse a bigger picture. 
 
 In a rare spell of self-awareness, I realized that the jobs I <em>thought</em> I should be going for were in fact not the jobs I should pursue. This allowed a course-correction. I compiled an updated view of the direction I wanted to go, what I wanted out of my career, and even the types of companies I wanted to work with. This new understanding of how I’d grown gave me an ability to enter conversations with prospective employers with a drive and awareness that showed a confidence not only about my career, but also about myself.
 
@@ -46,7 +46,7 @@ Of all things listed here, I do this the least. It’s like flossing. You know y
 
 ### Step-By-Steps
 
-I’m an adjunct instructor by night, and I love coaching and teaching, so perhaps the desire comes a bit more quickly to me, but that doesn’t mean teaching necessarily comes naturally. If I find I’m learning something new, such as creating an automated task for [resizing images](http://christanfergus.com/bulk-image-optimization-with-grunt), or learning how to build a plywood desk, I immediately open up a Google Doc and start documenting my process. This accomplishes two important things: 
+I’m an adjunct instructor by night, and I love coaching and teaching, so perhaps the desire comes a bit more quickly to me, but that doesn’t mean teaching necessarily comes naturally. If I find I’m learning something new, such as setting up a [retro gaming system](http://christanfergus.com/RetroPie-Gaming), or learning how to build a plywood desk, I immediately open up a Google Doc and start documenting my process. This accomplishes two important things: 
 
 1. I learn much better. Writing about my experience solidifies those neural pathways.
 2. You have a trail of proof of all the crazy things you just did, because trust me, you'll forget. 
@@ -118,4 +118,4 @@ With all this documentation talk, it should be clear that if you do this, you’
 - [What a creative routine looks like](https://podio.com/site/creative-routines)
 
 <br>
-You can see that no one had the same process, but all were effective in their own way. And that’s where I’m at. My experience looking for work and ultimately finding a new, great job, has not made me complaisent, it’s instead spurred me on to continue my documentation. Who knows what lies ahead in the future, but I do know I can inform that future. Do as little or as much as makes sense for you; just do something. Your future self will thank you. 
+If you looke at the above links, you can see that no one had the same process, but all were effective in their own way. And that’s where I’m at. My experience looking for work and ultimately finding a new, great job, has not made me complaisent. Instead, it has spurred me on to continue my documentation. I have no idea what lies in the future, but I do know I can <em>inform</em> that future. Do as little or as much as makes sense for you; just do something. Your future self will thank you. 
