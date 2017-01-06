@@ -5,8 +5,8 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jan 2017 16:38:59 -0700</pubDate>
-    <lastBuildDate>Thu, 05 Jan 2017 16:38:59 -0700</lastBuildDate>
+    <pubDate>Thu, 05 Jan 2017 17:01:24 -0700</pubDate>
+    <lastBuildDate>Thu, 05 Jan 2017 17:01:24 -0700</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -268,7 +268,9 @@ video_shader_enable = true
     
       <item>
         <title>Documenting Your Professional Life</title>
-        <description>&lt;h2 id=&quot;hello-the-unexpected&quot;&gt;Hello, The Unexpected&lt;/h2&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/fergd/image/upload/v1483660203/agundxz-vrw-klaas.jpg&quot; class=&quot;post-image&quot; alt=&quot;A typwriter and desk lamp are shown in a dimly lit room.&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;hello-the-unexpected&quot;&gt;Hello, The Unexpected&lt;/h2&gt;
 
 &lt;p&gt;Recently, a friend and I met for coffee. While we chatted about many things, the inevitable topic landed upon my current job search. He and I had worked together in the past as web developers, and shared many of the same interests. Our careers, however, were taking us both in different directions. The realization that my career trajectory was shifting came on the heels of my time spent, in my basement, drinking endless cups of coffee, searching for jobs.&lt;/p&gt;
 
@@ -359,6 +361,8 @@ Keep them on target, full of info, and to the point.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.webcredible.com/case-studies/retail/dulux/&quot;&gt;Case study example&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2015/02/designing-case-studies-human-centered-design-process/&quot;&gt;Designing case studies&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/fergd/image/upload/v1483660619/3pgb5eqvaie-lorenzo-cafaro.jpg&quot; class=&quot;post-image&quot; alt=&quot;A large block of minimized code is shown on a computer screen.&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;version-control&quot;&gt;Version Control&lt;/h3&gt;
 
