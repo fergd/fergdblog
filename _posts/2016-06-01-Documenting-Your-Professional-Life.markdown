@@ -10,6 +10,7 @@ published: true
 tags: user experience, professional growth, web development, user interface
 comments: true
 ---
+<img src="http://res.cloudinary.com/fergd/image/upload/v1483660203/agundxz-vrw-klaas.jpg" class="post-image" alt="A typwriter and desk lamp are shown in a dimly lit room.">
 
 ## Hello, The Unexpected
 
@@ -90,6 +91,8 @@ Keep them on target, full of info, and to the point.
 - [NPR site redesign case study](http://www.aiga.org/case-study-npr-org/) 
 - [Case study example](http://www.webcredible.com/case-studies/retail/dulux/) 
 - [Designing case studies](https://www.smashingmagazine.com/2015/02/designing-case-studies-human-centered-design-process/) 
+
+<img src="http://res.cloudinary.com/fergd/image/upload/v1483660619/3pgb5eqvaie-lorenzo-cafaro.jpg" class="post-image" alt="A large block of minimized code is shown on a computer screen." >
 
 ### Version Control
 
