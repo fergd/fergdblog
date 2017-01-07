@@ -1190,24 +1190,28 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
   margin-top: 50px;
   border-top: 1px solid #EEE657; }
 
+@media all and (max-width: 600px) {
+  /* line 115, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  .post-content {
+    font-size: 14px; } }
 @media all and (max-width: 960px) {
-  /* line 116, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 121, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post {
-    padding: 2em; }
+    padding: 2em 0.5em; }
 
-  /* line 119, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 124, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     display: none; } }
 @media all and (min-width: 1120px) and (max-width: 1380px) {
-  /* line 125, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 130, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-content {
     max-width: 80%; } }
 @media all and (min-width: 1381px) {
-  /* line 131, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 136, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .post-content {
     max-width: 760px; } }
 @media all and (min-width: 960px) and (max-width: 1420px) {
-  /* line 137, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 142, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     transform: translate-y(-50%);
     left: 0;
@@ -1218,7 +1222,7 @@ NOTE: Layout related to off-canvas nav in _off_canvas.scss
     border-left: 7px solid #FCB941;
     border-right: none; } }
 @media all and (min-width: 1421px) and (max-width: 1620px) {
-  /* line 150, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
+  /* line 155, /Users/Fergus/Projects/fergdblog/_sass/templates/_post_template.scss */
   .pulled-blockquote {
     right: 0;
     max-width: 20%;
@@ -1549,7 +1553,7 @@ main {
     padding: 32px 32px 0 32px; }
   /* line 138, /Users/Fergus/Projects/fergdblog/_sass/pages/_index_page.scss */
   .top-leader div > div {
-    padding: 16px; } }
+    padding: 7px; } }
 @media all and (max-width: 370px) {
   border-top: none !important; }
 @media all and (max-width: 480px) {
