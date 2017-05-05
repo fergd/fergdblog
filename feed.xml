@@ -5,9 +5,114 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Jan 2017 20:01:00 -0700</pubDate>
-    <lastBuildDate>Wed, 11 Jan 2017 20:01:00 -0700</lastBuildDate>
+    <pubDate>Thu, 04 May 2017 22:03:56 -0600</pubDate>
+    <lastBuildDate>Thu, 04 May 2017 22:03:56 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Establishing a Style Guide</title>
+        <description>&lt;p&gt;There is little I love more than designing, developing, and documenting. A style guide is the confluence of all three. I love them. This post highlights the style guide I created for a company I worked for at the time. It is an abbreviated post about the process, hitting just the high points. In another post, I will focus on the technical and discuss the way in which I built and utilized Jekyll to create the style guide.&lt;/p&gt;
+
+&lt;h2 id=&quot;opportunity&quot;&gt;Opportunity&lt;/h2&gt;
+&lt;p&gt;The need for a company style guide, or pattern library, was a big one. The company was undergoing a shift in the way it delivered software, namely transitioning to a SaaS model. The company’s many products were being folded into one platform. This gave rise to many challenges, as one could imagine, and one large challenge was the extreme diversity in experiences and design. There was a need for a unification.&lt;/p&gt;
+
+&lt;p&gt;As part of our role in the company, the UX team fielded many questions from developers about UI and UX patterns. Each of us had various areas of tribal knowledge (dangerous), and we were well aware we had no centralized repository of information to which we could point a developer. It was clear to us, and the big-bosses, a style guide was a necessity. But just because we all wanted one, didn’t make the process easy.&lt;/p&gt;
+
+&lt;p&gt;The ideal way I wanted to implement this style guide was actually for it to be a pattern library—a library of code and design snippets, directly connected to the company codebase, from which a developer could pull live methods, controllers, etc. to be used in their own code. This was not to be for the first round, however, since the user experience team did not have a back end developer, nor did they have access to one in the company.&lt;/p&gt;
+
+&lt;p&gt;Given that challenge, we shifted tactics and went full user-interface-user-experience-guide instead. This guide was to focus on UX patterns, UI design principles, and even content tone-of-voice and formatting. It was still destined to be a valuable tool, helping get all the teams on the same design-page.&lt;/p&gt;
+
+&lt;h2 id=&quot;building-blocks&quot;&gt;Building Blocks&lt;/h2&gt;
+&lt;p&gt;As stated above, the UX team had no back-end developers. We also had no access to developer time and talent because resources were stretched thin. Because of these constraints, I determined:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The style guide should live outside the company’s codebase so it does not depend on anyone or any stack for deployment&lt;/li&gt;
+  &lt;li&gt;The style guide should be fairly language agnostic, so it can be picked up at any time and augmented or folded into another codebase&lt;/li&gt;
+  &lt;li&gt;It must be (somewhat) easy for a designer with basic coding skills to contribute&lt;/li&gt;
+  &lt;li&gt;It must have clear documentation so the information is not siloed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Given this criteria, I built the style guide upon the Jekyll framework. Jekyll is a static website generator, which was a perfect tool for the job. A static website can be hosted anywhere, is generally light-weight, has no dependencies for deployment, and has virtually zero security issues since there are no databases or user information to compromise. While there were plenty of other options, I preferred Jekyll since I’ve spent my last few years working with it extensively. Once could argue that if you’re a hammer, everything’s a nail, but in this case, a hammer was the right tool.&lt;/p&gt;
+
+&lt;h2 id=&quot;guide-format&quot;&gt;Guide Format&lt;/h2&gt;
+&lt;p&gt;I broke the guide into three primary sections.&lt;/p&gt;
+
+&lt;h3 id=&quot;design-styles&quot;&gt;Design styles&lt;/h3&gt;
+&lt;p&gt;The meat of the style guide, here were all the styles. The style components were broken into three sections:&lt;/p&gt;
+&lt;dl&gt;
+	&lt;dt&gt;Foundation&lt;/dt&gt;
+	&lt;dd&gt;These were guides regarding the basics of the site. Color, typography, formatting, etc.&lt;/dd&gt;
+	&lt;dt&gt;Components&lt;/dt&gt;
+	&lt;dd&gt;These guides focused on UI components: form controls, breadcrumbs, etc.&lt;/dd&gt;
+	&lt;dt&gt;Behaviors&lt;/dt&gt;
+	&lt;dd&gt;Primarily UX patterns that involved setting guidelines around how a user interacted with the website components.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;http://res.cloudinary.com/fergd/image/upload/v1493956154/jk-color-compressor.png&quot; alt=&quot;&quot; /&gt;
+	&lt;figcaption&gt;The Style Guide shown displaying color information&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;ux-faqs&quot;&gt;UX FAQs&lt;/h3&gt;
+&lt;p&gt;While I’m generally not a fan of FAQ pages (because most FAQ questions are fake), the UX team legitimately receives frequently asked questions, so it really did seem appropriate&lt;/p&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
+&lt;p&gt;This documentation was for the style guide itself, and outlined everything from installation of the Jekyll framework, to how to make a component style and markdown, to deploying the site to production.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Side note: it’s my favorite part of the website. I LOVE writing documentation for some reason. &lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;guide-components&quot;&gt;Guide Components&lt;/h2&gt;
+&lt;p&gt;Within the format, there were some important site components that aided the user’s experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;search&quot;&gt;Search&lt;/h3&gt;
+&lt;p&gt;The goal was to make the guide easy to use, and also attractive so developers would return. Search was implemented for this reason. I have viewed a fair amount of style and pattern guides in my time, and I’m surprised at how few have a search.&lt;/p&gt;
+
+&lt;h3 id=&quot;cross-referencing&quot;&gt;Cross-Referencing&lt;/h3&gt;
+&lt;p&gt;This was one of the more manual aspects for me to set up, but the team felt it was important to provide cross-linking between related styles to help give context, but also to aide that user who may be hunting through the guide and hasn’t realized they can search!&lt;/p&gt;
+
+&lt;h3 id=&quot;feedback&quot;&gt;Feedback&lt;/h3&gt;
+&lt;p&gt;We built the style guide for developers, and we wanted and needed their input. My philosophy from the start was that this was the collective’s guide, so everyone who wanted to have a say could have a say. We provided a feedback link that was hosted by Survey Monkey, in which we provided a simple comment box for their feedback and/or suggestions.&lt;/p&gt;
+
+&lt;h2 id=&quot;results-amp-beyond&quot;&gt;Results &amp;amp; Beyond&lt;/h2&gt;
+&lt;p&gt;We released the guide to a warm reception from the company and developers. Many devs had been asking for something like what we produced, and were happy to have it. The first iteration of the guide was in no means exhaustive, however. For the sake of time, and the need to ship, we released with a handful of well-crafted guides, but with a mountain still waiting in the backlog.&lt;/p&gt;
+
+&lt;p&gt;As of this writing, I am actively developing for the next release. The plan will be to release updates, both content and code, every quarter. This was a reasonable timeframe, given the time it takes to vet and create a component on top of our regular job responsibilities.&lt;/p&gt;
+
+&lt;p&gt;I am expecting two specific results as the style guide matures: 
+1. The guide becomes a regular, habitual aspect of a developer’s toolkit
+2. It evolves into a living style and pattern library, with code and UI living in harmony.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The future is bright.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://styleguide.pinpointtech.com.s3-website-us-west-2.amazonaws.com/&quot; target=&quot;_blank&quot;&gt;View the Style Guide&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 May 2017 00:00:00 -0600</pubDate>
+        <link>http://christanfergus.com/establishing-a-style-guide</link>
+        <guid isPermaLink="true">http://christanfergus.com/establishing-a-style-guide</guid>
+        
+        <category>style</category>
+        
+        <category>guide,</category>
+        
+        <category>web</category>
+        
+        <category>development,</category>
+        
+        <category>web</category>
+        
+        <category>design,</category>
+        
+        <category>user</category>
+        
+        <category>interface</category>
+        
+        <category>design,</category>
+        
+        <category>Jekyll</category>
+        
+        
+        <category>Web &amp; App Development</category>
+        
+      </item>
     
       <item>
         <title>Retro Gaming With a RetroPie</title>
@@ -300,7 +405,7 @@ video_shader_enable = true
 
 &lt;h3&gt;Dear &lt;del&gt;Diary&lt;/del&gt; &lt;del&gt;Journal&lt;/del&gt;&lt;/h3&gt;
 
-&lt;p&gt;Of all things listed here, I do this the least. It’s like flossing. You know you need to do it. You know it keeps you healthy…but you’re just shit at it. When I do write, or journal (I hate that word), I find it extremely cathartic. The challenge is quieting your mind and the world around you enough to get going. I’m not here to tell you how to do this, there’s an internet full of articles telling you what you should do. I boil it down to just articulating whatever it is I’m feeling at that particular moment, beit personal or professional. I often find myself, after a little time, writing away with abandon. It feels good, but I rarely do it. Hence, the human condition.&lt;/p&gt;
+&lt;p&gt;Of all things listed here, I do this the least. It’s like flossing. You know you need to do it. You know it keeps you healthy…but you’re just terrible at it. When I do write, or journal (I hate that word), I find it extremely cathartic. The challenge is quieting your mind and the world around you enough to get going. I’m not here to tell you how to do this, there’s an internet full of articles telling you what you should do. I boil it down to just articulating whatever it is I’m feeling at that particular moment, beit personal or professional. I often find myself, after a little time, writing away with abandon. It feels good, but I rarely do it. Hence, the human condition.&lt;/p&gt;
 
 &lt;h3 id=&quot;step-by-steps&quot;&gt;Step-By-Steps&lt;/h3&gt;
 

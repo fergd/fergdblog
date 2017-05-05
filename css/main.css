@@ -497,6 +497,20 @@ figcaption {
 .page-heading {
   font-size: 3em; }
 
+/* line 194, /Users/Fergus/Projects/fergdblog/_sass/core/_typography.scss */
+dt, dl, dd {
+  font-size: 21px;
+  line-height: 27px; }
+
+/* line 198, /Users/Fergus/Projects/fergdblog/_sass/core/_typography.scss */
+dl {
+  font-weight: bold; }
+
+/* line 201, /Users/Fergus/Projects/fergdblog/_sass/core/_typography.scss */
+dd {
+  font-weight: normal;
+  padding-left: 32px; }
+
 /* line 6, /Users/Fergus/Projects/fergdblog/_sass/core/_layout.scss */
 .nav-col, .nav-col nav, .page-header, .post-header, .work-header, .example-work-wrap, .page-wrap {
   position: relative;
