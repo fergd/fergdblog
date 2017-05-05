@@ -42,7 +42,7 @@ Furthermore, documenting helps me ask better questions. As a UX Designer, questi
 
 <h3>Dear <del>Diary</del> <del>Journal</del></h3>
 
-Of all things listed here, I do this the least. It’s like flossing. You know you need to do it. You know it keeps you healthy...but you’re just shit at it. When I do write, or journal (I hate that word), I find it extremely cathartic. The challenge is quieting your mind and the world around you enough to get going. I’m not here to tell you how to do this, there’s an internet full of articles telling you what you should do. I boil it down to just articulating whatever it is I’m feeling at that particular moment, beit personal or professional. I often find myself, after a little time, writing away with abandon. It feels good, but I rarely do it. Hence, the human condition.  
+Of all things listed here, I do this the least. It’s like flossing. You know you need to do it. You know it keeps you healthy...but you’re just terrible at it. When I do write, or journal (I hate that word), I find it extremely cathartic. The challenge is quieting your mind and the world around you enough to get going. I’m not here to tell you how to do this, there’s an internet full of articles telling you what you should do. I boil it down to just articulating whatever it is I’m feeling at that particular moment, beit personal or professional. I often find myself, after a little time, writing away with abandon. It feels good, but I rarely do it. Hence, the human condition.  
 
 ### Step-By-Steps
 

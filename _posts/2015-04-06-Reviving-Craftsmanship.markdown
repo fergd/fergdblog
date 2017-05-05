@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reviving Craftsmanship"
+title: Reviving Craftsmanship
 permalink: reviving-craftsmanship/
 date: 2015-04-06
 category: UX Design

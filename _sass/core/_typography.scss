@@ -190,3 +190,16 @@ figcaption{
 .page-heading{
 	font-size: 3em;
 }
+
+dt, dl, dd{
+	font-size: 21px;
+	line-height: 27px;
+}
+dl{
+	font-weight: bold;
+}
+dd{
+	font-weight: normal;
+	padding-left: 32px;
+
+}
