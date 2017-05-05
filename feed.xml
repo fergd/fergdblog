@@ -5,8 +5,8 @@
     <description></description>
     <link>http://christanfergus.com/</link>
     <atom:link href="http://christanfergus.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 May 2017 22:03:56 -0600</pubDate>
-    <lastBuildDate>Thu, 04 May 2017 22:03:56 -0600</lastBuildDate>
+    <pubDate>Thu, 04 May 2017 22:08:29 -0600</pubDate>
+    <lastBuildDate>Thu, 04 May 2017 22:08:29 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -111,6 +111,8 @@
         
         
         <category>Web &amp; App Development</category>
+        
+        <category>Case Studies</category>
         
       </item>
     
