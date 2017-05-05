@@ -4,7 +4,7 @@ title: Establishing a Style Guide
 subtitle: Establishing a Style Guide
 permalink: establishing-a-style-guide
 date: 2017/05/04 
-categories: [Web & App Development]
+categories: [Web & App Development, Case Studies]
 author: Christan Fergus
 published: true
 tags: style guide, web development, web design, user interface design, Jekyll
