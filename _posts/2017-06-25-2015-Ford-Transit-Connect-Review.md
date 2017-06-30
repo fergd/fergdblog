@@ -15,7 +15,7 @@ comments: true
 <img src="http://res.cloudinary.com/fergd/image/upload/v1498705907/fergdblog/IMG_20170625_101848.jpg" alt="2015 Ford Transit Connect">
 <figcaption>My 2015 Ford Transit Connect.</figcaption>
 </figure>
-I’m a designer who likes to document things. I figured I’d document my experience with my new car. I understand this is a review of a used vehicle, but it’s new enough to justify this piece. I’d also love to spread the Transit love to my other designer peeps in a similar stage of life. As one of my designer buddies said, “This is an artist’s car!”. 
+I’m a designer who likes to document things. I figured I’d document my experience with my new car. I understand this is a review of a used vehicle, but it’s new enough to justify this piece. I’d also love to spread the Transit love to my other designer peeps in a similar stage of life. As one of my designer friends said, “This is an artist’s car!”. 
 
 ## Specs
 <dl>
@@ -168,7 +168,7 @@ There’s a nice place to put junk above the windshield, and you can get an opti
 ## Downsides
 
 ### Power
-I love that it has a 4 cylinder...but it’s not quite plucky enough. If you’re just tooling about, it’s fine, and once up to highway speeds, it’s perfect. The thing hums right along. But you often need to put your foot down, and when you do, the best you get is a louder noise, but not much else. I feel if they could have squeezed a mere 10 more hp out of the engine, it would feel just right. 
+I love that it has a 4 cylinder...but it’s not quite plucky enough. If you’re just tooling about, it’s fine, and once up to highway speeds, it’s perfect. The thing hums right along. But you often need to put your foot down, and when you do, the best you get is a louder noise, but not much else. I feel if they could have squeezed a mere 10 more horses out of the engine, it would feel just right. 
 
 ### Sun Visors * Shakes fist *
 <figure>
