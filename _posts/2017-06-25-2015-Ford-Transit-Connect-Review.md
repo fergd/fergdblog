@@ -81,7 +81,7 @@ It then took another two years of me following, researching, etc. before I final
 The Connect is a european vehicle, made by Ford Europe, produced in Turkey, imported to Boston. Why is this important? Because they didn’t make it big just to be big. In fact, it’s incredible how much space it provides for being considerably smaller than the competition. It’s HOW the space is configured which makes it such a good vehicle. 
 
 ### The Mark
-It’s a Ford. I really respect Ford, Ford US didn’t take bail out money, and they came out of the financial crisis with incredibly well built and engineered vehicles. I wouldn’t touch a GM or Chrysler product with a ten foot pole, since I view them as lazy. Ford also makes the GT. I have a deep, primal love of the GT40, especially with the spicy Le Mans history, and the new GTLM is one of the premier engineering feats to come out of America apart from the space program. 
+It’s a Ford. I really respect Ford, Ford US didn’t take bail out money, and they came out of the financial crisis with incredibly well built and engineered vehicles. Ford also makes the GT. I have a deep, primal love of the GT40, especially with the spicy Le Mans history, and the new GTLM is one of the premier engineering feats to come out of America apart from the space program. 
 
 ### Looks
 It looks damn good. As I wrote earlier, the Transit Connect is a stretched-out Focus. The front end is super sexy with the Aston Martin-esque grille, and those cleopatra eyes. Mmm mmm. 
@@ -168,7 +168,7 @@ There’s a nice place to put junk above the windshield, and you can get an opti
 ## Downsides
 
 ### Power
-I love that it has a 4 cylinder...but it’s not quite plucky enough. If you’re just tooling about, it’s fine, and once up to highway speeds, it’s perfect. The thing hums right along. But you often need to put your foot down, and you often do, the best you get is a louder noise, but not much else. I feel if they could have squeezed a mere 10 more hp out of the engine, it would feel just right. 
+I love that it has a 4 cylinder...but it’s not quite plucky enough. If you’re just tooling about, it’s fine, and once up to highway speeds, it’s perfect. The thing hums right along. But you often need to put your foot down, and when you do, the best you get is a louder noise, but not much else. I feel if they could have squeezed a mere 10 more hp out of the engine, it would feel just right. 
 
 ### Sun Visors * Shakes fist *
 <figure>
