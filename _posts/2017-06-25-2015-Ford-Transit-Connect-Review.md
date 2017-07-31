@@ -11,6 +11,7 @@ tags: vehicle review, Ford, Transit
 comments: true
 ---
 <p class="subtitle">{{page.subtitle}}</p>
+<small>Last updated 08/2017</small>
 <figure>
 <img src="http://res.cloudinary.com/fergd/image/upload/v1498705907/fergdblog/IMG_20170625_101848.jpg" alt="2015 Ford Transit Connect">
 <figcaption>My 2015 Ford Transit Connect.</figcaption>
@@ -170,6 +171,11 @@ There’s a nice place to put junk above the windshield, and you can get an opti
 ### Power
 I love that it has a 4 cylinder...but it’s not quite plucky enough. If you’re just tooling about, it’s fine, and once up to highway speeds, it’s perfect. The thing hums right along. But you often need to put your foot down, and when you do, the best you get is a louder noise, but not much else. I feel if they could have squeezed a mere 10 more horses out of the engine, it would feel just right. 
 
+#### Update 8/2017
+I've since learned how to best use Sport Mode and Select Shift features, and I have to say, the Sport Mode does make up a bit for the lack of power. As one would expect, choosing Sport Mode means the Transit shifts at higher revs, and does a pretty decent job of predicting my throttle use. This has essentially taken care of my on-ramp woes, but I stand by my desire for a slightly more powerful engine. 
+
+The Select Shift feature is extremely handy in the mountains. If you find yourself traversing a steep descent, pop this bad boy in first, and let the drive train do the rest. In first, downhill, the vehicle will stay at a tame 15 - 18mph. Second gear lets you maintain around 25mph. I have used this feature descending both Pikes Peak and Mount Evans, and have rarely felt more secure that my transportation is keeping me safe, and my brakes happy.
+
 ### Sun Visors * Shakes fist *
 <figure>
 <img src="https://i.giphy.com/media/HihTAdVMgLiTu/giphy.webp" alt="">
@@ -186,12 +192,18 @@ My real complaint, however, is that they also do not stay in place. Right from t
  
 This is not just because my Transit is 17 months old. I encountered the same issue in a brand new Transit I test drove. While it hadn’t reached the won’t-stay-in-place issue yet, it still wobbled and flopped, which was distracting. I’ll just leave that there. 
 
+#### Update 8/2017
+The visor drama has continued with the passenger side clip sheering off completely, leaving the passenger visor drooping down in the same way the driver has. So, not only will they not stay in place, but there is no where to clip them in. I'll be spending around $100 for new clips and visors. It's a small expense in the grand scheme, but a very annoying expense. 
+
 ### One Seat for All
 For my package/trim level, the seats do not have a back angle adjustment. You can move them back and forth, and only the drivers side has height and lumbar adjustment. If you’re the passenger, you’re out of luck. Back and forth, that’s it. Hey, I like utilitarian, but that’s a tad too utilitarian.  
 
 ### Rear Seat Workout
 You have to manhandle the seats to fold down or set up again. Not a big deal, because we’re not doing that every day, but sometimes it takes some effort to get the seats to move the way we want. You typically will have to position yourself on one side of the seats to adjust the backs, then walk around, climb inside, and finish the conversion. 
  
+#### Update 8/2017
+I found the back adjustment! My above commentary is not entirely accurate. I did actually find the back adjustment, and while I feel a little silly, I'm just happy they exist. So, the Transit has fully-functioning and customizable seating positions. Phew. 
+
 ## Wishlist
 I couldn't resist compiling a little wish list. 
 
