@@ -198,12 +198,12 @@ The visor drama has continued with the passenger side clip sheering off complete
 ### One Seat for All
 For my package/trim level, the seats do not have a back angle adjustment. You can move them back and forth, and only the drivers side has height and lumbar adjustment. If you’re the passenger, you’re out of luck. Back and forth, that’s it. Hey, I like utilitarian, but that’s a tad too utilitarian.  
 
-### Rear Seat Workout
-You have to manhandle the seats to fold down or set up again. Not a big deal, because we’re not doing that every day, but sometimes it takes some effort to get the seats to move the way we want. You typically will have to position yourself on one side of the seats to adjust the backs, then walk around, climb inside, and finish the conversion. 
- 
 #### Update 8/2017
 I found the back adjustment! My above commentary is not entirely accurate. I did actually find the back adjustment, and while I feel a little silly, I'm just happy they exist. So, the Transit has fully-functioning and customizable seating positions. Phew. 
 
+### Rear Seat Workout
+You have to manhandle the seats to fold down or set up again. Not a big deal, because we’re not doing that every day, but sometimes it takes some effort to get the seats to move the way we want. You typically will have to position yourself on one side of the seats to adjust the backs, then walk around, climb inside, and finish the conversion. 
+ 
 ## Wishlist
 I couldn't resist compiling a little wish list. 
 
