@@ -1,29 +1,22 @@
 ---
 layout: post
-title: Door To Door Organics Recipe Site Case Study
-permalink: door-to-door-organics-recipe-site-case-study
+title: Recipe Site Case Study
+subtitle: How we increased the customer conversion rate and an average basket size for an online grocery delivery company.
+permalink: /articles/door-to-door-organics-recipe-site-case-study
 date: 2012/05/06 
 category: Case Studies
 author: Christan Fergus
 published: true
 ---
+{{ page.subtitle }}
+
 ## Project Overview ##
 
-### Company Background ###
-
-Door To Door Organics is an online organic produce and market delivery service that covers five locations nationwide.
-
-### Project Goal ###
-
-As part of the company's commitment to their customers eating good food, Door To Door Organics decided to launch a recipe and meal planning “wing” to the website that would ultimately be incorporated into the future website shopping flow. The recipe site would bring the customer’s grocery box, with all of its ingredients, together with recipes to help provide inspiration in the kitchen and reduce food waste. This project would require:
+<span>D</span>oor To Door Organics is an online organic produce and market delivery service that, at the time of this project, covered five locations nationwide. As part of the company's commitment to their customers eating good food, Door To Door Organics decided to launch a recipe and meal planning “wing” to the website that would ultimately be incorporated into the future website shopping flow. The recipe site would bring the customer’s grocery box, with all of its ingredients, together with recipes to help provide inspiration in the kitchen and reduce food waste. This project would require:
 
 - A brand new design and code infrastructure
 - An engaging user experience that would be easy to use and make people want to come back
 - Ultimately growth in customer engagement, retention, and sales.
-{: .disc}
-
-> Overall customer retention increased with a 17% increased customer conversion rate and an average 13% larger basket size.
-{: .pulled-blockquote}
 
 ### Project Role ###
 
@@ -34,7 +27,6 @@ I was the designer on a three person team that also included a web developer and
 - Kristin Lindquist - Product Manager
 - David Rudder - Senior Software Developer
 - Christan Fergus - Senior Web Designer
-{: .disc}
 
 ## Process ##
 
@@ -54,11 +46,14 @@ David Rudder handled the software development, and we worked together through th
 - The ability to quickly sift through the user’s customer data, thus showing them relevant recipes based on their order and seasonal factors
 - The ability to purchase products directly from recipes
 - Provide a custom CMS for easy recipe input by the Door To Door team.
-{: .disc}
 
 ### User Testing ###
 
 User testing was implemented late in the process, something that since has been modified in our team’s creative process, but we did do live user testing, think-aloud, and A/B testing and continue to perform tests even after release.
+
+<blockquote>
+	<p>A 13% larger basket size was achieved.</p>
+</blockquote>
 
 ### Challenges ###
 
@@ -72,16 +67,26 @@ Feedback and site usage were extremely positive and we successfully created a fu
 
 - Overall customer retention increased with a 17% increased customer conversion rate
 - On average 13% larger basket size.
-{: .disc}
 
 As the Door To Door Organics recipe site has been live and active now for some time, we continue to respond to the data we receive and adjust accordingly. Since the original release, we have had a V1.5 release where we fixed some bugs and polished some functionality.
 
-<div class="slider">
-	<ul class="bjqs">
-		<li><img src="{{ "/img/dtdo/recipe-find.jpg" | prepend: site.baseurl }}" alt="Door To Door Organics Recipes" /></li>
-		<li><img src="{{ "/img/dtdo/recipe-recipe.jpg" | prepend: site.baseurl }}" alt="Easy to read recipes." /></li>
-		<li><img src="{{ "/img/dtdo/recipe-plan.jpg" | prepend: site.baseurl }}" alt="Plan your week of meals." /></li>
-		<li><img src="{{ "/img/dtdo/recipe-bookmarks.jpg" | prepend: site.baseurl }}" alt="Bookmark the meals you like best." /></li>
-		<li><img src="{{ "/img/dtdo/recipe-sbp.jpg" | prepend: site.baseurl }}" alt="Purchase ingredients for your recipe." /></li>
-	</ul>
-</div>
+## Screen Shots
+<figure>
+	<img src="https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-find.jpg" alt="Door To Door Organics Recipes" />
+</figure>
+<hr>
+<figure>
+	<img src="https://res.cloudinary.com/fergd/image/upload/v1486856030/fergdblog/recipe-recipe.jpg" alt="Easy to read recipes." />
+</figure>
+<hr>
+<figure>
+	<img src="https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-plan.jpg" alt="Plan your week of meals." />
+</figure>
+<hr>
+<figure>
+	<img src="https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-bookmarks.jpg" alt="Bookmark the meals you like best." />
+</figure>
+<hr>
+<figure>
+	<img src="https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-sbp.jpg" alt="Purchase ingredients for your recipe." />
+</figure>

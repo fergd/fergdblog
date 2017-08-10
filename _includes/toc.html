@@ -1,0 +1,10 @@
+{% if page.toc %}
+<div class="toc">
+<h2>Jump to Sections</h2>
+	<ul>
+		{% for jump in page.toc %}
+		<li><a href="#{{ jump.anchor }}">{{ jump.section }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}

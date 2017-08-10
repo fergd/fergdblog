@@ -1,0 +1,47 @@
+---
+layout: post
+title: Articles
+permalink: /articles/
+---
+<div class="article-wrap">
+	<div class="post-grid cat-case-studies">
+		<div class="heading-wrap">
+			<h2>Case Studies</h2>
+		</div>
+		<ul>
+		{% for category in site.categories %}
+		
+		{% if page.category contains "Case Studies" %} 
+			<li>
+				{{ post.title }}
+			</li>
+		{% endif %}
+			
+		
+		{% endfor %}
+		</ul>
+	</div>
+		
+	<div class="post-grid cat-uxd">
+		<h2>User Experience Design</h2>
+	</div>
+	
+	<div class="post-grid cat-web-dev">
+		<h2>Web Development</h2>
+	</div>
+
+	<div class="post-grid cat-app-dev">
+		<h2>App Development</h2>
+	</div>
+
+	<div class="post-grid cat-technology">
+		<h2>Web Industry</h2>
+	</div>
+
+</div>
+
+
+
+
+
+

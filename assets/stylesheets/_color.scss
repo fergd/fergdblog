@@ -1,0 +1,37 @@
+$black:			#474E5D;
+// $black: 		#341D1A;
+$med-grey: 		#777;
+$light-grey:	#CCC;
+$yellow:		#F2C300;
+$green:			#58dca9;
+
+$red:				#FF646A;
+$orange:			#FCB941;
+$blue:				#2C82C9;
+
+// Life Aquatic
+$la-light-blue: 	#7CA7B3;
+$la-blue:			#53899C;
+$la-red:			#C64643;
+$la-yellow:			#CC9F54;
+$la-light-yellow:	#DDB961;
+
+
+$default: 		$black;
+$subtitle:		$med-grey;
+$border-color:	$yellow;
+
+.default{ color: $default; }
+
+body{
+	color: $default;
+}
+p a, article li a{
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px dotted darken($green, 10%);
+	font-weight: 700;
+	&:hover{
+		border-bottom: 1px solid darken($green, 10%);
+	}
+}

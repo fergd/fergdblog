@@ -1,0 +1,137 @@
+$site-title:		'Rubik', Sans-Serif;
+$heading-copy:		'Rubik', Sans-Serif;
+$body-copy:			'Karla', Serif;
+$nav-copy: 			'Karla', Serif;
+// Font-Family: 'Rubik', Sans-Serif;
+// Font-Size: 45px;
+// Font-Family: 'Karla', Sans-Serif;
+// Font-Size: 16px;
+
+.emphasized-copy{
+	font-weight: 700;
+	font-style: italic;
+}
+body{
+	font-family: $body-copy;
+}
+a{
+	color: $la-blue;
+	text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+}
+h1 a:hover{
+	text-decoration: none;
+}
+form, input{
+	font-family: $body-copy;
+}
+h1:not(.header-heading){
+	font-size: ms(3);
+	font-weight: 900;
+}
+h2{
+	font-size: ms(2);
+	// font-weight: 900;
+}
+h3{
+	font-size: ms(1);
+}
+h4, h5, h6{
+	font-size: ms(0);
+}
+p{
+	font-size: ms(0);
+	line-height: 27px;
+}
+article li{
+	line-height: 27px;
+}
+@media screen and (min-width: 575px){
+	h1{
+		font-size: ms(3);
+	}
+	h2{
+		font-size: ms(2);
+	}
+	h3{
+		font-size: ms(1);
+	}
+	h4, h5, h6{
+		font-size: ms(1);
+	}
+}
+h1{
+	font-family: $heading-copy;
+}
+h2,h3,h1+p, h4,h5,h6{
+	font-family: $body-copy;
+}
+h3,h1+p,h3+p small{
+	color: $subtitle;
+}
+h4,h5,h6{
+	font-style: italic;
+	font-weight: 700;
+	color: $subtitle;
+}
+h1+p, h3+p small{
+	@extend .emphasized-copy;
+	margin-top: 0;
+}
+article > h1 + p{
+	border-top: 1px solid $border-color;
+}
+blockquote, .toc{
+	border-left: none;
+	border-right: none;
+	color: $med-grey;
+	
+	p{
+		@extend .emphasized-copy;
+		font-size: ms(1);
+	}
+	h1{
+		font-size: ms(2);
+	}
+	h2{
+		font-size: ms(0);
+	}
+}
+blockquote{
+	border-top: 5px solid $border-color;
+	border-bottom: 1px solid $border-color;
+}
+.toc{
+	border-top: 5px solid $green;
+	border-bottom: 1px solid $green;
+	background: lighten($med-grey, 50%);
+}
+.grabber{
+	font-size: ms(2);
+	line-height: 1.2;
+	margin: 30px 0;
+	border-top: 5px solid $med-grey;
+	border-bottom: 1px solid $med-grey;
+	padding: 20px 0;
+	text-align: center;
+}
+h1>a{
+	text-decoration: none;
+	color: inherit;
+}
+// Drop Cap
+article p span:first-child:not(.markup-wrap){
+	color: $yellow;
+	float: left;
+	font-family: $heading-copy;
+	font-size: 88px;
+	line-height: 73px;
+	padding-right: 8px;
+}
+@media screen and (min-width: 769px){
+	article > h1+p{
+		margin-top: -1em;
+	}
+}

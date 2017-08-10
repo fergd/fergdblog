@@ -1,0 +1,18 @@
+<div class="index-article-wrapper">
+	<ul>
+		{% if page.url == '/' %}
+		{% for post in site.posts limit: 5 | sort: "date" %}
+		<li>
+			<h3>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</h3>
+			<p><small>{{ post.date | date: "%a, %b %d, %y" }}{% if post.author %}| {{ post.author }}{% endif %}</small></p>
+		</li>
+		{% endfor %}
+		{% else %}
+		{% endif %}
+	</ul>
+</div>
+
+		
+		

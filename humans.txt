@@ -1,6 +1,6 @@
     /* TEAM */
     Title: Christan Fergus
-    Site: christanfergus.com & fergusdesign.com
+    Site: christanfergus.com
     Twitter: @ChristanFergus
     Location: Denver, Colorado, USA
 						
@@ -11,10 +11,9 @@
                         
 
     /* SITE */
-    Last update: 02/2014
     Standards: HTML5, CSS3,..
     Components: Modernizr, jQuery.
-    Software: Sass, Compass Framework
+    Software: Sass, Cloudinary
 
 
                     

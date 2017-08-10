@@ -1,8 +1,9 @@
-<header id="header-top" class="header-website">
-	<a href="#header-top"><img src="{{ site.baseurl }}/img/fergus-crest.svg" data-sticky /></a>
-	<h1 class="heading-website"><a href="{{ site.baseurl }}/">Christan Fergus</a></h1>
-	<h2 class="subheading-website">
-		<span><span class="markup-wrap">UX</span>&nbsp;Designer / Developer</span>
-	</h2>
-	<button class="menu-button" offclass="menu-button">Menu</button>
+<header class="global-header">
+	<div class="header-identity">
+		<h1 class="header-heading"><a href="{{ site.baseurl }}">{{ site.author }}</a></h1>
+	<!-- 	<p>{{ site.site-title }}</p>
+	</div> -->
+	</div>
+	{% include navigation.html %}
+	<button class="menu-button">Menu</button>
 </header>

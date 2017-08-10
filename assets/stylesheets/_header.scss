@@ -1,0 +1,21 @@
+.global-header{
+	padding: 0 20px;
+	height: 90px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid $la-light-yellow;
+}
+.header-heading{
+	font-size: ms(2);
+	&:before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		@extend .icon-icon-logo;
+		display: inline-block;
+		background-size: 100%;
+		background-position: center;
+	}
+}

@@ -2,68 +2,88 @@
 layout: post
 title: Retro Gaming With a RetroPie
 subtitle: Setting up a RetroPie gaming system because I couldn't get an NES Classic
-permalink: RetroPie-Gaming
+permalink: /articles/retropie-gaming/
 date: 2016/06/29 
-category: Misc
 author: Christan Fergus
+categories: Technology
 published: true
-tags: retropie, development, gaming
 comments: true
+toc:
+  - section: Resources
+    anchor: Resources
+  - section: Tips
+    anchor: Tips
 ---
+<p>{{ page.subtitle }}</p>
+
+<figure>
+	<img src="https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg" alt="Logos of NES and retropie" >
+</figure>
+
+{% include toc.html %}
+
 ## NES Classic Edition Vs. RetroPie
-<img src="https://res.cloudinary.com/fergd/image/upload/v1483218569/retro-vs.jpg" style="max-width: 100%;" alt="Logos of NES and retropie" >
-<hr>
-Skip to: <a href="#Resources">Resources</a> | <a href="#Tips">Tips</a>
-<hr>
-Like many of my fellow humans, I was excited when I heard Nintendo were putting out a purpose-built NES pre-packed with 30 games. The price was right, too. However, Nintendo only released a small amount to market, making the chances of getting one slim-to-none. Even worse, the scalpers were turning around and selling the things for insane amounts of money. I don’t have time or patience for that shit, so I decided to take matters into my own hands. 
+
+<span>L</span>ike many of my fellow humans, I was excited when I heard Nintendo were putting out a purpose-built NES pre-packed with 30 games. The price was right, too. However, Nintendo only released a small amount to market, making the chances of getting one slim-to-none. Even worse, the scalpers were turning around and selling the things for insane amounts of money. I don’t have time or patience for that shit, so I decided to take matters into my own hands. 
 
 I have wanted to mess around with a Raspberry Pi for some time. This project seemed like the perfect excuse to get my hands on one. With the development of the robust RetroPie platform, it was now extremely easy to set up a retro gaming system. The more I thought about it, the better this option looked. Here’s what I did. 
 
 Note: I am using a Mac to format and prep the SD card, and grab ROMS. The process may vary for Windows and Linux users. Hey, if you’re on Linux, I’m pretty sure you know what’s up anyway. 
 
-## Pros & Cons
+## RetroPie Pros & Cons
 
-### RetroPie Pros
-
-- Cheaper than NES Classic (if you already have a supported controller)
-- You get to geek out, play around in the command line, etc.
-- There is an enormous amount of platforms and games at your disposal
-- You can use a variety of controllers, both wired and wireless
-- The system is highly configurable
-- Large support community
-
-### RetroPie Cons
-
-- You have to work to set it up, whereas the NES Classic is plug-n-play
-- When you start to dig below the surface to configure, it's not intuitive
-- You have to seek out ROMS and manually install them which I find tedious
-- It doesn’t lend itself to intuitive use for the family room. On/off is plugging and unplugging the unit, and the OS makes it easy for my five-year-old to poke around and break stuff. 
+<div class="column">
+	<h3>Pros</h3>
+	<ul>
+		<li>Cheaper than NES Classic (if you already have a supported controller)</li>
+		<li>You get to geek out, play around in the command line, etc.</li>
+		<li>There is an enormous amount of platforms and games at your disposal</li>
+		<li>You can use a variety of controllers, both wired and wireless</li>
+		<li>The system is highly configurable</li>
+		<li>Large support community</li>
+	</ul>
+</div>
+<div class="column">
+	<h3>Cons</h3>
+	<ul>
+		<li>You have to work to set it up, whereas the NES Classic is plug-n-play</li>
+		<li>When you start to dig below the surface to configure, it's not intuitive</li>
+		<li>You have to seek out ROMS and manually install them which I find tedious</li>
+		<li>It doesn’t lend itself to intuitive use for the family room. On/off is plugging and unplugging the unit, and the OS makes it easy for my five-year-old to poke around and break stuff</li>
+	</ul>
+</div>
 
 ## Kit
 
-### Bare-minimum Required 
-
-- Raspberry Pi 3
-- Power supply
-- Monitor
-- USB keyboard
-- SD card
-
-### My Kit
-- Raspberry Pi 3
-- 1 Controller
-- Power supply
-- Case
-- Heat syncs 
-- SD card
-- USB Keyboard
-- Monitor
-- HDMI cable
-- USB flash drive
-
+<div class="column">
+	<h3>Bare-minimum Required</h3>
+	<ul>
+		<li>Raspberry Pi 3</li>
+		<li>Power supply</li>
+		<li>Monitor</li>
+		<li>USB keyboard</li>
+		<li>SD card</li>
+	</ul>
+</div>
+<div class="column">
+	<h3>My Kit</h3>
+	<ul>
+		<li>Raspberry Pi 3</li>
+		<li>1 Controller</li>
+		<li>Power supply</li>
+		<li>Case</li>
+		<li>Heat syncs</li> 
+		<li>SD card</li>
+		<li>USB Keyboard</li>
+		<li>Monitor</li>
+		<li>HDMI cable</li>
+		<li>USB flash drive</li>
+	</ul>
+</div>
+<figure>
+	<img src="http://res.cloudinary.com/fergd/image/upload/v1483219754/kit.jpg" alt="All the boxes of the pieces of raspberry pi in prep for retropie">
+</figure>
 ### What I Purchased
-
-<img src="http://res.cloudinary.com/fergd/image/upload/v1483219754/kit.jpg" class="post-image" alt="All the boxes of the pieces of raspberry pi in prep for retropie">
 
 #### Raspberry Pi Kit - $49.99
 
@@ -110,8 +130,6 @@ Once the power is plugged in, the Pi will begin its initial boot-up process. It 
 
 Aaaand DONE! It was that fast and easy.
 
-<img src="https://res.cloudinary.com/fergd/image/upload/v1483219189/setup.jpg" alt="An example of the setup: pi, controllers, monitor" style="max-height: 100%;" class="post-image">
-
 ### Games
 
 The RetroPie isn’t much fun without games, so you have to get some. Take a look at the video links I provide below, and follow their detailed instructions. 
@@ -124,9 +142,7 @@ When you have your ROMS, load them into the appropriate folders in your prepped 
 
 #### Wirelessly: ideal
 
-On a Mac, while in Finder select "Go" from the menu, then choose "Connect to Server". Enter 
-<pre><code>smb://retropie</code></pre>
-and hit enter. Sign in as a Guest, and you're off to the races. The only drawback is the time it takes to transfer. Depending on your wireless connection, larger files could take quite a while. Because I'm a glutton for punishment, the first games I transferred this way were for PS1, and my god were those big files. 
+On a Mac, while in Finder select <code>Go</code> from the menu, then choose <code>Connect to Server</code>. Enter <code>smb://retropie</code> and hit enter. Sign in as a Guest, and you're off to the races. The only drawback is the time it takes to transfer. Depending on your wireless connection, larger files could take quite a while. Because I'm a glutton for punishment, the first games I transferred this way were for PS1, and my god were those big files. 
 
 Again, watch the videos for important tips and processes for doing this. 
 
@@ -158,26 +174,26 @@ This section is a compilation of all the niggly things I had to figure out along
 
 ### Warning On Prepping SD Card!
 
-When prepping the RetroPie image, make sure you first extract your img.gz file with the Mac file system so that you are left with an *.img* file. It will not work if you still have the .gz extension still there. I did not do that the first time around, and it bricked the SD card. I had to erase it and start over. 
+When prepping the RetroPie image, make sure you first extract your img.gz file with the Mac file system so that you are left with an <code>.img</code> file. It will not work if you still have the <code>.gz</code> extension still there. I did not do that the first time around, and it bricked the SD card. I had to erase it and start over. 
 
 ### Patience in Transferring ROMS
 
 Be patient when loading games, and pay attention to your flickering flash stick light. That's your only indication of progress. If it's flickering, leave it alone. Transferring ROMS can take a while. 
 
 ### Enter the Game's Config Menu
-From inside any game, press "select" + "x" to enter a config menu. From here you can do quite a lot, including configure <a href="#Shaders">shaders</a>.
+From inside any game, press <code>select</code> + <code>x</code> to enter a config menu. From here you can do quite a lot, including configure <a href="#Shaders">shaders</a>.
 
 ### How to exit a game
 
-Press Start and Select at the same time. My goodness this took me forever to figure out. 
+Press <code>Start</code> and <code>Select</code> at the same time. My goodness this took me forever to figure out. 
 
 ### To The Command Line!
 
-F4
+<code>F4</code>
 
 ### How to exit the command line
 
-Type "exit". Emulationstation will restart. 
+Type `exit`. Emulationstation will restart. 
 
 ### Your RetroPie installation will probably <em>not</em> look like the video tutorials
 
@@ -188,9 +204,9 @@ Everything was completely fine, however. It turns out RetroPie is now being ship
 <h3 id="Shaders">Shaders</h3>
 In my opinion, this is a must. Most of the retro games were made for old CRT screens, not our fancy-pants HD screens. You can apply shaders to simulate the old screens which I find actually makes the gameplay more fun. 
 
-While you can set up the shaders per game by accessing "select" + "x" in a game, I went ahead and just applied a global shader via the command line. 
+While you can set up the shaders per game by accessing `select` + `x` in a game, I went ahead and just applied a global shader via the command line. 
 
-- F4 to hit the terminal, then:
+- `F4` to hit the terminal, then:
 
 <pre>
 <code>
@@ -198,7 +214,7 @@ sudo nano /opt/retropie/configs/all/retroarch.cfg
 </code>
 </pre>
 
-- Find "video_shader" pretty far down the list, and here is where you choose your shader type. I have shown the one I like, which seems to be the typical one folks use. Delete the hash and fill in the deets:
+- Find `video_shader` pretty far down the list, and here is where you choose your shader type. I have shown the one I like, which seems to be the typical one folks use. Delete the hash and fill in the deets:
 
 <pre>
 <code>
@@ -206,7 +222,7 @@ video_shader = "/opt/retropie/emulators/retroarch/shader/crt-pi.glslp"
 </code>
 </pre>
 
-- Un-comment the video_shader_enable and set to "true"
+- Un-comment the `video_shader_enable` and set to `true`
 
 <pre>
 <code>
@@ -214,11 +230,7 @@ video_shader_enable = true
 </code>
 </pre>
 
-- Now you're done. "Ctrl" + "x", "y" to save, "Enter" to confirm, then type "exit", then reboot. 
-
-### Configuring a PS3 Controller for wireless operation
-
-https://github.com/retropie/retropie-setup/wiki/Setting-up-a-PS3-controller
+- Now you're done. `Ctrl` + `x`, `y` to save, `Enter` to confirm, then type `exit`, then reboot. 
 
 ## Continuing the Retro Experience
 

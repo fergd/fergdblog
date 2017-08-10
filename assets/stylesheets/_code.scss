@@ -1,0 +1,19 @@
+pre, code {
+    font-family: 'PT Mono', Courier, monospace;
+    white-space: pre;
+    white-space: pre-wrap;
+    background: lighten($med-grey, 50%);
+    border: 1px solid $light-grey;
+}       
+    
+pre {
+    display: block;
+    padding: 0 20px;
+    code{
+       border: none; 
+    }   
+}
+
+article code {
+    padding: 0 10px;
+}

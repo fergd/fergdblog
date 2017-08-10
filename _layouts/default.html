@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	{% include head.html %}
-	<body>
-		<a href="#content" class="skip">Skip to main content</a>
-		<div class="page-wrap">	
-			{% include header.html %}
-			{% include navigation.html %}
-			<main id="content" class="home" role="main">
-				{{ content }}	
-			</main>	
-		</div>
-		{% include footer.html %}
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="{{"/js/vendor/jquery-1.10.2.min.js" | prepend: site.baseurl }}"><\/script>')</script>
-		<script src="{{"/js/vendors/bjqs-1.3.min.js" | prepend: site.baseurl }}"></script>
-
-		<script src="{{"/js/main.js" | prepend: site.baseurl }}"></script>
-		<noscript><link href="{{"/css/icons.fallback.css" | prepend: site.baseurl }}" rel="stylesheet"></noscript>
-
-		<script>$("[data-sticky]").stick_in_parent();</script>
-		<script id="dsq-count-scr" src="//fergdblog.disqus.com/count.js" async></script>
-	</body>
+<body>
+	{% if page.pagetype %} 
+	<div class="landing-leader">
+		<img src="{{ site.imgurl }}logo.svg"" alt="The logo of Christan Fergus">
+	</div>
+	{% endif %}
+	{% include header.html %}
+	<main>	
+		{{ content }}
+	</main>
+	{% include footer.html %} 
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="{{ site.js-dir | prepend: site.baseurl }}jquery.waypoints.min.js"></script>
+	<script src="{{ site.js-dir | prepend: site.baseurl }}main.js"></script>
+	<script src="{{ site.js-dir | prepend: site.baseurl }}lunr.min.js"></script>
+	<script src="{{ site.js-dir | prepend: site.baseurl }}search.js"></script>
+</body>
 </html>

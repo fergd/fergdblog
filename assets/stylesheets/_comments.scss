@@ -1,0 +1,13 @@
+.comments-wrap{
+	max-width: 748px;
+    overflow: hidden;
+    margin: 60px auto 10px auto;
+    border-top: 5px solid $black;
+    border-bottom: 1px solid $black;
+}
+
+@media screen and (max-width: 769px){
+	.comments-wrap{
+		padding: 0 10px;
+	}
+}

@@ -1,0 +1,10 @@
+<footer class="article-footer">
+	<ul>
+	<li><a href="{{ site.baseurl }}articles" class="button">More Articles</a></li>
+	{% for links in page.footer-links %} 
+	<li>
+		<a href="{{ links.url }}" class="button">{{ links.title }}</a>
+	</li>
+	{% endfor %}
+	</ul>
+</footer>

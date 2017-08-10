@@ -1,21 +1,68 @@
-# Site settings
-title: Christan Fergus UX Designer & Developer
-email: christan.fergus@gmail.com
-description: > # The work, writings, and profile of Christan Fergus, a web designer.
-# baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://christanfergus.com" # the base hostname & protocol for your site
-twitter_username: christanfergus
-github_username:  fergd
-linkedin_username: christanfergus
-cdn_image: "img/"
-cdn_root: "http://christanfergus.com/"
-future: true
-# Build settings
-kramdown:
-  input: GFM
-sass:
- sourcemap: true
- output_style: :compressed
- line_comments: true
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# exclude: ["node_modules", "gulpfile.js", "package.json"]
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Christan Fergus | User Experience Designer Developer
+site-title: A guy who makes stuff on the web continuum.
+email: christan.fergus@gmail.com
+author: Christan Fergus
+description: Christan Fergus is a front end user experience designer and developer based in the Denver metro.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://christanfergus.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: christanfergus.com
+github_username: fergd
+categories: 
+  - "Case Studies"
+  - "Web Development"
+  - "User Experience Design"
+  - "Web &amp; App Development"
+  - "Technology"
+
+imgurl:              "assets/images/"
+css-dir:              "assets/css/"
+js-dir:               "assets/js/"
+post-url:             "posts/"
+
+# Build settings
+markdown: kramdown
+# theme: minima
+
+gems:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - config
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - "*.DS_Store"
+  - deploy.sh
+  - .gitignore
+  
+sass:
+  sass_dir:           assets/stylesheets
+  style:              compressed
+  sourcemap:          true 
+
+# livereload: true     
+# reload_port: 5678

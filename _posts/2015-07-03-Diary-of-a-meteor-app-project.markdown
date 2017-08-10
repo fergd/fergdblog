@@ -2,7 +2,7 @@
 layout: post
 title: Diary Of A Meteor App Project
 subtitle: A case study chronicling my first experience with Meteor
-permalink: diary-of-a-meteor-app-projects
+permalink: /articles/diary-of-a-meteor-app-project/
 date: 2015/07/03 
 category: Web & App Development
 author: Christan Fergus
