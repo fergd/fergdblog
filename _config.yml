@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Christan Fergus | User Experience Designer Developer
-site-title: A guy who makes stuff on the web continuum.
 email: christan.fergus@gmail.com
 author: Christan Fergus
 description: Christan Fergus is a front end user experience designer and developer based in the Denver metro.
+employer: ZOLL
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://christanfergus.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: christanfergus.com
@@ -29,10 +29,10 @@ categories:
   - "Web &amp; App Development"
   - "Technology"
 
-imgurl:              "assets/images/"
-css-dir:              "assets/css/"
-js-dir:               "assets/js/"
-post-url:             "posts/"
+imgurl: "assets/images/"
+css-dir: "assets/css/"
+js-dir: "assets/js/"
+post-url: "posts/"
 
 # Build settings
 markdown: kramdown

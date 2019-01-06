@@ -8,6 +8,8 @@ category: User Experience Design
 author: Christan Fergus
 published: true
 comments: true
+frontpage: true
+frontpageposition: 2
 ---
 <p class="grabber">{{ page.grabber }}</p>
 

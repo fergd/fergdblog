@@ -1,17 +1,21 @@
+
+
+{% comment %}
 <nav class="primary-nav">
-	<h2 class="hidden">Navigation</h2>
-	<ul class="menu">
-		{% for link in site.data.navigation %}
-		{% assign active = nil %}
+    <h2 class="hidden">Navigation</h2>
+    <ul class="menu">
+        {% for link in site.data.navigation %}
+        {% assign active = nil %}
         {% if page.url contains link.url %}
-            {% assign active = 'active' %}
+        {% assign active = 'active' %}
         {% endif %}
-		<li><a href="{{ link.url }}" class="{{ active }}">{{ link.title }}</a></li>
-		{% endfor %}
-		{% comment %} 
-		<li class="search-wrapper">
-			{% include search-input.html %}
-		</li>
-		 {% endcomment %}
-	</ul>
+        <li><a href="{{ link.url }}" class="{{ active }}">{{ link.title }}</a></li>
+        {% endfor %}
+        {% comment %}
+        <li class="search-wrapper">
+            {% include search-input.html %}
+        </li>
+        {% endcomment %}
+    </ul>
 </nav>
+{% endcomment %}

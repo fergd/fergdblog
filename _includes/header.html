@@ -1,9 +1,13 @@
 <header class="global-header">
-	<div class="header-identity">
-		<h1 class="header-heading"><a href="{{ site.baseurl }}">{{ site.author }}</a></h1>
-	<!-- 	<p>{{ site.site-title }}</p>
-	</div> -->
-	</div>
-	{% include navigation.html %}
-	<button class="menu-button">Menu</button>
+	<a href={{site.baseurl}}><h1>{{ site.author }}</h1></a>
+	<nav>
+		{% comment %} 
+		<a href="">Posts</a>
+		{% endcomment %} 
+		{% for page in site.pages %} 
+		{% if page.display %} 
+		<a href="{{page.permalink}}">{{page.title}}</a>
+		{% endif %} 
+		{% endfor %} 
+	</nav>
 </header>
