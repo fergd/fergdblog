@@ -12,7 +12,16 @@ h6 {
         margin-top: var(--space-nudge);
     }
 }
+h3,
+h4{
+	font-family: var(--font-body), sans-serif;
+    line-height: 1.2;
+    margin: 0;
 
+    +* {
+        margin-top: var(--space-nudge);
+    }
+}
 h1 {
     font-size: var(--scale-6);
 }
