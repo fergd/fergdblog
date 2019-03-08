@@ -3,18 +3,13 @@
 {% include head.html %}
 
 <body>
-    {% include header.html %}
-    
+    {% include navigation.html %}
     <main>
-        <div class="employment">
-            <p>Currently working at {{ site.employer }}</p>
-        </div>
-       
         {{ content }}
-       
     </main>
+    {% comment %}
     {% include footer.html %}
-
+    {% endcomment %}
 </body>
 
 </html>
