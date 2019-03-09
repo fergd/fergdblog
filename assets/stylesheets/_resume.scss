@@ -1,5 +1,5 @@
 .container.resume{
-	padding: var(--space-medium);
+	// padding: var(--space-medium);
 	blockquote p{
 		font-size: var(--scale-3);
 	    font-weight: var(--font-medium);
@@ -21,10 +21,9 @@
 		}
 	}
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1025px) {
 	@supports (display:grid){
     .container.resume {
-    	padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 2fr 1fr;
         grid-template-rows: auto;
@@ -33,6 +32,7 @@
         .resume-column {
             display: flex;
             flex-direction: column;
+            align-content: flex-start;
         }
 
         .item-r2 {

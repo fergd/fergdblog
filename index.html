@@ -1,5 +1,6 @@
 ---
 layout: default
+title: landing
 ---
 <div class="container front-page">
     <div class="item-2 lede">
@@ -12,6 +13,9 @@ layout: default
             <p>As a leader in advocating for human beings, I bring empathy into product design, use the stories found in data to drive product direction, & craft meaningful designs that provide those humans with what they need to accomplish their tasks.</p>
         </blockquote>
     </div>
+    <div class="item-3-image">
+        <img src="{{site.imgurl | prepend:site.baseurl }}people.png" alt="">
+    </div>
     <div class="item-4">
         <h2>I'm About</h2>
         <ul class="outside">
@@ -21,11 +25,17 @@ layout: default
             <li>Educating software &amp; product professionals in the importance of designing &amp; developing for people</li>
         </ul>
     </div>
+    <div class="item-4-image">
+        <img src="{{site.imgurl | prepend:site.baseurl }}usable.png" alt="">
+    </div>
     <div class="item-5 lede">
         <h2>See for Yourself</h2>
         <div>
-            <a href="">Articles</a>
-            <a href="resume">Resume</a>
+            {% for page in site.pages %} 
+            {% if page.navpage %} 
+            <a href="{{page.permalink}}">{{page.title}}</a>
+            {% endif %} 
+            {% endfor %} 
             <a href="https://www.linkedin.com/in/christanfergus/">LinkedIn</a>
         </div>
     </div>

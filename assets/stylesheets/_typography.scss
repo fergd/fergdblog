@@ -75,3 +75,9 @@ h6 {
         font-size: .65em;
     }
 }
+
+.article-body p{
+	font-family: var(--font-article);
+	font-weight: var(--font-normal);
+	font-size: var(--scale-2);
+}

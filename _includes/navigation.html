@@ -1,9 +1,10 @@
-<nav>
 	<div class="container__logo">
-		<a href="/"><h1>CF</h1></a>
+		<a href="{{site.baseurl}}"><h1>CF</h1></a>
 	</div>
-	<div class="container__nav-items">
-		<a href="posts">Articles</a>
-		<a href="resume">Resume</a>
-	</div>
-</nav>
+	<nav>
+		{% for page in site.pages %} 
+		{% if page.navpage %} 
+		<a href="{{page.permalink}}">{{page.title}}</a>
+		{% endif %} 
+		{% endfor %} 
+	</nav>

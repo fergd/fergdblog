@@ -3,13 +3,13 @@
 {% include head.html %}
 
 <body>
-    {% include navigation.html %}
+    {% include header.html %}
     <main>
         {{ content }}
     </main>
-    {% comment %}
+    {% unless page.title == 'landing' %} 
     {% include footer.html %}
-    {% endcomment %}
+    {% endunless %} 
 </body>
 
 </html>
