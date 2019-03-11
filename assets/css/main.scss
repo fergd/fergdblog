@@ -111,7 +111,6 @@ blockquote {
 img {
     max-width: 100%;
     display: none;
-    opacity: 0.7;
 }
 
 p {
@@ -119,7 +118,7 @@ p {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 1) {
     img {
         display: block;
     }
@@ -133,7 +132,7 @@ p {
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     img {
         display: block;
     }
@@ -151,6 +150,7 @@ figure {
     border-radius: var(--radius-default);
     padding: 1em;
     margin: 0;
+    max-width: 100%;
 
     figcaption {
         border-top: 1px solid var(--gray-lighten-4);
@@ -276,6 +276,11 @@ footer {
         font-size: var(--scale-3);
         font-weight: var(--font-medium);
         color: var(--gray-darken-2);
+    }
+
+    .img-people{
+        height: 270px;
+
     }
 }
 

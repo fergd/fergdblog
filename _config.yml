@@ -7,7 +7,7 @@ baseurl: "/"
 url: "http://christanfergus.com"
 twitter_username: christanfergus.com
 github_username: fergd
-imgurl: "assets/images/"
+linkedin: "https://www.linkedin.com/in/christanfergus/"
 css-dir: "assets/css/"
 js-dir: "assets/js/"
 post-url: "posts/"

@@ -30,9 +30,9 @@
         grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 1em 1em;
 
-        img{
-            margin-top: var(--space-xxlarge);
-        }
+        // img{
+        //     margin-top: var(--space-xxlarge);
+        // }
     }
 
     .item-a2 {
@@ -81,6 +81,14 @@
 
     .item-a13 {
         grid-area: 6 / 3 / 7 / 5;
+    }
+
+    .item-a14 {
+        grid-area: 7 / 2 / 8 / 3;
+    }
+
+    .item-a15 {
+        grid-area: 7 / 3 / 8 / 5;
     }
 
     .item-image-2{
