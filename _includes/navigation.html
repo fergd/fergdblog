@@ -2,9 +2,6 @@
     <a href="{{site.baseurl}}">
         <h1>CF</h1>
     </a>
-    {% if is_footer == true %}
-    <span><small>&copy;<script>document.write(new Date().getFullYear())</script></small></span>
-    {% endif %} 
 </div>
 <nav>
     {% for page in site.pages %}
@@ -13,6 +10,6 @@
     {% endif %}
     {% endfor %}
     {% if is_footer == true %}
-    <a href="{{site.linkedin}}" target="_blank"><i class="fab fa-linkedin"></i> Contact</a>
+    <a href="{{site.linkedin}}" target="_blank"><i class="fab fa-linkedin footer-icon"></i>Contact</a>
     {% endif %} 
 </nav>

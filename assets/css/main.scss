@@ -79,11 +79,12 @@
 "../stylesheets/layout",
 "../stylesheets/resume",
 "../stylesheets/article",
-"../stylesheets/article-landing"
+"../stylesheets/article-landing",
+"../stylesheets/haikus"
 ;
 
 body {
-    margin: 0;
+    margin: 0 auto;
     min-height: 100vh;
     background: var(--white);
     color: var(--text-dark);
@@ -110,38 +111,41 @@ blockquote {
 
 img {
     max-width: 100%;
-    display: none;
 }
 
-p {
+p:not(blockquote>p) {
     max-width: 768px;
+}
+
+.footer-icon{
+    display: none;
 }
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 1) {
-    img {
-        display: block;
-    }
-
+   
     .front-page .item-3,
     .front-page .item-4 {
         h2 {
             text-align: right;
         }
+    }
+    .footer-icon{
+        display: inline-block;
     }
 }
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    img {
-        display: block;
-    }
 
     .front-page .item-3,
     .front-page .item-4 {
         h2 {
             text-align: right;
         }
+    }
+    .footer-icon{
+        display: inline-block;
     }
 }
 
@@ -151,6 +155,7 @@ figure {
     padding: 1em;
     margin: 0;
     max-width: 100%;
+    overflow: scroll;
 
     figcaption {
         border-top: 1px solid var(--gray-lighten-4);
@@ -166,6 +171,7 @@ figure {
 
     img {
         max-width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -270,17 +276,11 @@ footer {
 }
 
 .front-page {
-
     blockquote,
     li {
         font-size: var(--scale-3);
         font-weight: var(--font-medium);
         color: var(--gray-darken-2);
-    }
-
-    .img-people{
-        height: 270px;
-
     }
 }
 
@@ -290,7 +290,14 @@ footer {
         margin-right: var(--space-medium);
     }
 }
-
+.item-3-image{
+    background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/people.png");
+    background-size: contain;
+}
+.item-4-image{
+    background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/usable.png");
+    background-size: contain;
+}
 .item-4 {
     ul {
         padding: var(--space-default);

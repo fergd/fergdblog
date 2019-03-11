@@ -6,23 +6,11 @@ permalink: /articles/product-card-accessibility/
 date: 2016/04/10
 categories: [Web &amp; App Development, Case Studies]
 author: Christan Fergus
-published: false
+published: true
 tags: accessibility, user experience, screen readers, web development, user interface
-
 ---
 <div class="container article">
-    <div class="item-a2">
-        <h3>{{page.category}}</h3>
-        <h1>{{page.title}}</h1>
-        <p class="subtitle">{{page.author}}</p>
-        <hr>
-        <small>{{page.date}}</small>
-    </div>
-    <div class="item-a3">
-        <blockquote>
-            <p>{{page.subtitle}}</p>
-        </blockquote>
-    </div>
+    {% include article-headings.html %} 
     <div class="item-a4">
         <h2>Overview</h2>
     </div>
@@ -37,10 +25,10 @@ tags: accessibility, user experience, screen readers, web development, user inte
     </div>
     <div class="item-a7">
         <p>The current design was perfectly fine for most of our customers. The product cards had an image, basic info, and gave the customer the ability to purchase the product directly from the card.</p>
-        <!-- <figure>
+        <figure>
             <img src="https://res.cloudinary.com/fergd/image/upload/v1552250103/fergdblog/pa-original.jpg" alt="An example card display that was introduced in 2013">
             <figcaption>Fig. 1 - The product card display that was introduced in early 2013 and has been largely unchanged since.</figcaption>
-        </figure> -->
+        </figure>
         <p>However, if you view the card as a screen reader might, it may read like this (I say, “may” here since in my experience with JAWS, NVDA, and OSX’s native reader all interpret pages a bit differently):</p>
         <figure>
             <code>Yogurt Link Graphic Cherry Vanilla Whole Milk Yogurt This page link Preview Product Link Brown Cow Link Cherry Vanilla Whole Milk Yogurt dollars one point nine nine six oz, two pack Expand Link zero Link Buy dash plus</code>
@@ -58,7 +46,7 @@ tags: accessibility, user experience, screen readers, web development, user inte
         </blockquote>
         <h3>All the "Hiddens" &amp; Shortcuts</h3>
         <p>To make the card easily consumable to users with and without a screen reader, yet minimize duplicated code, a few layout decisions were made. My team’s first idea was to give screen readers an overview of the product card before actually drilling down through it. To accomplish this, we set the product name and a “jump-to-next product card” link as the first markup for every card. The idea behind this was to alleviate the user having to navigate all the way through each card’s tree just to skip to the next product.</p>
-        <!-- <figure>
+        <figure>
             <img src="https://res.cloudinary.com/fergd/image/upload/v1552250103/fergdblog/pa-updated.png" alt="The new card has an updated, more spacious design with less clutter">
             <figcaption>Fig. 3 - The updated design gives more space to the UI, but also adds some additional, accessible benefits.</figcaption>
         </figure>
@@ -72,11 +60,11 @@ tags: accessibility, user experience, screen readers, web development, user inte
 |-Item regular price (only visible if on sale)
 </pre>
             <figcaption>Fig. 4 - A typical markup tree looks like this</figcaption>
-        </figure> -->
+        </figure>
         <p>Note that you don’t get to the product name until three nodes down. Then to move on to the next card, you’d need to continue tabbing through prices and potentially other buttons (given on the card’s purchasing state). The structure, while it makes sense from a visual point of view, does not make sense if you are reading linearly through the markup.</p>
         <p>The solution was to add a product preview of sorts. Upon entering a new card, the user is read the title of the product and then immediately given the option to jump to the next product. If they want to know more about the product, then they can continue to tab through the card for more information and even purchase.</p>
         <p>To make this happen, we gave the UI-visible product brand and title the ARIA role of “hidden”. While not supported or treated exactly the same by all readers, this would potentially hide the title that shows up in the UI from the screen reader. Given that the screen reader had already read the product title, this seemed appropriate not to repeat. This was the result:</p>
-        <!-- <figure>
+        <figure>
             <pre>
 |-Item brand [hidden from UI]
 |-Item name/title [hidden from UI]
@@ -104,10 +92,10 @@ padding: 0;
 position: absolute;
 width: 1px;</code></pre>
             <figcaption>Fig. 7 - Visually hide elements</figcaption>
-        </figure> -->
+        </figure>
         <h3>Navigation &amp; :focus</h3>
         <p>Even though we had implemented the ability to skip through the cards without forcing the screen reader through every node, we weren’t quite there yet. It was necessary to underpin this navigation with a little JavaScript to add a unique ID to each card enabling the “jump to next product” link to work correctly. By doing so, we were then able to dynamically provide an anchor for the jump-to link. When the user chooses that link, focus is placed on the next card’s hidden product title. The title is read to them, and upon hitting tab, they would then hear the link to jump to the next card. If the user chooses too, they could navigate the entire product list with this technique.</p>
-        <!-- <figure>
+        <figure>
             <pre><div class="code">
 <span class="Element">&lt;div&nbsp;class="card"&gt;</span><br />
 &nbsp;&nbsp;<span class="Element">&lt;a&nbsp;href="product-url"&nbsp;class="is-visually-hidden"&gt;</span>Product&nbsp;Title&nbsp;X<span class="Element">&lt;/a&gt;</span><br />
@@ -121,7 +109,7 @@ width: 1px;</code></pre>
 <span class="Element">&lt;/div&gt;</span>
 </div></pre>
             <figcaption>Fig. 8</figcaption>
-        </figure> -->
+        </figure>
         <p>In many cases, we were initially loading a minimal number of products for better performance. In that case we provided a “load more” button. Upon selecting the load more button, focus is placed immediately on the next product’s hidden link title, and the user is able to continue navigating the cards like they were previously.</p>
         <p>A minor drawback to this approach, however, was that we were making an experience now for screen readers, and somewhat neglecting the sighted experience. In this case, a sighted user who liked to use a keyboard over a mouse, for instance, would potentially see, as they tabbed through the cards, a key press where nothing happens. The reason behind this is that the very first tab into a card selected the hidden title. To provide the sighted user with feedback, we again utilized javascript to add a class of “active” to the entire product card region when any element in that card had focus. By doing so, upon tabbing to the first, hidden link, the entire card gains a class, on to which we hook some styling to give that visual feedback.</p>
         <p>With this technique, even if the user then hit “enter”, they would be taken to the product itself since the top hidden link we provide for accessibility. While they may not have exactly wanted to do that, they would still be within the context of the product, thus keeping the user experience within a safe margin of expectation.</p>

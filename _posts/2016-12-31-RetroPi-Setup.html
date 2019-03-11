@@ -6,21 +6,10 @@ permalink: /articles/retropie-gaming/
 date: 2016/06/29
 author: Christan Fergus
 categories: Technology
-published: false
+published: true
 ---
 <div class="container article">
-    <div class="item-a2">
-        <h3>{{page.category}}</h3>
-        <h1>{{page.title}}</h1>
-        <p class="subtitle">{{page.author}}</p>
-        <hr>
-        <small>{{page.date}}</small>
-    </div>
-    <div class="item-a3">
-        <blockquote>
-            <p>{{page.subtitle}}</p>
-        </blockquote>
-    </div>
+    {% include article-headings.html %} 
     <div class="item-a4">
         <h2>NES Classic Edition Vs. RetroPie</h2>
     </div>
@@ -168,18 +157,10 @@ sudo nano /opt/retropie/configs/all/retroarch.cfg
 </pre>
             </li>
             <li>Find `video_shader` pretty far down the list, and here is where you choose your shader type. I have shown the one I like, which seems to be the typical one folks use. Delete the hash and fill in the deets:
-                <pre>
-<code>
-video_shader = "/opt/retropie/emulators/retroarch/shader/crt-pi.glslp"
-</code>
-</pre>
+            <pre>video_shader = "/opt/retropie/emulators/retroarch/shader/crt-pi.glslp"</pre>
             </li>
             <li>Un-comment the `video_shader_enable` and set to `true`
-                <pre>
-<code>
-video_shader_enable = true
-</code>
-</pre>
+            <pre>video_shader_enable = true</pre>
             </li>
             <li>Now you're done. `Ctrl` + `x`, `y` to save, `Enter` to confirm, then type `exit`, then reboot.</li>
         </ul>
