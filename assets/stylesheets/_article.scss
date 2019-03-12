@@ -1,3 +1,11 @@
+.container.article-landing{
+    a{
+        font-size: var(--scale-1);
+        small{
+            font-size: var(--scale--1);
+        }
+    }
+}
 .container.article{
     blockquote p{
         font-size: var(--scale-3);
