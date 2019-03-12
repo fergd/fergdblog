@@ -1,6 +1,6 @@
 {
-  "name": "Christan Fergus",
-  "version": "1.0.0",
+  "name": "Fergus",
+  "version": "5.0.0",
   "description": "The professional website of Christan Fergus",
   "main": "gulpfile.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.7.10",
-    "clean-css": "^3.3.1",
+    "gulp-clean-css": "^4.0.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-compass": "^2.1.0",
