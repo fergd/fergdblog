@@ -1,0 +1,26 @@
+---
+layout: default
+title: Articles
+permalink: /articles/
+navpage: true
+---
+<div class="article-landing container">
+    <div class="item-2">
+        <h3 class="text--all-caps">Always be learning</h3>
+        <h1>Articles</h1>
+        <p>A collection of case studies, posts, &amp; musings.</p>
+        <hr>
+    </div>
+    <div class="item-3">
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">
+                	<h3>{{ post.title }}</h3>
+                    <small class="text--small-caps">{{ post.date | date: "%Y" }}</small>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

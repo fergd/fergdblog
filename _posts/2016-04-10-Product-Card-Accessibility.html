@@ -1,49 +1,57 @@
 ---
-layout: post
+layout: default
 title: Product Card Accessibility
 subtitle: Making a more accessible Product Buying Experience
-permalink: product-card-accessibility
-date: 2016/04/10 
-categories: [Web & App Development, Case Studies]
+permalink: /articles/product-card-accessibility/
+date: 2016/04/10
+categories: [Web &amp; App Development, Case Studies]
 author: Christan Fergus
 published: true
 tags: accessibility, user experience, screen readers, web development, user interface
-comments: true
 ---
-<h2>Overview</h2>
-<p>Where I work, a constant challenge for our design code base has been making our ecommerce experience accessible to all. “All” means the spectrum spanning from mobile device users all the way across to visually impaired users. In the past, the most common way for a visually impaired user to purchase from our website was to contact our customer service, and have  that team assist with the modifying of the customer’s order.</p>
-<p>This was and is unacceptable.</p>
-<p>My philosophy and approach to UI and UX design is based on the premise that the web is for all, and our designs should not alienate any group. Based on this, we have begun to make concerted efforts to improve the web experience we provide for visually impaired users utilizing screen reader tools.</p>
-<p>While specific efforts to this end have been made in numerous areas of the site, including navigation and general ARIA role hooks, our glaring problem has revolved around the primary point of purchase for our customers: the product card.</p>
-
-<h2>Challenge</h2>
-<p>The current design was perfectly fine for most of our customers. The product cards had an image, basic info, and gave the customer the ability to purchase the product directly from the card.</p>
-<figure>
-	<img src="{{ site.cdn_image }}article-prod-card-accessibility/pa-original.jpg" alt="An example card display that was introduced in 2013">
-	<figcaption>Fig. 1 - The product card display that was introduced in early 2013 and has been largely unchanged since.</figcaption>
-</figure>
-
-<p>However, if you view the card as a screen reader might, it may read like this (I say, “may” here since in my experience with JAWS, NVDA, and OSX’s native reader all interpret pages a bit differently):</p>
-<figure>
-	<pre>Yogurt Link Graphic Cherry Vanilla Whole Milk Yogurt This page link Preview Product Link Brown Cow Link Cherry Vanilla Whole Milk Yogurt dollars one point nine nine six oz, two pack Expand Link zero Link Buy dash plus</pre>
-	<figcaption>Fig. 2 - Product card Interpreted with Fangs plugin for Firefox</figcaption>
-</figure>
-<p>Less than ideal, right? Imagine trying to navigate through a page with often fifty or more products just like this.</p>
-<p>With the new cards, I understood it was time to remove the barriers that lay between our user and accomplishing their goal of purchasing. It was important to form the content in a way that read clearly, but also allowed the user a way out if they don’t want to completely drill down in the details of each card.</p>
-
-<header>
-	<h2>Solution: Designing an Accessible Product Card</h2>
-	<p>As I have come to learn that as with many things, good accessibility is a journey, not a destination.</p>
-</header>
-<figure>
-	<img src="{{ site.cdn_image }}article-prod-card-accessibility/pa-updated.jpg" alt="The new card has an updated, more spacious design with less clutter">
-	<figcaption>Fig. 3 - The updated design gives more space to the UI, but also adds some additional, accessible benefits.</figcaption>
-</figure>
-<h3>All the "Hiddens" &amp; Shortcuts</h3>
-<p>To make the card easily consumable to users with and without a screen reader, yet minimize duplicated code, a few layout decisions were made. My team’s first idea was to give screen readers an overview of the product card before actually drilling down through it. To accomplish this, we set the product name and a “jump-to-next product card” link as the first markup for every card. The idea behind this was to alleviate the user having to navigate all the way through each card’s tree just to skip to the next product.</p>
-<figure>
-<pre>
-|-Area (div) containing,
+<div class="container article">
+    {% include article-headings.html %} 
+    <div class="item-a4">
+        <h2>Overview</h2>
+    </div>
+    <div class="item-a5">
+        <p>Where I work, a constant challenge for our design code base has been making our ecommerce experience accessible to all. “All” means the spectrum spanning from mobile device users all the way across to visually impaired users. In the past, the most common way for a visually impaired user to purchase from our website was to contact our customer service, and have that team assist with the modifying of the customer’s order.</p>
+        <p>This was and is unacceptable.</p>
+        <p>My philosophy and approach to UI and UX design is based on the premise that the web is for all, and our designs should not alienate any group. Based on this, we have begun to make concerted efforts to improve the web experience we provide for visually impaired users utilizing screen reader tools.</p>
+        <p>While specific efforts to this end have been made in numerous areas of the site, including navigation and general ARIA role hooks, our glaring problem has revolved around the primary point of purchase for our customers: the product card.</p>
+    </div>
+    <div class="item-a6">
+        <h2>Challenge</h2>
+    </div>
+    <div class="item-a7">
+        <p>The current design was perfectly fine for most of our customers. The product cards had an image, basic info, and gave the customer the ability to purchase the product directly from the card.</p>
+        <figure>
+            <img src="https://res.cloudinary.com/fergd/image/upload/v1552250103/fergdblog/pa-original.jpg" alt="An example card display that was introduced in 2013">
+            <figcaption>Fig. 1 - The product card display that was introduced in early 2013 and has been largely unchanged since.</figcaption>
+        </figure>
+        <p>However, if you view the card as a screen reader might, it may read like this (I say, “may” here since in my experience with JAWS, NVDA, and OSX’s native reader all interpret pages a bit differently):</p>
+        <figure>
+            <code>Yogurt Link Graphic Cherry Vanilla Whole Milk Yogurt This page link Preview Product Link Brown Cow Link Cherry Vanilla Whole Milk Yogurt dollars one point nine nine six oz, two pack Expand Link zero Link Buy dash plus</code>
+            <figcaption>Fig. 2 - Product card Interpreted with Fangs plugin for Firefox</figcaption>
+        </figure>
+        <p>Less than ideal, right? Imagine trying to navigate through a page with often fifty or more products just like this.</p>
+        <p>With the new cards, I understood it was time to remove the barriers that lay between our user and accomplishing their goal of purchasing. It was important to form the content in a way that read clearly, but also allowed the user a way out if they don’t want to completely drill down in the details of each card.</p>
+    </div>
+    <div class="item-a8">
+        <h2>Solution: Designing an Accessible Product Card</h2>
+    </div>
+    <div class="item-a9">
+        <blockquote>
+            <p>As I have come to learn that as with many things, good accessibility is a journey, not a destination.</p>
+        </blockquote>
+        <h3>All the "Hiddens" &amp; Shortcuts</h3>
+        <p>To make the card easily consumable to users with and without a screen reader, yet minimize duplicated code, a few layout decisions were made. My team’s first idea was to give screen readers an overview of the product card before actually drilling down through it. To accomplish this, we set the product name and a “jump-to-next product card” link as the first markup for every card. The idea behind this was to alleviate the user having to navigate all the way through each card’s tree just to skip to the next product.</p>
+        <figure>
+            <img src="https://res.cloudinary.com/fergd/image/upload/v1552250103/fergdblog/pa-updated.png" alt="The new card has an updated, more spacious design with less clutter">
+            <figcaption>Fig. 3 - The updated design gives more space to the UI, but also adds some additional, accessible benefits.</figcaption>
+        </figure>
+        <figure>
+            <pre>|-Area (div) containing,
 |----Linked image
 |----Buttons (purchasing actions)
 |-Item brand name (link)
@@ -51,15 +59,13 @@ comments: true
 |-Item price
 |-Item regular price (only visible if on sale)
 </pre>
-	<figcaption>Fig. 4 - A typical markup tree looks like this</figcaption>
-</figure>
-<p>Note that you don’t get to the product name until three nodes down. Then to move on to the next card, you’d need to continue tabbing through prices and potentially other buttons (given on the card’s purchasing state). The structure, while it makes sense from a visual point of view, does not make sense if you are reading linearly through the markup.</p>
-
-<p>The solution was to add a product preview of sorts. Upon entering a new card, the user is read the title of the product and then immediately given the option to jump to the next product. If they want to know more about the product, then they can continue to tab through the card for more information and even purchase.</p>
-
-<p>To make this happen, we gave the UI-visible product brand and title the ARIA role of “hidden”. While not supported or treated exactly the same by all readers, this would potentially hide the title that shows up in the UI from the screen reader. Given that the screen reader had already read the product title, this seemed appropriate not to repeat. This was the result:</p>
-<figure>
-<pre>
+            <figcaption>Fig. 4 - A typical markup tree looks like this</figcaption>
+        </figure>
+        <p>Note that you don’t get to the product name until three nodes down. Then to move on to the next card, you’d need to continue tabbing through prices and potentially other buttons (given on the card’s purchasing state). The structure, while it makes sense from a visual point of view, does not make sense if you are reading linearly through the markup.</p>
+        <p>The solution was to add a product preview of sorts. Upon entering a new card, the user is read the title of the product and then immediately given the option to jump to the next product. If they want to know more about the product, then they can continue to tab through the card for more information and even purchase.</p>
+        <p>To make this happen, we gave the UI-visible product brand and title the ARIA role of “hidden”. While not supported or treated exactly the same by all readers, this would potentially hide the title that shows up in the UI from the screen reader. Given that the screen reader had already read the product title, this seemed appropriate not to repeat. This was the result:</p>
+        <figure>
+            <pre>
 |-Item brand [hidden from UI]
 |-Item name/title [hidden from UI]
 |-Jump to next product link [hidden from UI]
@@ -70,14 +76,14 @@ comments: true
 |-Item name [aria-hidden=”true”]
 |-Item price
 </pre>
-<figcaption>Fig. 5 - The new markup tree</figcaption>
-</figure>
-<figure>
-	<img src="{{ site.cdn_image }}article-prod-card-accessibility/pa-hidden.jpg" alt="Normally hidden links are displayed to show how they are present on the card's markup">
-	<figcaption>Fig 6 - Example of links that are hidden from the UI (normally) but available to screen readers</figcaption>
-</figure>
-<figure>	
-<pre><code>border: 0; 
+            <figcaption>Fig. 5 - The new markup tree</figcaption>
+        </figure>
+        <figure>
+            <img src="https://res.cloudinary.com/fergd/image/upload/v1552250103/fergdblog/pa-hidden.jpg" alt="Normally hidden links are displayed to show how they are present on the card's markup">
+            <figcaption>Fig 6 - Example of links that are hidden from the UI (normally) but available to screen readers</figcaption>
+        </figure>
+        <figure>
+            <pre><code>border: 0; 
 clip: rect(0 0 0 0);
 height: 1px;
 margin: -1px;
@@ -85,12 +91,12 @@ overflow: hidden;
 padding: 0;
 position: absolute;
 width: 1px;</code></pre>
-<figcaption>Fig. 7 - Visually hide elements</figcaption>
-</figure>
-<h3>Navigation &amp; :focus</h3>
-<p>Even though we had implemented the ability to skip through the cards without forcing the screen reader through every node, we weren’t quite there yet. It was necessary to underpin this navigation with a little JavaScript to add a unique ID to each card enabling the “jump to next product” link to work correctly. By doing so, we were then able to dynamically provide an anchor for the jump-to link. When the user chooses that link, focus is placed on the next card’s hidden product title. The title is read to them, and upon hitting tab, they would then hear the link to jump to the next card. If the user chooses too, they could navigate the entire product list with this technique. </p>
-<figure>
-<pre><div class="code">
+            <figcaption>Fig. 7 - Visually hide elements</figcaption>
+        </figure>
+        <h3>Navigation &amp; :focus</h3>
+        <p>Even though we had implemented the ability to skip through the cards without forcing the screen reader through every node, we weren’t quite there yet. It was necessary to underpin this navigation with a little JavaScript to add a unique ID to each card enabling the “jump to next product” link to work correctly. By doing so, we were then able to dynamically provide an anchor for the jump-to link. When the user chooses that link, focus is placed on the next card’s hidden product title. The title is read to them, and upon hitting tab, they would then hear the link to jump to the next card. If the user chooses too, they could navigate the entire product list with this technique.</p>
+        <figure>
+            <pre><div class="code">
 <span class="Element">&lt;div&nbsp;class="card"&gt;</span><br />
 &nbsp;&nbsp;<span class="Element">&lt;a&nbsp;href="product-url"&nbsp;class="is-visually-hidden"&gt;</span>Product&nbsp;Title&nbsp;X<span class="Element">&lt;/a&gt;</span><br />
 &nbsp;&nbsp;<span class="Element">&lt;a&nbsp;href="card1"&nbsp;class="is-visually-hidden"&gt;</span>Jump&nbsp;to&nbsp;next&nbsp;product<span class="Element">&lt;/a&gt;</span><br />
@@ -102,23 +108,21 @@ width: 1px;</code></pre>
 ...
 <span class="Element">&lt;/div&gt;</span>
 </div></pre>
-<figcaption>Fig. 8</figcaption>
-</figure>
-<p>In many cases, we were initially loading a minimal number of products for better performance. In that case we provided a “load more” button. Upon selecting the load more button, focus is placed immediately on the next product’s hidden link title, and the user is able to continue navigating the cards like they were previously. 
-</p>
-
-<p>A minor drawback to this approach, however, was that we were making an experience now for screen readers, and somewhat neglecting the sighted experience. In this case, a sighted user who liked to use a keyboard over a mouse, for instance, would potentially see, as they tabbed through the cards, a key press where nothing happens. The reason behind this is that the very first tab into a card selected the hidden title. To provide the sighted user with feedback, we again utilized javascript to add a class of “active” to the entire product card region when any element in that card had focus. By doing so, upon tabbing to the first, hidden link, the entire card gains a class, on to which we hook some styling to give that visual feedback. 
-</p>
-<p>With this technique, even if the user then hit “enter”, they would be taken to the product itself since the top hidden link we provide for accessibility. While they may not have exactly wanted to do that, they would still be within the context of the product, thus keeping the user experience within a safe margin of expectation. 
-</p>
-
-<h3>Live Regions</h3>
-<p>Another feature I had been anxious to work with was ARIA live regions. On our card, we had two buttons serving as an incrementer and a decrementer. When the user interacted with the buttons, the quantity selected appeared in the center of the card. This posed a challenge for readers. While the reader would come across the form buttons and give the ability to increment or decrement, no feedback was natively given. Thus the user had no way of easily knowing what the quantity in their cart was. 
-</p>
-<p>A way to solve this is by using ARIA’s live region attribute. By setting the quantity wrapper to have a (in this case) aria-live=”polite”, the user could be notified of a change to that area and the value read aloud. So, when the user pressed the “add” button, for instance, the value changed to “1”, thus “One” is said aloud. 
-</p>
-
-<h2>Conclusion &amp; Going Forward</h2>
-<p>We were able to achieve this success and a better un-sighted experience with no compromise to the sighted user’s experience either. This extra effort also had minimal impact on the overall project’s timeline, again supporting the decision my team had made to bring accessibility to the front of our minds and development, even including accessibility features as a definition of done. Initial user tests of this technique indicated the experience had improved for our customers who used screen reader tools. As the card continues to live in the “wild” we will continue to monitor its successes and failures by tracking data and implementing on-going user tests.</p>
-
-<p>It’s worth also noting that our website is big, and there are still many areas of improvement. But, by incorporating accessibility enhancement in our projects moving forward, we move toward a more accessible experience for our entire customer base. It’s also worth noting that this effort is not just a way for us to make more money. At last count we had less than twenty customers actively using screen readers on our site out of a customer base comprised of many thousands. A major reason a visually impaired user would use our service is it can make their life a tad easier by having their groceries delivered. The irony is that if our site is not useable to them, the service that can help them isn’t of much good either. This just motivates me more with the belief that the web is for everyone, and accessible websites is a right, not a privilege.</p>
+            <figcaption>Fig. 8</figcaption>
+        </figure>
+        <p>In many cases, we were initially loading a minimal number of products for better performance. In that case we provided a “load more” button. Upon selecting the load more button, focus is placed immediately on the next product’s hidden link title, and the user is able to continue navigating the cards like they were previously.</p>
+        <p>A minor drawback to this approach, however, was that we were making an experience now for screen readers, and somewhat neglecting the sighted experience. In this case, a sighted user who liked to use a keyboard over a mouse, for instance, would potentially see, as they tabbed through the cards, a key press where nothing happens. The reason behind this is that the very first tab into a card selected the hidden title. To provide the sighted user with feedback, we again utilized javascript to add a class of “active” to the entire product card region when any element in that card had focus. By doing so, upon tabbing to the first, hidden link, the entire card gains a class, on to which we hook some styling to give that visual feedback.</p>
+        <p>With this technique, even if the user then hit “enter”, they would be taken to the product itself since the top hidden link we provide for accessibility. While they may not have exactly wanted to do that, they would still be within the context of the product, thus keeping the user experience within a safe margin of expectation.</p>
+        <h3>Live Regions</h3>
+        <p>Another feature I had been anxious to work with was ARIA live regions. On our card, we had two buttons serving as an incrementer and a decrementer. When the user interacted with the buttons, the quantity selected appeared in the center of the card. This posed a challenge for readers. While the reader would come across the form buttons and give the ability to increment or decrement, no feedback was natively given. Thus the user had no way of easily knowing what the quantity in their cart was.</p>
+        <p>A way to solve this is by using ARIA’s live region attribute. By setting the quantity wrapper to have a (in this case) aria-live=”polite”, the user could be notified of a change to that area and the value read aloud. So, when the user pressed the “add” button, for instance, the value changed to “1”, thus “One” is said aloud.</p>
+    </div>
+    <div class="item-a10">
+        <h2>Conclusion &amp; Going Forward</h2>
+    </div>
+    <div class="item-a11">
+        <p>We were able to achieve this success and a better un-sighted experience with no compromise to the sighted user’s experience either. This extra effort also had minimal impact on the overall project’s timeline, again supporting the decision my team had made to bring accessibility to the front of our minds and development, even including accessibility features as a definition of done. Initial user tests of this technique indicated the experience had improved for our customers who used screen reader tools. As the card continues to live in the “wild” we will continue to monitor its successes and failures by tracking data and implementing on-going user tests.</p>
+        <p>It’s worth also noting that our website is big, and there are still many areas of improvement. But, by incorporating accessibility enhancement in our projects moving forward, we move toward a more accessible experience for our entire customer base. It’s also worth noting that this effort is not just a way for us to make more money. At last count we had less than twenty customers actively using screen readers on our site out of a customer base comprised of many thousands. A major reason a visually impaired user would use our service is it can make their life a tad easier by having their groceries delivered. The irony is that if our site is not useable to them, the service that can help them isn’t of much good either. This just motivates me more with the belief that the web is for everyone, and accessible websites is a right, not a privilege.</p>
+    </div>
+</div>
+<!--END CONTAINER-->

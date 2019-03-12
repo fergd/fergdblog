@@ -2,19 +2,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="wot-verification" content="090d1039ef90475268b1"/>
-	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-	{% comment %}
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	{% endcomment %}
-	<meta name="description" content="Christan Fergus Web Developer in Denver, Boulder, Colorado">
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" media="(min-width: 319px)">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:500' rel='stylesheet' type='text/css'>
-	<link rel="author" href="humans.txt">
-	<script src="{{"/js/vendors/modernizr-2.6.2-respond-1.1.0.min.js" | prepend: site.baseurl }}"></script>
-	{% include grunticon.html %}
-	{% include google-analytics.html %}
+	<meta name="description" content="{{ site.description }}">
+	<meta name="theme-color" content="#2a323e"/>
+	<title>{{ site.title }}</title>
+	<link rel="manifest" href="/manifest.json">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Raleway:300,600,900|EB+Garamond:400,400i,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ site.css-dir | prepend: site.baseurl }}main.css">
 </head>
