@@ -1,45 +1,42 @@
 ---
 layout: default
+title: landing
 ---
-<div class="top-leader">
-	<div>
-		<p class="will-fade">I <span class="keep-visible">produce</span> deliberate user interfaces, <span class="keep-visible">craft</span> lovely HTML &amp; CSS, &amp; weild a <span class="keep-visible">passion</span> for making the web <span class="keep-visible">accessible</span> to every single gosh-darn amazing human being.</p>
-		<div>
-			<p>Want to learn a bit more about me?</p>
-			<a class="button" href="{{ "/profile/" | prepend: site.baseurl }}">Profile</a>
-			<a class="button" href="/work/cv/">Resume</a>
-		</div>
-	</div>
+<div class="container front-page">
+    <div class="item-2 lede">
+        <hr class="accent">
+        <h1>{{ site.author }}</h1>
+        <p class="subtitle">User Experience Strategist</p>
+        <hr class="accent">
+    </div>
+    <div class="item-3">
+        <h2>It's All About People</h2>
+        <blockquote>
+            <p>As a leader in advocating for human beings, I bring empathy into product design, use the stories found in data to drive product direction, & craft meaningful designs that provide those humans with what they need to accomplish their tasks.</p>
+        </blockquote>
+    </div>
+    <div class="item-3-image"></div>
+    <div class="item-4">
+        <h2>It's All About Me</h2>
+        <ul class="outside">
+            <li>discovering &amp; acting upon the right combination of business & user needs
+            <li>creating software that is accessible to all</li>
+            <li>enabling real people to accomplish their real tasks</li>
+            <li>educating software &amp; product professionals in the importance of designing &amp; developing for people</li>
+        </ul>
+    </div>
+    <div class="item-4-image"></div>
+    <div class="item-5 lede">
+        <hr class="accent">
+        <h2>See for Yourself</h2>
+        <div class="landing-links">
+            {% for page in site.pages %} 
+            {% if page.navpage %} 
+            <a href="{{page.permalink}}">{{page.title}}</a>
+            {% endif %} 
+            {% endfor %} 
+            <a href="{{site.linkedin}}">LinkedIn</a>
+        </div>
+        <hr class="accent">
+    </div>
 </div>
-
-<div class="big-square-lead">
-	<section>
-		<span class="icon-ux"></span>
-		<h2>The User's Experience</h2>
-		<p>UX is an holistic approach to the breadth of an experience. Great web design means understanding the user's needs and coupling that with a beautiful, useable interface. Navigating a web site should not feel like a scavenger hunt.</p>
-		<br>
-		<p>I determine the user’s needs through user testing, data, and research. I then use that information to provide the best possible, most informative, and painless experience on the website.</p>
-	</section>
-
-	<section>
-		<span class="icon-gears"></span>
-		<h2>The Code</h2>
-		<p>It’s paramount that the code running a site is light-weight, elegantly written, and accessible to all users and platforms. Naked markup starts out responsive and accessible, it’s our job as good web designers to keep it that way.</p>
-		<br>
-		<p>My passion resides in standards-based design, HTML, CSS (by way of Sass), JavaScript when necessary, DRY coding principles, and the utilization of pattern libraries.</p>
-	</section>
-</div>
-
-<section class="secondary-info">
-	<h1 class="page-heading">Recent Posts</h1>
-	<ul class="post-list">
-		{% for post in site.posts %}
-		<li>
-			<h2>
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h2>
-			<span class="post-meta subheader">{{ post.date | date: "%b %-d, %Y" }}</span>
-		</li>
-		{% endfor %}
-	</ul>
-</section>

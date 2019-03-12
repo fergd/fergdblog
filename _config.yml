@@ -1,20 +1,34 @@
-# Site settings
-title: Christan Fergus Web Designer
-email: fergusdesignllc@gmail.com
-description: > # The work, writings, and profile of Christan Fergus, a web designer.
-# baseurl: "/fergdblog" # the subpath of your site, e.g. /blog/
-url: "http://christanfergus.com" # the base hostname & protocol for your site
-twitter_username: christanfergus
-github_username:  fergd
-linkedin_username: christanfergus
-cdn_image: "http://static.christanfergus.com/images/"
-cdn_root: "http://static.christanfergus.com/"
-# Build settings
-kramdown:
-  input: GFM
+title: Christan Fergus | Senior User Experience Strategist
+author: Christan Fergus
+description: Christan Fergus is a user experience strategist in the Denver metro area.
+baseurl: "/" 
+url: "http://christanfergus.com"
+twitter_username: christanfergus.com
+github_username: fergd
+linkedin: "https://www.linkedin.com/in/christanfergus/"
+css-dir: "assets/css/"
+js-dir: "assets/js/"
+markdown: kramdown
+# gems:
+#   - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - config
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - "*.DS_Store"
+  - deploy.sh
+  - .gitignore
 sass:
- sourcemap: true
- output_style: :compressed
- line_comments: true
-
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+  sass_dir:           assets/stylesheets
+  style:              compressed
+  sourcemap:          true 

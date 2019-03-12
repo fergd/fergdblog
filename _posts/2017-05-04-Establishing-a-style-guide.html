@@ -1,0 +1,88 @@
+---
+layout: default
+title: Establishing a Style Guide
+subtitle: Building a style guide from scratch for a company which had no front-end developers or designers.
+permalink: establishing-a-style-guide
+date: 2017/05/04
+categories: [Web & App Development, Case Studies]
+author: Christan Fergus
+published: true
+tags: style guide, web development, web design, user interface design, Jekyll
+---
+<div class="container article">
+    {% include article-headings.html %}
+    <div class="item-a5">
+        <p>There is little I love more than designing, developing, and documenting. A style guide is the confluence of all three. I love them. This post highlights the style guide I created at my current company. Here I'll mainly cover the process, hitting just the high points. In another post, I will focus on the technical and discuss the way in which I built and utilized Jekyll to create the style guide.</p>
+    </div>
+    <div class="item-a6">
+        <h2>Opportunity</h2>
+    </div>
+    <div class="item-a7">
+        <p>The need for a company style guide, or pattern library, was a big one. The company was undergoing a shift in the way it delivered software, namely transitioning to a SaaS model. The company’s many products were being folded into one platform. This gave rise to many challenges, and one large challenge was the extreme diversity in experiences and design. There was a need for a unification.</p>
+        <p>As part of our role in the company, the UX team fielded many questions from developers about UI and UX patterns. To various degrees, each of us had different levels of tribal knowledge (dangerous), and we were well aware we had no centralized repository of information to which we could point a developer. It was clear a style guide wasn necessary. But just because we all wanted one, didn’t make the process easy.</p>
+        <p>The ideal way I wanted to implement this style guide was actually for it to be a pattern library—a library of code and design snippets, directly connected to the company codebase, from which a developer could pull live methods, controllers, etc. to be used in their own code. This was not to be for the first round, however, since the user experience team did not have a back end developer, nor did they have access to one in the company.</p>
+        <p>Given that challenge, we shifted tactics and went full user-interface-user-experience-guide instead. This guide was to focus on UX patterns, UI design principles, and even content tone-of-voice and formatting. It was still destined to be a valuable tool, helping get all the teams on the same design-page.</p>
+    </div>
+    <div class="item-a8">
+        <h2>Building Blocks</h2>
+    </div>
+    <div class="item-a9">
+        <p>As stated above, the UX team had no back-end developers. We also had no access to developer time and talent because resources were stretched thin. Because of these constraints, I determined:</p>
+        <ul>
+            <li>The style guide should live outside the company’s codebase so it does not depend on anyone or any stack for deployment</li>
+            <li>The style guide should be fairly language agnostic, so it can be picked up at any time and augmented or folded into another codebase</li>
+            <li>It must be (somewhat) easy for a designer with basic coding skills to contribute</li>
+            <li>It must have clear documentation so the information is not siloed</li>
+        </ul>
+        <p>Given this criteria, I built the style guide upon the Jekyll framework. Jekyll is a static website generator, which was a perfect tool for the job. A static website can be hosted anywhere, is generally light-weight, has few dependencies for deployment, and has virtually zero security issues since there are no databases or user information to compromise. While there were plenty of other options, I preferred Jekyll since I’ve spent my last few years working with it extensively.</p>
+    </div>
+    <div class="item-a10">
+        <h2>Guide Format</h2>
+    </div>
+    <div class="item-a11">
+        <p>We broke the guide into three primary sections.</p>
+        <h3>Design Styles</h3>
+        <p>Design Styles contained the meat of the style guide. In it, the style components were broken into three sections:</p>
+        <dl>
+            <dt>Foundation</dt>
+            <dd>These were guides regarding the basics of the site. Color, typography, formatting, etc.</dd>
+            <dt>Components</dt>
+            <dd>These guides focused on UI components: form controls, breadcrumbs, etc.</dd>
+            <dt>Behaviors</dt>
+            <dd>Primarily UX patterns that involved setting guidelines around how a user interacted with the website components.</dd>
+        </dl>
+        <figure>
+            <img src="http://res.cloudinary.com/fergd/image/upload/v1493956154/jk-color-compressor.png" alt="">
+            <figcaption>The Style Guide shown displaying color information</figcaption>
+        </figure>
+        <h3>UX FAQs</h3>
+        <p>While I’m generally not a fan of FAQ pages (because most FAQ questions are fake), the UX team legitimately receives frequently asked questions, so it really did seem appropriate.</p>
+        <h3>Documentation</h3>
+        <p>This documentation was for the style guide itself, and outlined everything from installation of the Jekyll framework, to how to make a component style and markdown, to deploying the site to production.</p>
+    </div>
+    <div class="item-a12">
+        <h2>Guide Components</h2>
+    </div>
+    <div class="item-a13">
+        <p>Within the format, there were some important site components that aided the user’s experience. </p>
+        <h3>Search</h3>
+        <p>The goal was to make the guide easy to use, and also attractive so developers would return. Search was implemented for this reason. I have viewed a fair amount of style and pattern guides in my time, and I’m surprised at how few have a search. It's common that a user will not know exactly what they are looking for, so blindly clicking links can become a frustrating task. Allowing the user to simply type in a few keywords virtually eliminates this frustration.</p>
+        <h3>Cross-Referencing</h3>
+        <p>This was one of the more manual aspects for me to set up, but the team felt it was important to provide cross-linking between related styles to help give context, but also to aide that user who may be hunting through the guide and hasn’t realized they can search!</p>
+        <h3>Feedback</h3>
+        <p>We built the style guide for developers, and we wanted and needed their input. My philosophy from the start was that this was the collective’s guide, so everyone who wanted to have a say could have a say. We provided a feedback link that was hosted by Survey Monkey, in which we provided a simple comment box for their feedback and/or suggestions.</p>
+    </div>
+    <div class="item-a14">
+        <h2>Results &amp; Beyond Release</h2>
+    </div>
+    <div class="item-a15">
+        <p>We released the guide to a warm reception from the company and developers. Many devs had been asking for something like what we produced, and were happy to have it. The first iteration of the guide was in no means exhaustive, however. For the sake of time, and the need to ship something, we released with a handful of well-crafted guides, but with a mountain of content still in the backlog.</p>
+        <p>I am expecting two specific results as the style guide matures:
+            <ol>
+                <li>The guide becomes a regular, habitual aspect of a developer’s toolkit</li>
+                <li>It evolves into a living style and pattern library, with code and UI living in harmony.</li>
+            </ol>
+            <em>The future is bright.</em>
+        </p>
+    </div>
+</div>

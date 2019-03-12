@@ -1,26 +1,15 @@
 <!DOCTYPE html>
-<html>
-	{% include head.html %}
-	<body>
-		<a href="#content" class="skip">Skip to main content</a>
-		<div class="hire-me-wrap">
-			<h1>I'm looking for a new, exciting opportunity! <a class="heading-talk-link" href="https://linkedin.com/in/{{ site.linkedin_username }}">Let's talk!</a></h1>
-		</div>
-		<div class="page-wrap">	
-			{% include header.html %}
-			{% include navigation.html %}
-			<main id="content" class="home" role="main">
-				{{ content }}	
-			</main>	
-		</div>
-		{% include footer.html %}
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="{{\"/js/vendor/jquery-1.10.2.min.js\" | prepend: site.baseurl }}"><\/script>')</script>
-		<script src="{{"/js/vendors/bjqs-1.3.min.js" | prepend: site.baseurl }}"></script>
+<html lang="en">
+{% include head.html %}
 
-		<script src="{{"/js/main.js" | prepend: site.baseurl }}"></script>
-		<noscript><link href="{{"/css/icons.fallback.css" | prepend: site.baseurl }}" rel="stylesheet"></noscript>
+<body>
+    {% include header.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% unless page.title == 'landing' %} 
+    {% include footer.html %}
+    {% endunless %} 
+</body>
 
-		<script>$("[data-sticky]").stick_in_parent();</script>
-	</body>
 </html>

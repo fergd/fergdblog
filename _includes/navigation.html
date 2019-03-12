@@ -1,15 +1,15 @@
-{% assign current = page.url | downcase | split: '/' %}
-
-<div class="nav-col off-canvas-navigation" role="navigation">
-	<nav>
-		<ul>
-			<li class="home-respond"><a href="/">Home</a></li>
-			{% for page in site.pages %}
-			{% if page.title %}
-			<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}" {% if current[1] == page.url %} class='active' {% endif %}>{{ page.title }}</a></li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</nav>
+<div class="container__logo">
+    <a href="{{site.baseurl}}">
+        <h1>CF</h1>
+    </a>
 </div>
-
+<nav>
+    {% for page in site.pages %}
+    {% if page.navpage %}
+    <a href="{{page.permalink}}">{{page.title}}</a>
+    {% endif %}
+    {% endfor %}
+    {% if is_footer == true %}
+    <a href="{{site.linkedin}}" target="_blank"><i class="fab fa-linkedin footer-icon"></i>Contact</a>
+    {% endif %} 
+</nav>
