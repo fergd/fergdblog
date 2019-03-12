@@ -9,6 +9,7 @@ linkedin: "https://www.linkedin.com/in/christanfergus/"
 css-dir: "assets/css/"
 js-dir: "assets/js/"
 markdown: kramdown
+future: true
 # gems:
 #   - jekyll-feed
 exclude:
