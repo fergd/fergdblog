@@ -1,8 +1,6 @@
 title: Christan Fergus | Senior User Experience Strategist
-email: christan.fergus@gmail.com
 author: Christan Fergus
 description: Christan Fergus is a user experience strategist in the Denver metro area.
-employer: ZOLL
 baseurl: "/" 
 url: "http://christanfergus.com"
 twitter_username: christanfergus.com
@@ -10,10 +8,9 @@ github_username: fergd
 linkedin: "https://www.linkedin.com/in/christanfergus/"
 css-dir: "assets/css/"
 js-dir: "assets/js/"
-post-url: "posts/"
 markdown: kramdown
-gems:
-  - jekyll-feed
+# gems:
+#   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock

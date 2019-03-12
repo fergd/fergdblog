@@ -4,8 +4,10 @@ title: landing
 ---
 <div class="container front-page">
     <div class="item-2 lede">
+        <hr class="accent">
         <h1>{{ site.author }}</h1>
         <p class="subtitle">User Experience Strategist</p>
+        <hr class="accent">
     </div>
     <div class="item-3">
         <h2>It's All About People</h2>
@@ -25,8 +27,9 @@ title: landing
     </div>
     <div class="item-4-image"></div>
     <div class="item-5 lede">
+        <hr class="accent">
         <h2>See for Yourself</h2>
-        <div>
+        <div class="landing-links">
             {% for page in site.pages %} 
             {% if page.navpage %} 
             <a href="{{page.permalink}}">{{page.title}}</a>
@@ -34,5 +37,6 @@ title: landing
             {% endfor %} 
             <a href="{{site.linkedin}}">LinkedIn</a>
         </div>
+        <hr class="accent">
     </div>
 </div>

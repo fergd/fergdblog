@@ -6,7 +6,10 @@ navpage: true
 ---
 <div class="article-landing container">
     <div class="item-2">
+        <h3 class="text--all-caps">Always be learning</h3>
         <h1>Articles</h1>
+        <p>A collection of case studies, posts, &amp; musings.</p>
+        <hr>
     </div>
     <div class="item-3">
         <ul>
@@ -14,7 +17,7 @@ navpage: true
             <li>
                 <a href="{{ post.url }}">
                 	<h3>{{ post.title }}</h3>
-                    <small>{{ post.date | date: "%Y" }}</small>
+                    <small class="text--small-caps">{{ post.date | date: "%Y" }}</small>
                 </a>
             </li>
             {% endfor %}
