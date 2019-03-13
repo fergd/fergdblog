@@ -20,7 +20,9 @@
         }
     }
 }
-
+.timeline{
+    display: none;
+}
 @media all and (min-width: 1025px) {
     .timeline{
             display: flex;
