@@ -1,6 +1,5 @@
 ---
 ---
-
 :root {
     --root-font-size: calc(.35vmax - .35vmin + 16px);
     --root-line-height: var(--space-medium, 1.35);
@@ -251,6 +250,8 @@ footer {
     padding: var(--space-medium);
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
 
     .container__logo {
         a {
