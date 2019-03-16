@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Christan Fergus is a user experience strategist in the Denver metro area.">
+	<meta name="theme-color" content="#2a323e"/>
+	<title>Christan Fergus | Senior User Experience Strategist</title>
+	<link rel="manifest" href="/manifest.json">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Raleway:300,600,900|EB+Garamond:400,400i,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <header>
+<div class="container__logo">
+    <a href="/">
+        <h1>C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus</span></h1>
+    </a>
+</div>
+<nav>
+    
+    
+    
+    
+    <a href="/articles/">Articles</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="/resume/">Resume</a>
+    
+    
+    
+    
+     
+</nav> 
+</header>
+    <main>
+        <div class="container article">
+    <div class="article-heading item-a2">
+    <h1>Automated Image Optimization</h1>
+    <p>Christan Fergus</p>
+    <hr />
+    <small>Jan 16, 2016</small>
+     
+</div>
+<div class="article-heading item-a3">
+    <blockquote>
+        <p>How to optimize your images with Grunt, Imagemagick, and the command line on OSX.</p>
+    </blockquote>
+</div>
+    <div class="item-a4">
+        <h2>Identifying the Need</h2>
+    </div>
+    <div class="item-a5">
+        <p>We find ourselves heading further down the road of our web pages and apps being served up on varying and often sketchy devices and networks. The importance of serving up lean applications has become not a luxury, but necessity. In this arena, images are one of the biggest and easiest areas a web designer can hack off kilobytes and boost page load times. Furthermore, with responsive applications, we are often serving up the same image in varying sizes to leverage screen sizes, data connections, etc.</p>
+        <p>Handling all this image resizing manually is no way to go, and only for those who enjoy a little self-inflicted pain. While there are dedicated tools that can do this, especially server side, often it makes sense to deal with the optimization locally. This is where task runners come in super handy. In our case, Grunt.</p>
+    </div>
+    <div class="item-a6">
+        <h2>Only Use It When You Need It</h2>
+    </div>
+    <div class="item-a7">
+        <p>Recently, the need for such image optimization arose. It’s worth noting at this point that, philosophically, I don’t ever add a tool until I need it&mdash;helps keep the cruft down. However, staring at over 500 images requiring at least two different size variations quickly launched me head-first into optimization world.</p>
+        <p>The following is my optimization workflow on Mac. I also assume creating a project from complete scratch. This is what works for me, but it may not be what you want. I included my sources below (I didn’t come up with any of this) so you can figure a workflow out for yourself that suits your needs.</p>
+        <h3>Ingredients You'll Need</h3>
+        <ol>
+            <li>OSX</li>
+            <li>Node</li>
+            <li>Grunt</li>
+            <li>Homebrew</li>
+            <li>Imagemagick</li>
+            <li>Patience</li>
+        </ol>
+        <h3>Install Grunt</h3>
+        <ol>
+            <li>Ensure you have installed Node, and are inside the directory in which you wish to optimize images.</li>
+            <li>Install Grunt.
+                <pre><code><span class="prompt">$</span> <span>npm install -g grunt-cli</span></code></pre>
+            </li>
+            <li>Install the Grunt initializer tool to create Gruntfile.js and packages.json (very handy but optional).
+                <pre><code><span class="prompt">$</span> <span>npm install -g grunt-init</span></code></pre>
+            </li>
+            <li>Now initialize the files.
+                <pre><code><span class="prompt">$</span> <span>grunt-init-gruntfile</span></code></pre>
+            </li>
+        </ol>
+        <p>You now have Grunt prepped and ready, but you'll need to modify the Gruntfile.js before it works. You may want to strip out everything the initializer did at first to just get your image optimization task working correctly. Further down is an example.</p>
+        <h3>Install Image Sizing Tasks</h3>
+        <p>The primary techniques followed here are shamelessly from <a href="https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick">this Smashing Magazine article</a>. You will want to learn a bit more about what's actually happening when you start optimizing your images. You will also want to know how to configure the out-of-the-box installation. Do that <a href="https://github.com/nwtn/grunt-respimg">her</a>.</p>
+        <ol>
+            <li>Install Grunt image sizing
+                <pre><code><span class="prompt">$</span> <span>npm install grunt-respimg --save-dev</span></code></pre>
+            </li>
+            <li>Install ImageMagick (with homebrew)
+                <pre><code><span class="prompt">$</span> <span>brew install imagemagick</span></code></pre>
+            </li>
+            <li>Edit your Gruntfile.js. In this case we are not using the additional image sizing tools. <a href="https://github.com/nwtn/grunt-respimg">Reference this</a> for more information.</li>
+            <li>Run your task
+                <pre><code><span class="prompt">$</span> <span>grunt</span></code></pre>
+            </li>
+        </ol>
+        <h3>Example Grunfile.js</h3>
+        <pre><code>
+	/*global module:false*/
+	module.exports = function(grunt) {
+
+	  // Project configuration.
+	  grunt.initConfig({
+	    // Task configuration.
+	    respimg: {
+	      nooptim: {
+	        options: {
+	          optimize: false,
+	          widths: [960, 420]
+	        },
+	        files: [{
+	          expand: true,
+	          // Be sure to get your own paths correct
+	          cwd: 'images/source/',
+	          src: ['**.{gif,jpg,png,svg}'],
+	          // Be sure to get your own paths correct
+	          dest: 'images/output/'
+	        }]
+	      }
+	    }
+	  });
+
+	  grunt.loadNpmTasks('grunt-respimg'); 
+
+	  // Default task.
+	  grunt.registerTask('default', ['respimg']);
+	};
+</code></pre>
+    </div>
+    <div class="item-a8">
+        <h2>References</h2>
+    </div>
+    <div class="item-a9">
+        <ul>
+            <li><a href="http://www.imagemagick.org/script/index.php">Imagemagick</a></li>
+            <li><a href="https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick">Smashing Mag article</a></li>
+            <li><a href="https://github.com/nwtn/grunt-respimg">Grunt task featured in the above article</a></li>
+            <li><a href="https://github.com/fergd/ImageResize">My Github page for experimenting with this</a></li>
+        </ul>
+    </div>
+</div>
+
+    </main>
+     
+    <footer>
+	
+    <div class="container__logo">
+    <a href="/">
+        <h1>C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus</span></h1>
+    </a>
+</div>
+<nav>
+    
+    
+    
+    
+    <a href="/articles/">Articles</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="/resume/">Resume</a>
+    
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/christanfergus/" target="_blank"><i class="fab fa-linkedin footer-icon"></i>Contact</a>
+     
+</nav> 
+</footer>
+     
+</body>
+
+</html>
