@@ -1,11 +1,13 @@
-<div class="item-a2">
-    <h3>{{page.category}}</h3>
+<div class="article-heading item-a2">
     <h1>{{page.title}}</h1>
-    <p class="subtitle">{{page.author}}</p>
+    <p>{{page.author}}</p>
     <hr>
     <small>{{page.date | date: "%b %d, %Y"}}</small>
+    {% if page.role %} 
+    <p class="text--all-caps">Role: {{page.role}}</p>
+    {% endif %} 
 </div>
-<div class="item-a3">
+<div class="article-heading item-a3">
     <blockquote>
         <p>{{page.subtitle}}</p>
     </blockquote>
