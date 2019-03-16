@@ -83,6 +83,14 @@
 "../stylesheets/haikus"
 ;
 
+.visually-hidden{
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 body {
     margin: 0 auto;
     min-height: 100vh;
@@ -97,6 +105,10 @@ body {
 
 a {
     color: var(--text-link);
+    i{
+        text-decoration: none;
+        margin-right: var(--space-xxsmall);
+    }
 }
 
 blockquote {
@@ -134,6 +146,14 @@ p:not(blockquote>p) {
         display: inline-block;
     }
 }
+
+p.subtitle {
+    font-family: var(--font-body);
+    font-weight: var(--font-heavy);
+    font-size: var(--scale-3);
+    color: var(--gray-darken-2);
+    margin: var(--scale-1) 0 0 0;
+    }
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {

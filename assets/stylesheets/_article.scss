@@ -1,25 +1,27 @@
-.container.article-landing{
-    a{
+.container.article-landing {
+    a {
         font-size: var(--scale-1);
-        small{
+
+        small {
             font-size: var(--scale--1);
         }
     }
 }
-.container.article{
-    blockquote p{
+
+.container.article {
+    blockquote p {
         font-size: var(--scale-3);
         font-weight: var(--font-medium);
         color: var(--gray-darken-2);
     }
 
     .article-column p,
-    .item-a2 a{
+    .item-a2 a {
         color: var(--gray-darken-2);
     }
 
-    .item-a2{
-        a{
+    .item-a2 {
+        a {
             display: inline-block;
             margin-bottom: var(--space-bump);
             font-size: var(--scale-1);
@@ -28,17 +30,25 @@
     }
 }
 
+.article-heading p {
+    color: var(--gray-darken-2);
+}
+
 @media all and (min-width: 1025px) {
-    .container.article {
+
+    .container.article,
+    .container.article-layout2 {
         display: grid;
         grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
         grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-auto-rows: auto;
         grid-gap: 1em 1em;
     }
-    [class^="item-a"]:not(.item-a2):not(.item-a3){
-        padding-left: var(--scale-1); 
+
+    [class^="item-a"]:not(.item-a2):not(.item-a3) {
+        padding-left: var(--scale-1);
     }
+
     .item-a2 {
         grid-area: 1 / 1 / 3 / 2;
     }
@@ -94,11 +104,42 @@
     .item-a15 {
         grid-area: 7 / 3 / 8 / 5;
     }
-    .item-image-2{
+
+    .item-image-2 {
         grid-area: 5 / 1 / 4 / 3;
         display: flex;
         flex-direction: column;
         background: transparent no-repeat url(https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/documenting.png);
         background-size: contain;
+    }
+
+    .container.article-layout2 {
+        .item-a2 {
+            grid-area: 1 / 1 / 3 / 3;
+        }
+
+        .item-a3 {
+            grid-area: 1 / 3 / 2 / 6;
+        }
+    }
+
+    .item-case-study.product-card {
+        grid-area: 3 / 2 / 4 / 5;
+    }
+
+    .item-case-study.navigation {
+        grid-area: 4 / 2 / 5 / 5;
+    }
+
+    .flex-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       figure{
+        margin: 0;
+       }
+       div, figure{
+        flex-basis: 18rem;
+       }
     }
 }
