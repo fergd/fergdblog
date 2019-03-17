@@ -35,6 +35,7 @@ navpage: true
 		<blockquote>
 			<p>I use my strong technical background combined with business acumen & user empathy to design responsible, user-centered software in the medical SaaS space.</p>
 		</blockquote>
+		<h3 class="visually-hidden">Experience</h3>
 		<ul>
 			<li>I led the design and launch of the innovative EMS Respond app which was selling before it was even released, and has proven consistently profitable as we continue to iterate on the product</li>
 			<li>Leader of the design and product strategy for ZOLL Dispatch, a SaaS EMS dispatch application which contains features and solutions entirely informed by user research and task analysis</li>
@@ -58,9 +59,11 @@ navpage: true
 	</div>
 
 	<div class="item-r7">
+
 		<blockquote>
 			<p>I’m passionate about teaching, coaching, & mentoring human-focused design professionals.</p>
 		</blockquote>
+		<h3 class="visually-hidden">Experience</h3>
 		<ul>
 			<li>Taught a 200-level web development course as part of the Multimedia & Graphic Design department</li>
 			<li>Designed my own curriculum</li>
@@ -73,6 +76,7 @@ navpage: true
 	</div>
 
 	<div class="item-r8">
+		{% assign is_dtdo = true %}
 		<h2>Door to Door Organics</h2>
 		<h3>Lead User Interface Developer</h3>
 		<small>March 2011 - May 2016</small><br>
@@ -85,12 +89,25 @@ navpage: true
 			<span class="timeline-line"></span>
 			<h4>Web Designer</h4>	
 		</div>
+		
+		<h3>Explore Some Of My Work</h3>
+		<ul>
+			{% for post in site.posts %}
+			{% if post.resume-section == 'dtdo' %} 
+			<li> 
+				<a href="{{post.permalink}}">{{post.title}}</a>
+			</li>
+			{% endif %} 
+			{% endfor %} 
+		</ul>
+	
 	</div>
 
 	<div class="item-r9">
 		<blockquote>
 			<p>I brought unity to the customer’s shopping experience by providing an intuitive journey that spanned from their devices to the point the groceries arrived on their  doorsteps, which in turn grew company profitability.</p>
 		</blockquote> 
+		<h3 class="visually-hidden">Experience</h3>
 		<ul>
 			<li>Led the front-end team that was responsible for the website user experience, interface design, and front end development</li>
 			<li>Was responsible for building, guiding and defining architectural direction</li>
@@ -113,6 +130,7 @@ navpage: true
 		<blockquote>
 			<p>By running my own business, I gained the vital industry and tech experience that formed the foundations on which I’ve built my career.</p>
 		</blockquote>
+		<h3 class="visually-hidden">Experience</h3>
 		<ul>
 			<li>Ran a profitable freelance business focusing on growing the online presence of small businesses</li>
 			<li>Grew project management, business development, accounting and mentoring skills</li>
