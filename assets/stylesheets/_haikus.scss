@@ -1,3 +1,8 @@
+.container.haikus{
+    [class$="-image"]{
+        display: none;
+    }
+}
 @media all and (min-width: 1025px) {
     .container.haikus {
         display: grid;
@@ -5,6 +10,15 @@
         grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-auto-rows: auto;
         grid-gap: 1em 1em;
+        
+        [class$="-image"]{
+            display: block;
+        }
+        
+        .has-background{
+            background: center no-repeat;
+            background-size: contain;
+        }
 
         [class^="item"]:not(.item-h2) {
             padding: calc(var(--space-xxlarge)*3) 0;
@@ -19,7 +33,7 @@
         }
         .item-h3-image{
             grid-area: 2 / 4 / 2 / 6;
-            background: url(https://res.cloudinary.com/fergd/image/upload/v1552857736/fergdblog/Clock.png);
+            background-image: url(https://res.cloudinary.com/fergd/image/upload/v1552857736/fergdblog/Clock.png);
         }
         .item-h4 {
             grid-area: 3 / 3 / 4 / 3;
@@ -32,7 +46,10 @@
         .item-h6 {
             grid-area: 5 / 3 / 6 / 3;
         }
-
+        .item-h6-image{
+            grid-area: 5 / 4 / 6 / 6;
+            background-image: url(https://res.cloudinary.com/fergd/image/upload/v1552857736/fergdblog/Owl.png);
+        }
         .item-h7 {
             grid-area: 6 / 3 / 7 / 3;
         }
