@@ -17,7 +17,10 @@
         .item-h3 {
             grid-area: 2 / 3 / 3 / 3;
         }
-
+        .item-h3-image{
+            grid-area: 2 / 4 / 2 / 6;
+            background: url(https://res.cloudinary.com/fergd/image/upload/v1552857736/fergdblog/Clock.png);
+        }
         .item-h4 {
             grid-area: 3 / 3 / 4 / 3;
         }
