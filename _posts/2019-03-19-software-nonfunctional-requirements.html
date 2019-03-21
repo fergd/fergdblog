@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software Non-functional Requirements
+title: Software Usability Non-functional Requirements
 subtitle: Baking guidelines for usability directly into development best practices.
 permalink: /articles/software-nonfunctional-requirements/
 date: 2019/03/19
@@ -14,7 +14,9 @@ resume-section: 'zoll'
         <h2>Overview</h2>
     </div>
     <div class="item-a5">
-        <p>This is a set of non-functional requirements I developed along side the lead engineer on the product team we were starting up from scratch. This set of requirements were to serve as best practices, and were shared with all developers and team members when they came onto the team. These guidelines were frequently referred to during retrospectives, definitions of done conversations, etc.</p>
+        <p>This is an example of non-functional user experience requirements I developed along side the lead engineer on the product team we were starting up from scratch. This set of requirements were to serve as usability requirements that would apply to all features that we relased. These guidelines were frequently referred to during retrospectives, grooming sessions, kick off meetings, definitions of done conversations, etc.</p>
+
+        <p>This list is by no means exhaustive. The set listed here does not include company-specific or technical requirements that would be included specific to our team. This list, however, can serve as a good baseline and starting point for any software application.</p>
     </div>
     <div class="item-a6">
         <h2>Requirements</h2>
@@ -28,8 +30,8 @@ resume-section: 'zoll'
         </ul>
         <h3>Processing & Response times</h3>
         <ul>
-	        <li>Pages and data should load w/in 2 seconds</li>
-	        <li>Components should update w/in 2 seconds after the user makes a request</li>
+	        <li>Pages and data should load w/in __ seconds</li>
+	        <li>Components should update w/in __ seconds after the user makes a request</li>
 	        <li>Provide an indication the system is working</li>
 		</ul>	
 		<h3>Do not refresh the page for new or updated content</h3>
@@ -41,34 +43,23 @@ resume-section: 'zoll'
         <ul>
         	<li>Do not move the user to another page unless they choose to do so</li>
         	<li>Do not place the user in obscure locations in the system</li>
-        	<li>Warn the user if they are about to leave their product, and give them the option to abort or proceed</li>
+        	<li>Warn the user if they are about to leave the website or software product, and give them the option to abort or proceed</li>
         </ul>
         <h3>Accessibility</h3>
         <ul>
-        	<li>Markup is to be well-formed to allow the content to be easily understood. Where at all possible, the content should be available when styles are not enabled.</li>
-        	<li>Colors and contrast should be tested to make sure they are visible to anyone with most sight disabilities.</li>
-        	<li>Important content should be immediately visible in the UI. Do not reveal important content via gestures, mouse hovers, or clicks.</li>
+        	<li>Markup is to be well-formed to allow the content to be easily understood.</li>
+        	<li>Where at all possible, the content should be available and understandable when styles and JavaScript are not enabled</li>
+        	<li>Colors and contrast should be tested to make sure they are visible to anyone with most sight disabilities</li>
+        	<li>Important content should be immediately visible in the UI&mdash;Do not reveal important content via gestures, mouse hovers, or clicks</li>
         </ul>
         <h3>Front End Accessibility</h3>
-        <p>UX, UI, and developers are able to audit front end pages and understand, at least on a basic level, what the code is doing.</p>
-        <h3>Data-Driven</h3>
-        <ul>
-        	<li>UI consumes JSON data, and should not use HTML driven techniques such as Ajax</li>
-        	<li>Data updates are real-time asynchronous using a technology such as Web Sockets (this is an example only)</li>
-        </ul>
+        <p>UX, UI developers are able to audit front end pages and understand, at least on a basic level, what the code is doing</p>
         <h3>Security/Roles</h3>
         <ul>
         	<li>The application must support multiple roles associated with the logged in user</li>
-        	<li>The application must allow UI elements to be shown to the user that are relevant to the user based the user's roles</li>
+        	<li>The application must allow UI elements to be shown to the user that are relevant to the user based the their specific role(s)</li>
         </ul>
-        <h3>Audit/Hipaa</h3>
-        <p>The application must be capable to reporting on a user's data views compatible with HIPAA requirements</p>
         <h3>Localization</h3>
-        <p>Must use localization techniques that will allow for strings and other elements (such as dates & money) to be localized to match the user's preferred language and culture.</p>
-        <h3>Availability</h3>
-        <ul>
-        	<li>The application must be capable of being run in a web farm, load balanced environment</li>
-        	<li>The application must be capable of logging errors and internal information to aid in diagnosing issues</li>
-        </ul>     
+        <p>The system must use localization techniques that will allow for strings and other elements (such as dates & currency) to be localized to match the user's preferred language and culture</p>
     </div>
 </div>
