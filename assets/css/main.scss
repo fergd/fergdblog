@@ -8,7 +8,6 @@
 
     --font-body: 'Raleway', 'Helvetica Neue', Helvetica, Arial;
     --font-heading: 'Playfair Display', var(--font-body);
-    --font-article: 'EB Garamond', var(--font-body);
 
     //--text-base-size: #{1em};
     --text-base-size: calc(12px + 2 * ((100vw - 300px) / 800));
@@ -79,7 +78,8 @@
 "../stylesheets/resume",
 "../stylesheets/article",
 "../stylesheets/article-landing",
-"../stylesheets/haikus"
+"../stylesheets/haikus",
+"../stylesheets/icons"
 ;
 
 .visually-hidden{
