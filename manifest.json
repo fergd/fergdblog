@@ -1,14 +1,14 @@
 {
   "short_name": "Fergus",
-  "name": "Christan Fergus Personal Site",
+  "name": "Christan Fergus • User Experience Strategist",
   "icons": [
     {
-      "src": "fergd-192.png",
+      "src": "Fergd-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "fergd-512.png",
+      "src": "Fergd-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
