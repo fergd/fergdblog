@@ -7,6 +7,7 @@ h6 {
     font-family: var(--font-heading), sans-serif;
     line-height: 1.2;
     margin: 0;
+    letter-spacing: -0.04ch;
 
     +* {
         margin-top: var(--space-nudge);
@@ -69,6 +70,7 @@ h6 {
 
     &--all-caps {
         text-transform: uppercase;
+        letter-spacing: 0.4ch;
     }
 
     &--small-caps {
@@ -81,4 +83,8 @@ h6 {
 	font-family: var(--font-article);
 	font-weight: var(--font-normal);
 	font-size: var(--scale-2);
+}
+
+p, li, a{
+    letter-spacing: -0.02ch;
 }
