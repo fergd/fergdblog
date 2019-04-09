@@ -223,6 +223,7 @@ ul {
 
 .lede {
     text-align: center;
+    margin-bottom: var(--space-xxlarge);
 
     h1 {
         font-weight: var(--font-heavy);
@@ -234,6 +235,7 @@ ul {
         font-weight: var(--font-medium);
         font-size: var(--scale-4);
         color: var(--gray-darken-2);
+        margin-bottom: var(--space-bump);
     }
 
     a {
@@ -291,7 +293,7 @@ footer {
         color: var(--gray-darken-2);
     }
     .landing-links{
-        margin-bottom: var(--space-xlarge);
+        margin: var(--space-xlarge) 0;
     }
 }
 
