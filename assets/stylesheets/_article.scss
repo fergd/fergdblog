@@ -37,7 +37,8 @@
 @media all and (min-width: 1025px) {
 
     .container.article,
-    .container.article-layout2 {
+    .container.article-layout2,
+    .container.article-full {
         display: grid;
         grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
         grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -154,5 +155,18 @@
        div, figure{
         flex-basis: 18rem;
        }
+    }
+    .container.article-full{
+        .item{
+            grid-column: 2 / 4;
+            grid-row: auto;
+            p{
+                padding-left: var(--space-default);
+            }
+        }
+        .item-image{
+             grid-column: 2 / 6;
+            grid-row: auto;
+        }
     }
 }

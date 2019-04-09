@@ -1,20 +1,21 @@
 {
-  "short_name": "Fergus",
+  "short_name": "Christan Fergus",
   "name": "Christan Fergus • User Experience Strategist",
+  "description": "The writings and works of Christan Fergus!",
   "icons": [
     {
-      "src": "Fergd-192.png",
+      "src": "assets/images/Fergd-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "Fergd-512.png",
+      "src": "assets/images/Fergd-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
-  "background_color": "#FFFFFF",
-  "display": "standalone",
+  "start_url": ".",
+  "background_color": "#FFCC00",
+  "display": "minimal-ui",
   "theme_color": "#2a323e"
 }

@@ -110,6 +110,11 @@ a {
     }
 }
 
+p>a{
+    text-decoration: none;
+    border-bottom: 3px solid var(--gray-lighten-4);
+}
+
 blockquote {
     margin: 0;
     padding: var(--space-default);
@@ -169,12 +174,8 @@ p.subtitle {
 }
 
 figure {
-    border: 1px solid var(--gray-lighten-4);
-    border-radius: var(--radius-default);
-    padding: 1em;
     margin: 0;
     max-width: 100%;
-    overflow: scroll;
 
     figcaption {
         border-top: 1px solid var(--gray-lighten-4);
