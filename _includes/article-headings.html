@@ -1,4 +1,7 @@
 <div class="article-heading item-a2">
+    {% if page.major-category %} 
+    <p class="subtitle text--all-caps">{{page.major-category}}</p>
+    {% endif %} 
     <h1>{{page.title}}</h1>
     <p>{{page.author}}</p>
     <hr>
