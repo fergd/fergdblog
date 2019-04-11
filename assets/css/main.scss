@@ -109,7 +109,12 @@ a {
         margin-right: var(--space-xxsmall);
     }
 }
-
+nav a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
 blockquote {
     margin: 0;
     padding: var(--space-default);

@@ -1,13 +1,80 @@
 ---
 layout: default
 title: "Case Study: Push to Talk"
-subtitle: Bringing clarity to an un-defined feature.
+subtitle: Bringing clarity to a loosely-defined feature.
 permalink: /articles/push-to-talk-case-study
 date: 2019/04/09
 author: Christan Fergus
-published: false
+published: true
 resume-section: 'zoll'
 ---
-
-<h1>Problem</h1>
-<h2>Solution</h2>
+<div class="container article">
+    {% include article-headings.html %}
+    <div class="item-a4">
+        <h2>Requirement</h2>
+    </div>
+    <div class="item-a5">
+        <p>Provide a walkie talkie feature in the Respond mobile app to reduce radio chatter and the number of technology pieces medics and dispatchers need to use.</p>
+    </div>
+    <div class="item-a6">
+        <h2>Challenges</h2>
+    </div>
+    <div class="item-a7">
+        <p>I was brought onto the development team mid-way through the larger project. The walkie-talkie feature, or “Push to Talk”, lacked even the most basic level of design clarity. Product wanted the feature, and there were a few stories, but there was no design or research. Challenges included:
+            <ul>
+                <li>a lack of feature design and architecture</li>
+                <li>team disagreement as to what the feature should be</li>
+                <li>pressured time frame to develop a releasable feature</li>
+            </ul>
+        </p>
+    </div>
+    <div class="item-a8">
+        <h2>Solution</h2>
+    </div>
+    <div class="item-a9">
+        <p>The feature was not going anywhere until we established clear user needs, detailed design flows, and UI design. The design had to cover not only the happy paths, but also error and edge cases, since the nature of the feature meant the user had to understand completely how the system was working at all times. </p>
+        <h3>Research & Collaboration</h3>
+        <p>I began by going back to the needs I’d discovered while I had travelled to multiple locations across the country talking to medic agencies. While doing contextual inquiries it was discovered that reducing the ways medics communicate was a significant need. I then had in-depth discussions with the Product Manager and Product Owner to understand how they were approaching the feature from a business point of view. Finally, I had in-depth technical discussions with my lead developers to understand the technical landscape I’d be designing within.</p>
+        <h3>Deliverables</h3>
+        <p>After hitting the reset button, verifying user needs, and understanding the business and technical requirements, I was able to crafted the design. I:
+            <ul>
+                <li>reframed user stories, wrote new stories, broke apart stories</li>
+                <li>mapped out detailed user and system flows for how calls would be made and experienced</li>
+                <li>created UI designs that covered all known states of the system (exposed by the detailed user flows)</li>
+                <li>built an HTML/CSS/JS working prototype that was used to illustrate concepts during our planning meetings, remove any ambiguity in discussions, and development questions</li>
+            </ul>
+        </p>
+    </div>
+    <div class="item-a10">
+        <h2>Success</h2>
+    </div>
+    <div class="item-a11">
+        <p>With the re-written stories and designs each story could directly point to, the development team was able to get back on track and gain development momentum. I maintained a close working relationship, answering questions and updating the design if needed, as the feature was developed.</p>
+        <p>The Push to Talk feature was released with the Respond app and available for iOS and Android devices. Companies who had begun to use the greater Respond app soon adopted the walkie-talkie feature. We continued to fix bugs and make minor improvements as it lived in the wild, but so far the feature has stayed largely the same, meeting the needs of the medics and dispatchers in the field.</p>
+    </div>
+    <div class="item-a12">
+        <h2>Examples</h2>
+    </div>
+    <div class="item-a13">
+    	<h3>User Flow</h3>
+    	<figure>
+    		<img src="https://res.cloudinary.com/fergd/image/upload/v1554948688/fergdblog/PTT--Calling-a-Contact.png" alt="Typical flow chart showing the process by which a medic can call another medic.">
+    		<figcaption>This flow is an example of a single process I mapped out to bring clarity to the Push to Talk feature.</figcaption>
+    	</figure>
+    	<h3>Prototype</h3>
+        <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="fergd" data-slug-hash="ROVNKB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="ZOLL PTT Prototype">
+            <span>See the Pen <a href="https://codepen.io/fergd/pen/ROVNKB/">
+                    ZOLL PTT Prototype</a> by Christan (<a href="https://codepen.io/fergd">@fergd</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <h3>UI Design</h3>
+		<figure>
+			<img src="https://res.cloudinary.com/fergd/image/upload/v1554951976/fergdblog/PTT.png" alt="A tablet and phone are using Push to Talk to communicate.">
+			<figcaption>This UI shows the paramedic (iPhone) talking to the dispatcher (iPad) who is listening.</figcaption>
+		</figure>
+    </div>
+    <div class="item-a15">
+        {% include article-footer.html %} 
+    </div>
+</div>
