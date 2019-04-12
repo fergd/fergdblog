@@ -16,6 +16,7 @@ navpage: true
             {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}">
+                    <small class="text--all-caps">{{ post.major-category}}</small>
                 	<h3>{{ post.title }}&nbsp;<small class="text--small-caps">{{ post.date | date: "%Y" }}</small></h3>
                    
                     <p>{{post.subtitle}}</p>
