@@ -5,7 +5,7 @@
     <h1>{{page.title}}</h1>
     <p>{{page.author}}</p>
     <hr>
-    <small>{{page.date | date: "%b %d, %Y"}}</small>
+    <small>Published {{page.date | date: "%Y"}}</small>
     {% if page.role %} 
     <p class="text--all-caps">Role: {{page.role}}</p>
     {% endif %} 
