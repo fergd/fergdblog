@@ -120,8 +120,8 @@ nav a{
 
 }
 .current{
-        font-weight: var(--font-heavy)
-    }
+    font-weight: var(--font-heavy)
+}
 blockquote {
     margin: 0;
     padding: var(--space-default);
@@ -362,4 +362,10 @@ footer{
 
 .bq-footer{
     margin-top: var(--space-xxlarge);
+}
+
+.profile{
+    p img{
+        max-width: 30%;
+    }
 }
