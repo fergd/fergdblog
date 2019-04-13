@@ -4,12 +4,12 @@
     </a>
 </div>
 <nav>
-    {% for page in site.pages %}
-    {% if page.navpage %}
-    <a href="{{page.permalink}}">{{page.title}}</a>
+    {% for item in site.pages %}
+    {% if item.navpage %}
+    <a href="{{item.permalink}}" {% if item.url == page.url %}class="current"{% endif %} >{{item.title}}</a>
     {% endif %}
     {% endfor %}
     {% if is_footer == true %}
     <a href="{{site.linkedin-contact}}" target="_blank" rel="noopener" rel="external">Contact&nbsp;<i class="icon icon-external"></i></a>
-    {% endif %} 
+    {% endif %}
 </nav>

@@ -8,6 +8,10 @@ main{
 	padding: var(--space-medium);
 }
 
+.push-right{
+    float: right;
+}
+
 @media all and (min-width: 1025px) {
     .container.front-page {
         display: grid;
