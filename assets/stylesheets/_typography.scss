@@ -88,3 +88,11 @@ h6 {
 p, li, a{
     letter-spacing: -0.02ch;
 }
+
+p.subtitle {
+    font-family: var(--font-body);
+    font-weight: var(--font-heavy);
+    font-size: var(--scale-3);
+    color: var(--gray-darken-2);
+    margin: var(--scale-1) 0 0 0;
+}

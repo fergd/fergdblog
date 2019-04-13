@@ -86,8 +86,11 @@
     position: absolute !important;
     height: 1px; width: 1px;
     overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
+}
+
+.no-margin{
+    margin: 0;
 }
 
 body {
@@ -114,7 +117,11 @@ nav a{
     &:hover{
         text-decoration: underline;
     }
+
 }
+.current{
+        font-weight: var(--font-heavy)
+    }
 blockquote {
     margin: 0;
     padding: var(--space-default);
@@ -150,14 +157,6 @@ p:not(blockquote>p) {
         display: inline-block;
     }
 }
-
-p.subtitle {
-    font-family: var(--font-body);
-    font-weight: var(--font-heavy);
-    font-size: var(--scale-3);
-    color: var(--gray-darken-2);
-    margin: var(--scale-1) 0 0 0;
-    }
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
@@ -249,14 +248,7 @@ ul {
     }
 }
 
-header,
-footer {
-    padding: var(--space-medium);
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    overflow: hidden;
-
+header,footer{
     .container__logo {
         a {
             text-decoration: none;
@@ -267,6 +259,14 @@ footer {
             font-size: var(--scale-3);
         }
     }
+}
+
+header{
+    padding: var(--space-medium);
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
 
     nav {
         display: flex;
@@ -277,13 +277,50 @@ footer {
             padding-left: var(--space-bump);
             padding-right: var(--space-bump);
 
-            &.current {
-                background: black;
-                color: red;
-            }
+            
         }
     }
 }
+
+footer{
+    padding: var(--space-default);
+    nav {
+    margin-top: var(--space-small);
+        a{
+        display: block;
+        margin-bottom: var(--space-small);
+    }
+}
+}
+
+
+@media all and (min-width: 600px) {
+
+    
+    footer {
+        padding: var(--space-medium);
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        overflow: hidden;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                padding-left: var(--space-bump);
+                padding-right: var(--space-bump);
+
+                
+            }
+        }
+    }
+
+
+}
+
 
 .front-page {
     blockquote,
