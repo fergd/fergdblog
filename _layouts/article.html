@@ -1,4 +1,21 @@
 ---
 layout: default
 ---
-{{content}}
+<article class="article--wrapper">
+    <header class='article--header'>
+        {% include article-header.html %}
+    </header>
+    <div class="article--content">
+        {% if page.subtitle %}
+        <blockquote class="article--blockquote">
+            <p>{{page.subtitle}}</p>
+        </blockquote>
+        {% endif %}
+        <div class="article--content--body">
+        	{{content}}
+        </div> 
+    </div>
+    {% if page.published == true %} 
+    {% include article-footer.html %} 
+    {% endif %}
+</article>

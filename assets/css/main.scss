@@ -76,7 +76,7 @@
 @import "../stylesheets/typography",
 "../stylesheets/layout",
 "../stylesheets/resume",
-"../stylesheets/article",
+"../stylesheets/article-page",
 "../stylesheets/article-landing",
 "../stylesheets/haikus",
 "../stylesheets/icons"
@@ -139,7 +139,9 @@ img {
 p:not(blockquote>p) {
     max-width: 768px;
 }
-
+.floated-image{
+    max-width: 40%;
+}
 .footer-icon{
     display: none;
 }
@@ -261,7 +263,7 @@ header,footer{
     }
 }
 
-header{
+header.site-header{
     padding: var(--space-medium);
     display: flex;
     justify-content: space-between;
@@ -282,7 +284,7 @@ header{
     }
 }
 
-footer{
+.footer--page{
     padding: var(--space-default);
     nav {
     margin-top: var(--space-small);
@@ -297,7 +299,7 @@ footer{
 @media all and (min-width: 600px) {
 
     
-    footer {
+    .footer--page {
         padding: var(--space-medium);
         display: flex;
         justify-content: space-between;
@@ -357,15 +359,5 @@ footer{
         li {
             margin-bottom: var(--space-xlarge);
         }
-    }
-}
-
-.bq-footer{
-    margin-top: var(--space-xxlarge);
-}
-
-.profile{
-    p img{
-        max-width: 30%;
     }
 }
