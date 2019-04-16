@@ -4,6 +4,10 @@ title: Articles
 permalink: /articles/
 navpage: true
 ---
+
+
+
+
 <div class="article-landing container">
     <div class="item-2">
         <p class="subtitle text--all-caps">Always be learning</p>
@@ -17,13 +21,13 @@ navpage: true
             <li>
                 <a href="{{ post.url }}">
                     <small class="text--all-caps">{{ post.major-category}}</small>
-                	<h3>{{ post.title }}&nbsp;<small class="text--small-caps">{{ post.date | date: "%Y" }}</small></h3>
-                   
+                	<h3>{{ post.title }}&nbsp;<small class="text--small-caps">{{ post.date | date: "%Y" }}</small></h3>   
                     <p>{{post.subtitle}}</p>
                 </a>
-
             </li>
             {% endfor %}
         </ul>
     </div>
 </div>
+
+{{content}}
