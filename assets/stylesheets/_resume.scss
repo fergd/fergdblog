@@ -6,7 +6,6 @@
     }
 
     .resume-column p,
-    .item-r2 a,
     .item-r2 h3 {
         color: var(--gray-darken-2);
     }
@@ -17,6 +16,10 @@
             margin-bottom: var(--space-bump);
             font-size: var(--scale-1);
             text-decoration: none;
+
+            &:hover{
+                text-decoration: underline
+            }
         }
     }
 }
@@ -24,6 +27,12 @@
     display: none;
 }
 @media all and (min-width: 1025px) {
+
+    .example-items{
+        li{
+            margin-bottom: var(--space-small);
+        }
+    }
     .timeline{
             display: flex;
             flex-direction: column;

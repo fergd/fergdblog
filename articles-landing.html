@@ -1,0 +1,19 @@
+---
+layout: article
+title: Articles
+permalink: /articles/
+navpage: true
+major-category: Always Be Learning
+purpose: A collection of case studies, posts, & musings.
+---
+<ul class="articles-landing--list">
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}"> 
+            <small class="text--all-caps">{{post.date | date: "%Y"}} | {{ post.major-category}}</small>
+            <h3>{{ post.title }}</h3>
+            <p>{{post.subtitle}}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
