@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
 <div class="container__logo">
     <a href="/">
         <h1>C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus</span></h1>
@@ -37,6 +37,8 @@
     
     
     
+    <a href="/profile/"  >Profile</a>
+    
     
     
     <a href="/resume/"  >Resume</a>
@@ -48,86 +50,90 @@
 </nav> 
 </header>
     <main>
-        <div class="container article">
-    <div class="article-heading item-a2">
+        <article class="article--wrapper">
+    <header class='article--header'>
+        <div>
      
     <p class="subtitle text--all-caps">Product Leadership</p>
      
     <h1>Software Usability Non-functional Requirements</h1>
+     
     <p>Christan Fergus</p>
+     
+     
     <hr>
+     
     <small>Published 2019</small>
+     
      
     <p class="text--all-caps">Role: User Experience Strategist</p>
      
+     
 </div>
-<div class="article-heading item-a3">
-    <blockquote>
-        <p>Baking guidelines for usability directly into development best practices.</p>
-    </blockquote>
-</div>
-    <div class="item-a4">
-        <h2>Overview</h2>
-    </div>
-    <div class="item-a5">
-        <p>This is an example of non-functional user experience requirements I have developed over the years. This set of requirements serve as a development guide, and are designed to be augmented and modified to a team and product's requirements.</p>
 
-        <p>This list is by no means exhaustive. However, this set can serve as a good baseline and starting point for any software application.</p>
+    </header>
+    <div class="article--content">
+        
+        <blockquote class="article--blockquote">
+            <p>Baking guidelines for usability directly into development best practices.</p>
+        </blockquote>
+        
+        <div class="article--content--body">
+        	<h2>Overview</h2>
+<p>This is an example of non-functional user experience requirements I have developed over the years. This set of requirements serve as a development guide, and are designed to be augmented and modified to a team and product's requirements.</p>
+<p>This list is by no means exhaustive. However, this set can serve as a good baseline and starting point for any software application.</p>
+<h2>Requirements</h2>
+<h3>User understands the state of the system at all times</h3>
+<ul>
+    <li>The user should know their actions are being interpreted by the system</li>
+    <li>The user should know if something is loading as a result of their action</li>
+    <li>The user should be prompted by the system if something requires their attention or action</li>
+</ul>
+<h3>Processing & Response times</h3>
+<ul>
+    <li>Pages and data should load w/in n seconds</li>
+    <li>Components should update w/in n seconds after the user makes a request</li>
+    <li>Provide an indication the system is working</li>
+</ul>
+<h3>Do not refresh the page for new or updated content</h3>
+<ul>
+    <li>Components and their data should update independent of the page</li>
+    <li>Do not perform page refreshes for new data unless the user is navigating to a logically different area/page of the site</li>
+</ul>
+<h3>User has control of how they navigate through the system</h3>
+<ul>
+    <li>Do not move the user to another page unless they choose to do so</li>
+    <li>Do not place the user in obscure locations in the system</li>
+    <li>Warn the user if they are about to leave the website or software product, and give them the option to abort or proceed</li>
+</ul>
+<h3>Accessibility</h3>
+<ul>
+    <li>Markup is to be well-formed to allow the content to be easily understood.</li>
+    <li>Where at all possible, the content should be available and understandable when styles and JavaScript are not enabled</li>
+    <li>Colors and contrast should be tested to make sure they are visible to anyone with most sight disabilities</li>
+    <li>Important content should be immediately visible in the UI&mdash;Do not reveal important content via gestures, mouse hovers, or clicks</li>
+</ul>
+<h3>Front End Accessibility</h3>
+<p>UX, UI developers are able to audit front end pages and understand, at least on a basic level, what the code is doing</p>
+<h3>Security/Roles</h3>
+<ul>
+    <li>The application must support multiple roles associated with the logged in user</li>
+    <li>The application must allow UI elements to be shown to the user that are relevant to the user based the their specific role(s)</li>
+</ul>
+<h3>Localization</h3>
+<p>The system must use localization techniques that will allow for strings and other elements (such as dates & currency) to be localized to match the user's preferred language and culture</p>
+        </div> 
     </div>
-    <div class="item-a6">
-        <h2>Requirements</h2>
-    </div>
-    <div class="item-a7">
-        <h3>User understands the state of the system at all times</h3>
-        <ul>
-        	<li>The user should know their actions are being interpreted by the system</li>
-        	<li>The user should know if something is loading as a result of their action</li>
-        	<li>The user should be prompted by the system if something requires their attention or action</li>
-        </ul>
-        <h3>Processing & Response times</h3>
-        <ul>
-	        <li>Pages and data should load w/in n seconds</li>
-	        <li>Components should update w/in n seconds after the user makes a request</li>
-	        <li>Provide an indication the system is working</li>
-		</ul>	
-		<h3>Do not refresh the page for new or updated content</h3>
-		<ul>
-			<li>Components and their data should update independent of the page</li>
-			<li>Do not perform page refreshes for new data unless the user is navigating to a logically different area/page of the site</li>
-		</ul>
-		<h3>User has control of how they navigate through the system</h3>
-        <ul>
-        	<li>Do not move the user to another page unless they choose to do so</li>
-        	<li>Do not place the user in obscure locations in the system</li>
-        	<li>Warn the user if they are about to leave the website or software product, and give them the option to abort or proceed</li>
-        </ul>
-        <h3>Accessibility</h3>
-        <ul>
-        	<li>Markup is to be well-formed to allow the content to be easily understood.</li>
-        	<li>Where at all possible, the content should be available and understandable when styles and JavaScript are not enabled</li>
-        	<li>Colors and contrast should be tested to make sure they are visible to anyone with most sight disabilities</li>
-        	<li>Important content should be immediately visible in the UI&mdash;Do not reveal important content via gestures, mouse hovers, or clicks</li>
-        </ul>
-        <h3>Front End Accessibility</h3>
-        <p>UX, UI developers are able to audit front end pages and understand, at least on a basic level, what the code is doing</p>
-        <h3>Security/Roles</h3>
-        <ul>
-        	<li>The application must support multiple roles associated with the logged in user</li>
-        	<li>The application must allow UI elements to be shown to the user that are relevant to the user based the their specific role(s)</li>
-        </ul>
-        <h3>Localization</h3>
-        <p>The system must use localization techniques that will allow for strings and other elements (such as dates & currency) to be localized to match the user's preferred language and culture</p>
-    </div>
-    <div class="item-a9">
-        <blockquote class="bq-footer">
+     
+    <footer class="footer--article">
     <h3>Would you like to talk more about this?</h3>
     <p>Let's connect! Reach out through <a href="https://www.linkedin.com/in/christanfergus/detail/contact-info/" target="_blank" rel="noopener" rel="external">LinkedIn <i class="icon icon-external"></i></a></p>
-</blockquote> 
-    </div>
-</div>
+</footer> 
+    
+</article>
     </main>
      
-    <footer>
+    <footer class="footer--page">
 	
     <div class="container__logo">
     <a href="/">
@@ -148,6 +154,8 @@
     
     
     
+    
+    <a href="/profile/"  >Profile</a>
     
     
     

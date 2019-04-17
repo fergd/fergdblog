@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
 <div class="container__logo">
     <a href="/">
         <h1>C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus</span></h1>
@@ -37,6 +37,8 @@
     
     
     
+    <a href="/profile/"  >Profile</a>
+    
     
     
     <a href="/resume/"  >Resume</a>
@@ -48,26 +50,36 @@
 </nav> 
 </header>
     <main>
-        <div class="container article">
-    <div class="article-heading item-a2">
+        <article class="article--wrapper">
+    <header class='article--header'>
+        <div>
      
     <p class="subtitle text--all-caps">Case Study</p>
      
     <h1>Door To Door Organics Case Studies</h1>
+     
     <p>Christan Fergus</p>
+     
+     
     <hr>
+     
     <small>Published 2016</small>
+     
      
     <p class="text--all-caps">Role: Lead Front End Developer</p>
      
-</div>
-<div class="article-heading item-a3">
-    <blockquote>
-        <p>This is a selection of projects I have highlighted that I worked on while at DTDO. My role in all these encompassed UI/UX design and code implementation (HTML, Sass, JQuery, and in some cases JSX).</p>
-    </blockquote>
+     
 </div>
 
-    <section class="item-case-study product-card">
+    </header>
+    <div class="article--content">
+        
+        <blockquote class="article--blockquote">
+            <p>This is a selection of projects I have highlighted that I worked on while at DTDO. My role in all these encompassed UI/UX design and code implementation (HTML, Sass, JQuery, and in some cases JSX).</p>
+        </blockquote>
+        
+        <div class="article--content--body">
+        	    <section class="item-case-study product-card">
          <h2>Product Card</h2>
         <h3>Requirements</h3>
         <ul>
@@ -160,10 +172,19 @@
             </figure>
         </div>
     </section>
-</div>
+
+        </div> 
+    </div>
+     
+    <footer class="footer--article">
+    <h3>Would you like to talk more about this?</h3>
+    <p>Let's connect! Reach out through <a href="https://www.linkedin.com/in/christanfergus/detail/contact-info/" target="_blank" rel="noopener" rel="external">LinkedIn <i class="icon icon-external"></i></a></p>
+</footer> 
+    
+</article>
     </main>
      
-    <footer>
+    <footer class="footer--page">
 	
     <div class="container__logo">
     <a href="/">
@@ -184,6 +205,8 @@
     
     
     
+    
+    <a href="/profile/"  >Profile</a>
     
     
     
