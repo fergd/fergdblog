@@ -1,0 +1,25 @@
+img.article--header-image{
+  max-width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 700px) and (max-width: 1023px){
+  img.article--header-image{
+    float: left;
+  }
+}
+
+@media all and (min-width: 1025px) {
+    .flex-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       figure{
+        margin: 0;
+       }
+       div, figure{
+        flex-basis: 18rem;
+       }
+    }
+}

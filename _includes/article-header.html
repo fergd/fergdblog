@@ -1,17 +1,22 @@
-<div class="article-heading item-a2">
+<div>
     {% if page.major-category %} 
     <p class="subtitle text--all-caps">{{page.major-category}}</p>
     {% endif %} 
     <h1>{{page.title}}</h1>
+    {% if page.author %} 
     <p>{{page.author}}</p>
+    {% endif %} 
+    {% if page.purpose %} 
+    <p>{{page.purpose}}</p>
+    {% endif %} 
     <hr>
+    {% if page.date %} 
     <small>Published {{page.date | date: "%Y"}}</small>
+    {% endif %} 
     {% if page.role %} 
     <p class="text--all-caps">Role: {{page.role}}</p>
     {% endif %} 
-</div>
-<div class="article-heading item-a3">
-    <blockquote>
-        <p>{{page.subtitle}}</p>
-    </blockquote>
+    {% if page.header-image %} 
+    <img src="{{page.header-image}}" alt="{{page.header-image-alt}}" class="article--header-image">
+    {% endif %} 
 </div>
