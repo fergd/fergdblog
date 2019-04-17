@@ -4,7 +4,7 @@
 <nav {% if is_footer == true %}aria-label="Site footer links and info"{% else %}aria-label="Main Menu"{% endif %}>
     {% for item in site.pages %}
     {% if item.navpage %}
-    <a href="{{item.permalink}}" {% if item.url == page.url %}class="current"{% endif %} >{{item.title}}</a>
+    <a href="{{item.permalink}}" {% if item.url == page.url %}class="current" aria-label="Current page: {{page.title}}"{% endif %} >{{item.title}}</a>
     {% endif %}
     {% endfor %}
     {% if is_footer == true %}
