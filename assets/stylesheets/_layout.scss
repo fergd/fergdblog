@@ -18,7 +18,9 @@ main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-gap: 1em 1em;
+        grid-gap: 1em;
+        grid-row-gap: 4em;
+
 
         [class^="item"] {
             display: flex;
