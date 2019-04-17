@@ -3,7 +3,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.faux-heading {
     font-family: var(--font-heading), sans-serif;
     line-height: 1.2;
     margin: 0;
@@ -23,7 +24,8 @@ h4{
         margin-top: var(--space-nudge);
     }
 }
-h1 {
+h1,
+.faux-heading {
     font-size: var(--scale-6);
 }
 
@@ -54,7 +56,8 @@ h6 {
 *+h3,
 *+h4,
 *+h5,
-*+h6 {
+*+h6,
+*+.faux-heading {
     margin-top: var(--space-default);
 }
 
