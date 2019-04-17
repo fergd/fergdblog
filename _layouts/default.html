@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-
 <body>
+	{% unless page.title == "landing" %} 
+    <a href="#main-content" class="visually-hidden">Skip navigation to main content</a>
+    {% endunless %} 
     {% include header.html %}
-    <main>
+    <main id="main-content">
         {{ content }}
     </main>
-    {% unless page.title == 'landing' %} 
+    {% unless page.title == 'landing' %}
     {% include footer.html %}
-    {% endunless %} 
+    {% endunless %}
 </body>
-
 </html>
