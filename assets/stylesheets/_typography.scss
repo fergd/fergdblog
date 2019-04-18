@@ -3,7 +3,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.faux-heading {
     font-family: var(--font-heading), sans-serif;
     line-height: 1.2;
     margin: 0;
@@ -14,7 +15,11 @@ h6 {
     // }
 }
 h3,
-h4{
+h4,
+//only for the article page
+h2.article-list--heading
+//
+{
 	font-family: var(--font-body), sans-serif;
     line-height: 1.2;
     margin: 0;
@@ -23,7 +28,8 @@ h4{
         margin-top: var(--space-nudge);
     }
 }
-h1 {
+h1,
+.faux-heading {
     font-size: var(--scale-6);
 }
 
@@ -31,7 +37,11 @@ h2 {
     font-size: var(--scale-5);
 }
 
-h3 {
+h3,
+//only for the article page
+h2.article-list--heading
+//
+{
     font-size: var(--scale-3);
     color: var(--gray-darken-2);
 }
@@ -54,7 +64,8 @@ h6 {
 *+h3,
 *+h4,
 *+h5,
-*+h6 {
+*+h6,
+*+.faux-heading {
     margin-top: var(--space-default);
 }
 

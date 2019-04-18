@@ -1,15 +1,13 @@
 <div class="container__logo">
-    <a href="{{site.baseurl}}">
-        <h1>C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus</span></h1>
-    </a>
+    <a href="{{site.baseurl}}" class="faux-heading">C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus Home</span></a>
 </div>
-<nav>
+<nav {% if is_footer == true %}aria-label="Site footer links and info"{% else %}aria-label="Main Menu"{% endif %}>
     {% for item in site.pages %}
     {% if item.navpage %}
-    <a href="{{item.permalink}}" {% if item.url == page.url %}class="current"{% endif %} >{{item.title}}</a>
+    <a href="{{item.permalink}}" {% if item.url == page.url %}class="current" aria-label="Current page: {{page.title}}"{% endif %} >{{item.title}}</a>
     {% endif %}
     {% endfor %}
     {% if is_footer == true %}
-    <a href="{{site.linkedin-contact}}" target="_blank" rel="noopener" rel="external">Contact&nbsp;<i class="icon icon-external"></i></a>
+    <a href="{{site.linkedin-contact}}" target="_blank" rel="noopener" rel="external" aria-described-by="a11y-nav-contact">Contact&nbsp;<i class="icon icon-external"></i><span id="a11y-nav-contact" class="visually-hidden" aria-hidden="true">(opens in a new window)</span></a>
     {% endif %}
 </nav>
