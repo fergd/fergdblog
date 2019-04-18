@@ -15,7 +15,11 @@ h6,
     // }
 }
 h3,
-h4{
+h4,
+//only for the article page
+h2.article-list--heading
+//
+{
 	font-family: var(--font-body), sans-serif;
     line-height: 1.2;
     margin: 0;
@@ -33,7 +37,11 @@ h2 {
     font-size: var(--scale-5);
 }
 
-h3 {
+h3,
+//only for the article page
+h2.article-list--heading
+//
+{
     font-size: var(--scale-3);
     color: var(--gray-darken-2);
 }
