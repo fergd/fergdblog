@@ -17,9 +17,11 @@ role: My job role on the project
 
 parent: if there is a parent page, put it here, like - articles
 
-header-image: {{url}}
-
-header-image-alt: "alt copy"
+header-image-320w:
+header-image-480w: 
+header-image-800w: 
+header-image: 
+header-image-alt: 
 
 published: false
 ---

@@ -3,10 +3,10 @@
 {% include head.html %}
 <body>
 	{% unless page.title == "landing" %} 
-    <a href="#main-content" class="visually-hidden">Skip navigation to main content</a>
+    <a href="#main-content" class="visually-hidden">Skip navigation</a>
     {% endunless %} 
     {% include header.html %}
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
         {{ content }}
     </main>
     {% unless page.title == 'landing' %}
