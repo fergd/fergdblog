@@ -4,7 +4,6 @@ title: Diary Of A Meteor App Project
 subtitle: A case study chronicling my first experience with Meteor. It was bumpy.
 permalink: diary-of-a-meteor-app-project
 date: 2015/07/03
-category: Web & App Development
 author: Christan Fergus
 published: true
 major-category: Personal Projects

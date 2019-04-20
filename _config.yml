@@ -9,6 +9,7 @@ linkedin: "https://www.linkedin.com/in/christanfergus/"
 linkedin-contact: "https://www.linkedin.com/in/christanfergus/detail/contact-info/"
 css-dir: "assets/css/"
 js-dir: "assets/js/"
+desc-dir: "/descriptions/"
 markdown: kramdown
 future: true
 # gems:
