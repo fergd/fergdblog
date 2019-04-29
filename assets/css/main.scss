@@ -65,6 +65,8 @@
     --gray-darken-5: #2a323e;
     --gray-darken-6: #181b27;
     --black: #000000;
+
+    --yellow: #ffcc33;
 }
 
 html.dark{
@@ -91,6 +93,11 @@ html.dark{
     box-sizing: border-box;
 }
 
+*::selection,
+*::-moz-selection{
+    background-color: var(--yellow);
+}
+
 @import "../stylesheets/typography",
 "../stylesheets/layout",
 "../stylesheets/resume",
@@ -99,6 +106,10 @@ html.dark{
 "../stylesheets/haikus",
 "../stylesheets/icons"
 ;
+
+.no-bullets{
+    list-style-type: none;
+}
 
 .visually-hidden{
     position: absolute !important;
@@ -145,10 +156,11 @@ a {
 }
 nav a{
     text-decoration: none;
+    white-space: nowrap;
     &:hover{
         text-decoration: underline;
     }
-
+    
 }
 .current{
     font-weight: var(--font-heavy)
@@ -284,6 +296,7 @@ ul {
 
 header,footer{
     .container__logo {
+        align-self: center;
         a {
             text-decoration: none;
         }
