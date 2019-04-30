@@ -67,6 +67,7 @@
     --black: #000000;
 
     --yellow: #ffcc33;
+    --yellow-80: #ffcc33D9;
 }
 
 html.dark{
@@ -149,6 +150,7 @@ body {
 
 a {
     color: var(--text-link);
+        white-space: nowrap;
     i{
         text-decoration: none;
         margin-right: var(--space-xxsmall);
@@ -161,6 +163,9 @@ nav a{
         text-decoration: underline;
     }
     
+}
+p a:hover{
+    background: var(--yellow);
 }
 .current{
     font-weight: var(--font-heavy)
