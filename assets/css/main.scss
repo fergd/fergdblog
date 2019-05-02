@@ -136,6 +136,10 @@ html.dark{
     margin: 0;
 }
 
+.no-wrapping{
+    white-space: nowrap;
+}
+
 body {
     margin: 0 auto;
     min-height: 100vh;
@@ -150,7 +154,7 @@ body {
 
 a {
     color: var(--text-link);
-        white-space: nowrap;
+        
     i{
         text-decoration: none;
         margin-right: var(--space-xxsmall);
