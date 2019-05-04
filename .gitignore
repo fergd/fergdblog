@@ -1,7 +1,8 @@
 .sass-cache
+.sass-cache/
 /_site
 /node_modules
 .DS_Store
 /dist
 .publish
-.publish/
+**.publish/
