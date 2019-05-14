@@ -1,14 +1,13 @@
 ---
 layout: article
-title: Articles
-permalink: /articles/
+title: Case Studies
+permalink: /case-studies/
 navpage: true
-major-category: Always Be Learning
-purpose: A collection of articles, posts, & musings.
+major-category: Doing the Diligent
 ---
 <ul class="articles-landing--list">
     {% for post in site.posts %}
-    {% unless post.major-category == 'Case Study' %} 
+    {% if post.major-category == 'Case Study' %}
     <li>
         <a href="{{ post.url }}"> 
             <small class="text--all-caps">{{post.date | date: "%Y"}} | {{ post.major-category}}</small>
@@ -16,6 +15,6 @@ purpose: A collection of articles, posts, & musings.
             <p>{{post.subtitle}}</p>
         </a>
     </li>
-    {% endunless %} 
+    {% endif %} 
     {% endfor %}
 </ul>
