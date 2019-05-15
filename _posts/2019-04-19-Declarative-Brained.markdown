@@ -1,6 +1,7 @@
 ---
 layout: article
 permalink: /articles/declarative-brained
+group: articles
 title: Declarative-Brained & a Myth of Fullstack
 subtitle: An observation on the state of full stack development and they way our brains tend to be wired. 
 date: 2019/04/15

@@ -3,6 +3,7 @@ layout: article
 title: "User Experience Design Team Flow"
 subtitle: The role of UX is not to sit on the sidelines of product. UX is to be an integral, driving, & course-correcting force that is crucial to a product’s development.
 permalink: /articles/ux-design-team-flow/
+group: articles
 date: 2019/04/07
 author: Christan Fergus
 published: true

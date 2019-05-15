@@ -1,13 +1,14 @@
 ---
 layout: article
 title: Work
-permalink: /case-studies/
+sort-order: 0
+permalink: /work/
 navpage: true
 major-category: Doing the Diligent
 ---
 <ul class="articles-landing--list">
     {% for post in site.posts %}
-    {% if post.major-category == 'Case Study' %}
+    {% if post.group == 'work' %}
     <li>
         <a href="{{ post.url }}"> 
             <small class="text--all-caps">{{post.date | date: "%Y"}} | {{ post.major-category}}</small>
