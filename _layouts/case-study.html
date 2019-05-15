@@ -5,6 +5,7 @@ layout: default
     <header class='article--header'>
         {% include article-header.html %}
     </header>
+    {% if page.overview %} 
     <div class="cs--overview">
         {% if page.subtitle %}
         <p class="subtitle">{{page.subtitle}}</p>
@@ -48,6 +49,7 @@ layout: default
             {% endif %}
         </div>
     </div>
+    {% endif %} 
     <div class="cs--content">
         {{content}}
     </div>
