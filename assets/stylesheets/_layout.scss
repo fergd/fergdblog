@@ -13,7 +13,9 @@ main{
 }
 
 @media all and (min-width: 1025px) {
-
+    .lede{
+        display: block;
+    }
     .container.front-page {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

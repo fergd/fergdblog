@@ -101,11 +101,13 @@ html.dark{
 
 @import "../stylesheets/typography",
 "../stylesheets/layout",
+"../stylesheets/case-studies",
 "../stylesheets/resume",
 "../stylesheets/article-page",
 "../stylesheets/article-landing",
 "../stylesheets/haikus",
-"../stylesheets/icons"
+"../stylesheets/icons",
+"../stylesheets/tables"
 ;
 
 .no-bullets{
@@ -227,7 +229,7 @@ p:not(blockquote>p) {
 }
 
 figure {
-    margin: 0;
+    margin: var(--space-large)  0 ;
     max-width: 100%;
 
     figcaption {
@@ -276,6 +278,7 @@ ul {
 }
 
 .lede {
+    display: none;
     text-align: center;
     margin-bottom: var(--space-xxlarge);
 

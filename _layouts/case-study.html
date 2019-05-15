@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<article class="article--wrapper">
+    <header class='article--header'>
+        {% include article-header.html %}
+    </header>
+    <div class="cs--overview">
+        {% if page.subtitle %}
+        <p class="subtitle">{{page.subtitle}}</p>
+        {% endif %}
+        {% if page.cs-objective %}
+        <div class="cs--overview-items">
+            <div class="one">
+                <h3>Objective</h3>
+                <p>{{page.cs-objective}}</p>
+            </div>
+            {% endif %}
+            {% if page.cs-tools %}
+            <div class="two">
+                <h3>Tools &amp; Methodology</h3>
+                <ul>
+                    {% for tools in page.cs-tools %}
+                    <li>{{tools}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            {% if page.cs-team %}
+            <div class="three">
+                <h3>Team</h3>
+                <ul>
+                    {% for team in page.cs-team %}
+                    <li>{{team}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            {% if page.cs-results %}
+            <div class="four">
+                <h3>Results</h3>
+                <ul>
+                    {% for result in page.cs-team %}
+                    <li>{{result}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="cs--content">
+        {{content}}
+    </div>
+</article>
