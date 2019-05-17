@@ -276,9 +276,15 @@ ul {
         list-style: inside;
     }
 }
-
-.lede {
+.landing-links{
     display: none;
+}
+@media all and (min-width: 1024px){
+    .landing-links{
+    display: block;
+}
+}
+.lede {
     text-align: center;
     margin-bottom: var(--space-xxlarge);
 
