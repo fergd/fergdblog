@@ -330,6 +330,7 @@ header.site-header{
     padding: var(--space-medium);
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     max-width: 100%;
     overflow: hidden;
 
@@ -339,10 +340,20 @@ header.site-header{
         align-items: center;
 
         a {
-            padding-left: var(--space-bump);
-            padding-right: var(--space-bump);
-
-            
+            padding-left: var(--space-min);
+            padding-right: var(--space-min);
+        }
+    }
+}
+@media all and (min-width: 600px){
+    header.site-header{
+        flex-direction: row;
+   
+        nav{
+            a{
+                padding-left: var(--space-bump);
+                padding-right: var(--space-bump);
+            }
         }
     }
 }
