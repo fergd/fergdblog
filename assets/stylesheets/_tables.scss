@@ -1,0 +1,14 @@
+table{
+	thead{
+		font-weight: var(--font-heavy);
+	}
+	td{
+		padding: var(--space-default);
+		&.cell--centered{
+			text-align: center;
+		}
+	}
+	tbody tr:nth-of-type(odd){
+		background: var(--gray-lighten-5);
+	}
+}

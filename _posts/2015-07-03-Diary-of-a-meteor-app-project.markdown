@@ -5,7 +5,7 @@ subtitle: A case study chronicling my first experience with Meteor. It was bumpy
 permalink: diary-of-a-meteor-app-project
 date: 2015/07/03
 author: Christan Fergus
-published: true
+published: false
 major-category: Personal Projects
 ---
 <h2>For Starters...</h2>
