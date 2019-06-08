@@ -26,6 +26,9 @@
 .timeline{
     display: none;
 }
+img.badge{
+    max-width: 240px;
+}
 @media all and (min-width: 1025px) {
 
     .example-items{
