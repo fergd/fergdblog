@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Thanks for having a look. Get in touch, christan.fergUX@gmail.com
+-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Christan Fergus is a user experience strategist in the Denver metro area.">
+	<meta name="theme-color" content="#2a323e"/>
+	<title>Using a Raspberry Pi 4 as a Plex Server - Christan Fergus</title>
+	<link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" href="/assets/css/main.css?v=5.9" media="(min-width: 320px)">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Raleway:600,900" rel="stylesheet"> 
+	<link rel="icon" 
+      type="image/png" 
+      href="/favicon.png?v=5.9">
+</head>
+<body>
+	 
+    <a href="#main-content" class="visually-hidden">Skip navigation</a>
+     
+    <header class="site-header">
+<div class="container__logo">
+    <a href="/" class="faux-heading">C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus Home</span></a>
+</div>
+<nav id="primary-nav" class="primary-nav"aria-label="Main Menu">
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="/work/"  >Work</a>
+    
+    
+    
+    <a href="/articles/"  >Articles</a>
+    
+    
+    
+    <a href="/profile/"  >Profile</a>
+    
+    
+    
+    <a href="/resume/"  >Resume</a>
+    
+    
+    
+</nav> 
+</header>
+    <main id="main-content" tabindex="-1">
+        <article class="article--wrapper">
+    <header class='article--header'>
+        <div class="article-header-container">
+     
+    <p class="subtitle text--all-caps">How-To</p>
+     
+    <h1>Using a Raspberry Pi 4 as a Plex Server</h1>
+     
+    <p>Christan Fergus</p>
+     
+     
+    <hr>
+     
+    <small>Published 2020</small>
+     
+     
+     
+</div>
+    </header>
+    <div class="article--content">
+        
+        <blockquote class="article--blockquote">
+            <p>How to install a Plex server on a Raspberry Pi 4</p>
+        </blockquote>
+        
+        <div class="article--content--body">
+        	<h1 id="parts--hardware">Parts &amp; Hardware</h1>
+<h2 id="required">Required</h2>
+<ul>
+  <li>Raspberry Pi 4 (4GB RAM recommended)</li>
+  <li>USBC power adapter</li>
+  <li>Mini HDMI to HDMI cable</li>
+  <li>External HDD</li>
+  <li>Micro SD Card (minimum 8GB)</li>
+</ul>
+
+<h2 id="optional">Optional</h2>
+<ul>
+  <li>RP4 Case</li>
+  <li>RP4 Fans and heatsinks</li>
+</ul>
+
+<h3 id="recommended-to-make-life-easier">Recommended to make life easier</h3>
+<p>Get a Raspberry Pi kit with power cable, fans, HDMI micro cables, etc. ~$100</p>
+
+<h1 id="software">Software</h1>
+<ul>
+  <li>Noobs</li>
+  <li>Raspbian</li>
+  <li>Plex</li>
+</ul>
+
+<h1 id="installation-steps">Installation Steps</h1>
+
+<ol>
+  <li>Download <a href="https://www.raspberrypi.org/downloads/noobs/">Noobs</a></li>
+  <li>Format your SD to FAT</li>
+  <li>Transfer Noobs onto the SD card. Only transfer the files inside the downloaded folder. Noobs will not boot if you transfer the root folder over.</li>
+  <li>Throw the SD card into the Pi and boot up. If the files were transferred correctly, the Pi will automatically boot up to a distro install screen.</li>
+  <li>Choose “Raspbian” and install, either full or basic, it shouldn’t matter</li>
+  <li>After successful install and reboot, set up the OS following the prompts,
+Change default pi password, set up wifi, download any updates, etc.</li>
+  <li><strong>Optional:</strong> to make your life easier, enable SSH access (via Raspbian GUI):
+Pi Menu&gt;Preferences&gt;Raspberry Pi Configuration&gt;Interfaces&gt;SSH=Enable</li>
+  <li>Ensure HTTPS transport package is installed (it most likely is for the latest versions of Noobs &amp; Raspbian):
+    <div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install apt-transport-https
+</code></pre>
+    </div>
+  </li>
+  <li>ntfs-3g is probably installed by default as well, but just in case, add the NTFS disc package
+    <div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install ntfs-3g 
+</code></pre>
+    </div>
+  </li>
+  <li>Download Plex for your Linux distro:
+    <ol>
+      <li>First, determine whether you need the ARMv7 or the ARMv8 package:
+        <div class="highlighter-rouge"><pre class="highlight"><code>dpkg --print-architecture 
+</code></pre>
+        </div>
+      </li>
+      <li><code class="highlighter-rouge">armhf </code>requires the ARMv7 package</li>
+      <li><code class="highlighter-rouge">arm64</code> requires ARMv8</li>
+      <li>Once determined, download the correct package from the <a href="https://www.plex.tv/media-server-downloads/">plex site</a> but do not attempt to extract it once downloaded.</li>
+    </ol>
+  </li>
+  <li>Install the Plex server:
+    <div class="highlighter-rouge"><pre class="highlight"><code>sudo dpkg -i [DOWNLOADED FILE, i.e /Downloads/plex_etc...] 
+</code></pre>
+    </div>
+  </li>
+  <li>A quick way to ensure plex has been installed correctly and begin to access your server, go to <a href="http://127.0.0.1:32400/web">http://127.0.0.1:32400/web</a> in your browser, you should see plex come up</li>
+  <li>Attach your hard drive(s) if you haven’t already</li>
+  <li>Follow Plex’s setup steps and find out if you have more work ahead of you:
+    <ol>
+      <li>When it’s time to set up your libraries, navigate to your hard drive. If you can see the contents, you are all set and can skip the rest of these steps</li>
+      <li>If you cannot see your hard drive contents, the external hard drive must be mapped to a new location so that plex can access its contents. If that’s the case, continue on…</li>
+    </ol>
+  </li>
+  <li>Change the plex user as the first step in enabling Plex to access your hard drive content:
+    <ol>
+      <li>open the PMS file
+        <div class="highlighter-rouge"><pre class="highlight"><code>sudo nano /etc/default/plexmediaserver 
+</code></pre>
+        </div>
+      </li>
+      <li>on the line, <code class="highlighter-rouge">PLEX_MEDIA_SERVER_USER=plex</code>, change the user from “<code class="highlighter-rouge">plex</code>” to “<code class="highlighter-rouge">YOURUSERNAME</code>”</li>
+      <li>Save the changes</li>
+    </ol>
+  </li>
+  <li>Elevate to root
+    <div class="highlighter-rouge"><pre class="highlight"><code>sudo -s
+</code></pre>
+    </div>
+  </li>
+  <li>Obtain your harddrive’s UUID. This command will give IDs for all drives including internal drives:
+    <div class="highlighter-rouge"><pre class="highlight"><code>blkid
+</code></pre>
+    </div>
+  </li>
+  <li>For however many harddrives you are connecting to be accessed by Plex, you have to set up separate mounting points. If there is a way to bulk do this, I don’t know it, so you have to run through these next steps for each HDD. Create your mount point:
+    <div class="highlighter-rouge"><pre class="highlight"><code>sudo mkdir -p /media/[CUSTOMFOLDER]
+</code></pre>
+    </div>
+  </li>
+  <li>Edit your fstab file. WARNING! Don’t screw this up or you’ll basically brick your Raspbian installation and have to reinstall everything and start over!
+    <div class="highlighter-rouge"><pre class="highlight"><code>nano /etc/fstab
+</code></pre>
+    </div>
+  </li>
+  <li>You will see something like this:
+    <div class="highlighter-rouge"><pre class="highlight"><code>proc            /proc           proc    defaults          0       0
+/dev/XXXXXXXXX  /boot           vfat    defaults          0       2
+/dev/XXXXXXXXX  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
+</code></pre>
+    </div>
+    <p>At the very end of the file, create a line for each mapped hard drive like so:</p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>UUID=XXXXXXXXXXXXXXXXX /media/[CUSTOMFOLDER1] ntfs-3g permissions,auto 0 0
+UUID=XXXXXXXXXXXXXXXXX /media/[CUSTOMFOLDER2] ntfs-3g permissions,auto 0 0
+</code></pre>
+    </div>
+  </li>
+  <li>You must now mount your hard drive locations. You must do this for each drive you have connected
+    <div class="highlighter-rouge"><pre class="highlight"><code>sudo mount /media/[CUSTOMFOLDER]
+</code></pre>
+    </div>
+  </li>
+  <li>Ensure plex can read the files:
+    <div class="highlighter-rouge"><pre class="highlight"><code>sudo chown -R [USER]:[USER] /media/[CUSTOMFOLDER]
+</code></pre>
+    </div>
+  </li>
+  <li>Repeat steps as needed for each drive. Head back over to Plex in your browswer. The contents of each drive will now show up as available in Plex. From here, you can follow the intuitive steps in Plex to set up your library.</li>
+</ol>
+
+<p>You’re all set up! Enjoy your Plex server on the cheap!</p>
+
+        </div> 
+    </div>
+     
+    <footer class="footer--article" aria-label="Article Ending Contact Info">
+    <h3>Would you like to talk more about this?</h3>
+    <p>Let's connect! Reach out through <a href="https://www.linkedin.com/in/christanfergus/detail/contact-info/" target="_blank" rel="noopener" rel="external" aria-describedby="a11y-article-footer-contact">LinkedIn <i class="icon icon-external"></i><span id="a11y-article-footer-contact" class="visually-hidden" aria-hidden="true">(opens in a new window)</span></a>or email at <a href="mailto:christan.fergUX@gmail.com">christan.fergUX@gmail.com</a></p>
+</footer> 
+    
+</article>
+    </main>
+    
+    <footer class="footer--page">
+	
+    <div class="container__logo">
+    <a href="/" class="faux-heading">C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus Home</span></a>
+</div>
+<nav id="primary-nav" class="primary-nav"aria-label="Site footer links and info">
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="/work/"  >Work</a>
+    
+    
+    
+    <a href="/articles/"  >Articles</a>
+    
+    
+    
+    <a href="/profile/"  >Profile</a>
+    
+    
+    
+    <a href="/resume/"  >Resume</a>
+    
+    
+    
+    <a href="mailto:christan.fergUX@gmail.com" class="no-wrapping"><i class="icon icon-envelope"></i>christan.fergUX@gmail.com</a></li>
+    
+</nav> 
+</footer>
+    
+</body>
+</html>
