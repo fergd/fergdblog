@@ -36,3 +36,4 @@ sass:
   sass_dir:           assets/stylesheets
   style:              compressed
   sourcemap:          true 
+

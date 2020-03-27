@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="article--wrapper">
+    <header class='article--header' style="grid-row: 1 / span 2;">
+        {% include article-header.html %}
+    </header>
+    <div class="article--content">
+        {% if page.subtitle %}
+        <blockquote class="article--blockquote" style="grid-row: 1 / span 1;">
+            <p>{{page.subtitle}}</p>
+        </blockquote>
+        {% endif %}    
+        {% if page.images %}
+        <div class="intro-images">
+            {% for image in page.images %} 
+            <img class="tut--intro-image" src="{{image.url}}" alt="{{image.alt}}">
+            {% endfor %} 
+        </div>
+        {% endif %}
+    </div>
+   
+        {{content}}
+    
+</article>
