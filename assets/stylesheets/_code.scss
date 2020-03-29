@@ -1,10 +1,11 @@
 pre.has-code{
-background: var(--gray-darken-6);
+	background: var(--gray-darken-6);
 	color: #19af5d;
 	text-shadow: 0px 0px 20px #19af5d;
 	padding: var(--scale-1);
-	font-weight: normal;
+	font-weight: var(--font-normal);
 	border-radius: var(--scale--5);
+	white-space: break-spaces;
 }
 
 code{

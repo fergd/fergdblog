@@ -1,7 +1,7 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby ">=2.6.0"
 
-gem "jekyll", "3.5.1"
+# gem "jekyll", "~> 4.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.0"
@@ -18,5 +18,5 @@ gem "github-pages", group: :jekyll_plugins
 
 
 
-gem "nokogiri", ">= 1.8.5"
+gem "nokogiri", "~> 1.8.5"
 

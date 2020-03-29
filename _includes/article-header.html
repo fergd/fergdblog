@@ -1,20 +1,23 @@
 <div class="article-header-container">
     {% if page.major-category %} 
-    <p class="subtitle text--all-caps">{{page.major-category}}</p>
+    <p class="label">{{page.major-category}}</p>
     {% endif %} 
     <h1>{{page.title}}</h1>
+    <p class="authorship">
     {% if page.author %} 
-    <p>{{page.author}}</p>
+    {{page.author}}
     {% endif %} 
+    {% if page.author && page.date %}|{%endif%}
+    {% if page.date %} 
+    {{page.date | date: "%Y"}}
+    {% endif %} 
+    </p>
     {% if page.purpose %} 
     <p>{{page.purpose}}</p>
     {% endif %} 
     <hr>
-    {% if page.date %} 
-    <small>Published {{page.date | date: "%Y"}}</small>
-    {% endif %} 
     {% if page.role %} 
-    <p class="text--all-caps">Role: {{page.role}}</p>
+    <p class="">Role: {{page.role}}</p>
     {% endif %} 
     {% if page.header-image %} 
     <img srcset="{{page.header-image-320w}} 400w,

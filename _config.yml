@@ -33,7 +33,11 @@ exclude:
   - deploy.sh
   - .gitignore
 sass:
-  sass_dir:           assets/stylesheets
-  style:              compressed
-  sourcemap:          true 
+  sass_dir: assets/stylesheets
+  style: compressed
+  sourcemap: true 
+assets:
+  source_maps: true
+  sources:
+  - assets/stylesheets
 

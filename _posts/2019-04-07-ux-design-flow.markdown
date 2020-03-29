@@ -10,16 +10,11 @@ published: true
 resume-section: 'zoll'
 role: User Experience Strategist
 major-category: Product Leadership
+tldr:
+ - The purpose of mapping out a design flow and sharing it is to illustrate how it <em>can</em> be done, and perhaps spark inspiration for other teams
+ - Design flows like this are not intended to be a rigid law
+ - Not all teams and companies will operate the same way, nor should they because teams contain humans
 ---
-<div class="tldr">
-<h2>TL;DR</h2>
-<ul>
-    <li>The purpose of mapping out a design flow and sharing it is to illustrate how it <em>can</em> be done, and perhaps spark inspiration for other teams</li>
-    <li>Design flows like this are not intended to be a rigid law</li>
-    <li>Not all teams and companies will operate the same way, nor should they because teams contain humans</li>
-</ul>
-</div>
-
 A user experience designer's role on a team can seem ambiguous to teammembers sometimes. It's useful to put an image with the concepts, which is what's happening here. This illustrates how the UX role(s) are woven into every aspect of the development cycle. In this case, this is for a scrum team that has adopted a dual-track development style.
 
 When I make these diagrams, I intend for them to be references, not law. There are few connecting lines (that would indicate a rigid flow) because some features/products may require all or only some of the steps in each phase. As with everything in Agile development, room must be given for team style and feature need.

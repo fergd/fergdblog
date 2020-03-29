@@ -41,8 +41,8 @@
             padding-left: var(--space-medium);
         }
 
-        p {
-            max-width: 720px;
+        p:not(.callout){
+            max-width: 520px;
         }
     }
     .footer--article{
@@ -58,19 +58,22 @@
         margin-left: 0;
 
         li {
-            margin-bottom: var(--space-xxlarge);
-            font-family: var(--font-body);
+            margin-bottom: calc(var(--space-large) + 1em);
+            font-family: var(--copy-body);
             font-weight: var(--font-medium);
             font-size: var(--scale-4);
             color: var(--gray-darken-2);
+            &:hover{
+                text-decoration: underline;
+            }
 
             a {
                 font-size: var(--scale-1);
                 text-decoration: none;
             }
 
-            small {
-                font-size: var(--scale--1);
+            p.label{
+                margin: 0;
             }
         }
     }
