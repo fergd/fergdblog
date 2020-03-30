@@ -4,8 +4,9 @@ h1 {
     line-height: 1;
     letter-spacing: -0.02ch;
     font-weight: var(--font-heavy);
-    margin: 0 0 var(--scale-3) 0;
+    margin: 0 0 var(--scale-1) 0;
 }
+
 .faux-heading {
     font-family: var(--sans-serif), sans-serif;
     font-weight: var(--font-heavy);
@@ -16,7 +17,10 @@ h2 {
     font-size: var(--scale-3);
     font-weight: var(--font-normal);
     line-height: calc(var(--scale-3) * 1.2);
-    margin: 0 0 var(--scale-2) 0;
+    margin: var(--scale-4) 0 var(--scale-0) 0;
+    &:first-of-type{
+        margin-top: 0;
+    }
     &.article-list--heading {
         color: var(--gray-darken-2);
     }
@@ -25,9 +29,12 @@ h3 {
     font-family: var(--sans-serif), sans-serif;
     font-size: var(--scale-2);
     font-weight: var(--font-medium);
-    line-height: calc(var(--scale-2) * 1.2);
+    line-height: calc(var(--scale-0) * 1.2);
     text-transform: uppercase;
-    margin: 0 0 var(--scale-1) 0;
+    margin: var(--scale-4) 0 var(--scale-1) 0;
+    &:first-of-type{
+        margin-top: 0;
+    }
 }
 p {
     font-family: var(--copy-body), sans-serif;
@@ -43,8 +50,8 @@ p {
 p.callout {
     font-family: var(--sans-serif);
     font-size: var(--scale-2);
-    border-top: var(--scale--5) solid var(--gray-lighten-2);
-    border-bottom: var(--scale--5) solid var(--gray-lighten-2);
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
     padding: var(--scale-2) 0 var(--scale-2) var(--scale-3);
 }
 p.label {
@@ -78,6 +85,7 @@ span.dropcap {
 }
 a{
     text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
     &:hover {
         text-decoration: underline;
         text-decoration-color: var(--yellow);
@@ -93,6 +101,7 @@ nav a {
         font-weight: var(--font-heavy);
         text-decoration: underline;
         text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
         text-decoration-color: var(--yellow);
     }
 }

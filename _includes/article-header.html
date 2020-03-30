@@ -7,7 +7,7 @@
     {% if page.author %} 
     {{page.author}}
     {% endif %} 
-    {% if page.author && page.date %}|{%endif%}
+    {% if page.author && page.date %}&bull;{%endif%}
     {% if page.date %} 
     {{page.date | date: "%Y"}}
     {% endif %} 

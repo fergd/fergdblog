@@ -1,79 +1,58 @@
 .article--header p {
     color: var(--gray-darken-2);
 }
-
 .footer--article{
     margin-top: calc(var(--space-xxlarge) * 2);
 }
 @media all and (min-width: 1025px) {
-
     .article--wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-auto-rows: auto;
         grid-gap: 2em;
     }
-
     .article--header {
         grid-column: 1 / 3;
         div{
             padding-top: var(--space-default);
         }
     }
-
-    .article--blockquote {
-        border-left: var(--space-small) solid var(--gray-lighten-2);
-        margin-bottom: var(--space-xxlarge);
-
-        p{
-            font-size: var(--scale-3);
-            font-weight: var(--font-medium);
-            color: var(--gray-darken-2);
-            margin: var(--space-default) 0;
-        }
-    }
-
     .article--content {
         grid-column: 3 / 7;
-        border-left: 1px solid var(--gray-lighten-2);
-        
+        border-left: 2px solid var(--gray-lighten-2);
         .article--content--body {
             padding-left: var(--space-medium);
         }
-
         p:not(.callout){
             max-width: 520px;
         }
     }
     .footer--article{
-        grid-column: 3 / 7;
+        grid-column: 1 / 7;
         padding-left: var(--space-default);
-        border-left: var(--space-small) solid var(--gray-lighten-2);
+        text-align: center;
     }
 }
-
-
-    .articles-landing--list {
-        list-style-type: none;
-        margin-left: 0;
-
-        li {
-            margin-bottom: calc(var(--space-large) + 1em);
-            font-family: var(--copy-body);
-            font-weight: var(--font-medium);
-            font-size: var(--scale-4);
-            color: var(--gray-darken-2);
-            &:hover{
-                text-decoration: underline;
-            }
-
-            a {
-                font-size: var(--scale-1);
-                text-decoration: none;
-            }
-
-            p.label{
-                margin: 0;
-            }
+.articles-landing--list {
+    list-style-type: none;
+    margin-left: 0;
+    li {
+        margin-bottom: calc(var(--space-large) + 1em);
+        font-family: var(--copy-body);
+        font-weight: var(--font-medium);
+        font-size: var(--scale-4);
+        color: var(--gray-darken-2);
+        &:hover h2{
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: var(--yello );
+        }
+        a {
+            font-size: var(--scale-1);
+            text-decoration: none;
+        }
+        p.label{
+            margin: 0;
         }
     }
+}

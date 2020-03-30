@@ -323,10 +323,16 @@ header.site-header {
 .item-4 {
     ul {
         padding: var(--space-default);
-        border-left: 1px solid var(--gray-lighten-2);
+        border-left: 2px solid var(--gray-lighten-2);
         list-style-type: none;
         li {
             margin-bottom: var(--space-medium);
         }
+    }
+}
+.item-3{
+    p{
+        border-left: 2px solid var(--gray-lighten-2);
+        padding-left: var(--space-bump);
     }
 }
