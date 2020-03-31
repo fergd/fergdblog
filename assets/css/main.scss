@@ -35,12 +35,6 @@
     --space-xxsmall: var(--scale--4);
     --space-min: var(--scale--5);
 
-    // Text Colors
-    --text-light: var(--white);
-    --text-subtle: var(--gray-lighten-4);
-    --text-dark: var(--gray-darken-5);
-    --text-link: var(--brand-base);
-
     // Grayscale
     --white: #ffffff;
     --gray-lighten-6: #f9fafb;
@@ -56,7 +50,13 @@
     --gray-darken-4: #3c444f;
     --gray-darken-5: #2a323e;
     --gray-darken-6: #181b27;
-    --black: #000000;
+
+     // Text Colors
+    --text-light: var(--white);
+    --text-subtle: var(--gray-lighten-4);
+    --text-default: var(--gray-darken-5);
+    --text-link: var(--text-default);
+    --text-medium: var(--gray-darken-3);
 
     --yellow: #ffcc33;
     --yellow-80: #ffcc33D9;
@@ -76,7 +76,8 @@
     background-color: var(--yellow);
     color: var(--black);
 }
-@import "../stylesheets/typography",
+@import 
+"../stylesheets/typography",
 "../stylesheets/layout",
 "../stylesheets/code",
 "../stylesheets/case-studies",
@@ -85,8 +86,7 @@
 "../stylesheets/article-landing",
 "../stylesheets/haikus",
 "../stylesheets/icons",
-"../stylesheets/tables",
-"../stylesheets/tutorials.scss"
+"../stylesheets/tables"
 ;
 .no-bullets {
     list-style-type: none;
@@ -120,7 +120,7 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     background: var(--white);
-    color: var(--text-dark);
+    color: var(--text-default);
     font-size: var(--root-font-size);
     font-family: var(--copy-body), sans-serif;
     font-weight: var(--font-normal);

@@ -2,11 +2,11 @@
 layout: article
 title: Articles
 permalink: /articles/
-sort-order: 1
+sort-order: 0
 group: articles
 navpage: true
 major-category: Always Be Learning
-purpose: A collection of articles, posts, & musings.
+purpose: A collection of articles, tutorials, and thoughts.
 ---
 <ul class="articles-landing--list">
     {% for post in site.posts %}
@@ -14,7 +14,7 @@ purpose: A collection of articles, posts, & musings.
     <li>
         <a href="{{ post.url }}"> 
             <p class="label">{{post.date | date: "%Y"}} &bull; {{ post.major-category}}</p>
-            <h2 class="article-list--heading">{{ post.title }}</h2>
+            <h2>{{ post.title }}</h2>
             <p>{{post.subtitle}}</p>
         </a>
     </li>

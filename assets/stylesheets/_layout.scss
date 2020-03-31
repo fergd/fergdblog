@@ -7,12 +7,15 @@ main {
 main{
 	padding: var(--space-medium);
 }
-
 .push-right{
     float: right;
 }
-
 @media all and (min-width: 1025px) {
+    .stick-em{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
     .lede{
         display: block;
     }
@@ -22,37 +25,30 @@ main{
         grid-template-rows: auto;
         grid-gap: 1em;
         grid-row-gap: 4em;
-
-
         [class^="item"] {
             display: flex;
             justify-content: space-between;
             padding: var(--space-medium);
         }
-
         .item-2 {
             flex-direction: column;
             grid-area: 1 / 2 / 2 / 5;
         }
-
         .item-3 {
             align-items: center;
             grid-area: 2 / 1 / 3 / 4;
         }
-
         .item-4 {
             flex-direction: row;
             align-items: center;
             grid-area: 3 / 3 / 4 / 6;
         }
-
         .item-5 {
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
             grid-area: 4 / 2 / 5 / 5;
         }
-
         .item-3-image{
         	grid-area: 2 / 4 / 2 / 6;
         }

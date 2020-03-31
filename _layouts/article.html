@@ -7,6 +7,9 @@ layout: default
     {% if page.tldr %}
     {% include tldr.html %}   
     {% endif %}
+    {% if page.toc %}
+    {% include toc.html %}
+    {% endif %}   
     </header>
     <div class="article--content">
         {% if page.subtitle %}
