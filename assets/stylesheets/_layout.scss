@@ -1,16 +1,67 @@
-body,
-main {
-    margin: 0 auto;
-    max-width: 1900px;
-    min-height: 100vh;
+html::after{
+    content: '320px';
+    background: rgba(255,0,0,0.7);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: var(--monospace);
+}
+@media all and (min-width: 600px){
+    html::after{
+    content: '600px';
+    background: rgba(255,0,0,0.7);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: var(--monospace);
+    }
+}
+@media all and (min-width: 480px){
+    html::after{
+    content: '480px';
+    background: rgba(255,0,0,0.7);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: var(--monospace);
+    }
+}
+@media all and (min-width: 1025px) {
+    html::after{
+    content: '1025px';
+    background: rgba(255,0,0,0.7);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    }
 }
 main{
 	padding: var(--space-medium);
 }
-.push-right{
+.push-right {
     float: right;
 }
+.push-left {
+    float: left;
+}
 @media all and (min-width: 1025px) {
+    html::after{
+    content: '1025px';
+    background: rgba(255,0,0,0.7);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+}
     .stick-em{
         position: sticky;
         position: -webkit-sticky;

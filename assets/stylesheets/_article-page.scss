@@ -3,22 +3,17 @@ img.article--header-image{
   display: block;
   margin: 0 auto;
 }
-
 .article--content--body{
   figure{
     display: flex;
     flex-direction: column;
-    margin-top: var(--space-large);
   }
 }
-
-
 @media all and (min-width: 700px) and (max-width: 1023px){
   img.article--header-image{
     float: left;
   }
 }
-
 @media all and (min-width: 1025px) {
     .flex-group {
         display: flex;

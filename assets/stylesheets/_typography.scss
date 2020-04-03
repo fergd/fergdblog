@@ -1,22 +1,25 @@
+
+
 // CSS verbosity is my friend here. I know I'm repeating a lot of declarations, this is deliberate to keep my sanity.
 h1 {
-    font-family: var(--heading-primary), sans-serif;
+    font-family: var(--heading-primary);
     font-size: var(--scale-4);
     line-height: 1;
     letter-spacing: -0.02ch;
     font-weight: var(--font-heavy);
-    margin: var(--scale-4) 0 var(--scale-1) 0;
+    margin: var(--scale-4) 0 var(--scale-1) 0;--heading-primary: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
     &:first-of-type{
         margin-top: 0;
     }
 }
 .faux-heading {
-    font-family: var(--sans-serif), sans-serif;
+    font-family: var(--sans-serif);
     font-weight: var(--font-heavy);
     font-size: var(--scale-2);
 }
 h2 {
-    font-family: var(--sans-serif), sans-serif;
+    font-family: var(--sans-serif);
     font-size: var(--scale-3);
     font-weight: var(--font-normal);
     line-height: calc(var(--scale-3) * 1.2);
@@ -30,7 +33,7 @@ h1+h2{
     margin-top: var(--scale-3) !important;
 }
 h3 {
-    font-family: var(--sans-serif), sans-serif;
+    font-family: var(--sans-serif);
     font-size: var(--scale-2);
     font-weight: var(--font-medium);
     line-height: calc(var(--scale-0) * 1.2);
@@ -45,7 +48,7 @@ h2+h3{
     margin-top: var(--scale-3) !important;
 }
 p {
-    font-family: var(--copy-body), sans-serif;
+    font-family: var(--copy-body);
     font-size: var(--scale-0);
     font-weight: var(--font-normal);
     line-height: 1.4em;
@@ -76,7 +79,7 @@ p.authorship {
 blockquote {
     border-left: var(--scale--5) solid var(--gray-lighten-2);
     p.pullquote {
-        font-family: var(--sans-serif), sans-serif;
+        font-family: var(--sans-serif);
         line-height: calc(var(--scale-2) * 1.2);
         font-size: var(--scale-2);
         font-style: italic;
@@ -126,4 +129,24 @@ figcaption {
     font-size: var(--scale--1);
     font-style: italic;
     font-family: var(--sans-serif);
+}
+del {
+    background: var(--del);
+}
+ins,
+code.in-context {
+    background: var(--ins);
+}
+a {
+    color: var(--text-link);
+    i {
+        text-decoration: none;
+        margin-right: var(--space-xxsmall);
+    }
+}
+p:not(blockquote>p) {
+    max-width: 640px;
+}
+li{
+    margin-bottom: var(--space-nudge);
 }

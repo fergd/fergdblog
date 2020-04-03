@@ -2,10 +2,14 @@
 ---
 :root {
     --copy-body: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --heading-primary: 'Playfair Display', var(--copy-body);
-    --sans-serif: 'Raleway', var(--copy-body);
+    --heading-primary: 'Playfair Display', serif;
+    --sans-serif: 'Raleway', 'Georgia', var(--copy-body);
+    --monospace:"Andale Mono WT", "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
-    --root-font-size: 18px;
+    --root-font-size:               ;
+    @media all and (min-width: 480px){
+        --root-font-size: 18px;
+    };
     --scale-base: var(--root-font-size);
     --text-scale-ratio: 1.25;
     --font-normal: #{400};
@@ -74,9 +78,9 @@
 *::selection,
 *::-moz-selection {
     background-color: var(--yellow);
-    color: var(--black);
 }
 @import 
+"../stylesheets/modularscale",
 "../stylesheets/typography",
 "../stylesheets/layout",
 "../stylesheets/code",
@@ -119,6 +123,7 @@
 body {
     margin: 0 auto;
     min-height: 100vh;
+    max-width: 1900px;
     background: var(--white);
     color: var(--text-default);
     font-size: var(--root-font-size);
@@ -127,25 +132,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-del {
-    background: var(--del);
-}
-ins,
-code.in-context {
-    background: var(--ins);
-}
-a {
-    color: var(--text-link);
-    i {
-        text-decoration: none;
-        margin-right: var(--space-xxsmall);
-    }
-}
 img {
     max-width: 100%;
-}
-p:not(blockquote>p) {
-    max-width: 640px;
 }
 .floated-image {
     max-width: 40%;
@@ -178,7 +166,6 @@ a[rel="external"] {
         display: inline-block;
     }
 }
-
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     .front-page .item-3,
@@ -192,12 +179,9 @@ a[rel="external"] {
     }
 }
 figure {
-    margin: var(--space-large) 0;
     max-width: 100%;
-    +figure {
-        margin-top: 1em;
-    }
-    img {
+    margin: 0;
+    img{
         max-width: 100%;
         margin: 0 auto;
     }
@@ -257,13 +241,14 @@ footer {
     }
 }
 header.site-header {
-    padding: var(--space-medium);
+    padding: var(--space-medium) var(--space-nudge);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     max-width: 100%;
     overflow: hidden;
     nav {
+        margin-top: var(--space-small);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -274,7 +259,11 @@ header.site-header {
 }
 @media all and (min-width: 600px) {
     header.site-header {
+        padding: var(--space-medium);
         flex-direction: row;
+        nav{
+            margin-top: 0;
+        }
     }
 }
 
