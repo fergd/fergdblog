@@ -51,3 +51,8 @@
         text-align: center;
     }
 }
+.get-date{
+    &::after{
+        content: attr(data-date);
+    }
+}
