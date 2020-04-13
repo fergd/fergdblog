@@ -1,152 +1,152 @@
-
-
+//For global font rules, see _globals.scss
 // CSS verbosity is my friend here. I know I'm repeating a lot of declarations, this is deliberate to keep my sanity.
 h1 {
+    font-size: var(--ms3);
     font-family: var(--heading-primary);
-    font-size: var(--scale-4);
-    line-height: 1;
     letter-spacing: -0.02ch;
-    font-weight: var(--font-heavy);
-    margin: var(--scale-4) 0 var(--scale-1) 0;--heading-primary: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-
-    &:first-of-type{
-        margin-top: 0;
-    }
+    font-weight: var(--f-heavy);
+    margin: var(--ms2) 0 var(--ms1) 0;
+    line-height: 1;
 }
 .faux-heading {
+    font-size: var(--ms1);
     font-family: var(--sans-serif);
-    font-weight: var(--font-heavy);
-    font-size: var(--scale-2);
+    font-weight: var(--f-heavy);
 }
 h2 {
+    font-size: var(--ms2);
     font-family: var(--sans-serif);
-    font-size: var(--scale-3);
-    font-weight: var(--font-normal);
-    line-height: calc(var(--scale-3) * 1.2);
-    margin: var(--scale-4) 0 var(--scale-0) 0;
-    &:first-of-type{
-        margin-top: 0;
-    }
-}
-h1+h2{
-    // This is to keep the first of type rule that does not account for headings that could be next to each other in the document. 
-    margin-top: var(--scale-3) !important;
+    font-weight: var(--f-normal);
+    margin: var(--ms2) 0 var(--ms0) 0;
+    line-height: 1;
 }
 h3 {
+    font-size: var(--ms1);
     font-family: var(--sans-serif);
-    font-size: var(--scale-2);
-    font-weight: var(--font-medium);
-    line-height: calc(var(--scale-0) * 1.2);
+    font-weight: var(--f-medium);
     text-transform: uppercase;
-    margin: var(--scale-4) 0 var(--scale-1) 0;
-    &:first-of-type{
-        margin-top: 0;
-    }
-}
-h2+h3{
-    // This is to keep the first of type rule that does not account for headings that could be next to each other in the document. 
-    margin-top: var(--scale-3) !important;
+    margin: var(--ms0) 0;
+    line-height: 1;
 }
 p {
+    font-size: var(--ms0);
     font-family: var(--copy-body);
-    font-size: var(--scale-0);
-    font-weight: var(--font-normal);
+    font-weight: var(--f-normal);
     line-height: 1.4em;
-    margin: 0 0 var(--scale-2) 0;
-    &.intro {
-        font-size: var(--scale-1);
-        line-height: calc(var(--scale-1) * 1.2);
-    }
+    margin: 0 0 var(--ms0) 0;
 }
 p.callout {
+    font-size: var(--ms1);
     font-family: var(--sans-serif);
-    font-size: var(--scale-2);
-    border-top: 2px solid var(--yellow);
-    border-bottom: 2px solid var(--yellow);
-    padding: var(--scale-2) 0 var(--scale-2) var(--scale-3);
-}
-p.label {
-    font-family: var(--sans-serif);
-    text-transform: uppercase;
-    font-weight: var(--font-heavy);
-    color: var(--gray-base);
-    letter-spacing: 0.5ch;
-}
-p.authorship {
-    font-family: var(--body-copy);
-    font-size: var(--scale--1);
+    line-height: 1.2;
+    border-top: var(--d-border);
+    border-bottom: var(--d-border);
+    padding: var(--ms1);
+    margin: var(--ms1) 0;
 }
 blockquote {
-    border-left: var(--scale--5) solid var(--gray-lighten-2);
-    p.pullquote {
+    border-left: var(--d-border);
+    margin: var(--ms1) 0;
+    p {
+        font-size: var(--ms1);
         font-family: var(--sans-serif);
-        line-height: calc(var(--scale-2) * 1.2);
-        font-size: var(--scale-2);
+        line-height: 1.2;
         font-style: italic;
-        margin-left: var(--space-bump);
-        color: var(--gray-base);
+        margin-left: var(--ms0);
+        color: var(--accent-color);
     }
 }
+p.label {
+    font-size: var(--ms0);
+    font-family: var(--sans-serif);
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: var(--f-heavy);
+    color: var(--accent-color);
+    letter-spacing: 0.5ch;
+    & + h2{
+        margin-top: var(--ms-1);
+    }
+}
+p.authorship {
+    font-size: var(--ms-1);
+    font-family: var(--copy-body);
+    color: var(--accent-color);
+    font-weight: var(--f-heavy);
+    margin: var(--ms0) 0;
+}
+
 span.dropcap {
     float: left;
-    font-size: 90px;
-    line-height: var(--scale-4);
+    font-size: var(--ms4);
+    line-height: 0.7;
     font-family: var(--heading-primary);
-    padding: 0 10px 0 0;
+    padding: 0 var(--ms-1) 0 0;
 }
 a{
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
     &:hover {
         text-decoration: underline;
-        text-decoration-color: var(--yellow);
+        text-decoration-color: var(--color-splash);
         text-decoration-thickness: 2px;
     }
 }
 nav a {
     font-family: var(--sans-serif);
-    font-weight: var(--font-normal);
+    font-weight: var(--f-normal);
     text-decoration: none;
     white-space: nowrap; 
     &.current {
-        font-weight: var(--font-heavy);
+        font-weight: var(--f-heavy);
         text-decoration: underline;
         text-decoration-thickness: 2px;
         text-underline-offset: 3px;
-        text-decoration-color: var(--yellow);
+        text-decoration-color: var(--color-splash);
     }
 }
 .tldr,
 .toc {
-    background-color: var(--yellow);
-    padding: var(--space-bump);
-    border-radius: 0 2em;
-    margin: 0 0 var(--scale-2) 0;
+    background-color: var(--color-splash);
+    padding: var(--ms0);
+    border-radius: 0 var(--d-radius);
+    margin: 0 0 var(--ms1) 0;
 }
 figcaption {
-    border-top: 2px solid var(--yellow);
-    padding-top: var(--space-bump);
-    font-size: var(--scale--1);
-    font-style: italic;
-    font-family: var(--sans-serif);
-}
-del {
-    background: var(--del);
-}
-ins,
-code.in-context {
-    background: var(--ins);
+    font-family: var(--copy-body);
+    font-size: var(--ms-1);
+    font-style: var(--f-emphasis);
+    border-top: var(--d-border);
+    padding-top: var(--ms0);
 }
 a {
-    color: var(--text-link);
+    color: var(--text-default);
     i {
         text-decoration: none;
-        margin-right: var(--space-xxsmall);
+        margin-right: var(--ms-1);
     }
 }
 p:not(blockquote>p) {
     max-width: 640px;
 }
-li{
-    margin-bottom: var(--space-nudge);
+ol{
+    margin-left: var(--ms0);
+}
+ul, ol {
+    li{
+        font-family: var(--copy-body);
+        line-height: 1.4em;
+        margin-bottom: var(--ms0);
+    }
+}
+.lede {
+    text-align: center;
+    margin-bottom: var(--ms3);
+    hr.accent {
+        width: var(--ms3);
+        margin: 0 auto;
+    }
+    hr.accent + h1{
+        margin: var(--ms1) 0 var(--ms2) 0;
+    }
 }

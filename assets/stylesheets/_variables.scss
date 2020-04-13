@@ -1,0 +1,65 @@
+:root {
+	/*--
+	GLOSSARY
+	• d = 	default
+	• c = 	color
+	• f = 	font
+	• ms = 	modular scale
+	--*/
+	--copy-body:         	'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--heading-primary:   	'Playfair Display', serif;
+	--sans-serif:        	'Raleway', 'Georgia', var(--copy-body);
+	--monospace:         	'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	--base-font-size: 		19px;
+ 
+	//Fonts & Spacing • Golden Section 1.618
+	--ms-3:             	0.236rem;
+	--ms-2:             	0.382rem;
+	--ms-1:             	0.618rem;
+	--ms0:              	1rem;
+	--ms1:              	1.618rem;
+	--ms2:              	2.618rem;
+	--ms3:              	4.236rem;
+	--ms4:              	6.854rem;
+	--ms5:              	11.089rem;
+	--ms-dropcap:       	90rem;
+
+	//Font Displays
+	--f-normal:         	400;
+	--f-medium:         	700;
+	--f-heavy:          	900;
+	--f-emphasis:       	400i;
+
+	//Base Colors
+	--c-yellow:         	#ffcc33;
+	--c-midnight:       	#2a323e;
+	--c-dusk:           	#8d9299;
+	--c-pale-red:       	#fbb;
+	--c-pale-green:     	PaleGreen;
+
+	//Color Rules
+	--text-default:     	var(--c-midnight);
+	--accent-color:     	var(--c-dusk);
+	--color-splash:     	var(--c-yellow);
+	--del:              	var(--c-pale-red);
+	--ins:              	var(--c-pale-green);
+
+	//Borders, Outlines, Radii
+	--d-border-thickness:   3px;
+	--d-border:         	var(--d-border-thickness) solid var(--color-splash);
+	--d-radius:         	var(--ms-1);
+	--d-radius:         	var(--ms-1);
+	--d-radius-small:   	var(--ms-2);
+	--d-radius-tiny:    	var(--ms-3);
+}    
+
+@media all and (min-width: 600px) {
+	:root {
+		--base-font-size: 21px;
+	}
+}
+@mixin custom-underline(){
+	text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--c-yellow);
+}

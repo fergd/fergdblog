@@ -1,16 +1,22 @@
 pre.has-code{
 	font-family: var(--monospace);
-	background: var(--gray-darken-6);
-	color: var(--yellow);
-	text-shadow: 0px 0px 20px var(--yellow);
-	padding: var(--scale-1);
-	font-weight: var(--font-normal);
-	border-radius: var(--scale--5);
+	background: var(--c-midnight);
+	color: var(--color-splash);
+	text-shadow: 0px 0px 20px var(--color-splash);
+	padding: var(--ms-1);
+	font-weight: var(--f-normal);
+	border-radius: var(--d-radius-tiny);
 	white-space: break-spaces;
 }
-
 code{
-	color: var(--gray-darken-6);
+	color: var(--c-midnight);
 	background: #19af5d;
 	font-family: var(--monospace);
+}
+del {
+    background: var(--del);
+}
+ins,
+code.in-context {
+    background: var(--ins);
 }

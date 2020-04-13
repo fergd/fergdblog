@@ -10,4 +10,4 @@ gem "github-pages", group: :jekyll_plugins
 #    gem 'jekyll-livereload'
 # end
 gem "nokogiri", "~> 1.8.5"
-
+gem 'jekyll-sass-converter'

@@ -245,11 +245,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-sass-converter
   nokogiri (~> 1.8.5)
   rake (>= 12.3.3)
-
-RUBY VERSION
-   ruby 2.7.0p0
 
 BUNDLED WITH
    2.1.4

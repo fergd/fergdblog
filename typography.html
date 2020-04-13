@@ -2,7 +2,6 @@
 title: Typography
 layout: default
 permalink: /typography/
-navpage: true
 ---
 <div style="max-width: 680px;margin: 0 auto;">
 <p class="label">Doing the diligent</p>
@@ -11,7 +10,6 @@ navpage: true
 <h3>Heading 3: Subsections</h3>
 <p class="authorship">Author and Dates, i.e. James Bond • 2019</p>
 <p class="callout">Callout section: this is kind of like a blockquote, but is usually at the beginning of the article and does not contain text found in the article itself.</p>
-<p class="intro">Introductory text. A brief overview of what's about to happen. Intro text is not always necessary.</p>
 <p><span class="dropcap">D</span>ropcap time. Only use drop caps at the beginning of an article or the start of another major section, typically with a first level heading. Looks pretty classy, eh? Amet natus beatae alias, porro fugit blanditiis fugiat aliquid sequi unde quibusdam nemo numquam voluptatem repellendus impedit a quia eum, doloremque quidem!</p>
 <p>This is a normal paragraph. Nothing special is happening here, just make sure the width of a paragraph does not exceed <em>two alphabets worth of letters wide</em>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet natus beatae alias, porro fugit blanditiis fugiat aliquid sequi unde quibusdam nemo numquam voluptatem repellendus impedit a quia eum, doloremque quidem!</p>
 <blockquote>
@@ -48,3 +46,9 @@ navpage: true
 	<li>quae earum similique quis id dicta sapiente consectetur adipisicing elit. Incidunt quibusdam iste voluptatem repellat autem ipsa vel modi, totam, teneturodio</li>
 	<li>ipsum dolor sit amet, consectetur adipisicing elit. Incidunt</li>
 </ul>
+<h1>Colors</h1>
+<div class="color-blocks" style="display:flex; justify-content: space-around; flex-direction: column;">
+{% for block in site.data.colors.colors %}
+<div style="padding: 10px;background-color: var({{block}})"><h3>{{block}}</h3></div>
+{% endfor %}  
+</div>	
