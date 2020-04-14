@@ -17,86 +17,13 @@
 "../stylesheets/layout",
 "../stylesheets/code",
 "../stylesheets/header-and-footer",
+"../stylesheets/landing-page",
 "../stylesheets/case-studies",
 "../stylesheets/resume",
 "../stylesheets/article-page",
 "../stylesheets/article-landing",
 "../stylesheets/haikus",
 "../stylesheets/icons",
-"../stylesheets/tables"
+"../stylesheets/tables",
+"../stylesheets/article-footer"
 ;
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 1) {
-    .front-page .item-3,
-    .front-page .item-4 {
-        h2 {
-            text-align: right;
-        }
-    }
-    .footer-icon {
-        display: inline-block;
-    }
-}
-/* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 2200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    .front-page .item-3,
-    .front-page .item-4 {
-        h2 {
-            text-align: right;
-        }
-    }
-    .footer-icon {
-        display: inline-block;
-    }
-}
-
-
-.landing-links {
-    display: none;
-}
-@media all and (min-width: 1024px) {
-    .landing-links {
-        display: block;
-        a{
-            margin: 0 var(--ms-1);
-            text-decoration: none;
-            font-family: var(--sans-serif);
-            &:hover{
-                text-decoration: underline;
-                text-decoration-color: var(--color-splash);
-                text-decoration-thickness: 2px;
-            }
-        }
-    }
-}
-
-.item-3,
-.item-4 {
-    // h2 {
-    //     margin-right: var(--space-medium);
-    // }
-}
-.item-3-image {
-    background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/people.png");
-    background-size: contain;
-}
-.item-4-image {
-    background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/usable.png");
-    background-size: contain;
-}
-.item-4 {
-    // ul {
-    //     padding: var(--space-default);
-    //     border-left: 2px solid var(--gray-lighten-2);
-    //     list-style-type: none;
-    //     li {
-    //         margin-bottom: var(--space-medium);
-    //     }
-    // }
-}
-// .item-3{
-//     p{
-//         border-left: 2px solid var(--gray-lighten-2);
-//         padding-left: var(--space-bump);
-//     }
-// }

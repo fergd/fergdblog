@@ -10,7 +10,7 @@
 	--heading-primary:   	'Playfair Display', serif;
 	--sans-serif:        	'Raleway', 'Georgia', var(--copy-body);
 	--monospace:         	'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-	--base-font-size: 		19px;
+	--base-font-size: 		17px;
  
 	//Fonts & Spacing • Golden Section 1.618
 	--ms-3:             	0.236rem;
@@ -22,7 +22,10 @@
 	--ms3:              	4.236rem;
 	--ms4:              	6.854rem;
 	--ms5:              	11.089rem;
+
+	//Typography
 	--ms-dropcap:       	90rem;
+	--max-paragraph: 		30rem;
 
 	//Font Displays
 	--f-normal:         	400;
@@ -55,11 +58,19 @@
 
 @media all and (min-width: 600px) {
 	:root {
-		--base-font-size: 21px;
+		--base-font-size: 19px;
 	}
 }
-@mixin custom-underline(){
+@mixin custom-underline($color: var(--accent-color)){
 	text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color: var(--c-yellow);
+    text-decoration-thickness: var(--d-border-thickness);
+    text-underline-offset: var(--d-border-thickness);
+    text-decoration-color: $color;
+}
+
+@mixin custom-underline--hover(){
+	text-decoration: underline;
+    text-decoration-thickness: var(--d-border-thickness);
+    text-underline-offset: var(--d-border-thickness);
+    text-decoration-color: var(--color-splash);
 }

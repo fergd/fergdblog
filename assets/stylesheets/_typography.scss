@@ -1,12 +1,17 @@
 //For global font rules, see _globals.scss
 // CSS verbosity is my friend here. I know I'm repeating a lot of declarations, this is deliberate to keep my sanity.
 h1 {
-    font-size: var(--ms3);
+    font-size: var(--ms2);
     font-family: var(--heading-primary);
     letter-spacing: -0.02ch;
     font-weight: var(--f-heavy);
     margin: var(--ms2) 0 var(--ms1) 0;
     line-height: 1;
+}
+@media all and (min-width: 600px){
+    h1{
+        font-size: var(--ms3);
+    }
 }
 .faux-heading {
     font-size: var(--ms1);
@@ -75,7 +80,6 @@ p.authorship {
     font-weight: var(--f-heavy);
     margin: var(--ms0) 0;
 }
-
 span.dropcap {
     float: left;
     font-size: var(--ms4);
@@ -84,12 +88,10 @@ span.dropcap {
     padding: 0 var(--ms-1) 0 0;
 }
 a{
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
+    color: var(--text-default);
+    @include custom-underline;
     &:hover {
-        text-decoration: underline;
-        text-decoration-color: var(--color-splash);
-        text-decoration-thickness: 2px;
+        @include custom-underline--hover();
     }
 }
 nav a {
@@ -99,10 +101,7 @@ nav a {
     white-space: nowrap; 
     &.current {
         font-weight: var(--f-heavy);
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 3px;
-        text-decoration-color: var(--color-splash);
+        @include custom-underline(var(--color-splash));
     }
 }
 .tldr,
@@ -119,15 +118,8 @@ figcaption {
     border-top: var(--d-border);
     padding-top: var(--ms0);
 }
-a {
-    color: var(--text-default);
-    i {
-        text-decoration: none;
-        margin-right: var(--ms-1);
-    }
-}
 p:not(blockquote>p) {
-    max-width: 640px;
+    max-width: var(--max-paragraph);
 }
 ol{
     margin-left: var(--ms0);
