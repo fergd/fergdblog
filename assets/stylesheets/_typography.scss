@@ -12,6 +12,14 @@ h1 {
     h1{
         font-size: var(--ms3);
     }
+    .article-header-container{
+        h1{
+            font-size: var(--ms2);
+            &::first-line{
+                font-size: var(--ms3);
+            }
+        }
+    }
 }
 .faux-heading {
     font-size: var(--ms1);
@@ -52,7 +60,7 @@ p.callout {
     border-top: var(--d-border);
     border-bottom: var(--d-border);
     padding: var(--ms1);
-    margin: var(--ms1) 0;
+    margin: 0 0 var(--ms1) 0;
 }
 blockquote {
     border-left: var(--d-border);

@@ -1,14 +1,19 @@
 <div class="logo-container">
     <a href="{{site.baseurl}}" class="faux-heading">C<span class="visually-hidden">hristan&nbsp;</span>F<span class="visually-hidden">ergus Home</span></a>
 </div>
+{% capture 'parent-page' %}{{page.parent}}{% endcapture %}  
 <nav id="primary-nav" {% if is_footer == true %}aria-label="Site footer links and info"{% else %}aria-label="Main Menu"{% endif %}>
 	{% assign view = site.pages | sort: 'sort-order' %}
     {% for item in view %}
     {% if item.navpage %}
-    <a href="{{item.permalink}}" {% if item.url == page.url %}class="current" aria-label="Current page: {{page.title}}"{% endif %} >{{item.title}}</a>
+    <a href="{{item.permalink}}" {% if item.url == page.url or item.group == {{parent-page}} %}class="current" aria-label="Current page: {{page.title}}"{% endif %}>{{item.title}}</a>
     {% endif %}
     {% endfor %}
-    {% if is_footer == true %}
+    {% if is_footer %}
     <a href="mailto:{{site.email}}" class="no-wrapping">{{site.email}}</a></li>
     {% endif %}
 </nav>
+
+{% comment %} 
+
+{% endcomment %} 

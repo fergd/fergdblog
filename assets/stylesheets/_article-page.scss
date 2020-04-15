@@ -8,7 +8,7 @@ img.article--header-image{
     display: flex;
     flex-direction: column;
   }
-  &::after{
+  &.flourish::after{
     content: '\00A7';
     max-width: var(--max-paragraph);
     color: var(--accent-color);
