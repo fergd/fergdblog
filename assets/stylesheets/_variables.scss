@@ -51,7 +51,6 @@
 	--d-border-thickness:   3px;
 	--d-border:         	var(--d-border-thickness) solid var(--color-splash);
 	--d-radius:         	var(--ms-1);
-	--d-radius:         	var(--ms-1);
 	--d-radius-small:   	var(--ms-2);
 	--d-radius-tiny:    	var(--ms-3);
 }    
@@ -63,14 +62,14 @@
 }
 @mixin custom-underline($color: var(--accent-color)){
 	text-decoration: underline;
-    text-decoration-thickness: var(--d-border-thickness);
+    text-decoration-thickness: 2px;
     text-underline-offset: var(--d-border-thickness);
     text-decoration-color: $color;
 }
 
 @mixin custom-underline--hover(){
 	text-decoration: underline;
-    text-decoration-thickness: var(--d-border-thickness);
+    text-decoration-thickness: 2px;
     text-underline-offset: var(--d-border-thickness);
     text-decoration-color: var(--color-splash);
 }
