@@ -8,7 +8,7 @@ h1 {
     margin: var(--ms2) 0 var(--ms1) 0;
     line-height: 1;
 }
-@media all and (min-width: 600px){
+@media all and (min-width: 768px){
     h1{
         font-size: var(--ms3);
     }
@@ -19,11 +19,16 @@ h1 {
     font-weight: var(--f-heavy);
 }
 h2 {
-    font-size: var(--ms2);
+    font-size: var(--ms1);
     font-family: var(--sans-serif);
     font-weight: var(--f-normal);
     margin: var(--ms2) 0 var(--ms0) 0;
     line-height: 1;
+}
+@media all and (min-width: 768px){
+    h2{
+        font-size: var(--ms2);
+    }
 }
 h3 {
     font-size: var(--ms1);

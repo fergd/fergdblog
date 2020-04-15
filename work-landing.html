@@ -8,16 +8,4 @@ navpage: true
 major-category: Doing the Diligent
 purpose: A collection of case studies & work from over the years.
 ---
-<ul class="articles-landing--list">
-    {% for post in site.posts %}
-    {% if post.group == 'work' %}
-    <li>
-        <a href="{{ post.url }}"> 
-            <p class="label">{{post.date | date: "%Y"}} | {{ post.major-category}}</p>
-            <h2>{{ post.title }}</h2>
-            <p>{{post.subtitle}}</p>
-        </a>
-    </li>
-    {% endif %} 
-    {% endfor %}
-</ul>
+{% include landing-lists.html %} 

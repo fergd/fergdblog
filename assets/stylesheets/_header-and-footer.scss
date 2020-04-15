@@ -1,65 +1,73 @@
-header,
-footer {
-    .container__logo {
+header.site-header,
+footer.site-footer {
+    .logo-container {
         align-self: center;
+        margin-bottom: var(--ms0);
         a {
             text-decoration: none;
         }
     }
 }
 header.site-header {
-    padding: var(--ms0) var(--ms-1);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding: var(--ms0) 0;
+    margin-bottom: var(--ms2);
     max-width: 100%;
     overflow: hidden;
-    margin-bottom: var(--ms1);
     nav {
-        margin-top: var(--ms0);
         display: flex;
         justify-content: space-between;
         align-items: center;
         a {
-            padding: 0 var(--ms-1);
+            padding: 0 var(--ms0);
         }
     }
 }
-footer.page-footer {
-    padding: var(--ms0) 0;
+footer.site-footer {
     margin-top: var(--ms2);
     nav {
-        margin-top: var(--ms0);
         a {
             display: block;
-            margin-bottom: var(--ms-1);
+            padding: var(--ms0) 0;
         }
     }
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 1024px) {
+    header.site-header,
+    footer.site-footer{
+        .logo-container{
+            margin-bottom: 0;
+        }
+    }
     header.site-header {
-        padding: var(--space-medium);
         flex-direction: row;
-        margin-bottom: var(--ms3);
-        nav {
-            margin-top: 0;
+        nav a {
+            &:last-of-type {
+                padding-right: 0;
+            }
+            &:first-of-type {
+                padding-left: 0;
+            }
         }
     }
-}
-@media all and (min-width: 600px) {
-    .page-footer {
-        padding: var(--space-medium);
+    footer.site-footer {
         display: flex;
         justify-content: space-between;
-        max-width: 100%;
         overflow: hidden;
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             a {
-                padding: 0 var(--space-bump);
-                padding-right: var(--space-bump);
+                padding: 0 var(--ms0);
+                &:first-of-type {
+                    padding-left: 0;
+                }
+                &:last-of-type {
+                    padding-right: 0;
+                }
             }
         }
     }
