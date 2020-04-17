@@ -1,0 +1,41 @@
+{% for job in site.data.resume-companies %} 
+<section class="job-history zoll">
+	<header>
+		<h1 class="shrink-lines">{{job.company}}</h1>
+		<p>{{job.date-span}}</p>
+		<p>Industry • {{job.industry-type}}</p>
+		<hr>
+		<div class="timeline">
+			<h3>{{job.current-role}}</h3>
+			{% if job.past-role %} 
+			{% for role in job.past-role %} 
+			<h4>{{role}}</h4>
+			{% endfor %} 
+			{% endif %} 
+		</div>
+	</header>
+	<div>
+		<p class="callout">{{job.callout}}</p>
+		<h3 class="visually-hidden">Experience</h3>
+		<ul class="example-items">
+			{% for item in job.experience %} 
+			<li>{{item}}</li>
+			{% endfor %} 
+		</ul>
+	</div>
+	{% if job.related-work %} 
+	<aside>
+		<h4>Explore Related Work</h4>
+		<ul>
+			{% for post in site.posts %}
+			{% if post.resume-section == job.co %}
+			<li>
+				<a href="{{post.permalink}}">{{post.title}}</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</aside>
+	{% endif %} 
+</section>
+{% endfor %} 

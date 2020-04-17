@@ -5,177 +5,27 @@ sort-order: 4
 permalink: /resume/
 navpage: true
 ---
-<!--
-<div>
-	<h1>Christan Fergus, <small>UXC</small></h1>
-	<p>User Experience Strategist/Product Designer</p>
-	<hr>
-	<ul class="no-margin no-bullets">
-		<li><a href="{{ site.baseurl }}Christan-Fergus-Resume.pdf" download="Christan-Fergus-Resume.pdf" class="no-wrapping"><i class="icon icon-dl" aria-hidden="true"></i> PDF Resume</a></li>
-		<li><a href="https://www.linkedin.com/in/christanfergus/" target="_blank" class="no-wrapping"><i class="icon icon-li" aria-describedby="a11y-linkedin" aria-hidden="true"></i> Get in touch via LinkedIn&nbsp;<i class="icon icon-external" aria-hidden="true"></i><span class="visually-hidden" aria-hidden="true" id="a11y-linkedin">(opens in a new window)</span></a></li>
-		<li><a href="mailto:{{site.email}}" class="no-wrapping"><i class="icon icon-envelope"></i>christan.fergUX@gmail.com</a></li>
-	</ul>
-	<img src="https://res.cloudinary.com/fergd/image/upload/v1560003338/fergdblog/nng-uxc-badge.png" alt="Nielsen Norman Group UX certification badge" class="badge" width="120">
-</div>
-<div class=''>
-	<blockquote>
-		<p>As a leader in advocating for human beings, I bring empathy into product design, use the stories found in data to inform product direction, & craft meaningful designs that provide those humans with what they need to accomplish their tasks.</p>
-	</blockquote>
-</div>
--->
-<section class="job-history zoll">
-	<header>
-		{% assign is_zoll = true %}
-		<h1>ZOLL</h1>
-		<p>July 2016 - Present</p>
-		<p>Industry / Medical EMS SaaS</p>
-		<hr>
-		<div class="timeline">
-			<h3>Senior User Experience Architect</h3>
-			<h4>Senior User Experience Strategist</h4>
-			<h4>Sr. UX Designer/Developer</h4>
-		</div>
-	</header>
-	<div>
-		<p class="callout">I use my strong technical background combined with business acumen & user empathy to design responsible, user-centered software in the medical SaaS space.</p>
-		<h3 class="visually-hidden">Experience</h3>
-		<ul class="example-items">
-			<li>I took over and led the design and launch of the innovative EMS Respond app which was selling before it was even released, and has proven consistently profitable as we continue to iterate on the product</li>
-			<li>Leader of the design and product strategy for ZOLL Dispatch, a SaaS EMS dispatch application which contains features and solutions entirely informed by user research and task analysis</li>
-			<li>I provide detailed system and user flows to illustrate how users move through systems. Doing so uncovers most unexpected scenarios that enable me to design for all use-cases, thus reducing developer churn</li>
-			<li>I partner with the PO & PM, and am an integral part of product design</li>
-			<li>I gather qualitative & quantitative research, market research, and analysis then recommend, inform, and promote a user-centered product strategy</li>
-			<li>I understand how business works—that profitability & market leadership come from the union of business vision and the meeting customer needs—and work hard to cultivate that union</li>
-			<li>Experienced with presentations, I regularly give user-advocacy talks and present data research to my scrum team, and the company at large</li>
-			<li>I’m passionate about writing effective user stories that are centered on detailed personas</li>
-			<li>As an active member of a cross-functional, distributed UX team, I build and cultivate relationships across the company and promote UX design patterns</li>
-			<li>I serve as a consultant for teams that do not have a UX role, supporting their design and development as needed</li>
-			<li>I mentor junior team members, am a leader on my teams, and a servant leader to all</li>
-		</ul>
-	</div>
-	<aside>
-		<h4>Explore Related Work</h4>
-		<ul>
-			{% for post in site.posts %}
-			{% if post.resume-section == 'zoll' %}
-			<li>
-				<a href="{{post.permalink}}">{{post.title}}</a>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</aside>
+<section class="resume-intro">
+    <div class="r-name lede">
+        <hr class="accent">
+        <h1>{{ site.author }}</h1>
+        <p class="label">User Experience Architect</p>
+        <hr class="accent">
+    </div>
+    <div class="r-quote">
+        <blockquote>
+            <p>As a leader in advocating for human beings, I bring empathy into product design, use the stories found in data to inform product direction, & craft meaningful designs that provide those humans with what they need to accomplish their tasks.</p>
+        </blockquote>
+    </div>
+    <div class="r-links">
+        <img src="https://res.cloudinary.com/fergd/image/upload/v1560003338/fergdblog/nng-uxc-badge.png" alt="Nielsen Norman Group UX certification badge" class="badge" width="120">
+        <br>
+        <ul class="no-margin no-bullets">
+            <li><a href="{{ site.baseurl }}Christan-Fergus-Resume.pdf" download="Christan-Fergus-Resume.pdf" class="no-wrapping"><i class="icon icon-dl" aria-hidden="true"></i> PDF Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/christanfergus/" target="_blank" class="no-wrapping"><i class="icon icon-li" aria-describedby="a11y-linkedin" aria-hidden="true"></i> Get in touch via LinkedIn&nbsp;<i class="icon icon-external" aria-hidden="true"></i><span class="visually-hidden" aria-hidden="true" id="a11y-linkedin">(opens in a new window)</span></a></li>
+            <li><a href="mailto:{{site.email}}" class="no-wrapping"><i class="icon icon-envelope"></i>christan.fergUX@gmail.com</a></li>
+        </ul>
+    </div>
 </section>
-
-<section class="job-history frontrange">
-	<header>
-		<h1 class="shrink-lines">Front Range Community College</h1>
-		<p>January 2014 - May 2017</p>
-		<p>Industry / Higher Education</p>
-		<h4>Instructor</h4>
-	</header>
-
-	<div>
-	<p class="callout">I’m passionate about teaching, coaching, & mentoring human-focused design professionals.</p>
-	<h3 class="visually-hidden">Experience</h3>
-	<ul class="example-items">
-		<li>Taught a 200-level web development course as part of the Multimedia & Graphic Design department</li>
-		<li>Designed my own curriculum</li>
-		<li>Managed, instructed, & guided classes with up to 25 students</li>
-		<li>Emphasized & focused on real world use cases by analyzing websites & sharing my own industry experience</li>
-		<li>Focused on solid design guidelines and principles focusing on elements and principles of design</li>
-		<li>Approached the course with a holistic view from a professional’s perspective</li>
-		<li>Upon completion of the course, students had an expanded understanding and ability to craft the foundations of the web experience, and a solid understanding of what it will take to be a successful web designer</li>
-	</ul>
-</div>
-</section>
-<!--
-
-<div>
-	{% assign is_dtdo = true %}
-	<h2>Door to Door Organics</h2>
-	<small>March 2011 - May 2016</small><br>
-	<small>Industry / Grocery E-Commerce</small>
-	<h3>Lead User Interface Developer</h3>
-	<div class="timeline">
-		<span class="timeline-line"></span>
-		<h4>Senior Web Designer</h4>
-	</div>
-	<div class="timeline">
-		<span class="timeline-line"></span>
-		<h4>Web Designer</h4>
-	</div>
-	<hr>
-	<h3>Explore Related Work</h3>
-	<ul class="related-work">
-		{% for post in site.posts %}
-		{% if post.resume-section == 'dtdo' %}
-		<li>
-			<a href="{{post.permalink}}">{{post.title}}</a>
-		</li>
-		{% endif %}
-		{% endfor %}
-</div>
-<div>
-	<blockquote>
-		<p>I brought unity to the customer’s shopping experience by providing an intuitive journey that spanned from their devices to the point the groceries arrived on their doorsteps, which in turn grew company profitability.</p>
-	</blockquote>
-	<h3 class="visually-hidden">Experience</h3>
-	<ul class="example-items">
-		<li>Led the front-end team that was responsible for the website user experience, interface design, and front end development</li>
-		<li>Was responsible for building, guiding and defining architectural direction</li>
-		<li>I worked with visual designers, software developers, QA, product managers, & stakeholders to create and ensure our website was easy-to-use, engaging for the customer, and met business needs</li>
-		<li>Major components of my job included wireframing, designing, coding, and maintaining front-end architecture and patterns</li>
-		<li>Driver in the vision of the front end from an interface and code perspective that ensured quality and emphasizes best-practices</li>
-		<li>I utilized data from user testing, analytics, and behavioral metrics to drive design and product decisions</li>
-		<li>Discovered my love for user-centered-design as I dug into the "why’s" behind requests and needs, not just the “what’s”</li>
-		<li>Mentored junior team members, was a servant leader to all</li>
-	</ul>
-</div>
-<div>
-	<h2>Fergus Design</h2>
-	<small>January 2008 - December 2011</small><br>
-	<small>Industry / Small Business Development</small>
-	<h3>Owner/Freelancer</h3>
-</div>
-<div>
-	<blockquote>
-		<p>By running my own business, I gained the vital industry and tech experience that formed the foundations on which I’ve built my career.</p>
-	</blockquote>
-	<h3 class="visually-hidden">Experience</h3>
-	<ul class="example-items">
-		<li>Ran a profitable freelance business focusing on growing the online presence of small businesses</li>
-		<li>Grew project management, business development, accounting and mentoring skills</li>
-		<li>I specialized in static brochure websites and custom Wordpress builds</li>
-		<li>Worked closely with my clients and fostered long-term relationships</li>
-		<li>Translated their requirements into dynamic, rich and usable designs by providing wireframes and comps</li>
-		<li>Provided coded websites that met budget and requirements</li>
-		<li>Provided hosting to clients and managed their site needs</li>
-	</ul>
-</div>
-<div>
-	<h2>Continuing Education</h2>
-</div>
-<div>
-	<h3>Nielsen Norman Group</h3>
-	<small>User Experience Certification</small><br>
-	<small>2019</small>
-	<h3>Deque University</h3>
-	<small>Web &amp; Mobile Accessibility</small><br>
-	<small>2019</small>
-</div>
-<div>
-	<h2>Education</h2>
-</div>
-<div>
-	<h3>Westwood College</h3>
-	<small>Web &amp; Multimedia Design</small><br>
-	<small>2008</small><br>
-	<small>Bachelors, Graduated with Honors</small>
-	<h3>Clovis Community College</h3>
-	<small>Graphic Design</small><br>
-	<small>2003</small><br>
-	<small>Associates, Graduated with Honors</small>
-</div>
-
--->
+{% include resume--job-history.html %}
+{% include resume--ed-history.html %}

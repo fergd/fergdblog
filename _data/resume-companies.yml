@@ -1,0 +1,68 @@
+- company: 'ZOLL'
+  date-span: 'July 2016 - Present'
+  industry-type: 'Healthcare'
+  current-role: 'Senior User Experience Architect'
+  past-role:
+    - 'Senior User Experience Strategist'
+    - 'Sr. UX Designer/Developer'
+  callout: 'I use my strong technical background combined with business acumen & user empathy to design responsible, user-centered software in the medical SaaS space.'
+  experience: 
+    - 'I took over and led the design and launch of the innovative EMS Respond app which was selling before it was even released, and has proven consistently profitable as we continue to iterate on the product'
+    - 'Leader of the design and product strategy for ZOLL Dispatch, a SaaS EMS dispatch application which contains features and solutions entirely informed by user research and task analysis'
+    - 'I provide detailed system and user flows to illustrate how users move through systems. Doing so uncovers most unexpected scenarios that enable me to design for all use-cases, thus reducing developer churn'
+    - 'I partner with the PO & PM, and am an integral part of product design'
+    - 'I gather qualitative & quantitative research, market research, and analysis then recommend, inform, and promote a user-centered product strategy'
+    - 'I understand how business works—that profitability & market leadership come from the union of business vision and the meeting customer needs—and work hard to cultivate that union'
+    - Experienced with presentations, I regularly give user-advocacy talks and present data research to my scrum team, and the company at large'
+    - 'I’m passionate about writing effective user stories that are centered on detailed personas'
+    - 'As an active member of a cross-functional, distributed UX team, I build and cultivate relationships across the company and promote UX design patterns'
+    - 'I serve as a consultant for teams that do not have a UX role, supporting their design and development as needed'
+    - 'I mentor junior team members, am a leader on my teams, and a servant leader to all'
+  related-work: true
+  co: zoll
+- company: 'Front Range Community College'
+  date-span: 'January 2014 - May 2017'
+  industry-type: 'Higher Education'
+  current-role: 'Instructor'
+  callout: 'I’m passionate about teaching, coaching, & mentoring human-focused design professionals.'
+  experience: 
+    - Taught a 200-level web development course as part of the Multimedia & Graphic Design department
+    - Designed my own curriculum
+    - Managed, instructed, & guided classes with up to 25 students
+    - Emphasized & focused on real world use cases by analyzing websites & sharing my own industry experience
+    - Focused on solid design guidelines and principles focusing on elements and principles of design
+    - Approached the course with a holistic view from a professional’s perspective
+    - Upon completion of the course, students had an expanded understanding and ability to craft the foundations of the web experience, and a solid understanding of what it will take to be a successful web designer
+- company: "Door To Door Organics"
+  date-span: 'March 2011 - May 2016'
+  industry-type: 'Grocery E-Commerce'
+  current-role: 'Lead User Interface Developer'
+  past-role:
+    - 'Senior Web Designer'
+    - 'Web Designer'
+  callout: 'I brought unity to the customer’s shopping experience by providing an intuitive journey that spanned from their devices to the point the groceries arrived on their doorsteps, which in turn grew company profitability.'
+  experience: 
+    - Led the front-end team that was responsible for the website user experience, interface design, and front end development
+    - Was responsible for building, guiding and defining architectural direction
+    - I worked with visual designers, software developers, QA, product managers, & stakeholders to create and ensure our website was easy-to-use, engaging for the customer, and met business needs
+    - Major components of my job included wireframing, designing, coding, and maintaining front-end architecture and patterns
+    - Driver in the vision of the front end from an interface and code perspective that ensured quality and emphasizes best-practices
+    - I utilized data from user testing, analytics, and behavioral metrics to drive design and product decisions
+    - Discovered my love for user-centered-design as I dug into the "why’s" behind requests and needs, not just the “what’s”
+    - Mentored junior team members, was a servant leader to all
+  related-work: true
+  co: dtdo
+- company: 'Fergus Design'
+  date-span: 'January 2008 - December 2011'
+  industry-type: 'Small Business Development'
+  current-role: 'Freelancer'
+  callout: 'By running my own business, I gained the vital industry and tech experience that formed the foundations on which I’ve built my career.'
+  experience:
+    - Ran a profitable freelance business focusing on growing the online presence of small businesses
+    - Grew project management, business development, accounting and mentoring skills
+    - I specialized in static brochure websites and custom Wordpress builds
+    - Worked closely with my clients and fostered long-term relationships
+    - Translated their requirements into dynamic, rich and usable designs by providing wireframes and comps
+    - Provided coded websites that met budget and requirements
+    - Provided hosting to clients and managed their site needs 
+   
