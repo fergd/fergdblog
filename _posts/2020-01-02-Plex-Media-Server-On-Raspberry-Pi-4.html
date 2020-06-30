@@ -16,12 +16,13 @@ images:
   - url: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Plex_vector_logo.svg"
     alt: "Plex logo"
 toc:
- - <a href="#kit">Gather all the right kit</a>
+ - <a href="#kit">Required kit</a>
  - <a href="#setup-pi">Set up a Raspberry Pi 4 from scratch</a>
  - <a href="#linux-config">Configure your Linux environment</a>
  - <a href="#plex-install">Plex installation</a>
  - <a href="#tuning">Tuning Plex</a>
 ---
+<!--
 <section>
     <h1>A Brief Overview of Why</h1>
     <h2>What is Plex?</h2>
@@ -36,10 +37,9 @@ toc:
     <p>That said, with some careful configuration and tweaking, the Raspberry Pi Plex server can meet most needs and be a lot of fun in the process.</p>
     <p>Now the disclaimers are out of the way, let's get going!</p>
 </section>
+-->
 <section>
-    <h1>Planning</h1>
-    <p>In any project, a good plan can help you stay focused and ensure you successfully complete your mission. This project is no different. As you go into the project, ask yourself how much content you have, how you plan to back up your data, where you want your little server set up to live, etc. etc. Will you have multiple hard drives or just one? Are they going to be dedicated to only the Pi?</p>
-    <p>Getting a good plan together will help you save money. It's also good to read a bunch of blogs about what other people have done. That said, here's what I've done.</p> 
+    <p>Plex is a fantastic way to watch and share all of your media with one powerful tool. Even better, it can be installed on a small footprint with a Raspberry Pi. If you like to tinker, this tutorial is for you. However, just because you can, doesn’t mean  you should. While the Pi is a great way to get Plex going, it doesn’t have the horse power to do lots of high quality simultaneous device streaming. That said, for most people, it will do the job nicely.</p>
 </section>
 <section>
     <h1 id="kit">Requried Kit</h1>
@@ -69,7 +69,7 @@ toc:
         <li>Choose <span class="highlight">Raspbian</span> and install.<br>Full or basic, is fine, I went with basic to preserve a little space and the fact I wouldn't be using any extra software.</li>
         <li>Follow all the prompts making sure to change your default pi password, set up wifi, download any updates, etc.</li>
         <li>Finally, enable <span class="highlight">SSH</span> via the GUI to enable remote access from another computer:<br>
-            <code class="in-context">Pi Menu>Preferences>Raspberry Pi Configuration>Interfaces>SSH=Enable</code><br>This is very handy if you end up having your setup in a hard-to-access location, or run it "headless".</li>
+            <code class="in-context">Pi Menu>Preferences>Raspberry Pi Configuration>Interfaces>SSH=Enable</code><br>This is very handy if you end up having your setup in a hard-to-access location, or run it headless. In most cases, I do all my RP work over SSH since my Pi is located in an invonvinient place.</li>
     </ol>
 </section>
 <section>
@@ -122,21 +122,26 @@ toc:
                 </figure>
             </p>
         </li>
-        
-        <li>You now need to change the default Plex user from "Plex" to whatever your chosen username is. Let's face it, it's probably "Pi", amirite? You will do this in the command line. I used Nano to edit the file, but you can use the editor of your choice.
+        <li>You now need to change the default Plex user from "plex" to whatever your chosen username is. Let's face it, it's probably "pi", amirite? You will do this in the command line. I used Nano to edit the file, but you can use the editor of your choice.
             <figure aria-labelledby="tut-bb">
                     <pre class="has-code">sudo nano /etc/default/plexmediaserver</pre>
                     <figcaption id="tut-bb" class="visually-hidden">Code example that shows the command to change the default Plex user.</figcaption>
                 </figure>
             </li>
         <li>In the file, locate the line reading, <pre><code class="in-context">PLEX_MEDIA_SERVER_USER=plex</code></pre> and change the user from <code class="in-context">plex</code> to your user name (which is probably <code class="in-context">pi</code>). <pre><code class="in-context">PLEX_MEDIA_SERVER_USER=[YOURUSERNAME]</code></pre>.</li>
-        <li>Save your changes and exit out. If you're not sure how to do so:
-            <ul><li>ctrl+x</li><li>y</li><li>enter</li></ul>
+        <li>Save your changes and exit out. If you're in Nano and not sure how to do so:
+            <ul>
+                <li><code class="in-context">ctrl+x</code></li>
+                <li><code class="in-context">y</code></li>
+                <li><code class="in-context">enter</code></li>
+            </ul>
         <li>Once everything is installed, in your browswer, navigate to <code class="in-context">https://127.0.0.1:32400/web</code> where you should see the glorious Plex logo appear!</li>
-        <li>Connect your hard drive(s) if you haven't already.</li>
-        <li><p>Follow the setup steps on the Plex server site. At some point, it will ask you to set up your content libraries. This is where you're going to find out if you need to do some harddrive mapping.</p>
+        <li>It's now time to have Plex discover your content. Connect your hard drive(s) to the Pi if you haven't already.</li>
+        <li>
+            <p>Follow the setup steps on the Plex server site. At some point, it will ask you to set up your content libraries. This is where you're going to find out if you need to do some harddrive mapping.</p>
             <p>Go ahead and choose the type of library you want to set up (movies, music, TV, etc.) and navigate to the harddrive that contains the files.</p>
-            <ul>If you can see your hard drive contents you're in business and can <a href="#system-configs">skip the next section.</a> If you cannot, continue on. There is more work to be done.</ul>  
+            <p>If you can see your hard drive contents you're in business and can <a href="#system-configs">skip the next section.</a> If you cannot, continue on. There is more work to be done.</p>  
+        </li>
     </ol>
 </section>
 

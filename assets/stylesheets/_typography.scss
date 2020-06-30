@@ -3,7 +3,7 @@
 h1 {
     font-size: var(--ms2);
     font-family: var(--heading-primary);
-    letter-spacing: -0.02ch;
+    letter-spacing: -0.06ch;
     font-weight: var(--f-heavy);
     margin: var(--ms2) 0 var(--ms1) 0;
     line-height: 1;
@@ -20,6 +20,11 @@ h1 {
             }
         }
     }
+    h1.shrink-heading{
+        &::first-line{
+            font-size: var(--ms2);
+        }
+    }
 }
 .faux-heading {
     font-size: var(--ms1);
@@ -30,6 +35,7 @@ h2 {
     font-size: var(--ms1);
     font-family: var(--sans-serif);
     font-weight: var(--f-normal);
+    letter-spacing: -0.04ch;    
     margin: var(--ms2) 0 var(--ms0) 0;
     line-height: 1;
 }
@@ -45,6 +51,7 @@ h3 {
     font-size: var(--ms1);
     font-family: var(--sans-serif);
     font-weight: var(--f-medium);
+    letter-spacing: -0.06ch; 
     text-transform: uppercase;
     margin: var(--ms0) 0;
     line-height: 1;
@@ -169,4 +176,10 @@ ul, ol {
 }
 small{
     font-size: 0.5em;
+}
+strong{
+    font-weight: var(--f-heavy);
+}
+em{
+    font-style: italic;
 }

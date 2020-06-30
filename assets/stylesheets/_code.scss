@@ -1,16 +1,16 @@
 pre.has-code{
 	font-family: var(--monospace);
 	background: var(--c-midnight);
-	color: var(--color-splash);
-	text-shadow: 0px 0px 20px var(--color-splash);
+	color: var(--code);
 	padding: var(--ms-1);
 	font-weight: var(--f-normal);
 	border-radius: var(--d-radius-tiny);
 	white-space: break-spaces;
 }
-code{
+code,
+.highlight{
 	color: var(--c-midnight);
-	background: #19af5d;
+	background: var(--ins);
 	font-family: var(--monospace);
 }
 del {

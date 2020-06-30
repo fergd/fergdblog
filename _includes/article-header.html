@@ -2,7 +2,7 @@
     {% if page.major-category %} 
     <p class="label">{{page.major-category}}</p>
     {% endif %} 
-    <h1>{{page.title}}</h1>
+    <h1 {% if page.shrink-heading == true %}class="shrink-heading"{% endif %}  >{{page.title}}</h1>
     <p class="authorship">
     {% if page.author %} 
     {{page.author}}
@@ -24,7 +24,6 @@
                  {{page.header-image-480w}} 600w,
                  {{page.header-image-800w}} 768w,
                  {{page.header-image}} 1024w" 
-                 
                  src="{{page.header-image}}" alt="{{page.header-image-alt}}"
                  class="article--header-image">
     {% endif %} 

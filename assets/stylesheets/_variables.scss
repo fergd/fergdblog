@@ -6,10 +6,11 @@
 	• f = 	font
 	• ms = 	modular scale
 	--*/
-	--copy-body:         	'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/* 'Roboto Slab', */
+	--copy-body:         	'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
 	--heading-primary:   	'Playfair Display', serif;
-	--sans-serif:        	'Raleway', 'Georgia', var(--copy-body);
-	--monospace:         	'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	--sans-serif:        	'Raleway', var(--copy-body);
+	--monospace:         	Menlo,Roboto Mono, 'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 	--base-font-size: 		17px;
  
 	//Fonts & Spacing • Golden Section 1.618
@@ -39,6 +40,7 @@
 	--c-dusk:           	#8d9299;
 	--c-pale-red:       	#fbb;
 	--c-pale-green:     	PaleGreen;
+	--c-pale-blue: 			#62cfcf;
 
 	//Color Rules
 	--text-default:     	var(--c-midnight);
@@ -46,6 +48,7 @@
 	--color-splash:     	var(--c-yellow);
 	--del:              	var(--c-pale-red);
 	--ins:              	var(--c-pale-green);
+	--code: 				var(--c-pale-blue);
 
 	//Borders, Outlines, Radii
 	--d-border-thickness:   3px;

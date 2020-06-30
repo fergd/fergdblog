@@ -40,7 +40,7 @@ article--header div{
     }
   .article--content {
         grid-column: 3 / 7;
-        border-left: 2px solid var(--accent-color);
+        border-left: 1px solid var(--accent-color);
         .article--content--body {
             padding-left: var(--ms1);
         }
