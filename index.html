@@ -24,15 +24,4 @@ title: Home
         </ul>
     </section>
     <div class="item-4-image"></div>
-    <section class="item-5 lede">
-        <h2>See for Yourself</h2>
-        <div class="landing-links">
-            {% for page in site.pages %} 
-            {% if page.navpage %} 
-            <a href="{{page.permalink}}">{{page.title}}</a>
-            {% endif %} 
-            {% endfor %} 
-            <a href="{{site.linkedin-contact}}" class="no-wrapping" target="_blank" rel="noopener" rel="external" aria-describedby="a11y-nav-contact">LinkedIn&nbsp;<i class="icon icon-external"></i><span id="a11y-nav-contact" class="visually-hidden" aria-hidden="true">(opens in a new window)</span></a>
-        </div>
-    </section>
 </div>

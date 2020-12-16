@@ -6,7 +6,7 @@ permalink: /articles/Plex-Media-Server-on-Raspberry-Pi-4
 group: articles
 date: 2020/01/02
 author: Christan Fergus
-published: true
+published: false
 major-category: How-To
 parent: articles
 overview: true
@@ -22,22 +22,6 @@ toc:
  - <a href="#plex-install">Plex installation</a>
  - <a href="#tuning">Tuning Plex</a>
 ---
-<!--
-<section>
-    <h1>A Brief Overview of Why</h1>
-    <h2>What is Plex?</h2>
-    <p>In Plex's own words, <q cite="https://www.plex.tv/">Plex brings together all the media that matters to you. Your personal collection will look beautiful alongside stellar streaming content. Enjoy Live TV & DVR, a growing catalog of great web shows, news, and podcasts.</q></p>
-    <p>I decided a while back that I was no longer comfortable with the model of buying digital content from a service such as Google Play or Amazon, since I did not actually <em>own</em> the content. I don't like that these services can dictate how and even when I can consume the content. With Plex, I'm able to digitize all my [legally] purchased content and be comforted knowing I will always have access to it. With Plex, I'm my own content provider, serving up decades of my own music, TV, movies, and photos.</p>
-    <h2>Why the Pi?</h2>
-    <p>The Raspberry Pi is an inexpensive and fun platform on which to geek out, to put it simply. In addition, my goal was to create as low-profile a system as I could. The Raspberry Pi is tiny, and the hard drives I purchased were small, laptop SSHDs. All in all, I just tucked them away behind some books and no one was the wiser.</p>
-    <h2>A Word of Caution</h2>
-    <p>Just because we can, doesn't mean we should...</p>
-    <p>This write-up is for anyone who, like me, loves to mess around and tinker with stuff. However, if you want a basic tutorial to simply get Plex up and running, there are far easier ways to do it. It can be as easy as downloading it to your Mac or PC, installing, and then you're pretty much off to the races.</p>
-    <p>Additionally, if you require a powerful system that supports multiple simultaneous streaming of 4K content, <em>you do not want to use a Raspberry Pi!</em> The pi simply does not have the horsepower.</p>
-    <p>That said, with some careful configuration and tweaking, the Raspberry Pi Plex server can meet most needs and be a lot of fun in the process.</p>
-    <p>Now the disclaimers are out of the way, let's get going!</p>
-</section>
--->
 <section>
     <p>Plex is a fantastic way to watch and share all of your media with one powerful tool. Even better, it can be installed on a small footprint with a Raspberry Pi. If you like to tinker, this tutorial is for you. However, just because you can, doesn’t mean  you should. While the Pi is a great way to get Plex going, it doesn’t have the horse power to do lots of high quality simultaneous device streaming. That said, for most people, it will do the job nicely.</p>
 </section>
@@ -62,7 +46,7 @@ toc:
     <h2>Install Raspbian OS</h2>
     <p>In this section we're going to get the Raspbian OS up and running so that we can then install Plex.</p>
     <ol class="steps">
-        <li>Download <a href="https://www.raspberrypi.org/downloads/noobs/" rel="external" target="_blank"><span class="highlight">NOOBS</span></a>.<br>(<span class="highlight">N</span class="highlight">ew <span class="highlight">O</span class="highlight">ut <span class="highlight">O</span class="highlight">f <span class="highlight">T</span class="highlight">he <span class="highlight">B</span class="highlight">ox <span class="highlight">S</span class="highlight">oftware)</li>
+        <li>Download <a href="https://www.raspberrypi.org/downloads/noobs/" rel="external" target="_blank">NOOBS</span></a></li>
         <li>Format your micro SD to FAT.<br>The Mac's <a href="https://support.apple.com/guide/disk-utility/welcome/mac" rel="external" target="_blank">Disk Utility</a> is an easy way to do it.</li>
         <li>Transfer Noobs onto the SD card.<br><strong>Note:</strong> Only transfer the files <em>inside</em> the downloaded folder. Noobs will not boot if you transfer the root folder over.</li>
         <li>Insert the SD card into the Pi and turn it on<br>If the files were transferred correctly, the Pi will automatically boot up to a distro install screen </li>
@@ -156,6 +140,7 @@ toc:
                 </figure>
             Then we want to change the line that says, 
         </li>
+
     </ol>
 
 15.  

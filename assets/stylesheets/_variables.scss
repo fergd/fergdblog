@@ -7,11 +7,15 @@
 	• ms = 	modular scale
 	--*/
 	/* 'Roboto Slab', */
-	--copy-body:         	'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
-	--heading-primary:   	'Playfair Display', serif;
-	--sans-serif:        	'Raleway', var(--copy-body);
-	--monospace:         	Menlo,Roboto Mono, 'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-	--base-font-size: 		17px;
+	// --copy-body: 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
+	// --heading-primary: 'Playfair Display', serif; 
+	// --sans-serif: 'Raleway', var(--copy-body);
+	// --monospace:         	Menlo,Roboto Mono, 'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	--base-font-size: 17px;
+	--copy-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--heading-primary: 'Playfair Display', serif; 
+	--sans-serif: 'Raleway', var(--copy-body);
+	--monospace: Menlo,Roboto Mono, 'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
  
 	//Fonts & Spacing • Golden Section 1.618
 	--ms-3:             	0.236rem;
@@ -38,17 +42,22 @@
 	--c-yellow:         	#ffcc33;
 	--c-midnight:       	#2a323e;
 	--c-dusk:           	#8d9299;
+	--c-dusk-50: 			rgba(141,146,153,0.5);
+	--c-dusk-20: 			rgba(141,146,153,0.2);
 	--c-pale-red:       	#fbb;
+	--c-green: 				#005733;
 	--c-pale-green:     	PaleGreen;
 	--c-pale-blue: 			#62cfcf;
 
 	//Color Rules
-	--text-default:     	var(--c-midnight);
-	--accent-color:     	var(--c-dusk);
-	--color-splash:     	var(--c-yellow);
-	--del:              	var(--c-pale-red);
-	--ins:              	var(--c-pale-green);
-	--code: 				var(--c-pale-blue);
+	--text-default:     			var(--c-midnight);
+	--accent-color:     			var(--c-dusk);
+	--accent-color-transparent: 	var(--c-dusk-50);
+	--shadow-color: 				var(--c-dusk-20);
+	--color-splash:     			var(--c-yellow);
+	--del:              			var(--c-pale-red);
+	--ins:              			var(--c-pale-green);
+	--code: 						var(--c-pale-blue);
 
 	//Borders, Outlines, Radii
 	--d-border-thickness:   3px;

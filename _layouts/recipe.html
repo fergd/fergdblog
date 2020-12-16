@@ -15,10 +15,8 @@ layout: default
         {% if page.subtitle %}
         <p class="callout">{{page.subtitle}}</p>
         {% endif %}
-        <div class="article--content--body">
+        <div class="article--content--body{%if page.published%} flourish{%endif%}">
         	{{content}}
-                   {%include circles.html%}
         </div> 
-
     </div>
 </article>

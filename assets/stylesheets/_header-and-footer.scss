@@ -1,72 +1,98 @@
 header.site-header,
 footer.site-footer {
-    .logo-container {
-        align-self: center;
-        margin-bottom: var(--ms0);
-        a {
-            text-decoration: none;
-        }
-    }
-}
-header.site-header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: var(--ms0) 0;
-    margin-bottom: var(--ms2);
     max-width: 100%;
     overflow: hidden;
+}
+
+header.site-header {
+    margin-bottom: var(--ms2);
+}
+
+header.site-header nav {
+    display: none;
+}
+
+.logo-container {
+    align-self: center;
+    margin-bottom: var(--ms-1);
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    a, a:hover {
+        text-decoration: none;
+    }
+}
+
+footer.site-footer {
+    margin-top: var(--ms4);
     nav {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         a {
-            padding: 0 var(--ms0);
+            margin-bottom: var(--ms0);
+        }
+    }
+    .social--container{
+        display: flex;
+        li{
+            margin-right: var(--ms0);
         }
     }
 }
-footer.site-footer {
-    margin: var(--ms2) 0;
-    nav {
-        a {
-            display: block;
-            padding: var(--ms0) 0;
+
+@media all and (min-width: 455px) {
+    header.site-header {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                padding: 0 var(--ms0);
+            }
         }
     }
 }
-@media all and (min-width: 1024px) {
-    header.site-header,
-    footer.site-footer{
-        .logo-container{
+
+@media all and (min-width: 768px) {
+    header.site-header {
+        .logo-container {
             margin-bottom: 0;
         }
     }
+
     header.site-header {
         flex-direction: row;
+
         nav a {
             &:last-of-type {
                 padding-right: 0;
             }
+
             &:first-of-type {
                 padding-left: 0;
             }
         }
     }
+
     footer.site-footer {
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
+        div.logo-container {
+            align-self: start;
+        }
+
         nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: row;
+            justify-content: left;
             a {
                 padding: 0 var(--ms0);
-                &:first-of-type {
+                &:first-of-type{
                     padding-left: 0;
-                }
-                &:last-of-type {
-                    padding-right: 0;
                 }
             }
         }

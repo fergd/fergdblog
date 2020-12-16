@@ -1,0 +1,11 @@
+<nav>
+    <ul class="social--container">
+        {% for item in site.pages %}
+        {% if item.navgroup == "extra" %}
+        <li>{{item.title}}</li>
+        {% endif %}
+        {% endfor %}
+        <li><a href="mailto:{{site.email}}" class="no-wrapping">{{site.email}}</a></li>
+        <li><a href="{{site.linkedin-contact}}" target="_blank" rel="noopener" rel="external" aria-describedby="a11y-article-footer-contact">LinkedIn <i class="icon icon-external"></i><span id="a11y-article-footer-contact" class="visually-hidden" aria-hidden="true">(opens in a new window)</span></li>
+    </ul>
+</nav>

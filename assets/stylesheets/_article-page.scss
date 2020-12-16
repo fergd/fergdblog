@@ -3,20 +3,7 @@ img.article--header-image{
   display: block;
   margin: 0 auto;
 }
-.article--content--body{
-  figure{
-    display: flex;
-    flex-direction: column;
-  }
-  &.flourish::after{
-    content: '\00A7';
-    max-width: var(--max-paragraph);
-    color: var(--accent-color);
-    display: flex;
-    justify-content: space-around;
-    font: serif;
-  }
-}
+
 article--header div{
   padding-top: var(--ms0);
 }
@@ -40,9 +27,11 @@ article--header div{
     }
   .article--content {
         grid-column: 3 / 7;
-        border-left: 1px solid var(--accent-color);
+        // border-left: 1px solid var(--accent-color-transparent);
+        box-shadow: 0 2em 2em 0.5em var(--shadow-color);
+        border-radius: 0 0 1em 1em;
         .article--content--body {
-            padding-left: var(--ms1);
+            padding: 0 0 var(--ms1) var(--ms1);
         }
         p:not(.callout){
             max-width: var(--max-paragraph);

@@ -11,6 +11,7 @@ h1 {
 @media all and (min-width: 768px){
     h1{
         font-size: var(--ms3);
+        color: var(--text-default);
     }
     .article-header-container{
         h1{
@@ -30,14 +31,16 @@ h1 {
     font-size: var(--ms1);
     font-family: var(--sans-serif);
     font-weight: var(--f-heavy);
+    color: var(--text-default);
 }
 h2 {
     font-size: var(--ms1);
-    font-family: var(--sans-serif);
-    font-weight: var(--f-normal);
+    font-family: var(--body-copy);
+    font-weight: var(--f-medium);
     letter-spacing: -0.04ch;    
     margin: var(--ms2) 0 var(--ms0) 0;
     line-height: 1;
+    color: var(--c-midnight);
 }
 @media all and (min-width: 768px){
     h2{
@@ -70,6 +73,7 @@ p {
     font-family: var(--copy-body);
     font-weight: var(--f-normal);
     line-height: 1.4em;
+    letter-spacing: -0.06ch;
     margin: 0 0 var(--ms0) 0;
 }
 p.callout {
@@ -128,9 +132,11 @@ a{
 }
 nav a {
     font-family: var(--sans-serif);
-    font-weight: var(--f-normal);
+    font-weight: var(--f-heavy);
     text-decoration: none;
     white-space: nowrap; 
+    text-transform: uppercase;
+    color: var(--c-dusk);
     &.current {
         font-weight: var(--f-heavy);
         @include custom-underline(var(--color-splash));
@@ -161,6 +167,7 @@ ul, ol {
         font-family: var(--copy-body);
         line-height: 1.4em;
         margin-bottom: var(--ms0);
+        letter-spacing: -0.06ch;
     }
 }
 .lede {

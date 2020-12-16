@@ -12,7 +12,7 @@
         font-family: var(--copy-body);
         color: var(--accent-color);
         &:hover h2{
-            @include custom-underline;
+            @include custom-underline--hover();
         }
         a {
             text-decoration: none;
