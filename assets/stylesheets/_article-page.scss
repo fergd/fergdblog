@@ -37,6 +37,10 @@ article--header div{
             max-width: var(--max-paragraph);
         }
     }
+  .article--figure{
+      grid-column: 2 / 8;
+      background: red;
+  }
     .flex-group {
         display: flex;
         flex-direction: row;

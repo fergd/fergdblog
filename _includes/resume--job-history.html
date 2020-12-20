@@ -1,5 +1,5 @@
 {% for job in site.data.resume-companies %} 
-<section class="job-history zoll">
+<section class="job-history">
 	<header>
 		<h1 class="shrink-lines">{{job.company}}</h1>
 		<p>{{job.date-span}}</p>
@@ -17,19 +17,19 @@
 	<div>
 		<p class="callout">{{job.callout}}</p>
 		<h3 class="visually-hidden">Experience</h3>
-		<ul class="example-items">
+		<ul class="inside">
 			{% for item in job.experience %} 
-			<li>{{item}}</li>
+			<li class="nudge-bottom">{{item}}</li>
 			{% endfor %} 
 		</ul>
 	</div>
 	{% if job.related-work %} 
 	<aside>
 		<h4>Explore Related Work</h4>
-		<ul>
+		<ul class="inside">
 			{% for post in site.posts %}
 			{% if post.resume-section == job.co %}
-			<li>
+			<li class="nudge-bottom">
 				<a href="{{post.permalink}}">{{post.title}}</a>
 			</li>
 			{% endif %}

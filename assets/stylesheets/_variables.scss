@@ -6,11 +6,6 @@
 	• f = 	font
 	• ms = 	modular scale
 	--*/
-	/* 'Roboto Slab', */
-	// --copy-body: 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
-	// --heading-primary: 'Playfair Display', serif; 
-	// --sans-serif: 'Raleway', var(--copy-body);
-	// --monospace:         	Menlo,Roboto Mono, 'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 	--base-font-size: 17px;
 	--copy-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--heading-primary: 'Playfair Display', serif; 
@@ -36,11 +31,12 @@
 	--f-normal:         	400;
 	--f-medium:         	700;
 	--f-heavy:          	900;
-	--f-emphasis:       	400i;
+	--f-emphasis:       	italic;
 
 	//Base Colors
 	--c-yellow:         	#ffcc33;
 	--c-midnight:       	#2a323e;
+	--c-midnight-50:		rgba(42,50,62,0.5);
 	--c-dusk:           	#8d9299;
 	--c-dusk-50: 			rgba(141,146,153,0.5);
 	--c-dusk-20: 			rgba(141,146,153,0.2);
@@ -51,7 +47,8 @@
 
 	//Color Rules
 	--text-default:     			var(--c-midnight);
-	--accent-color:     			var(--c-dusk);
+	--blockquote: 					var(--c-midnight-50);
+	--accent-color:     			var(--c-midnight-50);
 	--accent-color-transparent: 	var(--c-dusk-50);
 	--shadow-color: 				var(--c-dusk-20);
 	--color-splash:     			var(--c-yellow);

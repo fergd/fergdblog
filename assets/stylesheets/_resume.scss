@@ -18,6 +18,12 @@ img.badge{
         .r-links{
             grid-column: 1 / 2;
             grid-row: 2;
+            a{
+                text-decoration: none;
+                &:hover{
+                    @include custom-underline--hover();
+                }
+            }
         }
     }
     .job-history{

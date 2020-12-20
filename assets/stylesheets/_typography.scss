@@ -58,6 +58,7 @@ h3 {
     text-transform: uppercase;
     margin: var(--ms0) 0;
     line-height: 1;
+    color: var(--c-midnight-50);
 }
 h4 {
     font-size: var(--ms0);
@@ -88,14 +89,17 @@ p.callout {
 blockquote {
     border-left: var(--d-border);
     margin: var(--ms1) 0;
+    padding-left: var(--ms0);
     p {
         font-size: var(--ms1);
         font-family: var(--sans-serif);
         line-height: 1.2;
         font-style: italic;
-        margin-left: var(--ms0);
-        color: var(--accent-color);
+        color: var(--blockquote);
     }
+}
+q{
+    font-style: italic;
 }
 p.label {
     font-size: var(--ms0);
@@ -153,8 +157,10 @@ figcaption {
     font-family: var(--copy-body);
     font-size: var(--ms-1);
     font-style: var(--f-emphasis);
+    font-weight: var(--f-heavy);
     border-top: var(--d-border);
     padding-top: var(--ms0);
+    margin-top: var(--ms0);
 }
 p:not(blockquote>p) {
     max-width: var(--max-paragraph);
@@ -166,9 +172,11 @@ ul, ol {
     li{
         font-family: var(--copy-body);
         line-height: 1.4em;
-        margin-bottom: var(--ms0);
         letter-spacing: -0.06ch;
     }
+}
+.nudge-bottom{
+    margin-bottom: var(--ms-1);
 }
 .lede {
     text-align: center;
