@@ -5,12 +5,11 @@
     }
 }
 .articles-landing--list {
-    list-style-type: none;
     margin-left: 0;
     li {
-        margin-bottom: var(--ms4);
+        margin-bottom: var(--ms3);
         font-family: var(--copy-body);
-        color: var(--accent-color);
+        color: var(--accent);
         &:hover h2{
             @include custom-underline--hover();
         }

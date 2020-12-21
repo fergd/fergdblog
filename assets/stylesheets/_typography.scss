@@ -40,7 +40,7 @@ h2 {
     letter-spacing: -0.04ch;    
     margin: var(--ms2) 0 var(--ms0) 0;
     line-height: 1;
-    color: var(--c-midnight);
+    color: var(--text-default);
 }
 @media all and (min-width: 768px){
     h2{
@@ -58,7 +58,7 @@ h3 {
     text-transform: uppercase;
     margin: var(--ms0) 0;
     line-height: 1;
-    color: var(--c-midnight-50);
+    color: var(--accent);
 }
 h4 {
     font-size: var(--ms0);
@@ -67,7 +67,7 @@ h4 {
     text-transform: uppercase;
     margin: var(--ms0) 0;
     line-height: 1;
-    color: var(--accent-color);
+    color: var(--accent);
 }
 p {
     font-size: var(--ms0);
@@ -107,7 +107,7 @@ p.label {
     line-height: 1;
     text-transform: uppercase;
     font-weight: var(--f-heavy);
-    color: var(--accent-color);
+    color: var(--accent);
     letter-spacing: 0.5ch;
     & + h2{
         margin-top: var(--ms-1);
@@ -116,7 +116,7 @@ p.label {
 p.authorship {
     font-size: var(--ms-1);
     font-family: var(--copy-body);
-    color: var(--accent-color);
+    color: var(--accent);
     font-weight: var(--f-heavy);
     margin: var(--ms0) 0;
 }
@@ -140,7 +140,7 @@ nav a {
     text-decoration: none;
     white-space: nowrap; 
     text-transform: uppercase;
-    color: var(--c-dusk);
+    color: var(--accent);
     &.current {
         font-weight: var(--f-heavy);
         @include custom-underline(var(--color-splash));
@@ -174,9 +174,6 @@ ul, ol {
         line-height: 1.4em;
         letter-spacing: -0.06ch;
     }
-}
-.nudge-bottom{
-    margin-bottom: var(--ms-1);
 }
 .lede {
     text-align: center;

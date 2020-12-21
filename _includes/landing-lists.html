@@ -1,5 +1,5 @@
 {% capture 'group' %}{{page.group}}{% endcapture %} 
-<ul class="articles-landing--list">
+<ul class="articles-landing--list hide-bullets">
     {% for post in site.posts %}
     {% if post.group == {{group}} %}
     <li>

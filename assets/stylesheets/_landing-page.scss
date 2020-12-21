@@ -29,10 +29,12 @@
     .item-3-image {
         background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/people.png");
         background-size: contain;
+        opacity: var(--image-opacity);
     }
     .item-4-image {
         background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/usable.png");
         background-size: contain;
+        opacity: var(--image-opacity);
     }
     display: flex;
     justify-content: space-evenly;

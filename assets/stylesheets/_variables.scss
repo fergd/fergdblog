@@ -34,27 +34,28 @@
 	--f-emphasis:       	italic;
 
 	//Base Colors
-	--c-yellow:         	#ffcc33;
-	--c-midnight:       	#2a323e;
-	--c-midnight-50:		rgba(42,50,62,0.5);
-	--c-dusk:           	#8d9299;
-	--c-dusk-50: 			rgba(141,146,153,0.5);
-	--c-dusk-20: 			rgba(141,146,153,0.2);
-	--c-pale-red:       	#fbb;
+	--c-yellow:         	rgba(255,204,51,0.7);
+	--c-grey:       		rgba(42,50,62,0.9);
+	--c-grey-50:			rgba(42,50,62,0.5);
+	--c-grey-25:			rgba(42,50,62,0.25);
+	--c-grey-05:			rgba(42,50,62,0.05);
+	--c-pale-red:       	rgba(255,0,0,0.5);
 	--c-green: 				#005733;
 	--c-pale-green:     	PaleGreen;
 	--c-pale-blue: 			#62cfcf;
 
+
 	//Color Rules
-	--text-default:     			var(--c-midnight);
-	--blockquote: 					var(--c-midnight-50);
-	--accent-color:     			var(--c-midnight-50);
-	--accent-color-transparent: 	var(--c-dusk-50);
-	--shadow-color: 				var(--c-dusk-20);
-	--color-splash:     			var(--c-yellow);
-	--del:              			var(--c-pale-red);
-	--ins:              			var(--c-pale-green);
-	--code: 						var(--c-pale-blue);
+	--text-default:     	var(--c-grey);
+	--blockquote: 			var(--c-grey-50);
+	--accent:     			var(--c-grey-50);
+	--shadow: 				var(--c-grey-05);
+	--color-splash:     	var(--c-yellow);
+	--del:              	var(--c-pale-red);
+	--ins:              	var(--c-pale-green);
+	--code: 				var(--c-pale-blue);
+
+	--image-opacity: 		0.75;
 
 	//Borders, Outlines, Radii
 	--d-border-thickness:   3px;
@@ -69,7 +70,7 @@
 		--base-font-size: 19px;
 	}
 }
-@mixin custom-underline($color: var(--accent-color)){
+@mixin custom-underline($color: var(--accent)){
 	text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: var(--d-border-thickness);

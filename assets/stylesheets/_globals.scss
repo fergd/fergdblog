@@ -1,9 +1,10 @@
 html {
     font-size: var(--base-font-size);
 }
+
 body {
-	font-size: 100%;
-	font-family: var(--copy-body);
+    font-size: 100%;
+    font-family: var(--copy-body);
     margin: 0 auto;
     padding: var(--ms0);
     min-height: 100vh;
@@ -14,12 +15,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
+
 .visually-hidden {
     position: absolute !important;
     height: 1px;
     width: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
+
     &:focus {
         clip: auto;
         left: 0;
@@ -33,61 +36,66 @@ body {
         background: rgba(255, 255, 255, 0.5);
     }
 }
+
 .no-margin {
     margin: 0;
 }
+
 .no-wrapping {
     white-space: nowrap;
 }
+
 img {
     max-width: 100%;
 }
+
 .floated-image {
     max-width: 40%;
 }
-.floated-image.push-right{
+
+.floated-image.push-right {
     margin-bottom: 2em;
 }
+
 .footer-icon {
     display: none;
 }
+
 figure {
     max-width: 100%;
     margin: 0;
-    img{
+
+    img {
         max-width: 100%;
         margin: 0 auto;
     }
 }
+
 hr {
     height: var(--d-border-thickness);
     background: var(--color-splash);
     border: 0;
     margin: var(--ms0) 0;
 }
+
 ul {
+    li::before {
+        content: '\2022';
+        font-family: var(--heading-primary);
+        font-weight: var(-f-heavy);
+        color: var(--accent);
+        display: inline-block;
+        width: var(--ms0);
+        margin-left: -1rem;
+    }
     &.inside {
-        list-style: inside;
+        list-style-position: inside;
+        margin-left: var(--ms0);
     }
-    &.outside {
-        list-style: outside;
-    }
-    &.outside, &.inside{
-        list-style-type: none;
-        li::before{
-            content: '\2022';
-            font-family: var(--heading-primary);
-            font-weight: var(-f-heavy);
-            color: var(--color-splash);
-            display: inline-block; 
-            width: var(--ms0); 
-            margin-left: -1rem;
-        }
-    }
-    &.landing-list li::before{
+    &.landing-list li::before {
         content: '\2026';
     }
-    &.hide-bullets li::before{
+    &.hide-bullets li::before {
         display: none;
     }
 }

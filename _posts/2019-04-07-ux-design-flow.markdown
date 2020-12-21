@@ -40,7 +40,7 @@ The UX Strategy Design Flow is presented as a loose flowchart and structured in 
 At the beginning , the first swimlane is referred to as “strategy”. At this point, there has been two primary types of research that’s been performed: task analysis and contextual inquiry. These are common forms of initial research that are used to influence a product feature’s direction. The chart shows that discovered information flowing into a user’s persona. The user persona is there to say, “for this specific person, these are the things they need to accomplish their tasks.”
 
 After the flow of info has been tied to a persona, the Strategy phase technically begins where the UX strategist crafts, along with the team input and feedback, the ideas and possible solutions for a given user challenge. The steps showing in the diagram indicate some or all of the following things can be done:
-<ul class="outside">
+<ul class="inside">
 <li>Discovery session with the team</li>
 <li>Whiteboarding</li>
 <li>User flows</li>
@@ -49,7 +49,7 @@ After the flow of info has been tied to a persona, the Strategy phase technicall
 ### Design
 
 Once the strategy phase has been brought to a logical conclusion or transition point, the design phase typically begins. This phase is usually only just ahead of when the design would actually get developed, typically about one sprint. Commonly in this phase a UX strategist will work with various members of the team providing. Items in this stage of the diagram include:
-<ul class="outside">
+<ul class="inside">
 <li>Wireframes</li>
 <li>System flows</li>
 <li>Mockups</li>

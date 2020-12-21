@@ -56,13 +56,13 @@ img.badge{
     .timeline{
         h4{
             margin: 0;
-            color: var(--c-dusk);
+            color: var(--accent);
             &::before{
                 content: '';
                 display: block;
                 width: var(--d-border-thickness);
                 height: var(--ms2);
-                background: var(--accent-color);
+                background: var(--accent);
                 margin: 0 auto;
             }
         }

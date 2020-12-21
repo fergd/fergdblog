@@ -1,6 +1,6 @@
 colors:
 - '--c-yellow'
-- '--c-midnight'
-- '--c-dusk'
+- '--c-grey'
+- '--c-grey-50'
+- '--c-grey-25'
 - '--c-pale-red'
-- '--c-pale-green'

@@ -6,13 +6,13 @@
         height: var(--ms0);
         border-radius: 100%;
         &:first-of-type {
-            background: var(--c-midnight);
+            background: var(--text-default);
         }
         &:nth-of-type(2) {
-            background: var(--c-dusk);
+            background: var(--accent);
         }
         &:nth-of-type(3) {
-            background: var(--c-yellow);
+            background: var(--color-splash);
         }
     }
 }

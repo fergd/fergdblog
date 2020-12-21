@@ -4,6 +4,9 @@
 .push-left {
     float: left;
 }
+.nudge-bottom{
+    margin-bottom: var(--ms-1);
+}
 @media all and (min-width: 1024px) {
     .stick-em{
         position: sticky;

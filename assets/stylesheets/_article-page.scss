@@ -2,10 +2,15 @@ img.article--header-image{
   max-width: 280px;
   display: block;
   margin: 0 auto;
+  opacity: var(--image-opacity);
 }
-
 article--header div{
   padding-top: var(--ms0);
+}
+.article--content{
+  figure{
+    margin-bottom: var(--ms0);
+  }
 }
 @media all and (min-width: 700px) and (max-width: 1023px){
   img.article--header-image{
@@ -27,8 +32,7 @@ article--header div{
     }
   .article--content {
         grid-column: 3 / 7;
-        // border-left: 1px solid var(--accent-color-transparent);
-        box-shadow: 0 2em 2em 0.5em var(--shadow-color);
+        box-shadow: 0 2.5em 2em 0.5em var(--shadow);
         border-radius: 0 0 1em 1em;
         .article--content--body {
             padding: 0 0 var(--ms1) var(--ms1);

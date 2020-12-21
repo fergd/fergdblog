@@ -3,7 +3,7 @@
 	<header>
 		<h1 class="shrink-lines">{{job.company}}</h1>
 		<p>{{job.date-span}}</p>
-		<p>Industry • {{job.industry-type}}</p>
+		<p>Industry: {{job.industry-type}}</p>
 		<hr>
 		<div class="timeline">
 			<h3>{{job.current-role}}</h3>
@@ -26,7 +26,7 @@
 	{% if job.related-work %} 
 	<aside>
 		<h4>Explore Related Work</h4>
-		<ul class="inside">
+		<ul class="hide-bullets">
 			{% for post in site.posts %}
 			{% if post.resume-section == job.co %}
 			<li class="nudge-bottom">
