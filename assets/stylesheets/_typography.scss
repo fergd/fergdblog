@@ -6,7 +6,7 @@ h1 {
     letter-spacing: -0.06ch;
     font-weight: var(--f-heavy);
     margin: var(--ms2) 0 var(--ms1) 0;
-    line-height: 1;
+    line-height: 0.9;
 }
 @media all and (min-width: 768px){
     h1{
@@ -76,6 +76,12 @@ p {
     line-height: 1.4em;
     letter-spacing: -0.06ch;
     margin: 0 0 var(--ms0) 0;
+    @media (prefers-color-scheme: dark) {
+        letter-spacing: 0.05ch;
+    }
+    @media (prefers-color-scheme: light) {
+        letter-spacing: -0.06ch;
+    }
 }
 p.callout {
     font-size: var(--ms1);
@@ -126,6 +132,7 @@ span.dropcap {
     line-height: 0.7;
     font-family: var(--heading-primary);
     padding: 0 var(--ms-1) 0 0;
+    color: var(--dropcap);
 }
 a{
     color: var(--text-default);
@@ -152,6 +159,12 @@ nav a {
     padding: var(--ms0);
     border-radius: 0 var(--d-radius);
     margin: 0 0 var(--ms1) 0;
+    p,li{
+        color: var(--tldr-text);
+    }
+    ul{
+        margin-left: var(--ms0);
+    }
 }
 figcaption {
     font-family: var(--copy-body);

@@ -3,4 +3,8 @@ colors:
 - '--c-grey'
 - '--c-grey-50'
 - '--c-grey-25'
+- '--c-grey-0.5'
 - '--c-pale-red'
+- '--c-green'
+- '--c-pale-green'
+- '--c-pale-blue'

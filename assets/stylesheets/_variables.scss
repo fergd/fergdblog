@@ -1,3 +1,60 @@
+@media (prefers-color-scheme: dark) {
+	:root {
+		//Base Colors
+        --c-yellow: rgba(255, 204, 51, 0.7);
+        --c-grey: rgba(19, 20, 21, 1);
+        --c-white: rgba(188, 210, 220, 1);
+        --c-grey-50: rgba(188, 210, 220, 0.5);
+        --c-grey-25: rgba(188, 210, 220, 0.25);
+        --c-grey-05: rgba(188, 210, 220, 0.05);
+        --c-pale-red: rgba(255, 0, 0, 0.5);
+        --c-green: #005733;
+        --c-pale-green: PaleGreen;
+        --c-pale-blue: #62cfcf;
+
+        //Color Rules
+        --background: var(--c-grey);
+        --text-default: var(--c-white);
+        --blockquote: var(--c-grey-50);
+        --accent: var(--c-grey-50);
+        --shadow: rgba(10,10,10,0.2);
+        --color-splash: var(--c-yellow);
+        --del: var(--c-pale-red);
+        --ins: var(--c-pale-green);
+        --code: var(--c-pale-blue);
+        --dropcap: var(--c-yellow);
+        --tldr-text: var(--c-grey);
+        --code-bg: var(--shadow);
+	}
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        //Base Colors
+        --c-yellow: rgba(255, 204, 51, 0.7);
+        --c-grey: rgba(42, 50, 62, 1);
+        --c-grey-50: rgba(42, 50, 62, 0.5);
+        --c-grey-25: rgba(42, 50, 62, 0.25);
+        --c-grey-05: rgba(42, 50, 62, 0.05);
+        --c-pale-red: rgba(255, 0, 0, 0.5);
+        --c-green: #005733;
+        --c-pale-green: PaleGreen;
+        --c-pale-blue: #62cfcf;
+
+        //Color Rules
+        --background: var(--c-grey-05);
+        --text-default: var(--c-grey);
+        --blockquote: var(--c-grey-50);
+        --accent: var(--c-grey-50);
+        --shadow: var(--c-grey-05);
+        --color-splash: var(--c-yellow);
+        --del: var(--c-pale-red);
+        --ins: var(--c-pale-green);
+        --code: var(--c-pale-blue);
+        --dropcap: var(--text-default);
+        --tldr-text: var(--text-default);
+        --code-bg: var(--c-grey);
+    }
+}
 :root {
 	/*--
 	GLOSSARY
@@ -6,6 +63,8 @@
 	• f = 	font
 	• ms = 	modular scale
 	--*/
+	color-scheme: light dark;
+
 	--base-font-size: 17px;
 	--copy-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--heading-primary: 'Playfair Display', serif; 
@@ -33,29 +92,7 @@
 	--f-heavy:          	900;
 	--f-emphasis:       	italic;
 
-	//Base Colors
-	--c-yellow:         	rgba(255,204,51,0.7);
-	--c-grey:       		rgba(42,50,62,0.9);
-	--c-grey-50:			rgba(42,50,62,0.5);
-	--c-grey-25:			rgba(42,50,62,0.25);
-	--c-grey-05:			rgba(42,50,62,0.05);
-	--c-pale-red:       	rgba(255,0,0,0.5);
-	--c-green: 				#005733;
-	--c-pale-green:     	PaleGreen;
-	--c-pale-blue: 			#62cfcf;
-
-
-	//Color Rules
-	--text-default:     	var(--c-grey);
-	--blockquote: 			var(--c-grey-50);
-	--accent:     			var(--c-grey-50);
-	--shadow: 				var(--c-grey-05);
-	--color-splash:     	var(--c-yellow);
-	--del:              	var(--c-pale-red);
-	--ins:              	var(--c-pale-green);
-	--code: 				var(--c-pale-blue);
-
-	--image-opacity: 		0.75;
+	--image-opacity: 		brightness(.8) contrast(1.2);
 
 	//Borders, Outlines, Radii
 	--d-border-thickness:   3px;
@@ -63,8 +100,7 @@
 	--d-radius:         	var(--ms-1);
 	--d-radius-small:   	var(--ms-2);
 	--d-radius-tiny:    	var(--ms-3);
-}    
-
+}   
 @media all and (min-width: 768px) {
 	:root {
 		--base-font-size: 19px;
@@ -76,7 +112,6 @@
     text-underline-offset: var(--d-border-thickness);
     text-decoration-color: $color;
 }
-
 @mixin custom-underline--hover(){
 	text-decoration: underline;
     text-decoration-thickness: 2px;
