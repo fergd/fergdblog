@@ -83,6 +83,9 @@ p {
         letter-spacing: -0.06ch;
     }
 }
+p:not(.callout):not(blockquote>p):not(.label){
+    max-width: var(--max-paragraph);
+}
 p.callout {
     font-size: var(--ms1);
     font-family: var(--sans-serif);
@@ -175,9 +178,7 @@ figcaption {
     padding-top: var(--ms0);
     margin-top: var(--ms0);
 }
-p:not(blockquote>p) {
-    max-width: var(--max-paragraph);
-}
+
 ol{
     margin-left: var(--ms0);
 }

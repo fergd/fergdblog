@@ -35,10 +35,7 @@ article--header div{
         box-shadow: 0 2.5em 2em 0.5em var(--shadow);
         border-radius: 0 0 1em 1em;
         .article--content--body {
-            padding: 0 0 var(--ms1) var(--ms1);
-        }
-        p:not(.callout){
-            max-width: var(--max-paragraph);
+            padding: 0 var(--ms0) var(--ms1) var(--ms0);
         }
     }
   .article--figure{
