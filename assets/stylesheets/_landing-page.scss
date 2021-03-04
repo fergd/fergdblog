@@ -28,14 +28,17 @@ p.label{
             margin: 0;
             padding: var(--ms2);
         }
+        h2{
+            color: var(--landing-list-heading);
+        }
     }
     .item-3-image {
-        background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/people.png");
+        background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1614899940/fergdblog/people.png");
         background-size: contain;
         opacity: var(--image-opacity);
     }
     .item-4-image {
-        background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1552244671/fergdblog/usable.png");
+        background: center no-repeat url("https://res.cloudinary.com/fergd/image/upload/v1614899940/fergdblog/usable.png");
         background-size: contain;
         opacity: var(--image-opacity);
     }
@@ -79,7 +82,9 @@ p.label{
         .item-4 {
             ul,
             p {
+                @media (prefers-color-scheme: light) {
                 border-left: var(--d-border);
+            }
             }
         }
         .item-5 {

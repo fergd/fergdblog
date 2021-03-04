@@ -3,7 +3,7 @@
 		//Base Colors
         --c-yellow: rgba(255, 204, 51, 0.7);
         --c-grey: rgba(19, 20, 21, 1);
-        --c-white: rgba(188, 210, 220, 1);
+        --c-white: rgba(188, 210, 220, 0.85);
         --c-grey-50: rgba(188, 210, 220, 0.5);
         --c-grey-25: rgba(188, 210, 220, 0.25);
         --c-grey-05: rgba(188, 210, 220, 0.05);
@@ -25,6 +25,7 @@
         --dropcap: var(--c-yellow);
         --tldr-text: var(--c-grey);
         --code-bg: var(--shadow);
+        --landing-list-heading: var(--c-yellow);
 	}
 }
 @media (prefers-color-scheme: light) {
@@ -66,9 +67,14 @@
 	color-scheme: light dark;
 
 	--base-font-size: 17px;
+    /*
 	--copy-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--heading-primary: 'Playfair Display', serif; 
 	--sans-serif: 'Raleway', var(--copy-body);
+    */
+    --sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --heading-primary: 'EB Garamond', var(--sans-serif);
+    --copy-body: var(--sans-serif);
 	--monospace: Menlo,Roboto Mono, 'Andale Mono WT', "Andale Mono", Consolas, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
  
 	//Fonts & Spacing • Golden Section 1.618
@@ -88,8 +94,8 @@
 
 	//Font Displays
 	--f-normal:         	400;
-	--f-medium:         	700;
-	--f-heavy:          	900;
+	--f-medium:         	400;
+	--f-heavy:          	800;
 	--f-emphasis:       	italic;
 
 	--image-opacity: 		brightness(.8) contrast(1.2);
