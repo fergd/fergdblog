@@ -1,7 +1,7 @@
 ---
-layout: article
+layout: article-2
 title: "Using a Raspberry Pi 4 as a Plex Server"
-subtitle: How to install a Plex server on a Raspberry Pi 4
+subtitle: Installation, lessons, enhancements, and tweaks for running the Plex server on a Raspberry Pi.
 permalink: /articles/Plex-Media-Server-on-Raspberry-Pi-4
 group: articles
 date: 2020/01/02
@@ -10,7 +10,6 @@ published: true
 major-category: How-To
 parent: articles
 overview: true
-cs-objective: Bring design and feature clarity to a walkie-talkie app which addresses a user need.
 ---
 
 # Parts & Hardware

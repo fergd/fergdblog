@@ -10,17 +10,12 @@ published: true
 resume-section: 'zoll'
 role: User Experience Strategist
 major-category: Product Leadership
+tldr:
+ - The purpose of mapping out a design flow and sharing it is to illustrate how it <em>can</em> be done, and perhaps spark inspiration for other teams
+ - Design flows like this are not intended to be a rigid law
+ - Not all teams and companies will operate the same way, nor should they because teams contain humans
 ---
-<div class="tldr">
-<h2>TL;DR</h2>
-<ul>
-    <li>The purpose of mapping out a design flow and sharing it is to illustrate how it <em>can</em> be done, and perhaps spark inspiration for other teams</li>
-    <li>Design flows like this are not intended to be a rigid law</li>
-    <li>Not all teams and companies will operate the same way, nor should they because teams contain humans</li>
-</ul>
-</div>
-
-A user experience designer's role on a team can seem ambiguous to teammembers sometimes. It's useful to put an image with the concepts, which is what's happening here. This illustrates how the UX role(s) are woven into every aspect of the development cycle. In this case, this is for a scrum team that has adopted a dual-track development style.
+<span class="dropcap">A</span> user experience designer's role on a team can sometimes seem ambiguous to teammembers. It's useful to put an image with the concepts, which is what's happening here. This illustrates how the UX role(s) are woven into every aspect of the development cycle. In this case, this is for a scrum team that has adopted a dual-track development style.
 
 When I make these diagrams, I intend for them to be references, not law. There are few connecting lines (that would indicate a rigid flow) because some features/products may require all or only some of the steps in each phase. As with everything in Agile development, room must be given for team style and feature need.
 <figure>
@@ -45,23 +40,25 @@ The UX Strategy Design Flow is presented as a loose flowchart and structured in 
 At the beginning , the first swimlane is referred to as “strategy”. At this point, there has been two primary types of research that’s been performed: task analysis and contextual inquiry. These are common forms of initial research that are used to influence a product feature’s direction. The chart shows that discovered information flowing into a user’s persona. The user persona is there to say, “for this specific person, these are the things they need to accomplish their tasks.”
 
 After the flow of info has been tied to a persona, the Strategy phase technically begins where the UX strategist crafts, along with the team input and feedback, the ideas and possible solutions for a given user challenge. The steps showing in the diagram indicate some or all of the following things can be done:
-- Discover session with the team
-- Whiteboarding
-- User flows
-- Qualitative and/or quantitative research
-
+<ul class="inside">
+<li>Discovery session with the team</li>
+<li>Whiteboarding</li>
+<li>User flows</li>
+<li>Qualitative and/or quantitative research</li>
+</ul>
 ### Design
 
 Once the strategy phase has been brought to a logical conclusion or transition point, the design phase typically begins. This phase is usually only just ahead of when the design would actually get developed, typically about one sprint. Commonly in this phase a UX strategist will work with various members of the team providing. Items in this stage of the diagram include:
-- Wireframes
-- System flows
-- Mockups
-- Design testing
-- User story creation
-- Documentation if necessary
-- Run team buy-in meeting
-- Some or all of these steps may be done in this phase. It simply depends on what the particular feature needs. 
-
+<ul class="inside">
+<li>Wireframes</li>
+<li>System flows</li>
+<li>Mockups</li>
+<li>Design testing</li>
+<li>User story creation</li>
+<li>Documentation if necessary</li>
+<li>Run team buy-in meeting</li>
+<li>Some or all of these steps may be done in this phase. It simply depends on what the particular feature needs.</li>
+</ul>
 ### Development
 
 The final phase is the actual development sprint. It’s demonstrated that UX works closely with development and QA to assist, answer questions, updated designs if necessary, entirely through the development cycle. Once development and QA is completed, the final necessary step is to get UX’s sign-off that the design meets the user’s needs as expected. 

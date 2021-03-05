@@ -1,6 +1,22 @@
-pre{
-	background: var(--gray-darken-6);
-	color: var(--gray-lighten-3);
-	padding: var(--scale-1);
-	font-weight: normal;
+pre.has-code{
+	font-family: var(--monospace);
+	background: var(--shadow);
+	color: var(--code);
+	padding: var(--ms-1);
+	font-weight: var(--f-normal);
+	border-radius: var(--d-radius-tiny);
+	white-space: break-spaces;
+}
+code,
+.highlight{
+	color: var(--text-default);
+	background: var(--ins);
+	font-family: var(--monospace);
+}
+del {
+    background: var(--del);
+}
+ins,
+code.in-context {
+    background: var(--ins);
 }
