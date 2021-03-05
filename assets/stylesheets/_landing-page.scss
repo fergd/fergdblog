@@ -72,6 +72,7 @@ p.label{
             border-bottom: var(--d-border);
             display: flex;
             justify-content: space-around;
+            overflow: hidden;
             img{
                 max-width: 100%;
                 margin-bottom: -3px;
