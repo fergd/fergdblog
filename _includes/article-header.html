@@ -1,28 +1,34 @@
 <div class="article-header-container">
     {% if page.major-category %} 
-    <p class="subtitle text--all-caps">{{page.major-category}}</p>
+    <p class="label">{{page.major-category}}</p>
     {% endif %} 
-    <h1>{{page.title}}</h1>
+    <h1 {% if page.shrink-heading == true %}class="shrink-heading"{% endif %}  >{{page.title}}</h1>
+    <p class="authorship">
     {% if page.author %} 
-    <p>{{page.author}}</p>
+    {{page.author}}
     {% endif %} 
+    {% if page.author && page.date %}&bull;{%endif%}
+    {% if page.date %} 
+    {{page.date | date: "%Y"}}
+    {% endif %} 
+    </p>
     {% if page.purpose %} 
     <p>{{page.purpose}}</p>
     {% endif %} 
     <hr>
-    {% if page.date %} 
-    <small>Published {{page.date | date: "%Y"}}</small>
-    {% endif %} 
     {% if page.role %} 
-    <p class="text--all-caps">Role: {{page.role}}</p>
+    <p class="">Role: {{page.role}}</p>
     {% endif %} 
     {% if page.header-image %} 
+    <div class="stick-em">
     <img srcset="{{page.header-image-320w}} 400w,
                  {{page.header-image-480w}} 600w,
                  {{page.header-image-800w}} 768w,
                  {{page.header-image}} 1024w" 
-                 
-                 src="{{page.header-image}}" alt="{{page.header-image-alt}}"
-                 class="article--header-image">
+                 src="{{page.header-image}}" 
+                 alt="{{page.header-image-alt}}"
+                 class="article--header-image"
+                 data-bg="">
+             </div>
     {% endif %} 
 </div>

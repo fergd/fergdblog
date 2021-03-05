@@ -1,0 +1,11 @@
+<div class="education-container">
+    <div>
+        <h1>Education</h1>
+        {% for ed in site.data.resume-education %}
+        <section>
+            <h2 class="shrink-lines">{{ed.institution}}</h2>
+            <p>{{ed.year}} • {{ed.certification}}</p>
+        </section>
+        {% endfor %}
+    </div>
+</div>

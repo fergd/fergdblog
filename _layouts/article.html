@@ -3,19 +3,22 @@ layout: default
 ---
 <article class="article--wrapper">
     <header class='article--header'>
-        {% include article-header.html %}
+    {% include article-header.html %}
+    {% if page.tldr %}
+    {% include tldr.html %}   
+    {% endif %}
+    {% if page.toc %}
+    {% include toc.html %}
+    {% endif %}   
     </header>
     <div class="article--content">
         {% if page.subtitle %}
-        <blockquote class="article--blockquote">
-            <p>{{page.subtitle}}</p>
-        </blockquote>
+        <p class="callout">{{page.subtitle}}</p>
         {% endif %}
         <div class="article--content--body">
         	{{content}}
+            {%include circles.html%}
         </div> 
+
     </div>
-    {% if page.published == true %} 
-    {% include article-footer.html %} 
-    {% endif %}
 </article>

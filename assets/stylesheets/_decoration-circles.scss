@@ -1,0 +1,23 @@
+.circles-container {
+    display: flex;
+    flex-direction: row;
+    div {
+        width: var(--ms0);
+        height: var(--ms0);
+        border-radius: 100%;
+        &:first-of-type {
+            background: var(--text-default);
+        }
+        &:nth-of-type(2) {
+            background: var(--accent);
+        }
+        &:nth-of-type(3) {
+            background: var(--color-splash);
+        }
+    }
+}
+.logo-container{
+    .circles-container{
+        margin-left: var(--ms-2);
+    }
+}

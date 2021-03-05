@@ -1,0 +1,10 @@
+.article--footer{ 
+	margin-top: var(--ms2);
+}
+@media all and (min-width: 1025px) {
+    .article--footer{
+        grid-column: 1 / 7;
+        padding-left: var(--ms0);
+        text-align: center;
+    }
+}

@@ -1,21 +1,11 @@
 ---
 layout: article
 title: Work
-sort-order: 0
 permalink: /work/
+sort-order: 1
+group: work
 navpage: true
 major-category: Doing the Diligent
+purpose: A collection of case studies & work from over the years.
 ---
-<ul class="articles-landing--list">
-    {% for post in site.posts %}
-    {% if post.group == 'work' %}
-    <li>
-        <a href="{{ post.url }}"> 
-            <small class="text--all-caps">{{post.date | date: "%Y"}} | {{ post.major-category}}</small>
-            <h2 class="article-list--heading">{{ post.title }}</h2>
-            <p>{{post.subtitle}}</p>
-        </a>
-    </li>
-    {% endif %} 
-    {% endfor %}
-</ul>
+{% include landing-lists.html %} 
