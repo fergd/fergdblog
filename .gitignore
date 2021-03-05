@@ -6,3 +6,4 @@
 /dist
 .publish
 **.publish/
+Gemfile.lock
