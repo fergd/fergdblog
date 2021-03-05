@@ -13,4 +13,11 @@
         position: -webkit-sticky;
         top: var(--ms0);
     }
+    .container-tiles{
+    	display: flex;
+    	justify-content: space-between;
+    	figure{
+    		margin: var(--ms0);
+    	}
+    }
 }
