@@ -72,7 +72,7 @@ hr {
     border: 0;
     margin: var(--ms0) 0;
 }
-ul {
+ul,dl {
     li::before {
         content: '\2022';
         font-family: var(--heading-primary);

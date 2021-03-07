@@ -6,7 +6,7 @@ permalink: /articles/Plex-Media-Server-on-Raspberry-Pi-4
 group: articles
 date: 2020/01/02
 author: Christan Fergus
-published: false
+published: true
 major-category: How-To
 parent: articles
 overview: true
@@ -20,7 +20,7 @@ toc:
  - <a href="#setup-pi">Set up a Raspberry Pi 4 from scratch</a>
  - <a href="#linux-config">Configure your Linux environment</a>
  - <a href="#plex-install">Plex installation</a>
- - <a href="#tuning">Tuning Plex</a>
+ - <a href="#up-to-date">Keeping Up-To-Date</a>
 ---
 <section>
     <p>Plex is a fantastic way to watch and share all of your media with one powerful tool. Even better, it can be installed on a small footprint with a Raspberry Pi. If you like to tinker, this tutorial is for you. However, just because you can, doesn’t mean  you should. While the Pi is a great way to get Plex going, it doesn’t have the horse power to do lots of high quality simultaneous device streaming. That said, for most people, it will do the job nicely.</p>
@@ -49,11 +49,10 @@ toc:
         <li>Download <a href="https://www.raspberrypi.org/downloads/noobs/" rel="external" target="_blank">NOOBS</span></a></li>
         <li>Format your micro SD to FAT.<br>The Mac's <a href="https://support.apple.com/guide/disk-utility/welcome/mac" rel="external" target="_blank">Disk Utility</a> is an easy way to do it.</li>
         <li>Transfer Noobs onto the SD card.<br><strong>Note:</strong> Only transfer the files <em>inside</em> the downloaded folder. Noobs will not boot if you transfer the root folder over.</li>
-        <li>Insert the SD card into the Pi and turn it on<br>If the files were transferred correctly, the Pi will automatically boot up to a distro install screen </li>
-        <li>Choose <span class="highlight">Raspbian</span> and install.<br>Full or basic, is fine, I went with basic to preserve a little space and the fact I wouldn't be using any extra software.</li>
+        <li>Insert the SD card into the Pi and turn it on. If the files were transferred correctly, the Pi will automatically boot up to a distro install screen.</li>
+        <li>Choose <span class="highlight">Raspbian</span> and install. Either full or basic are fine. I went with basic to preserve a little space and the fact I wouldn't be using any extra software.</li>
         <li>Follow all the prompts making sure to change your default pi password, set up wifi, download any updates, etc.</li>
-        <li>Finally, enable <span class="highlight">SSH</span> via the GUI to enable remote access from another computer:<br>
-            <code class="in-context">Pi Menu>Preferences>Raspberry Pi Configuration>Interfaces>SSH=Enable</code><br>This is very handy if you end up having your setup in a hard-to-access location, or run it headless. In most cases, I do all my RP work over SSH since my Pi is located in an invonvinient place.</li>
+        <li>Finally, enable <span class="highlight">SSH</span> via the GUI to enable remote access from another computer: <span class="highlight">Pi Menu>Preferences>Raspberry Pi Configuration>Interfaces>SSH=Enable</span>.<br>This is very handy if you end up having your setup in a hard-to-access location, or run it headless. In most cases, I do all my RP work over SSH since my Pi is located in an invonvinient place.</li>
     </ol>
 </section>
 <section>
@@ -93,8 +92,8 @@ toc:
         <li>
             <p>Head to the <a href="https://www.plex.tv/media-server-downloads" rel="external" target="_blank">Plex download page</a> and grab the right version for your Linux distro. In our case, Raspbian is a Debian fork, so you want the Debian install. In addition, you want the right version for your architecture (the value you got in the last step).</p>
             <ul>
-                <li><code class="in-context">armhf</code> requires the "ARMv7" package</li>
-                <li><code class="in-context">arm64</code> requires "ARMv8"</li>
+                <li><span class="highlight">armhf</span> requires the <span class="highlight">ARMv7</span> package</li>
+                <li><span class="highlight">arm64</span> requires <span class="highlight">ARMv8</span> package</li>
             </ul>
             <p><em>Do not extract the downloaded package in the GUI, we'll do that via the command line.</em></p>
         </li>
@@ -112,220 +111,46 @@ toc:
                     <figcaption id="tut-bb" class="visually-hidden">Code example that shows the command to change the default Plex user.</figcaption>
                 </figure>
             </li>
-        <li>In the file, locate the line reading, <pre><code class="in-context">PLEX_MEDIA_SERVER_USER=plex</code></pre> and change the user from <code class="in-context">plex</code> to your user name (which is probably <code class="in-context">pi</code>). <pre><code class="in-context">PLEX_MEDIA_SERVER_USER=[YOURUSERNAME]</code></pre>.</li>
-        <li>Save your changes and exit out. If you're in Nano and not sure how to do so:
-            <ul>
-                <li><code class="in-context">ctrl+x</code></li>
-                <li><code class="in-context">y</code></li>
-                <li><code class="in-context">enter</code></li>
-            </ul>
-        <li>Once everything is installed, in your browswer, navigate to <code class="in-context">https://127.0.0.1:32400/web</code> where you should see the glorious Plex logo appear!</li>
+        <li>In the file, locate the line reading, <code class="in-context">PLEX_MEDIA_SERVER_USER=plex</code> and change the user from <code class="in-context">plex</code> to your user name (which is probably <code class="in-context">pi</code>). <code class="in-context">PLEX_MEDIA_SERVER_USER=[YOURUSERNAME]</code></pre>.</li>
+        <li>Save your changes and exit out. If you're in Nano and not sure how to do so: <span class="highlight">CTRL+X</span>, <span class="highlight">Y</span>, <span class="highlight">ENTER</span></li>
+        <li>Once everything is installed, in your browswer, navigate to <span class="highlight">https://127.0.0.1:32400/web</span> where you should see the glorious Plex logo appear!</li>
         <li>It's now time to have Plex discover your content. Connect your hard drive(s) to the Pi if you haven't already.</li>
         <li>
-            <p>Follow the setup steps on the Plex server site. At some point, it will ask you to set up your content libraries. This is where you're going to find out if you need to do some harddrive mapping.</p>
+            <p>Follow the setup steps on the Plex server site that you just navigated to. At some point, it will ask you to set up your content libraries. This is where you're going to find out if you need to do some harddrive mapping.</p>
             <p>Go ahead and choose the type of library you want to set up (movies, music, TV, etc.) and navigate to the harddrive that contains the files.</p>
-            <p>If you can see your hard drive contents you're in business and can <a href="#system-configs">skip the next section.</a> If you cannot, continue on. There is more work to be done.</p>  
+            <p>If you can see your hard drive contents you're in business. If you cannot, there is more work to be done. You must manually map your drives. For information on how to do that, check out these resources: 
+            <ul>
+                <li><a href="https://tecadmin.net/mount-and-unmount-filesystem-in-linux/" rel="external" target="_blank">Mount and Unmount Linux Filesystem</a></li>
+                <li><a href="https://customerhelp.co.za/linux/ubuntu/correctly-auto-mount-seagate-exfat-external-usb-drive-ubuntu-permanent-mounting.html" rel="external" target="_blank">Correctly Auto-Mount Harddrives</a></li>
+            </p>  
         </li>
     </ol>
 </section>
 
-<section id="setup-hd">
-    <h1>Map Your Hard Drives</h1>
-    <p>Because of the way Linux handles permissions, Plex most likely does not have permission to see into your harddrives. What you need to do is map your harddrives to a new location that has the correct permissions so Plex can see the content.</p>
-    <ol>
-        <li>First off, we are going to use the Nano text editor to change the default Plex user:
-            <figure aria-labelledby="tut-ca">
-                    <pre class="has-code">sudo nano /etc/default/plexmediaserver</pre>
-                    <figcaption id="tut-ca" class="visually-hidden"></figcaption>
-                </figure>
-            Then we want to change the line that says, 
-        </li>
-
-    </ol>
-
-15.  
-    1. open the PMS file
-    ```
-    sudo nano /etc/default/plexmediaserver 
-    ```
-    2. on the line, `PLEX_MEDIA_SERVER_USER=plex`, change the user from “`plex`” to “`YOURUSERNAME`” 
-    3. Save the changes
-16. Elevate to root
-```
-sudo -s
-```
-17. Obtain your harddrive’s UUID. This command will give IDs for all drives including internal drives:
-```
-blkid
-```
-18. For however many harddrives you are connecting to be accessed by Plex, you have to set up separate mounting points. If there is a way to bulk do this, I don’t know it, so you have to run through these next steps for each HDD. Create your mount point:
-```
-sudo mkdir -p /media/[CUSTOMFOLDER]
-```
-19. Edit your fstab file. WARNING! Don’t screw this up or you’ll basically brick your Raspbian installation and have to reinstall everything and start over! 
-```
-nano /etc/fstab
-```
-20. You will see something like this:
-```
-proc            /proc           proc    defaults          0       0
-/dev/XXXXXXXXX  /boot           vfat    defaults          0       2
-/dev/XXXXXXXXX  /               ext4    defaults,noatime  0       1
-# a swapfile is not a swap partition, no line here
-#   use  dphys-swapfile swap[on|off]  for that
-```
-At the very end of the file, create a line for each mapped hard drive like so:
-```
-UUID=XXXXXXXXXXXXXXXXX /media/[CUSTOMFOLDER1] ntfs-3g permissions,auto 0 0
-UUID=XXXXXXXXXXXXXXXXX /media/[CUSTOMFOLDER2] ntfs-3g permissions,auto 0 0
-```
-21. You must now mount your hard drive locations. You must do this for each drive you have connected
-```
-sudo mount /media/[CUSTOMFOLDER]
-```
-22. Ensure plex can read the files: 
-```
-sudo chown -R [USER]:[USER] /media/[CUSTOMFOLDER]
-```
-23. Repeat steps as needed for each drive. Head back over to Plex in your browswer. The contents of each drive will now show up as available in Plex. From here, you can follow the intuitive steps in Plex to set up your library. 
-
-
-
-
 
 </section>
 
-<section id="system-configs" class="tut--content">
-<h1>System Configurations</h1>
+<section id="up-to-date" class="tut--content">
+<h1>Stay Up-To-Date</h1>
+<p>Plex frequently releases updates to the server. The easiest way to stay up-to-date is to periodically run an update command. For this, I went ahead and created a bash script so I wouldn't have to run everything manually. The script involves these commands:
+    <figure aria-labelledby="tut-ca">
+        <pre class="has-code">#!/usr/bin/env bash
+# runs a full system update and install
 
+sudo apt update -y
+sudo apt full-upgrade -y
+sudo apt clean
+sudo apt autoclean
+sudo apt autoremove</pre>
+        <figcaption id="tut-ca" class="visually-hidden">my bash script</figcaption>
+    </figure>
+</p>
+<p>There may be an occasion where you need to start, stop, or restart the Plex server. You can do so with these commands:
+    <figure aria-labelledby="tut-cb">
+        <pre class="has-code">sudo service plexmediaserver start</pre><br>
+<pre class="has-code">sudo service plexmediaserver stop</pre><br>
+<pre class="has-code">sudo service plexmediaserver restart</pre>
+        <figcaption id="tut-cb" class="visually-hidden">Managing the Plex server status</figcaption>
+    </figure>
+    <p>This tutorial only scratches the surface of how you can install and tweak Plex. If you like to get your hands dirty, it's a fun project to tweak and maintain.</p>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<div class="tut--references">
-    REFERENCES
-</div>
--->
-
-
-
-
-
-{% comment %} 
-
-# Parts & Hardware
-## Required
-*   Raspberry Pi 4 (4GB RAM recommended)
-*   USBC power adapter
-*   Mini HDMI to HDMI cable
-*   External HDD
-*   Micro SD Card (minimum 8GB)
-
-## Optional
-*   RP4 Case
-*   RP4 Fans and heatsinks
-
-### Recommended to make life easier
-Get a Raspberry Pi kit with power cable, fans, HDMI micro cables, etc. ~$100
-
-# Software
-*   Noobs
-*   Raspbian
-*   Plex
-
-# Installation Steps
-
-1. Download [Noobs](https://www.raspberrypi.org/downloads/noobs/)
-2. Format your SD to FAT
-3. Transfer Noobs onto the SD card. Only transfer the files inside the downloaded folder. Noobs will not boot if you transfer the root folder over. 
-4. Throw the SD card into the Pi and boot up. If the files were transferred correctly, the Pi will automatically boot up to a distro install screen. 
-5. Choose “Raspbian” and install, either full or basic, it shouldn’t matter
-6. After successful install and reboot, set up the OS following the prompts,
-Change default pi password, set up wifi, download any updates, etc.
-7. **Optional:** to make your life easier, enable SSH access (via Raspbian GUI):
-Pi Menu>Preferences>Raspberry Pi Configuration>Interfaces>SSH=Enable
-8. Ensure HTTPS transport package is installed (it most likely is for the latest versions of Noobs & Raspbian): 
-```
-sudo apt-get install apt-transport-https
-```
-9. ntfs-3g is probably installed by default as well, but just in case, add the NTFS disc package 
-```
-sudo apt-get install ntfs-3g 
-```
-10. Download Plex for your Linux distro:
-    1. First, determine whether you need the ARMv7 or the ARMv8 package: 
-    ```
-    dpkg --print-architecture 
-    ```
-    2. `armhf `requires the ARMv7 package
-    3. `arm64` requires ARMv8
-    4. Once determined, download the correct package from the [plex site](https://www.plex.tv/media-server-downloads/) but do not attempt to extract it once downloaded.
-11. Install the Plex server:
-```
-sudo dpkg -i [DOWNLOADED FILE, i.e /Downloads/plex_etc...] 
-```
-12. A quick way to ensure plex has been installed correctly and begin to access your server, go to [http://127.0.0.1:32400/web](http://127.0.0.1:32400/web) in your browser, you should see plex come up 
-13. Attach your hard drive(s) if you haven’t already
-14. Follow Plex’s setup steps and find out if you have more work ahead of you: 
-    1. When it’s time to set up your libraries, navigate to your hard drive. If you can see the contents, you are all set and can skip the rest of these steps
-    2. If you cannot see your hard drive contents, the external hard drive must be mapped to a new location so that plex can access its contents. If that's the case, continue on...
-15. Change the plex user as the first step in enabling Plex to access your hard drive content: 
-    1. open the PMS file
-    ```
-    sudo nano /etc/default/plexmediaserver 
-    ```
-    2. on the line, `PLEX_MEDIA_SERVER_USER=plex`, change the user from “`plex`” to “`YOURUSERNAME`” 
-    3. Save the changes
-16. Elevate to root
-```
-sudo -s
-```
-17. Obtain your harddrive’s UUID. This command will give IDs for all drives including internal drives:
-```
-blkid
-```
-18. For however many harddrives you are connecting to be accessed by Plex, you have to set up separate mounting points. If there is a way to bulk do this, I don’t know it, so you have to run through these next steps for each HDD. Create your mount point:
-```
-sudo mkdir -p /media/[CUSTOMFOLDER]
-```
-19. Edit your fstab file. WARNING! Don’t screw this up or you’ll basically brick your Raspbian installation and have to reinstall everything and start over! 
-```
-nano /etc/fstab
-```
-20. You will see something like this:
-```
-proc            /proc           proc    defaults          0       0
-/dev/XXXXXXXXX  /boot           vfat    defaults          0       2
-/dev/XXXXXXXXX  /               ext4    defaults,noatime  0       1
-# a swapfile is not a swap partition, no line here
-#   use  dphys-swapfile swap[on|off]  for that
-```
-At the very end of the file, create a line for each mapped hard drive like so:
-```
-UUID=XXXXXXXXXXXXXXXXX /media/[CUSTOMFOLDER1] ntfs-3g permissions,auto 0 0
-UUID=XXXXXXXXXXXXXXXXX /media/[CUSTOMFOLDER2] ntfs-3g permissions,auto 0 0
-```
-21. You must now mount your hard drive locations. You must do this for each drive you have connected
-```
-sudo mount /media/[CUSTOMFOLDER]
-```
-22. Ensure plex can read the files: 
-```
-sudo chown -R [USER]:[USER] /media/[CUSTOMFOLDER]
-```
-23. Repeat steps as needed for each drive. Head back over to Plex in your browswer. The contents of each drive will now show up as available in Plex. From here, you can follow the intuitive steps in Plex to set up your library. 
-
-You're all set up! Enjoy your Plex server on the cheap!
-
-
-{% endcomment %} 

@@ -7,9 +7,10 @@
         --c-grey-50: rgba(188, 210, 220, 0.5);
         --c-grey-25: rgba(188, 210, 220, 0.25);
         --c-grey-05: rgba(188, 210, 220, 0.05);
-        --c-pale-red: rgba(255, 0, 0, 0.5);
-        --c-green: #005733;
-        --c-pale-green: PaleGreen;
+        --c-pale-red: rgba(255,97,69,0.2);
+        --c-red: rgba(255,97,69,1);
+        --c-green: rgba(126,211,33,1);
+        --c-pale-green: rgba(126,211,33,0.5);
         --c-pale-blue: #62cfcf;
 
         //Color Rules
@@ -21,7 +22,7 @@
         --color-splash: var(--c-yellow);
         --del: var(--c-pale-red);
         --ins: var(--c-pale-green);
-        --code: var(--c-pale-blue);
+        --code: var(--c-green);
         --dropcap: var(--c-yellow);
         --tldr-text: var(--c-grey);
         --code-bg: var(--shadow);
@@ -36,9 +37,10 @@
         --c-grey-50: rgba(42, 50, 62, 0.5);
         --c-grey-25: rgba(42, 50, 62, 0.25);
         --c-grey-05: rgba(42, 50, 62, 0.05);
-        --c-pale-red: rgba(255, 0, 0, 0.5);
-        --c-green: #005733;
-        --c-pale-green: PaleGreen;
+        --c-red: rgba(208,2,27,1);
+        --c-pale-red: rgba(255, 0, 0, 0.2);
+        --c-green: rgba(126,211,33,1);
+        --c-pale-green: rgba(126,211,33,0.5);
         --c-pale-blue: #62cfcf;
 
         //Color Rules
@@ -50,7 +52,7 @@
         --color-splash: var(--c-yellow);
         --del: var(--c-pale-red);
         --ins: var(--c-pale-green);
-        --code: var(--c-pale-blue);
+        --code: var(--c-green);
         --dropcap: var(--text-default);
         --tldr-text: var(--text-default);
         --code-bg: var(--c-grey);
