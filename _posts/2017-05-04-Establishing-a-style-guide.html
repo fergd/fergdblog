@@ -7,7 +7,8 @@ group: work
 date: 2017/05/04
 author: Christan Fergus
 major-category: Case Study
-published: false
+published: true
+parent: work
 ---
 <p>There is little I love more than designing, developing, and documenting. A style guide is the confluence of all three. I love them. This post highlights the style guide I created at my current company. Here I'll mainly cover the process, hitting just the high points. In another post, I will focus on the technical and discuss the way in which I built and utilized Jekyll to create the style guide.</p>
 <h2>Opportunity</h2>
@@ -16,24 +17,26 @@ published: false
 <p>The ideal way I wanted to implement this style guide was actually for it to be a pattern library—a library of code and design snippets, directly connected to the company codebase, from which a developer could pull live methods, controllers, etc. to be used in their own code. This was not to be for the first round, however, since the user experience team did not have a back end developer, nor did they have access to one in the company.</p>
 <p>Given that challenge, we shifted tactics and went full user-interface-user-experience-guide instead. This guide was to focus on UX patterns, UI design principles, and even content tone-of-voice and formatting. It was still destined to be a valuable tool, helping get all the teams on the same design-page.</p>
 <p>As stated above, the UX team had no back-end developers. We also had no access to developer time and talent because resources were stretched thin. Because of these constraints, I determined:</p>
-<ul>
+<ul class="inside">
     <li>The style guide should live outside the company’s codebase so it does not depend on anyone or any stack for deployment</li>
     <li>The style guide should be fairly language agnostic, so it can be picked up at any time and augmented or folded into another codebase</li>
     <li>It must be (somewhat) easy for a designer with basic coding skills to contribute</li>
     <li>It must have clear documentation so the information is not siloed</li>
 </ul>
+<br>
 <p>Given this criteria, I built the style guide upon the Jekyll framework. Jekyll is a static website generator, which was a perfect tool for the job. A static website can be hosted anywhere, is generally light-weight, has few dependencies for deployment, and has virtually zero security issues since there are no databases or user information to compromise. While there were plenty of other options, I preferred Jekyll since I’ve spent my last few years working with it extensively.</p>
 <p>We broke the guide into three primary sections.</p>
 <h3>Design Styles</h3>
 <p>Design Styles contained the meat of the style guide. In it, the style components were broken into three sections:</p>
-<dl>
-    <dt>Foundation</dt>
-    <dd>These were guides regarding the basics of the site. Color, typography, formatting, etc.</dd>
-    <dt>Components</dt>
-    <dd>These guides focused on UI components: form controls, breadcrumbs, etc.</dd>
-    <dt>Behaviors</dt>
-    <dd>Primarily UX patterns that involved setting guidelines around how a user interacted with the website components.</dd>
-</dl>
+<ul class="inside">
+    <li>Foundation<br>
+    These were guides regarding the basics of the site. Color, typography, formatting, etc.</li>
+    <li>Components<br>
+    These guides focused on UI components: form controls, breadcrumbs, etc.</li>
+    <li>Behaviors<br>
+    Primarily UX patterns that involved setting guidelines around how a user interacted with the website components.</li>
+</ul>
+<br>
 <figure>
     <img src="http://res.cloudinary.com/fergd/image/upload/v1493956154/jk-color-compressor.png" alt="">
     <figcaption>The Style Guide shown displaying color information</figcaption>
@@ -52,9 +55,3 @@ published: false
 <p>We built the style guide for developers, and we wanted and needed their input. My philosophy from the start was that this was the collective’s guide, so everyone who wanted to have a say could have a say. We provided a feedback link that was hosted by Survey Monkey, in which we provided a simple comment box for their feedback and/or suggestions.</p>
 <h2>Results &amp; Beyond Release</h2>
 <p>We released the guide to a warm reception from the company and developers. Many devs had been asking for something like what we produced, and were happy to have it. The first iteration of the guide was in no means exhaustive, however. For the sake of time, and the need to ship something, we released with a handful of well-crafted guides, but with a mountain of content still in the backlog.</p>
-<p>I am expecting two specific results as the style guide matures:
-    <ol>
-        <li>The guide becomes a regular, habitual aspect of a developer’s toolkit</li>
-        <li>It evolves into a living style and pattern library, with code and UI living in harmony.</li>
-    </ol>
-</p>
