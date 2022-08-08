@@ -91,8 +91,8 @@ p.callout {
     font-family: var(--sans-serif);
     line-height: 1.2;
     border-top: var(--d-border);
-    border-bottom: var(--d-border);
-    padding: var(--ms1);
+    // border-bottom: var(--d-border);
+    padding: var(--ms1) var(--ms1) var(--ms1) 0;
     margin: 0 0 var(--ms1) 0;
 }
 blockquote {

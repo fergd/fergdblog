@@ -1,8 +1,16 @@
 - company: 'Snapdocs'
   date-span: 'May 2021 - Present'
   industry-type: 'Mortgage Lending'
-  current-role: 'Senior Product Designer'
-  callout: 'I apply my experience of working within complex systems to design a series of systems that aide in discovering and identifying loan document errors with the goal of reducing the time it takes for a loan to get funded.'
+  current-role: 'Lead Product Designer'
+  past-role:
+    - 'Senior Product Designer'
+  callout: 'I apply my experience of working within complex systems to design a series of solutions which aid in identifying loan errors, in turn reducing the time and expense it takes for a loan to get funded.'
+  experience: 
+    - Automation and Document Intelligence group (containing 5 products & tools) lead 
+    - Sets the design direction for AI-driven tools, both customer-facing and internal
+    - Strategic partner with product and engineering leads
+    - Technical and people manager; mentor for those inside the company wanting to move into UX; authored a reusable mentoring plan
+    - Provides continual cross-department critiques to ensure design team and output is world-class
 - company: 'ZOLL'
   date-span: 'July 2016 - April 2021'
   industry-type: 'Healthcare'
@@ -14,17 +22,11 @@
   experience: 
     - 'Product: ZOLL Dispatch, SaaS map-based computer aided dispatch system (designed from ground-up and recently launched)'
     - 'Product: ZOLL Respond, iOS/Android paramedic/EMT mobile toolset for comms, navigation, & assignments'
-    - 'I am part of a small cross-functional team of UX Architects who provide an internal consultant service by leading discovery workshops to aide teams in finding the right solutions to their user’s challenges'
-    - 'UX Architect for all SaaS products in the Communications Group'
-    - 'Designer and a voice at the table in product strategy for ZOLL Dispatch, a SaaS EMS dispatch application which contains features and solutions entirely informed by user research and task analysis'
-    - 'Designer for the innovative mobile application, Respond, which aides paramedics in the field,  and has proven consistently profitable as we continue to iterate on the product'
-    - 'I utilize trusted methodologies and tools (such as story mapping and user flows) to illustrate how users move through systems. Doing so uncovers most unexpected scenarios that enable me to design for all use-cases,  thus reducing developer churn'
-    - 'I partner with the PO & PM, and am an integral part of product design'
-    - I gather qualitative & quantitative research, market research, and analysis then recommend, inform, and promote a user-centered product strategy'
-    - 'I understand how business works—that profitability & market leadership come from the union of business vision and the meeting customer needs—and work hard to cultivate that union'
-    - 'Valuing communication and transparency, I regularly give user-advocacy talks and present data research to my scrum team, and the company at large'
-    - 'As an active member of a cross-functional, distributed UX team, I build and cultivate relationships across the company and promote UX design patterns'
-    - 'I mentor junior team members, am a leader on my teams, and a servant leader to all'
+    - UX Architect for all SaaS products in the Communications Group, setting vision and strategy alongside PM
+    - Integral founder & architect for ZOLL Dispatch, a SaaS EMS dispatch application which contains features and solutions entirely informed by user research and task analysis
+    - Pioneered a component and role-based dispatching system which A) meant a single system could be tailored to specific user roles, and B) that system was inherently scalable from a product and engineering standpoint
+    - Valuing communication and transparency, I regularly gave user-advocacy talks and present data research to my scrum team, and the company at large
+    - Mentor to junior team members, a leader on product teams, and a servant leader to all
   related-work: true
   co: zoll
 - company: 'Front Range Community College'
@@ -34,29 +36,23 @@
   callout: 'I’m passionate about teaching, coaching, & mentoring human-focused design professionals.'
   experience: 
     - Taught a 200-level web development course as part of the Multimedia & Graphic Design department
-    - Designed my own curriculum
-    - Managed, instructed, & guided classes with up to 25 students
-    - Emphasized & focused on real world use cases by analyzing websites & sharing my own industry experience
-    - Focused on solid design guidelines and principles focusing on elements and principles of design
+    - Designed my own curriculum focused on solid design guidelines and principles focusing on elements and principles of design
     - Approached the course with a holistic view from a professional’s perspective
     - Upon completion of the course, students had an expanded understanding and ability to craft the foundations of the web experience, and a solid understanding of what it will take to be a successful web designer
 - company: "Door To Door Organics"
   date-span: 'March 2011 - May 2016'
   industry-type: 'Grocery E-Commerce'
-  current-role: 'Lead User Interface Developer'
+  current-role: 'Lead Front End Developer'
   past-role:
     - 'Senior Web Designer'
     - 'Web Designer'
   callout: 'I brought unity to the customer’s shopping experience by providing an intuitive journey that spanned from their devices to the point the groceries arrived on their doorsteps, which in turn grew company profitability.'
   experience: 
-    - Led the front-end team that was responsible for the website user experience, interface design, and front end development
+    - Lead developer of the front-end team, responsible for the website user experience, interface design, and front end development 
     - Was responsible for building, guiding and defining architectural direction
-    - I worked with visual designers, software developers, QA, product managers, & stakeholders to create and ensure our website was easy-to-use, engaging for the customer, and met business needs
     - Major components of my job included wireframing, designing, coding, and maintaining front-end architecture and patterns
     - Driver in the vision of the front end from an interface and code perspective that ensured quality and emphasizes best-practices
     - I utilized data from user testing, analytics, and behavioral metrics to drive design and product decisions
-    - Discovered my love for user-centered-design as I dug into the "why’s" behind requests and needs, not just the “what’s”
-    - Mentored junior team members, was a servant leader to all
   related-work: true
   co: dtdo
 - company: 'Fergus Design'
