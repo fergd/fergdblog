@@ -6,9 +6,8 @@
     - 'Lead Product Designer'
   callout: 'Leader of the automation group focused on machine learning in lending document quality control'
   experience: 
-    - Reduced the time it takes a loan officer to check documents for errors by 15 minutes per loan, saving users 8-15 hours on average of costly time each month
-    - Collaborated with multiple teams to Implement error reports as part of existing processes enabling us to charge ~$10 more per transaction
-    - Established user experience as an integral part of the product development process resulting in confidence to move forward with MVPs, demonstrably solving user challenges by uncovering unexpected opportunities in a different market segments
+    - Reduced the time it takes a loan officer to check documents for errors by 15 minutes per loan, saving users 8-15 hours per month of costly time
+    - Collaborated with cross functional teams to implement a system which provided immediate insight into closing errors, enabling us to charge approximately 35% more per transaction
   related-work: true
   co: snapdocs
 - company: 'ZOLL'
@@ -21,8 +20,8 @@
   callout: 'Strategic leader for green-field SaaS, mobile, and existing SaaS products'
   experience: 
     - Built a one-of-a-kind SaaS dispatch tool which saw 100% adoption with the 6 companies who tested the software
-    - Established design and development methodology focused on user roles in turn making the software infinitely scalable from day one
-    - By tracking usability scores, increased satisfaction with our dispatching software from an “F” grade for the old software to a “B” with the new
+    - As the senior user experience architect, I partnered with the engineering lead to design a system which brought release times down from 2 months to 2 weeks
+    - Created new dispatch software which increased user satisfaction by 80%
   related-work: true
   co: zoll
 - company: 'Front Range Community College'
@@ -30,9 +29,6 @@
   industry-type: 'Higher Education'
   current-role: 'Instructor'
   callout: 'Taught a 200 level web development course fueled by real world scenarios and experience'
-  experience: 
-    - Taught Web Development 201 with as many as 25 students of all ages 
-    - For those pursuing a tech career, roughly 50% found jobs in the web development field
 - company: "Door To Door Organics"
   date-span: 'March 2011 - May 2016'
   industry-type: 'Grocery E-Commerce'
@@ -42,8 +38,8 @@
     - 'Web Designer'
   callout: 'Responsible for front end software architecture, people leadership, & a learnable ecommerce experience '
   experience: 
-    - Built a first-of-its-kind recipe site atop the existing grocery delivery service, allowing users to shop for ingredients from recipes, resulting in 40% increase in sales after 1 year
-    - As the first front end developer/designer, I grew the team from 1 to 5
+    - Led a team which built an innovative recipe site which integrated with existing grocery delivery service, resulting in a 40% increase in sales within 1 year
+    - As front end developer/designer, I grew the team from 1 to 5
   related-work: true
   co: dtdo
 - company: 'Fergus Design'
@@ -51,8 +47,6 @@
   industry-type: 'Small Business Development'
   current-role: 'Freelancer'
   callout: 'Coached, designed for, & supported small businesses and their online presence'
-  experience:
-    - Provided website services for small business customers, most of whom I formed a long-term working relationship with, creating repeat business 
 - company: The Early Years
   date-span: '2000 - 2008'
   industry-type: Various
