@@ -6,8 +6,8 @@
     - 'Lead Product Designer'
   callout: 'Leader of the automation group focused on machine learning in lending document quality control'
   experience: 
+    - Implemented a system which provides immediate insight into closing errors, enabling us to charge approximately 35% more per transaction, totalling $375K/month in additional revenue
     - Reduced the time it takes a loan officer to check documents for errors by 15 minutes per loan, saving users 8-15 hours per month of costly time
-    - Collaborated with cross functional teams to implement a system which provided immediate insight into closing errors, enabling us to charge approximately 35% more per transaction
   related-work: true
   co: snapdocs
 - company: 'ZOLL'
