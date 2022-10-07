@@ -86,14 +86,20 @@ p {
 p:not(.callout):not(blockquote>p):not(.label){
     max-width: var(--max-paragraph);
 }
-p.callout {
+p.callout,
+p.callout-resume {
     font-size: var(--ms1);
     font-family: var(--sans-serif);
     line-height: 1.2;
-    border-top: var(--d-border);
-    // border-bottom: var(--d-border);
-    padding: var(--ms1) var(--ms1) var(--ms1) 0;
+    
     margin: 0 0 var(--ms1) 0;
+}
+p.callout{
+    border-top: var(--d-border);
+    padding: var(--ms1) var(--ms1) var(--ms1) 0;
+}
+p.callout-resume{
+    padding: 0 var(--ms1) var(--ms1) 0;
 }
 blockquote {
     border-left: var(--d-border);

@@ -59,6 +59,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-gap: var(--ms2);
+        padding: 1.5em 0;
 
         &:not(:first-of-type) {
             margin-top: var(--ms3);
