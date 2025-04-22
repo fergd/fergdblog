@@ -1,4 +1,20 @@
+<button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+
 <header class="site-header">
-{% include logo.html %} 
-{% include navigation.html %} 
+  <a href="/" class="site-title"><h1>Christan Fergus</h1></a>
+
+  {% capture 'current' %}{{page.parent}}{% endcapture %}  
+  <nav id="primary-nav" class="primary-nav" aria-label="Main Menu">
+    {% assign view = site.pages | sort: 'sort-order' %}
+    {% for item in view %}
+      {% if item.navpage %}
+        <div class="nav-item {% if item.url == page.url or item.group == {{current}} %}current{% endif %}">
+          <a href="{{item.permalink}}" {% if item.url == page.url or item.group == {{current}} %}class="current" aria-label="Current page: {{page.title}}"{% endif %}>{{item.title}}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+    <div class="nav-item">
+      <a href="https://www.linkedin.com/in/christanfergus" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
 </header>

@@ -1,41 +1,49 @@
-{% for job in site.data.resume-companies %} 
-<section class="job-history">
-	<header>
-		<h1 class="shrink-lines">{{job.company}}</h1>
-		<p>{{job.date-span}}</p>
-		<p>Industry: {{job.industry-type}}</p>
-		<hr>
-		<div class="timeline">
-			<h3>{{job.current-role}}</h3>
-			{% if job.past-role %} 
-			{% for role in job.past-role %} 
-			<h4>{{role}}</h4>
-			{% endfor %} 
-			{% endif %} 
-		</div>
-	</header>
-	<div>
-		<p class="callout">{{job.callout}}</p>
-		<h3 class="visually-hidden">Experience</h3>
-		<ul class="inside">
-			{% for item in job.experience %} 
-			<li class="nudge-bottom">{{item}}</li>
-			{% endfor %} 
-		</ul>
-	</div>
-	{% if job.related-work %} 
-	<aside>
-		<h4>Explore Related Work</h4>
-		<ul class="hide-bullets">
-			{% for post in site.posts %}
-			{% if post.resume-section == job.co %}
-			<li class="nudge-bottom">
-				<a href="{{post.permalink}}">{{post.title}}</a>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</aside>
-	{% endif %} 
+{% for job in site.data.resume-companies %}
+<section class="job-history {% if job.current %}current{% endif %}">
+  <div>
+    <h2 class="job-title">{{ job.company }}</h2>
+  </div>
+  <div>
+    <p>
+      {% assign start = job.date-start %}
+      {% assign end = job.date-end %}
+
+      {%- comment -%} FORMAT START DATE {%- endcomment -%}
+      {% if start.size == 4 %}
+        {{ start }}
+      {% elsif start.size == 7 %}
+        {{ start | date: "%B %Y" }}
+      {% else %}
+        {{ start | date: "%B %Y" }}
+      {% endif %}
+
+      &ndash;
+
+      {%- comment -%} FORMAT END DATE {%- endcomment -%}
+      {% if end == "present" %}
+        Present
+      {% elsif end.size == 4 %}
+        {{ end }}
+      {% elsif end.size == 7 %}
+        {{ end | date: "%B %Y" }}
+      {% else %}
+        {{ end | date: "%B %Y" }}
+      {% endif %}
+
+      <span class="date-range" data-start="{{ job.date-start }}" data-end="{{ job.date-end }}"></span>
+    </p>
+
+    {% if job.industry-type %}
+      <p>Industry: {{ job.industry-type }}{% if job.business-type%}, {{job.business-type}}{%endif%}</p>
+    {% endif %}
+  </div>
+
 </section>
-{% endfor %} 
+{% if job.bullets %}
+  <ul>
+    {% for bullet in job.bullets %}
+      <li>{{ bullet }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endfor %}

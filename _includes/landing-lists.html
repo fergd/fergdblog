@@ -1,14 +1,9 @@
-{% capture 'group' %}{{page.group}}{% endcapture %} 
-<ul class="articles-landing--list hide-bullets">
+<ul>
     {% for post in site.posts %}
-    {% if post.group == {{group}} %}
     <li>
         <a href="{{ post.url }}"> 
-            <p class="label">{{post.date | date: "%Y"}} &bull; {{ post.major-category}}</p>
             <h2>{{ post.title }}</h2>
-            <p>{{post.subtitle}}</p>
         </a>
-    </li>
-    {% endif %} 
+</li>
     {% endfor %}
 </ul>

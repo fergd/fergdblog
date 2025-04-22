@@ -1,0 +1,361 @@
+---
+---
+@font-face {
+  font-family: 'Xenon-regular';
+  src: url('https://res.cloudinary.com/fergd/raw/upload/v1745009957/fonts/MonaspaceXenon-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neon-regular';
+  src: url('https://res.cloudinary.com/fergd/raw/upload/v1745010061/fonts/MonaspaceNeon-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neon-bold';
+  src: url('https://res.cloudinary.com/fergd/raw/upload/v1745010057/fonts/MonaspaceNeon-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*::selection,
+*::-moz-selection {
+    background-color: var(--color-yellow);
+}
+:root {
+    --base-font-size: 15px;
+    --heading-font: "Schibsted Grotesk", 'Helvetica', sans-serif;
+    --body-font: 'Neon-regular', monospace;
+    --impact-font: 'Syne Mono', monospace;
+    --ms-2:                 0.4rem;
+    --ms-1:                 0.6rem;
+    --ms0:                  1rem;
+    --ms1:                  1.5rem;
+    --ms2:                  2.25rem;
+    --ms3:                  3.375rem;
+    --ms4:                  5rem;
+    --ms5:                  9rem;
+
+    --color-black: rgba(0,0,0,0.8);
+    --color-green: rgba(83, 79, 36, 1);
+    --color-yellow: #fdd452;
+    --color-beige: rgba(254, 220, 172, 0.5);
+    --color-bg: var(--color-beige);
+    --color-green-bg: var(--color-green);
+    --color-current: rgba(83, 79, 36, 0.4);
+
+    @media (min-width: 960px) {
+        --base-font-size: 21px;
+    }
+}
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.visually-hidden:focus {
+    clip: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: var(--space-default) 0;
+    text-align: center;
+    font-weight: 900;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+a[target]:after{
+    content:'';
+    display:inline-block;
+    vertical-align: baseline;
+    margin-left: 4px;
+    height:18px;
+    width:18px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQ4IiBoZWlnaHQ9IjQ0OCIgdmlld0JveD0iMCAwIDQ0OCA0NDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zODQgMEM0MTkuMyAwIDQ0OCAyOC43IDQ0OCA2NFYzODRDNDQ4IDQxOS4zIDQxOS4zIDQ0OCAzODQgNDQ4SDY0QzI4LjcgNDQ4IDAgNDE5LjMgMCAzODRWNjRDMCAyOC43IDI4LjcgMCA2NCAwSDM4NFpNMTYwIDExMkMxNDYuNyAxMTIgMTM2IDEyMi43IDEzNiAxMzZDMTM2IDE0OS4zIDE0Ni43IDE2MCAxNjAgMTYwSDI1NC4xTDExOSAyOTVDMTA5LjYgMzA0LjQgMTA5LjYgMzE5LjYgMTE5IDMyOC45QzEyOC40IDMzOC4yIDE0My42IDMzOC4zIDE1Mi45IDMyOC45TDI4Ny45IDE5My45TDI4OCAyOTZDMjg4IDMwOS4zIDI5OC43IDMyMCAzMTIgMzIwQzMyNS4zIDMyMCAzMzYgMzA5LjMgMzM2IDI5NlYxMzZDMzM2IDEyMi43IDMyNS4zIDExMiAzMTIgMTEySDE2MFoiIGZpbGw9IiM1MzRGMjQiLz4KPC9zdmc+Cg==);    background-repeate: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+html {
+    font-size: var(--base-font-size);
+    background-color: var(--color-bg);
+}
+body {
+    font-size: 100%;
+    font-family: var(--body-font);
+    margin:0;
+    min-height: 100vh;
+    max-width: 1900px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+/* LAYOUT */
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+div.body-content{
+    padding: var(--ms-1) var(--ms-1) var(--ms-1);
+}
+@media (min-width: 960px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    div.body-content{
+        padding: 0 var(--ms3) var(--ms3) var(--ms3);
+    }
+    
+}
+
+
+/* Default: hide nav and show toggle button under 960px */
+.nav-toggle {
+  display: block;
+  position: fixed;
+  top: var(--ms-1);
+  left: var(--ms-1);
+  z-index: 1000;
+  font-size: 1.5rem;
+  padding: var(--ms-1) var(--ms0);
+  background: var(--color-green);
+  color: var(--color-beige);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hide nav by default on small screens */
+#primary-nav {
+  display: none;
+}
+
+/* When nav-open class is on body, show the nav */
+body.nav-open #primary-nav {
+  display: block;
+}
+
+/* ≥960px: always show nav, hide toggle */
+@media (min-width: 960px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  #primary-nav {
+    display: block !important;
+  }
+}
+
+nav{
+    min-width: 300px;
+    border-bottom: 1px solid var(--color-black);
+}
+header.site-header h1{
+    font-size: var(--ms1);
+    margin: var(--ms1);
+}
+header a{
+    text-decoration: none;
+}
+nav div.nav-item{
+    border-top: var(--ms-2) var(--color-black) solid;
+}
+nav div.nav-item:first-of-type{
+    border-top: var(--ms0) var(--color-black) solid;
+}
+
+nav div.nav-item a{
+    color: var(--color-black);
+    font-family: var(--body-font);
+    text-decoration: none;
+    padding: var(--ms1);
+    display: block;
+    width: 100%;
+}
+div.nav-item.current,
+div.nav-item a.current{
+    background: var(--color-current);
+    border-color: var(--color-green-bg);
+    color: var(--color-black);
+}
+nav div.nav-item:hover,
+div.nav-item.current{
+    background: var(--color-yellow);
+}
+
+
+
+
+/* END LAYOUT */
+a{
+    color: var(--color-green);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+}
+
+h1{
+    font-family: var(--heading-font);
+    color: var(--color-black);
+    font-weight: 900;
+}
+h2,h3,h4,h5,h6{
+    font-family: helvetica;
+    margin: 0;
+}
+h1,h2{
+    font-style: normal;
+    line-height: 0.9;
+    
+}
+h1{
+    font-size: var(--ms4);
+    font-weight: 500;
+    letter-spacing: -0.09ch;
+}
+h2{
+    font-size: var(--ms3);
+    line-height: 0.9;
+    font-weight: normal;
+    letter-spacing: -0.05ch;
+}
+h3{
+    font-size: var(--ms1);
+    line-height: 1;
+}
+p{
+    font: var(--body-font);
+}
+}
+div>p{
+    line-height: 1.2;
+    font-size: var(--ms0);
+    text-indent: var(--ms2);
+}
+p.subtitle{
+    font-family: var(--impact-font);
+    background-color: var(--color-green-bg);
+    color: white;
+    display: inline-block;
+    padding: 0 var(--ms-1);
+}
+span.authorship{
+    font-size: var(--ms-1);
+    font-weight: 700;
+}
+p span.dropcap{
+    font-size: var(--ms3);
+    font-family: var(--heading-font);
+    line-height: 0.5;
+}
+img{
+    max-width: 100%;
+}
+p:last-of-type{
+    margin-bottom: var(--ms3);
+}
+/* HEADER */
+header.site-header{
+    border-bottom: 2px solid;
+}
+header.site-header>div{
+    padding: var(--ms2) var(--ms-2) 0 var(--ms1);
+}
+h1.site-header-heading{
+    font-size: var(--ms1);
+}
+
+/* END HEADER */
+
+div.site-intro,
+header.article-intro{
+    margin-bottom: var(--ms3);
+    h1,h2{
+        margin-bottom: 0;
+    }
+}
+footer{
+    padding: var(--ms2);
+    border-top: var(--ms0) var(--color-black) solid;
+}
+
+
+/* END NAV */
+
+
+.article--wrapper{
+    max-width: 960px;
+}
+
+
+
+
+/* PROFILE */
+.home-excerpt{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: var(--ms2);
+}
+article.profile{
+    display:flex;
+    flex-direction: column;
+}
+article.profile section{
+    margin-bottom: var(--ms4);
+}
+article.profile section h2{
+    margin-bottom: var(--ms1);
+}
+article.profile section p{
+    margin-bottom: var(--ms0);
+}
+/* END PROFILE */
+
+/* RESUME */
+article.resume-content{
+/*    max-width: 680px;*/
+    display: flex;
+    flex-direction: column;
+}
+section.job-history{
+/*    padding: var(--ms0) 0 0 0;*/
+    margin: 0 var(--ms5) var(--ms1) 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+/*    transform: rotate(-16deg);
+    transform-origin: top left;
+*/}
+section.job-history>div{
+    margin-right: var(--ms1);
+}
+section.job-history h2.job-title{
+    display: inline-block;
+}
+section.job-history h2.job-title{
+    background: var(--color-black);
+    color: white;
+    padding: var(--ms0);
+}
+section.job-history.current{
+    background: #7E3DD4;
+    color: white;
+}
+section.job-history.current h2.job-title{
+    background: #7E3DD4;
+}
+section.job-history p{
+}
+/* END RESUME */
+

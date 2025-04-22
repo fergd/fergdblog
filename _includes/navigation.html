@@ -1,9 +1,0 @@
-{% capture 'current' %}{{page.parent}}{% endcapture %}  
-<nav {% if is_footer == true %}id="footer-nav" aria-label="Site footer links and info"{% else %}aria-label="Main Menu" {% else %}id="primary-nav" {% endif %}>
-	{% assign view = site.pages | sort: 'sort-order' %}
-    {% for item in view %}
-    {% if item.navpage %}
-    <a href="{{item.permalink}}" {% if item.url == page.url or item.group == {{current}} %}class="current" aria-label="Current page: {{page.title}}"{% endif %}>{{item.title}}</a>
-    {% endif %}
-    {% endfor %}
-</nav>

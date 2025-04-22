@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-Thanks for having a look. Get in touch, christan.fergUX@gmail.com
--->
 {% include head.html %}
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7XW5TT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 	{% unless page.title == "landing" %} 
     <a href="#main-content" class="visually-hidden">Skip navigation</a>
     {% endunless %} 
-    {% include header.html %}
-    <main id="main-content" tabindex="-1">
-        {{ content }}
+    
+    <main id="main-content" tabindex="-1" class="main-layout">
+        {% include header.html %}
+        <div class="body-content">
+            {{ content }}
+        </div>
     </main>
-    {% unless page.title == 'landing' %}
     {% include footer.html %}
-    {% endunless %}
 </body>
-<script src="https://getinsights.io/js/insights.js"></script>
 <script>
-insights.init('NHufIdNZHHLFAGok');
-insights.trackPages();
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('nav-toggle');
+    const body = document.body;
+
+    if (toggleButton) {
+      toggleButton.addEventListener('click', function () {
+        const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+        toggleButton.setAttribute('aria-expanded', String(!expanded));
+        body.classList.toggle('nav-open');
+      });
+    }
+  });
 </script>
+
 </html>

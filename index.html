@@ -1,35 +1,23 @@
 ---
 layout: default
 title: Home
+page-title: 'Christan Fergus'
+page-blurb: 'A product design leader in Denver'
 ---
-<div class="container front-page">
-
-    <section class="item-2 lede">
-        <hr class="accent">
-        <h1>{{ site.author }}</h1>
-        <p class="label">{{site.current-title}}</p>
-        <hr class="accent">
-    </section>
-    <section class="big-image">
-        <img src="https://res.cloudinary.com/fergd/image/upload/v1614980970/fergdblog/hero.png" alt="A sampling of work combined together to show the breadth of the UX work Christan Fergus does">
-    </section>
-    <section class="item-3">
-        <h2>It's All About People</h2>
-        <p>As a leader in advocating for human beings, I bring empathy into product design, use the stories found in data to drive product direction, & craft meaningful designs that provide those humans with what they need to accomplish their tasks.</p>
-    </section>
-    <div class="item-3-image" data-bg="">
-        
-    </div>
-    <section class="item-4">
-        <h2>It's All About What I Do</h2>
-        <ul>
-            <li>discovering &amp; acting upon the right combination of business & user needs
-            <li>creating software that is accessible to all</li>
-            <li>enabling real people to accomplish their real tasks</li>
-            <li>educating software &amp; product professionals in the importance of designing &amp; developing for people</li>
-        </ul>
-    </section>
-    <div class="item-4-image" data-bg>
-        
-    </div>
+<div class="site-intro">
+<h1>Human, Designer, Maker</h1>
+<p class="subtitle">Denver, Colorado</p>
 </div>
+
+{% assign latest_post = site.posts.first %}
+
+<article class="home-excerpt">
+  <header class="article-intro">
+    <h2>{{ latest_post.title }}</h2>
+    <p class="subtitle">{{ latest_post.date | date: "%B %d, %Y" }}</p>
+  </header>
+  <div>
+    {{ latest_post.excerpt }}
+    <a href="{{ latest_post.url }}">Read more</a>
+  </div>
+</article>

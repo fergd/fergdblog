@@ -1,59 +1,44 @@
+- company: 'Homebase'
+  date-start: '2022-11-01'
+  date-end: 'present'
+  industry-type: 'Small business software'
+  current-role: 'Sr. Manager, Product Design'
+  manager: true
+  current: true
+  business-type: 'B to B/C'
+  bullets:
+    - "I help teams up-level their operational impact. I see design as a function the same as engineering: designers are makers, therefore their time needs to be treated as such."
+    - "FObar"
+    - "fooooobar"
 - company: 'Snapdocs'
-  date-span: 'May 2021 - Present'
-  industry-type: 'Mortgage Lending'
+  date-start: '2021-05-01'
+  date-end: '2022-08-01'
+  industry-type: 'Mortgage servicing'
   current-role: 'Lead Product Designer'
-  past-role:
-    - 'Lead Product Designer'
-  callout: 'Leader of the automation group focused on machine learning in lending document quality control'
-  experience: 
-    - Implemented a system which provides immediate insight into closing errors, enabling us to charge approximately 35% more per transaction, totalling $375K/month in additional revenue
-    - Reduced the time it takes a loan officer to check documents for errors by 15 minutes per loan, saving users 8-15 hours per month of costly time
-  related-work: true
-  co: snapdocs
+  business-type: 'B to B/C'
+  IC: true
 - company: 'ZOLL'
-  date-span: 'July 2016 - April 2021'
-  industry-type: 'Healthcare'
+  date-start: '2016-07'
+  date-end: '2021-04'
+  industry-type: 'EMS healthcare'
   current-role: 'Senior User Experience Architect'
-  past-role:
-    - 'Senior User Experience Strategist'
-    - 'Sr. UX Designer/Developer'
-  callout: 'Strategic leader for green-field SaaS, mobile, and existing SaaS products'
-  experience: 
-    - Built a one-of-a-kind SaaS dispatch tool which saw 100% adoption with the 6 companies who tested the software
-    - As the senior user experience architect, I partnered with the engineering lead to design a system which brought release times down from 2 months to 2 weeks
-    - Created new dispatch software which increased user satisfaction by 80%
-  related-work: true
-  co: zoll
+  business-type: 'B to B'
+  IC: true
 - company: 'Front Range Community College'
-  date-span: 'January 2014 - May 2017'
+  date-start: '2014-01'
+  date-end:  '2017-05'
   industry-type: 'Higher Education'
-  current-role: 'Instructor'
-  callout: 'Taught a 200 level web development course fueled by real world scenarios and experience'
+  current-role: 'Instructor, Web Development 2'
 - company: "Door To Door Organics"
-  date-span: 'March 2011 - May 2016'
-  industry-type: 'Grocery E-Commerce'
+  date-start: '2011-03'
+  date-end:  '2016-05'
+  industry-type: 'Grocery e-commerce'
   current-role: 'Lead Front End Developer'
-  past-role:
-    - 'Senior Web Designer'
-    - 'Web Designer'
-  callout: 'Responsible for front end software architecture, people leadership, & a learnable ecommerce experience '
-  experience: 
-    - Led a team which built an innovative recipe site which integrated with an existing grocery delivery service, resulting in a 40% increase in sales within 1 year
-    - As front end developer/designer, I grew the team from 1 to 5
-  related-work: true
-  co: dtdo
+  business-type: 'B to C'
+  manager: true
+  IC: true
 - company: 'Fergus Design'
-  date-span: 'January 2008 - December 2011'
-  industry-type: 'Small Business Development'
+  date-span: '2002'
+  date-start: '2002'
+  date-end: '2011'
   current-role: 'Freelancer'
-  callout: 'Coached, designed for, & supported small businesses and their online presence'
-- company: The Early Years
-  date-span: '2000 - 2008'
-  industry-type: Various
-  callout: Even before I began my traditional career, I had many opportunities and experiences that grew and shaped me into what I am today.
-  experience:
-    - Technical writer at Cummins Natural Gas, engineering division
-    - Founded a local coffee shop, managed up to fifteen employees at any given time
-    - Textile screen printer
-    - Starbucks assistant manager 
-   
