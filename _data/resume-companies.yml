@@ -6,6 +6,9 @@
   manager: true
   current: true
   business-type: 'B to B/C'
+  awards:
+    - "2 Webby Awards"
+    - "Fast Company Brands that Matter"
   bullets:
     - "I help teams up-level their operational impact. I see design as a function the same as engineering: designers are makers, therefore their time needs to be treated as such."
     - "FObar"

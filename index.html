@@ -8,9 +8,7 @@ page-blurb: 'A product design leader in Denver'
 <h1>Human, Designer, Maker</h1>
 <p class="subtitle">Denver, Colorado</p>
 </div>
-
 {% assign latest_post = site.posts.first %}
-
 <article class="home-excerpt">
   <header class="article-intro">
     <h2>{{ latest_post.title }}</h2>
@@ -19,5 +17,20 @@ page-blurb: 'A product design leader in Denver'
   <div>
     {{ latest_post.excerpt }}
     <a href="{{ latest_post.url }}">Read more</a>
+  </div>
+</article>
+
+<article class="home-excerpt llm-conversations">
+  <header>
+    <h2>Chats with chat</h2>
+    <p class="subtitle">Excerpts from my budding relationship with LLMs</p>
+  </header>
+  <div class="llm-conversation">
+    <div class='llm-me'>
+      <p>For future reference, please avoid "intuitive" as it is not a helpful way to describe outcomes, given "intuitive" is highly subjective based on a person's own experiences and abilities.</p>
+    </div>
+    <div class="llm">
+      <p>Got it—I'll steer clear of "intuitive" and stick with clearer, more objective language like "clear," "effective," or "streamlined."</p>
+    </div>
   </div>
 </article>

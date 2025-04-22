@@ -1,8 +1,9 @@
 ---
 title: Embracing AI for a Smarter, Faster UX
+type: article
 permalink: /article/embracing-ai
 date: 2024-12-02
-layout: case-study
+layout: article
 ---
 As a UX designer, I know how much we all wish for the perfect world: one with ample time to iterate, test, and refine designs until they’re just right. But let’s be real—tight deadlines, shifting roadmaps, and last-minute changes rarely leave room for that ideal process. It’s all too easy to fall into a rut of designing one thing and moving forward with it because, well, time doesn’t wait. 
 

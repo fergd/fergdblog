@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Case Studies
-permalink: /case-studies
+title: Articles
+permalink: /articles
 navpage: true
 published: true
 ---
 <h1>{{page.title}}</h1>
 <ul class="landing-lists">
   {% for post in site.posts %}
-    {% if post.type == "case-study" %}
+    {% if post.type == "article" %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
   {% endfor %}
