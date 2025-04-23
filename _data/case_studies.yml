@@ -1,0 +1,139 @@
+- title: "Smart Recipes Integration"
+  metrics:
+    - label: "Average basket size increase"
+      value: "[+13%]"
+    - label: "Customer conversion rate improvement"
+      value: "[+17%]"
+    - label: "Increased engagement and recipe interaction"
+      value: "[Placeholder]"
+  role: "UX & Front-End Lead"
+  team: "1 PM, 1 Developer, Myself"
+  duration: "~3 months"
+  goal: "Help customers use up ingredients, reduce food waste, and grow basket size and retention."
+  tools: ["HTML", "CSS", "JavaScript"]
+  approach:
+    - "Led UX and UI from scratch for a brand-new digital feature built to enhance the existing shopping flow."
+    - "Created a system to recommend recipes based on past purchases and seasonal availability."
+    - "Worked closely with engineering to build Ajax-powered dynamic content and handle browser constraints like IE7."
+  lesson: "This work reinforced how great UX blends data, behavior, and context."
+  images:
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-find.jpg"
+      alt: "Door To Door Organics Recipes"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856030/fergdblog/recipe-recipe.jpg"
+      alt: "Easy to read recipes."
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-plan.jpg"
+      alt: "Plan your week of meals."
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-bookmarks.jpg"
+      alt: "Bookmark the meals you like best."
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-sbp.jpg"
+      alt: "Purchase ingredients for your recipe."
+
+- title: "Product Card Redesign"
+  metrics:
+    - label: "Conversion rate increase on product pages"
+      value: "[Placeholder]"
+    - label: "Mobile session engagement increase"
+      value: "[Placeholder]"
+    - label: "Reduction in support tickets related to cart/purchase confusion"
+      value: "[Placeholder]"
+  role: "Lead Front-End Developer"
+  goal: "Redesign product cards to boost shopping ease, responsiveness, and visual clarity."
+  tools: ["React", "HTML/CSS", "JavaScript"]
+  approach:
+    - "Analyzed customer behavior and product card performance to identify design gaps."
+    - "Rebuilt the card as a modular React component with responsive behaviors."
+    - "Partnered with UX, marketing, and engineering for consistent design and performance outcomes."
+  lesson: "A simple, clean interface can unlock measurable gains in conversion."
+  images:
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1552746673/fergdblog/prod-purch.gif"
+      alt: "Product card purchase flow"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1552746672/fergdblog/prod-purch-off.png"
+      alt: "Product card default state"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1552746672/fergdblog/prod-purch-on.png"
+      alt: "Product card in-cart state"
+
+- title: "Walkie-Talkie For First Responders"
+  metrics:
+    - label: "Market adoption"
+      value: "Less than 1% of existing customers"
+  role: "UX lead (joined mid-project)"
+  goal: "Clarify and deliver a voice communication feature to replace radio chatter in the field."
+  approach:
+    - "Took on design leadership of off shore team."
+    - "Rewrote and organized stories based on dispatcher needs and backend limits."
+    - "Mapped user/system flows, created edge-case UI states, and built a working prototype."
+  lesson: "The project started as an idea based on flawed assumptions. While skeptical when I came onto the project, I did not push hard enough to pause and validate the need. So I picked up the project and kept it moving. It was a lesson that to replace something that is already rock-solid (radios, in this case) you have to have something truly better and truly compelling. This feature had none of those things."
+  images:
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1555020365/fergdblog/WT--Calling-a-Contact.png"
+      alt: "Typical flow chart showing the process by which a medic can call another medic."
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1555020050/fergdblog/WT.png"
+      alt: "UI showing a paramedic (iPhone) speaking to a dispatcher (iPad)."
+  failure: true
+
+- title: "Top Tasks for a New Product"
+  metrics:
+    - label: "Top tasks identified"
+      value: "[5 per role]"
+    - label: "Reduced roadmap debate"
+      value: "[Placeholder]"
+    - label: "Research adoption across teams"
+      value: "[Placeholder]"
+  role: "UX Strategist"
+  goal: "Identify which features mattered most for dispatchers and supervisors in order to shape a new product."
+  tools: ["Surveys", "Task Prioritization", "Data Analysis"]
+  approach:
+    - "Surveyed 67 tasks and asked users to prioritize their top five using a structured scoring model."
+    - "Segmented results by job role to better understand varied needs."
+    - "Tested assumptions internally by having team members take the same survey."
+  lesson: "Top tasks research provided data-driven clarity and alignment in early product development."
+
+- title: "Cloud-Based Dispatch System"
+  metrics:
+    - label: "SUS improvement over legacy system"
+      value: "[Placeholder]"
+    - label: "Task time reduction (e.g. call creation, dispatch)"
+      value: "[Placeholder]"
+    - label: "Adoption rate across agencies or users"
+      value: "[Placeholder]"
+  role: "UX Architect"
+  goal: "Replace legacy on-premise dispatch software with a SaaS solution that reflected real dispatcher workflows."
+  tools: ["Top Tasks", "Story Mapping", "SUS", "User Testing", "Wireframes"]
+  approach:
+    - "Conducted foundational research including top tasks and contextual inquiry."
+    - "Mapped dispatcher workflows and created scalable IA and flow documentation."
+    - "Built and tested interfaces to support task-focused functionality."
+  lesson: "The system is only as good as its understanding of its environment."
+  images:
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1557890025/fergdblog/Dis_Sup_Int-Percent.png"
+      alt: "Top Tasks bar graph showing dispatcher priorities"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1614986787/fergdblog/storymapping-wall.jpg"
+      alt: "Story mapping workshop wall"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1614988852/fergdblog/ct-flow.png"
+      alt: "User flow for editing a request"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1614988287/fergdblog/ct-wireframe.png"
+      alt: "Wireframe for the request module"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1614988288/fergdblog/ct-mockup.png"
+      alt: "Mockup in context of dispatch interface"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1614988288/fergdblog/ct-live.png"
+      alt: "Final live screen UI"
+
+- title: "Closing Quality Control"
+  metrics:
+    - label: "Manual effort saved per loan"
+      value: "10–15 minutes"
+    - label: "Increased fee revenue"
+      value: "$15 per loan (~$375K/month)"
+    - label: "New clients gained due to feature"
+      value: "3+ early adopters, 40+ within 6 months"
+    - label: "User testing task success (perceived)"
+      value: "76.7%"
+    - label: "User testing task success (actual)"
+      value: "100%"
+  role: "Lead Product Designer"
+  goal: "Surface quality control data at the right time to help mortgage professionals prevent funding errors."
+  tools: ["Interviews", "Prototyping", "User Testing", "Cross-team Collaboration"]
+  approach:
+    - "Performed discovery interviews to map diverse user workflows across lending and title offices."
+    - "Integrated reports into workflows through both app and email delivery mechanisms."
+    - "Validated effectiveness via user testing and updated naming conventions to reflect user understanding."
+  lesson: "Even the best ML-powered data is only valuable when it’s delivered at the right moment, in the right format."

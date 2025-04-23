@@ -1,0 +1,30 @@
+<header class="list-header">
+  <h1>{{ include.title }}</h1>
+  <p>{{ include.description }}</p>
+</header>
+
+<div class="link-list">
+  <ul class="landing-lists">
+{% for post in site.posts %}
+  {% assign post_type = post.type | downcase %}
+  {% assign target_type = include.type | downcase %}
+
+  {% if post_type == target_type %}
+    <li>
+      {% if post.failure %}
+        <span class="fail-tag">Failure!</span>
+      {% endif %}
+      <a href="{{ post.url }}">
+        <div>
+          <h3>{{ post.title }}</h3>
+          <span>{{ post.date | date: "%-d %B, %Y" }}</span>
+        </div>
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+
+
+

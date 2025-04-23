@@ -2,35 +2,108 @@
 layout: default
 title: Home
 page-title: 'Christan Fergus'
-page-blurb: 'A product design leader in Denver'
+page-blurb: 'Human. Maker. Designer.'
+location: 'Denver, Colorado'
+current: 'Homebase'
 ---
-<div class="site-intro">
-<h1>Human, Designer, Maker</h1>
-<p class="subtitle">Denver, Colorado</p>
-</div>
-{% assign latest_post = site.posts.first %}
-<article class="home-excerpt">
-  <header class="article-intro">
-    <h2>{{ latest_post.title }}</h2>
-    <p class="subtitle">{{ latest_post.date | date: "%B %d, %Y" }}</p>
-  </header>
-  <div>
-    {{ latest_post.excerpt }}
-    <a href="{{ latest_post.url }}">Read more</a>
-  </div>
-</article>
+<div class="index-page">
+    <div class="site-intro">
+        <h1>{{page.page-blurb}}</h1>
+        <p class='site-intro-location'><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="32" fill="rgba(83, 79, 36, 1)">
+  <path d="M336 0c-26.5 0-48 21.5-48 48l0 92.1 71.4 118.4c2.5-1.6 5.4-2.5 8.6-2.5l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-3.5 0 73.8 122.4c12.4 20.6 12.9 46.3 1.2 67.3c-.4 .8-.9 1.6-1.4 2.3L592 512c26.5 0 48-21.5 48-48l0-224c0-26.5-21.5-48-48-48l-24 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-40 0 0-144c0-26.5-21.5-48-48-48L336 0zm32 64l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM352 176c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm160 96c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm16 80l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM224 188.9L283.8 288 223 288l-48 64-24.6-41.2L224 188.9zm29.4-44.2C247.1 134.3 236 128 224 128s-23.1 6.3-29.4 16.7L5.1 458.9c-6.5 10.8-6.7 24.3-.7 35.3S22 512 34.5 512l379.1 0c12.5 0 24-6.8 30.1-17.8s5.8-24.5-.7-35.3L253.4 144.7z"/>
+</svg>
+</span> {{page.location}} <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="32" fill="rgba(83, 79, 36, 1)">
+  <path d="M336 0c-26.5 0-48 21.5-48 48l0 92.1 71.4 118.4c2.5-1.6 5.4-2.5 8.6-2.5l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-3.5 0 73.8 122.4c12.4 20.6 12.9 46.3 1.2 67.3c-.4 .8-.9 1.6-1.4 2.3L592 512c26.5 0 48-21.5 48-48l0-224c0-26.5-21.5-48-48-48l-24 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-40 0 0-144c0-26.5-21.5-48-48-48L336 0zm32 64l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM352 176c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm160 96c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm16 80l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM224 188.9L283.8 288 223 288l-48 64-24.6-41.2L224 188.9zm29.4-44.2C247.1 134.3 236 128 224 128s-23.1 6.3-29.4 16.7L5.1 458.9c-6.5 10.8-6.7 24.3-.7 35.3S22 512 34.5 512l379.1 0c12.5 0 24-6.8 30.1-17.8s5.8-24.5-.7-35.3L253.4 144.7z"/>
+</svg>
+</span></p>
+    </div>
 
-<article class="home-excerpt llm-conversations">
-  <header>
-    <h2>Chats with chat</h2>
-    <p class="subtitle">Excerpts from my budding relationship with LLMs</p>
-  </header>
-  <div class="llm-conversation">
-    <div class='llm-me'>
-      <p>For future reference, please avoid "intuitive" as it is not a helpful way to describe outcomes, given "intuitive" is highly subjective based on a person's own experiences and abilities.</p>
-    </div>
-    <div class="llm">
-      <p>Got it—I'll steer clear of "intuitive" and stick with clearer, more objective language like "clear," "effective," or "streamlined."</p>
-    </div>
-  </div>
-</article>
+{% assign latest_post = site.posts.first %}
+    <article class="home-excerpt">
+        <header class="article-intro">
+            <p class="subtitle">{{ latest_post.date | date: "%B %d, %Y" }}</p>
+            <h2>{{ latest_post.title }}</h2>
+            
+        </header>
+        <div class="max-width post-excerpt">
+            {{ latest_post.excerpt }}
+            <a href="{{ latest_post.url }}#continued" class="link-button">Read more ></a>
+        </div>
+    </article>
+
+    {% assign current_job = site.data.resume-companies | where: "current", true | first %}
+    {% if current_job %}
+    <article class="home-excerpt current-role">
+        <h1>Current role</h1>
+        <section class="current-job">
+            <div class="job-history current">
+                <h2>{{ current_job.company }}</h2>
+                <p> {{ current_job.industry-type }}</p>
+                {% if current_job.awards %}
+                <p>Awards:</p>
+                <ul>
+                    {% for award in current_job.awards %}
+                    <li>{{ award }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div>
+                <p>{{ current_job.current-role }}</p>
+                <p>
+                    {% assign start = current_job.date-start %}
+                    {% assign end = current_job.date-end %}
+                    {%- comment -%} FORMAT START DATE {%- endcomment -%}
+                    {% if start.size == 4 %}
+                    {{ start }}
+                    {% elsif start.size == 7 %}
+                    {{ start | date: "%B %Y" }}
+                    {% else %}
+                    {{ start | date: "%B %Y" }}
+                    {% endif %}
+                    &ndash;
+                    {%- comment -%} FORMAT END DATE {%- endcomment -%}
+                    {% if end == "present" %}
+                    Present
+                    {% elsif end.size == 4 %}
+                    {{ end }}
+                    {% elsif end.size == 7 %}
+                    {{ end | date: "%B %Y" }}
+                    {% else %}
+                    {{ end | date: "%B %Y" }}
+                    {% endif %}
+                    <span class="date-range" data-start="{{ current_job.date-start }}" data-end="{{ current_job.date-end }}"></span></p>
+
+                    <a href="https://www.joinhomebase.com/" target="_blank" class="link-button">Homebase website</a>
+            </div>
+        </section>
+        {% if current_job.bullets %}
+        <section>
+            <h3>Highlights:</h3>
+            <ul>
+                {% for bullet in current_job.bullets %}
+                <li>{{ bullet }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </section>
+        <a href="{{site.baseurl}}resume" class="link-button">Full resume ></a>
+    </article>
+    {% endif %}
+
+    
+    <article class="home-excerpt llm-conversations">
+        <header>
+            <h2>Chats with chat</h2>
+            <p class="subtitle">Excerpts from my budding relationship with LLMs</p>
+        </header>
+        <div class="llm-conversation">
+            <div class='llm-chat-container llm-me'>
+                <p>For future reference, please avoid "intuitive" as it is not a helpful way to describe outcomes, given "intuitive" is highly subjective based on a person's own experiences and abilities.</p>
+            </div>
+            <div class="llm-chat-container llm">
+                <p>Got it—I'll steer clear of "intuitive" and stick with clearer, more objective language like "clear," "effective," or "streamlined."</p>
+            </div>
+        </div>
+    </article>
+</div>

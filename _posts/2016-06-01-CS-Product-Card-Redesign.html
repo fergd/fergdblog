@@ -1,6 +1,6 @@
 ---
 layout: default
-type: case-study
+type: "case-study"
 title: Product Card Redesign
 permalink: /work/product-card-redesign/
 group: work
@@ -19,6 +19,55 @@ cs-tools:
  - CSS
  - JavaScript
 ---
+
+
+
+{% assign study = site.data.case_studies | where: "title", page.title | first %}
+
+<section class="case-study">
+  <h3>Project Snapshot</h3>
+  <ul>
+    <li><strong>Role:</strong> {{ study.role }}</li>
+    <li><strong>Goal:</strong> {{ study.goal }}</li>
+    <li><strong>Tools:</strong> {{ study.tools | join: ", " }}</li>
+  </ul>
+
+  <h3>My Approach</h3>
+  <ul>
+    {% for item in study.approach %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>Outcomes</h3>
+  <ul>
+    {% for metric in study.outcomes %}
+      <li>{{ metric.label }}: {{ metric.value }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>What I Learned</h3>
+  <p>{{ study.lesson }}</p>
+
+  <div class="flex-group">
+    {% for image in study.images %}
+    <figure>
+      <img src="{{ image.url }}" alt="{{ image.alt }}" />
+    </figure>
+    {% endfor %}
+  </div>
+</section>
+
+
+
+
+
+
+
+
+{% comment %}
+
+
 <!-- Product Card Redesign -->
 <section class="case-study">
   <h3>Project Snapshot</h3>
@@ -58,3 +107,6 @@ cs-tools:
     </figure>
   </div>
 </section>
+
+
+{% endcomment %}

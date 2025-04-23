@@ -7,7 +7,7 @@ permalink: /articles/ux-design-team-flow/
 group: articles
 date: 2019/04/07
 author: Christan Fergus
-published: true
+published: false
 resume-section: 'zoll'
 role: User Experience Strategist
 major-category: Product Leadership

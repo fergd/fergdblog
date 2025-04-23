@@ -4,6 +4,10 @@ layout: default
 <article>
     <header>
         <h1>{{page.title}}</h1>
+        <p class='subtitle'>{{page.date | date: "%-d %B, %Y"}}</p>
+        {%if page.archives == true %}
+        <p class='subtitle'>From the archives</p>
+        {%endif%}
     </header>
     <section class="article--wrapper">
         {{content}}
