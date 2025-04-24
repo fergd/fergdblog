@@ -22,9 +22,7 @@
 :root {
     --base-font-size: 17px;
     --heading-font: "Schibsted Grotesk", 'Helvetica', sans-serif;
-/*    --heading-font: Helvetica Neue, Helvetica, Arial, sans-serif;*/
     --body-font: 'Monaspace Neon', 'SF Mono', 'Courier New', monospace;
-/*    --impact-font: 'Syne Mono', monospace;*/
     --impact-font: 'Monaspace Neon', 'SF Mono', 'Courier New', monospace;;
 
     --font-light: 300;
@@ -83,6 +81,7 @@
     font-weight: 900;
     background: rgba(255, 255, 255, 0.5);
 }
+
 html {
     font-size: var(--base-font-size);
     background-color: var(--color-bg);
@@ -247,6 +246,14 @@ div.body-content {
     z-index: 1000;
     font-size: var(--ms1);
     cursor: pointer;
+}
+.icon-bars{
+    display: block;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBmaWxsPSIjMzEyZTI5Ij48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTAgOTZDMCA3OC4zIDE0LjMgNjQgMzIgNjRsMzg0IDBjMTcuNyAwIDMyIDE0LjMgMzIgMzJzLTE0LjMgMzItMzIgMzJMMzIgMTI4QzE0LjMgMTI4IDAgMTEzLjcgMCA5NnpNNjQgMjU2YzAtMTcuNyAxNC4zLTMyIDMyLTMybDM4NCAwYzE3LjcgMCAzMiAxNC4zIDMyIDMycy0xNC4zIDMyLTMyIDMyTDk2IDI4OGMtMTcuNyAwLTMyLTE0LjMtMzItMzJ6TTQ0OCA0MTZjMCAxNy43LTE0LjMgMzItMzIgMzJMMzIgNDQ4Yy0xNy43IDAtMzItMTQuMy0zMi0zMnMxNC4zLTMyIDMyLTMybDM4NCAwYzE3LjcgMCAzMiAxNC4zIDMyIDMyeiIvPjwvc3ZnPg==');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
 }
 
 /* Hide nav by default on small screens */
