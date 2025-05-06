@@ -6,28 +6,12 @@
     {% unless page.title == "landing" %}
     <a href="#main-content" class="visually-hidden">Skip navigation</a>
     {% endunless %}
-    <main id="main-content" tabindex="-1" class="main-layout">
+    <main class="main-layout">
         {% include header.html %}
-        <div class="body-content">
+        <div id="main-content" tabindex="-1" class="body-content">
             {{ content }}
         </div>
     </main>
-    {% include footer.html %}
 </body>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('nav-toggle');
-    const body = document.body;
-
-    if (toggleButton) {
-        toggleButton.addEventListener('click', function() {
-            const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
-            toggleButton.setAttribute('aria-expanded', String(!expanded));
-            body.classList.toggle('nav-open');
-        });
-    }
-});
-</script>
-
+<script type="text/javascript" src="/assets/js/js.js"></script>
 </html>

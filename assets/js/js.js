@@ -47,3 +47,20 @@ document.addEventListener("DOMContentLoaded", function () {
     el.textContent = `(${roundedYears})`;
   });
 });
+
+
+n =  new Date();
+y = n.getFullYear();
+document.getElementById("date").innerHTML = y;
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('nav-toggle');
+
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault(); // prevent jump to top if it's an <a>
+
+      const isOpen = document.body.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  });

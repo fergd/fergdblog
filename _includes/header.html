@@ -1,22 +1,39 @@
 <a id="nav-toggle" class="nav-toggle link-button" aria-expanded="false" aria-controls="primary-nav"><i class="icon-bars"></i><span class="visually-hidden">Menu</span></a>
 <div class="header-nav-wrapper">
-    <header class="site-header">
-        <a href="/">
-            <h1>Christan Fergus</h1>
-        </a>
-    </header>
-    {% capture 'current' %}{{page.parent}}{% endcapture %}
-    <nav id="primary-nav" class="primary-nav" aria-label="Main Menu">
-        {% assign view = site.pages | sort: 'sort-order' %}
-        {% for item in view %}
-        {% if item.navpage %}
-        <div class="nav-item {% if item.url == page.url or item.group == {{current}} %}current{% endif %}">
-            <a href="{{item.permalink}}" {% if item.url==page.url or item.group=={{current}} %}class="current" aria-label="Current page: {{page.title}}" {% endif %}>{{item.title}}</a>
-        </div>
-        {% endif %}
-        {% endfor %}
-        <div class="nav-item">
-            <a href="https://www.linkedin.com/in/christanfergus" target="_blank">LinkedIn</a>
-        </div>
-    </nav>
+    <div>
+        <header class="site-header">
+            <a href="/">
+                <h1>Christan Fergus</h1>
+            </a>
+        </header>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main Menu">
+            {% assign view = site.pages | sort: 'sort-order' %}
+            {% for item in view %}
+            {% if item.navpage %}
+            {% assign is_current = false %}
+            {%- comment -%}
+            Mark as current if:
+            1. Exact URL match
+            2. Current page is a child of this item's permalink (e.g., /articles/foo → /articles/)
+            {%- endcomment -%}
+            {% if page.url == item.url or page.url contains item.permalink %}
+            {% assign is_current = true %}
+            {% endif %}
+            <div class="nav-item {% if is_current %}current{% endif %}">
+                <a href="{{ item.permalink }}" {% if is_current %}class="current" aria-label="Current page: {{ page.title }}" {% endif %}>
+                    {{ item.title }}
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </nav>
+    </div>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/christanfergus" target="_blank">LinkedIn</a></li>
+            <li><a href="https://pricklypeteswork.shop" target="_blank">Woodworking</a></li>
+            <li><a href="https://yardbird.observer" target="_blank">Birds</a></li>
+        </ul>
+        <p class="boilerplate"><small>&copy; Christan Fergus&nbsp;2002&mdash;<span id="date"></span></small></p>
+    </footer>
 </div>

@@ -1,11 +1,11 @@
 ---
 title: Embracing AI for a Smarter, Faster UX
 type: article
-permalink: /article/embracing-ai
+permalink: /articles/embracing-ai
 date: 2024-12-02
 layout: article
 ---
-As a UX designer, I know how much we all wish for the perfect world: one with ample time to iterate, test, and refine designs until they’re just right. But let’s be real. Tight deadlines, shifting roadmaps, and last-minute changes rarely leave room for that ideal process. It’s all too easy to fall into a rut of designing one thing and moving forward with it because, well, time doesn’t wait. 
+{% if page.url == '/' %}As&nbsp;{% else %}<span class="dropcap">As</span>&nbsp;{% endif %}a UX designer, I know how much we all wish for the perfect world: one with ample time to iterate, test, and refine designs until they’re just right. But let’s be real. Tight deadlines, shifting roadmaps, and last-minute changes rarely leave room for that ideal process. It’s all too easy to fall into a rut of designing one thing and moving forward with it because, well, time doesn’t wait. 
 
 ---
 <span id="continued" class="continued-marker">Continued...</span>
