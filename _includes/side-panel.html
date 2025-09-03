@@ -1,7 +1,11 @@
 <div class="side-panel">
- 
     <div class="link-wrapper">
         <nav id="primary-nav" class="primary-nav" aria-label="Main Menu">
+            <div class="nav-item item-head">
+                <a href="/">
+                    <strong>Christan Fergus</strong>
+                </a>
+            </div>
             {% assign view = site.pages | sort: 'sort-order' %}
             {% for item in view %}
             {% if item.navpage %}

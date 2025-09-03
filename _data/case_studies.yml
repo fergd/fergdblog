@@ -1,56 +1,36 @@
-- title: "Smart Recipes Integration"
-  metrics:
-    - label: "Average basket size increase"
-      value: "[+13%]"
-    - label: "Customer conversion rate improvement"
-      value: "[+17%]"
-    - label: "Increased engagement and recipe interaction"
-      value: "[Placeholder]"
-  role: "UX & Front-End Lead"
-  team: "1 PM, 1 Developer, Myself"
-  duration: "~3 months"
-  goal: "Help customers use up ingredients, reduce food waste, and grow basket size and retention."
-  tools: ["HTML", "CSS", "JavaScript"]
+- title: "AI-Driven Design Critique Figma Plugin"
+  role: "Technical Lead & Product Owner"
+  team: "Solo Build"
+  challenge: "Design teams losing velocity to repetitive critique cycles and surface-level feedback in high-pressure environment"
+  solution: "Accelerate design quality and velocity with an AI critique assistant that delivers instant, contextual feedback—eliminating revision cycles in our high-pressure environment."
+  
   approach:
-    - "Led UX and UI from scratch for a brand-new digital feature built to enhance the existing shopping flow."
-    - "Created a system to recommend recipes based on past purchases and seasonal availability."
-    - "Worked closely with engineering to build Ajax-powered dynamic content and handle browser constraints like IE7."
-  lesson: "This work reinforced how great UX blends data, behavior, and context."
-  images:
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-find.jpg"
-      alt: "Door To Door Organics Recipes"
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856030/fergdblog/recipe-recipe.jpg"
-      alt: "Easy to read recipes."
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-plan.jpg"
-      alt: "Plan your week of meals."
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-bookmarks.jpg"
-      alt: "Bookmark the meals you like best."
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1486856031/fergdblog/recipe-sbp.jpg"
-      alt: "Purchase ingredients for your recipe."
+    - "Trained custom AI agent using proprietary design frameworks and UX best practices"
+    - "Built contextual feedback system based on Tenets and Traps framework with real-time analysis"
+    - "Implemented precise issue location system with direct navigation to flagged design elements"
+  
+  technical_execution:
+    tools: ["Bigspin", "Chat GPT", "Replit", "Figma API", "HTML", "CSS", "JavaScript"]
+    key_features:
+      - "Custom AI training for design-specific critique"
+      - "In-context feedback delivery within Figma workspace"
+      - "Smart highlighting with direct issue navigation"
+  
+  impact:
+    - "14% increase in designer velocity over 4-sprint measurement period"
+    - "Optimized design review cycles by catching obvious issues upfront, allowing team crits to focus exclusively on strategic UX challenges and user-centered design decisions"
+  
+  outcomes:
+    - "Transformed team performance by strategically investing in custom tools that addressed systemic workflow challenges"
+    - "Spearheaded AI integration initiatives, building organizational expertise in machine learning for design applications"
+    - "Established technical leadership in design platform development, expanding team capabilities through strategic tool creation"
 
-- title: "Product Card Redesign"
-  metrics:
-    - label: "Conversion rate increase on product pages"
-      value: "[Placeholder]"
-    - label: "Mobile session engagement increase"
-      value: "[Placeholder]"
-    - label: "Reduction in support tickets related to cart/purchase confusion"
-      value: "[Placeholder]"
-  role: "Lead Front-End Developer"
-  goal: "Redesign product cards to boost shopping ease, responsiveness, and visual clarity."
-  tools: ["React", "HTML/CSS", "JavaScript"]
-  approach:
-    - "Analyzed customer behavior and product card performance to identify design gaps."
-    - "Rebuilt the card as a modular React component with responsive behaviors."
-    - "Partnered with UX, marketing, and engineering for consistent design and performance outcomes."
-  lesson: "A simple, clean interface can unlock measurable gains in conversion."
   images:
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1552746673/fergdblog/prod-purch.gif"
-      alt: "Product card purchase flow"
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1552746672/fergdblog/prod-purch-off.png"
-      alt: "Product card default state"
-    - url: "https://res.cloudinary.com/fergd/image/upload/v1552746672/fergdblog/prod-purch-on.png"
-      alt: "Product card in-cart state"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1756906259/fergdblog/crit-assistant-fullscreen.png"
+      alt: "Figma AI-driven critique plugin in the Figma app"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1756906322/fergdblog/figma-plugin-top.png"
+      alt: "Plugin shown after it returns"
+      small: true
 
 - title: "Walkie-Talkie For First Responders"
   metrics:
@@ -117,23 +97,3 @@
     - url: "https://res.cloudinary.com/fergd/image/upload/v1614988288/fergdblog/ct-live.png"
       alt: "Final live screen UI"
 
-- title: "Closing Quality Control"
-  metrics:
-    - label: "Manual effort saved per loan"
-      value: "10–15 minutes"
-    - label: "Increased fee revenue"
-      value: "$15 per loan (~$375K/month)"
-    - label: "New clients gained due to feature"
-      value: "3+ early adopters, 40+ within 6 months"
-    - label: "User testing task success (perceived)"
-      value: "76.7%"
-    - label: "User testing task success (actual)"
-      value: "100%"
-  role: "Lead Product Designer"
-  goal: "Surface quality control data at the right time to help mortgage professionals prevent funding errors."
-  tools: ["Interviews", "Prototyping", "User Testing", "Cross-team Collaboration"]
-  approach:
-    - "Performed discovery interviews to map diverse user workflows across lending and title offices."
-    - "Integrated reports into workflows through both app and email delivery mechanisms."
-    - "Validated effectiveness via user testing and updated naming conventions to reflect user understanding."
-  lesson: "Even the best ML-powered data is only valuable when it’s delivered at the right moment, in the right format."

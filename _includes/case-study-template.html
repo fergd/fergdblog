@@ -1,50 +1,61 @@
-
 {% assign case = site.data.case_studies | where: "title", page.title | first %}
 
-{% if case %}
-  <section class="case-study">
-    {% if case.failure %}
-    <div class="fail-wrapper">
-      <h3>Key Metrics</h3>
-    <span class="fail-tag">Failure!</span>
-   </div>
-   {%else%}
-   <h3>Key Metrics</h3>
-   {%endif%}
-    <ul>
-      {% for item in case.metrics %}
-        <li>{{ item.label }}: {{ item.value }}</li>
-      {% endfor %}
-    </ul>
-
-    <h3>Project Snapshot</h3>
+<div>
+    <h2>Project Snapshot</h2>
     <ul>
       <li><strong>Role:</strong> {{ case.role }}</li>
-      {% if case.team %}<li><strong>Team:</strong> {{ case.team }}</li>{% endif %}
-      {% if case.duration %}<li><strong>Duration:</strong> {{ case.duration }}</li>{% endif %}
-      <li><strong>Goal:</strong> {{ case.goal }}</li>
-      {% if case.tools %}<li><strong>Tools:</strong> {{ case.tools | join: ", " }}</li>{% endif %}
+      <li><strong>Team:</strong> {{ case.team }}</li>
+      <li><strong>Challenge:</strong> {{ case.challenge }}</li>
+      <li><strong>Solution:</strong> {{case.solution }}</li> 
     </ul>
 
-    <h3>My Approach</h3>
+    <h2>Approach</h2>
     <ul>
-      {% for step in case.approach %}
-        <li>{{ step }}</li>
+      {% for approach in case.approach %}
+      <li>{{approach}}</li>
       {% endfor %}
     </ul>
 
-    <h3>What I Learned</h3>
-    <p>{{ case.lesson }}</p>
+    <h2>Execution</h2>
+    <h3>Tools</h3>
+    <ul class="execution_tools_item">
+      {%for tool in case.technical_execution.tools%}
+      <li>{{tool}}</li>
+      {%endfor%}
+    </ul>
+
+    <h3>Key Features</h3>
+    <ul>
+      {% for feature in case.technical_execution.key_features %}
+      <li>{{feature}}</li>
+      {% endfor %}
+    </ul>
+
+
+    <h2>Impact</h2>
+    <ul>
+      {% for impact in case.impact %}
+        <li>{{ impact }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Outcomes</h3>
+    <ul>
+      {% for outcome in case.outcomes %}
+      <li>{{outcome}}</li>
+      {%endfor%}
+    </ul>
+
 
     {% if case.images %}
-    <div class="flex-group">
+    <div class="flex-group case-images test">
       {% for image in case.images %}
-        <figure>
-          <img src="{{ image.url }}" alt="{{ image.alt }}">
+        <figure {%if image.small %}class="image-small"{%endif%}>
+          <img src="{{ image.url }}" alt="{{ image.alt }}" />
           {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
         </figure>
       {% endfor %}
     </div>
     {% endif %}
-  </section>
-{% endif %}
+ 
+</div>

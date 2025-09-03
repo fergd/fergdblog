@@ -20,14 +20,15 @@
 }
 
 :root {
-    --base-font-size: 17px;
-    --heading-font: "Schibsted Grotesk", 'Helvetica', sans-serif;
+    --base-font-size: 13px;
+    --heading-font: "Plus Jakarta Sans", 'Helvetica', sans-serif;
     --body-font: 'Monaspace Neon', 'SF Mono', 'Courier New', monospace;
-    --impact-font: 'Monaspace Neon', 'SF Mono', 'Courier New', monospace;;
+    --impact-font: 'Monaspace Neon', 'SF Mono', 'Courier New', monospace;
 
     --font-light: 300;
     --font-regular: 400;
     --font-bold: 700;
+    --heavy: 800;
     --font-italic: oblique 10deg;
 
     --ms-2: 0.4rem;
@@ -59,7 +60,7 @@
     --shadow-nintendo: 10px 10px 0px 0px var(--color-black);
 
     @media (min-width: 960px) {
-        --base-font-size: 21px;
+        --base-font-size: 19px;
     }
 }
 .color-green{
@@ -172,7 +173,7 @@ h5,
 h6 {
     font-family: var(--heading-font) ;
     margin: 0;
-    font-weight: normal;
+    font-weight: var(--heavy);
 }
 
 h1,h2,h3{
@@ -228,7 +229,8 @@ span.authorship {
 p span.dropcap {
     font-size: var(--ms2);
     font-stretch: extra-expanded;
-    font-family: var(--body-font);
+    font-family: var(--heading-font);
+    font-weight: var(--heavy);
     line-height: 0.5;
     background: var(--color-teal);
     color: white;
@@ -271,11 +273,11 @@ header.site-header{
     width: 100%;
 }
 
-header.site-header h1 {
+header.site-header h1{
     font-size: var(--ms1);
     text-align: right;
     margin: var(--ms1) var(--ms0);
-    font-weight: 500;
+    font-weight: var(--heavy);
     letter-spacing: normal;
 }
 
@@ -331,6 +333,7 @@ div.side-panel{
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     background: var(--color-beige-solid);
+    z-index: 100;
 }
 
 body.nav-open{
@@ -348,13 +351,19 @@ body.nav-open div.side-panel{
         transform: translateX(0);
     }
 }
+h1.nav-header{
+    font-size: var(--ms1);
+    font-weight: var(--heavy);
 
-
+}
 
 /* ≥960px: always show nav, hide toggle */
 @media (min-width: 960px) {
     .primary-nav {
         display: block !important;
+    }
+    .item-head{
+        display: none;
     }
 }
 
@@ -375,7 +384,8 @@ nav div.nav-item:first-of-type {
 
 nav div.nav-item a {
     color: var(--color-black);
-    font-family: var(--body-font);
+    font-family: var(--heading-font);
+    font-weight: var(--heavy);
     padding: var(--ms0);
     display: block;
     width: 100%;
@@ -652,6 +662,25 @@ article.case-study-content header,
 article.article-content header {
     margin-bottom: var(--ms2);
 }
+
+div.flex-group.case-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article--wrapper figure{
+    box-shadow: var(--shadow-nintendo);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    padding: 0;
+}
+
+.article--wrapper figure.image-small{
+    max-width: 50%;
+}
+
+
 
 @media all and (min-width:960px) {
 

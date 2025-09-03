@@ -5,7 +5,7 @@
 
 <div class="link-list">
   <ul class="landing-lists">
-{% for post in site.posts %}
+  {% for post in site.posts %}
   {% assign post_type = post.type | downcase %}
   {% assign target_type = include.type | downcase %}
 
