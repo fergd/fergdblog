@@ -48,7 +48,7 @@
 
 
     {% if case.images %}
-    <div class="flex-group case-images test">
+    <div class="flex-group case-images">
       {% for image in case.images %}
         <figure {%if image.small %}class="image-small"{%endif%}>
           <img src="{{ image.url }}" alt="{{ image.alt }}" />

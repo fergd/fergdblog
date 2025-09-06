@@ -32,6 +32,30 @@
       alt: "Plugin shown after it returns"
       small: true
 
+- title: "Reports & Forecasting Assistant"
+  role: "Technical lead, Designer"
+  team: "Design, Product, 2 Engineers"
+  challenge: "Small business owners operate on thin margins and rely on a range of information to make timely, cost-effective decisions about staffing and other important business aspects based on sales, labor, and community data."
+  solution: "Provide hyper-local, AI-assisted and relevant data to managers to empower them to make the best possible decisions."
+  technical_execution:
+    tools: ["Bigspin", "Anthropic", "Replit", "Figma API", "iOS & Android"]
+    key_features:
+      - "Hyper-local weather and event information"
+      - "Quickly digestible sales and labor data with analysis and strategy suggestions"
+  approach: 
+    - "Designed a mobile-first, progressive disclosure interface with Today and Forecast tabs prioritizing at-a-glance insights"
+    - "Integrated multiple data sources: internal shift/labor data, partner POS sales data, weather forecasts, and PredictHQ event data"
+    - "Developed custom AI assistant to analyze data patterns and generate contextual business recommendations"
+  impact:
+    - "Enabled CEO and executives to showcase Homebase's AI capabilities to major potential partners"
+    - "Received overwhelmingly positive customer feedback during testing phases thus greenlighting the project"
+  outcomes: 
+    - "Successfully transitioned from proof-of-concept to development roadmap with data science team ownership"
+    - "Positioned and solidified Homebase as an innovative leader in AI-powered small business solutions"
+  images:
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1757164994/fergdblog/Forecast.png"
+    - url: "https://res.cloudinary.com/fergd/image/upload/v1757164982/fergdblog/Today.png"
+
 - title: "Walkie-Talkie For First Responders"
   metrics:
     - label: "Market adoption"

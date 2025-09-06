@@ -669,13 +669,6 @@ div.flex-group.case-images{
     align-items: center;
 }
 
-.article--wrapper figure{
-    box-shadow: var(--shadow-nintendo);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    padding: 0;
-}
-
 .article--wrapper figure.image-small{
     max-width: 50%;
 }
