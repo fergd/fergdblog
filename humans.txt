@@ -1,5 +1,0 @@
-    /* TEAM */
-    Title: Christan Fergus
-    Site: christanfergus.com
-    Twitter: @ChristanFergus
-    Location: Denver, Colorado, USA

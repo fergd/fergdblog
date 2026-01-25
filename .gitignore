@@ -1,9 +1,5 @@
+_site
 .sass-cache
-.sass-cache/
-/_site
-/node_modules
-.DS_Store
-/dist
-.publish
-**.publish/
-Gemfile.lock
+.jekyll-cache
+.jekyll-metadata
+vendor
