@@ -1,0 +1,73 @@
+/* Design Tokens - Exported from Figma Variables */
+/* https://www.figma.com/design/6DKlJrooOGqFENpWxa7HSg/Portfolio-site */
+
+:root {
+  /* === SPACING (Perfect Fifth Scale) === */
+  --spacing-xs: 0.5rem;      /* 8px */
+  --spacing-sm: 0.75rem;     /* 12px */
+  --spacing-base: 1rem;      /* 16px */
+  --spacing-md: 1.5rem;      /* 24px */
+  --spacing-lg: 2.25rem;     /* 36px */
+  --spacing-xl: 3.375rem;    /* 54px */
+  --spacing-2xl: 5.063rem;   /* 81px */
+  --spacing-3xl: 7.625rem;   /* 122px */
+  
+  /* === BORDER RADIUS === */
+  --radius-none: 0;
+  --radius-xs: 0.125rem;     /* 2px */
+  --radius-sm: 0.25rem;      /* 4px */
+  --radius-base: 0.5rem;     /* 8px */
+  --radius-md: 0.75rem;      /* 12px */
+  --radius-lg: 1rem;         /* 16px */
+  
+  /* === TYPOGRAPHY - Font Families === */
+  --font-heading: 'JetBrains Mono', monospace;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* === TYPOGRAPHY - Font Sizes === */
+  --font-size-hero: 7.594rem;       /* 121.5px */
+  --font-size-display: 4rem;      /* 64px */
+  --font-size-h1: 3rem;           /* 48px */
+  --font-size-h2: 2rem;           /* 32px */
+  --font-size-h3: 1.5rem;         /* 24px */
+  --font-size-h4: 1.125rem;       /* 18px */
+  --font-size-body-lg: 1.125rem;  /* 18px */
+  --font-size-body: 1rem;         /* 16px */
+  --font-size-body-sm: 0.875rem;  /* 14px */
+  --font-size-caption: 0.75rem;   /* 12px */
+  
+  /* === TYPOGRAPHY - Font Weights === */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  /* === TYPOGRAPHY - Line Heights === */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+}
+
+/* === INDUSTRIAL DARK THEME (Default) === */
+:root {
+  /* Background Colors */
+  --color-bg-primary: #1A1C1E;
+  --color-bg-secondary: #22242A;
+  --color-bg-elevated: #2A2D32;
+  
+  /* Text Colors */
+  --color-text-primary: #E8E8E8;
+  --color-text-secondary: #B8B8B8;
+  --color-text-tertiary: #888888;
+  
+  /* Accent Colors (Warm Copper) */
+  --color-accent-primary: #D49456;
+  --color-accent-primary-hover: #E8A870;
+  --color-accent-secondary: #A8A8A8;
+  --color-accent-secondary-hover: #C0C0C0;
+  
+  /* Border Colors */
+  --color-border-default: #3A3D42;
+  --color-border-subtle: #2A2D32;
+  --color-border-emphasis: #D49456;
+}
