@@ -25,7 +25,7 @@
   --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   
   /* === TYPOGRAPHY - Font Sizes === */
-  --font-size-hero: 7.594rem;       /* 121.5px */
+  --font-size-hero: 7.594rem;     /* 121.5px */
   --font-size-display: 4rem;      /* 64px */
   --font-size-h1: 3rem;           /* 48px */
   --font-size-h2: 2rem;           /* 32px */
@@ -50,24 +50,23 @@
 
 /* === INDUSTRIAL DARK THEME (Default) === */
 :root {
-  /* Background Colors */
-  --color-bg-primary: #1A1C1E;
-  --color-bg-secondary: #22242A;
-  --color-bg-elevated: #2A2D32;
+  --color-bg-primary: #1A1917;      /* Dark warm brown */
+  --color-bg-secondary: #222018;    /* Slightly lighter brown */
+  --color-bg-elevated: #2A2620;     /* Card/elevated surfaces */
   
   /* Text Colors */
-  --color-text-primary: #E8E8E8;
-  --color-text-secondary: #B8B8B8;
-  --color-text-tertiary: #888888;
+  --color-text-primary: #EDE9DB;  /* Keyboard cream/off-white */
+  --color-text-secondary: #B8B0A0; /* Muted tan */
+  --color-text-tertiary: #8A8272;  /* Darker muted tan */
   
-  /* Accent Colors (Warm Copper) */
-  --color-accent-primary: #D49456;
-  --color-accent-primary-hover: #E8A870;
-  --color-accent-secondary: #A8A8A8;
-  --color-accent-secondary-hover: #C0C0C0;
+  /* Accent Colors - Warm Copper/Orange */
+  --color-accent-primary: #E89A5E;   /* Keyboard warm orange */
+  --color-accent-primary-hover: #F5AB75; /* Lighter orange on hover */
+  --color-accent-secondary: #9B8B78;  /* Muted brown */
+  --color-accent-secondary-hover: #ADA090; /* Lighter brown on hover */
   
   /* Border Colors */
-  --color-border-default: #3A3D42;
-  --color-border-subtle: #2A2D32;
-  --color-border-emphasis: #D49456;
+  --color-border-default: #3A3530;  /* Subtle border */
+  --color-border-subtle: #2A2620;   /* Very subtle */
+  --color-border-emphasis: #E89A5E; /* Accent border */
 }
