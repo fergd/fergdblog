@@ -1,18 +1,36 @@
-/* Main Stylesheet */
-/* Portfolio Site - 2026 Redesign */
-/* Design System: Industrial/Cassette Futurism Aesthetic */
+/* ==========================================================================
+   MAIN STYLESHEET
+   Portfolio Site - 2026 Redesign
+   Design System: Industrial/Cassette Futurism Aesthetic
+   ========================================================================== */
 
-/* Import Google Fonts */
+/* ==========================================================================
+   GOOGLE FONTS
+   JetBrains Mono: Headings, code, monospace elements
+   IBM Plex Sans: Body text, readable content
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
-/* Import Design Tokens */
+/* ==========================================================================
+   DESIGN TOKENS
+   Custom properties for colors, spacing, typography
+   ========================================================================== */
 @import url('tokens.css');
 
-/* Import Base Styles */
+/* ==========================================================================
+   BASE STYLES
+   Reset, typography foundations, global element styles
+   ========================================================================== */
 @import url('base.css');
 
-/* Import Layout System */
+/* ==========================================================================
+   LAYOUT SYSTEM
+   Container, grid, flexbox utilities, spacing
+   ========================================================================== */
 @import url('layout.css');
 
-/* Import Components */
+/* ==========================================================================
+   COMPONENTS
+   Reusable UI components (buttons, cards, navigation, etc.)
+   ========================================================================== */
 @import url('components.css');

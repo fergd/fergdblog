@@ -1,6 +1,11 @@
-/* Base Styles - Reset & Foundations */
+/* ==========================================================================
+   BASE STYLES
+   Reset, typography foundations, and global element styles
+   ========================================================================== */
 
-/* === RESET === */
+/* ==========================================================================
+   MODERN CSS RESET
+   ========================================================================== */
 *,
 *::before,
 *::after {
@@ -26,7 +31,9 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* === TYPOGRAPHY === */
+/* ==========================================================================
+   TYPOGRAPHY - Headings
+   ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-medium);
@@ -56,12 +63,26 @@ h4 {
   line-height: var(--line-height-tight);
 }
 
+/* ==========================================================================
+   TYPOGRAPHY - Body Text
+   ========================================================================== */
 p {
   margin-bottom: var(--spacing-base);
   color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
 }
 
+strong, b {
+  font-weight: var(--font-weight-bold);
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY - Links
+   ========================================================================== */
 a {
   color: var(--color-accent-primary);
   text-decoration: none;
@@ -77,14 +98,9 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-strong, b {
-  font-weight: var(--font-weight-bold);
-}
-
-em, i {
-  font-style: italic;
-}
-
+/* ==========================================================================
+   TYPOGRAPHY - Code
+   ========================================================================== */
 code, pre {
   font-family: var(--font-heading);
   font-size: 0.9em;
@@ -109,7 +125,9 @@ pre code {
   background: none;
 }
 
-/* === LISTS === */
+/* ==========================================================================
+   TYPOGRAPHY - Lists
+   ========================================================================== */
 ul, ol {
   margin-bottom: var(--spacing-base);
   padding-left: var(--spacing-md);
@@ -120,7 +138,9 @@ li {
   margin-bottom: var(--spacing-xs);
 }
 
-/* === UTILITIES === */
+/* ==========================================================================
+   ACCESSIBILITY
+   ========================================================================== */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -133,7 +153,9 @@ li {
   border-width: 0;
 }
 
-/* === SELECTION === */
+/* ==========================================================================
+   TEXT SELECTION
+   ========================================================================== */
 ::selection {
   background-color: var(--color-accent-primary);
   color: var(--color-bg-primary);

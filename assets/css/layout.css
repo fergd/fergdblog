@@ -1,6 +1,11 @@
-/* Layout System - Grid & Container */
+/* ==========================================================================
+   LAYOUT SYSTEM
+   Container, grid, flex utilities, and spacing
+   ========================================================================== */
 
-/* === CONTAINER === */
+/* ==========================================================================
+   CONTAINER
+   ========================================================================== */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -17,7 +22,9 @@
   }
 }
 
-/* === SECTION SPACING === */
+/* ==========================================================================
+   SECTION SPACING
+   ========================================================================== */
 .section {
   padding-top: var(--spacing-xl);
   padding-bottom: var(--spacing-xl);
@@ -30,12 +37,15 @@
   }
 }
 
-/* === GRID SYSTEM === */
+/* ==========================================================================
+   GRID SYSTEM
+   ========================================================================== */
 .grid {
   display: grid;
   gap: var(--spacing-md);
 }
 
+/* Two Column Grid */
 .grid--2col {
   grid-template-columns: 1fr;
 }
@@ -46,6 +56,7 @@
   }
 }
 
+/* Three Column Grid */
 .grid--3col {
   grid-template-columns: 1fr;
 }
@@ -62,7 +73,9 @@
   }
 }
 
-/* === FLEX UTILITIES === */
+/* ==========================================================================
+   FLEXBOX UTILITIES
+   ========================================================================== */
 .flex {
   display: flex;
 }
@@ -75,6 +88,7 @@
   flex-wrap: wrap;
 }
 
+/* Alignment */
 .items-center {
   align-items: center;
 }
@@ -87,6 +101,7 @@
   align-items: flex-end;
 }
 
+/* Justification */
 .justify-center {
   justify-content: center;
 }
@@ -103,6 +118,7 @@
   justify-content: flex-end;
 }
 
+/* Gap Utilities */
 .gap-xs { gap: var(--spacing-xs); }
 .gap-sm { gap: var(--spacing-sm); }
 .gap-base { gap: var(--spacing-base); }
@@ -110,7 +126,9 @@
 .gap-lg { gap: var(--spacing-lg); }
 .gap-xl { gap: var(--spacing-xl); }
 
-/* === SPACING UTILITIES === */
+/* ==========================================================================
+   SPACING UTILITIES - Margin
+   ========================================================================== */
 .mt-xs { margin-top: var(--spacing-xs); }
 .mt-sm { margin-top: var(--spacing-sm); }
 .mt-base { margin-top: var(--spacing-base); }
@@ -127,6 +145,9 @@
 .mb-xl { margin-bottom: var(--spacing-xl); }
 .mb-2xl { margin-bottom: var(--spacing-2xl); }
 
+/* ==========================================================================
+   SPACING UTILITIES - Padding
+   ========================================================================== */
 .pt-xs { padding-top: var(--spacing-xs); }
 .pt-sm { padding-top: var(--spacing-sm); }
 .pt-base { padding-top: var(--spacing-base); }
@@ -141,7 +162,9 @@
 .pb-lg { padding-bottom: var(--spacing-lg); }
 .pb-xl { padding-bottom: var(--spacing-xl); }
 
-/* === ASPECT RATIO === */
+/* ==========================================================================
+   ASPECT RATIO UTILITIES
+   ========================================================================== */
 .aspect-square {
   aspect-ratio: 1 / 1;
 }

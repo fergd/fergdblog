@@ -1,8 +1,14 @@
-/* Design Tokens - Exported from Figma Variables */
-/* https://www.figma.com/design/6DKlJrooOGqFENpWxa7HSg/Portfolio-site */
+/* ==========================================================================
+   DESIGN TOKENS
+   Design System: Cassette Futurism / Industrial Dark Theme
+   Source: https://www.figma.com/design/6DKlJrooOGqFENpWxa7HSg/Portfolio-site
+   ========================================================================== */
 
 :root {
-  /* === SPACING (Perfect Fifth Scale) === */
+  /* ==========================================================================
+     SPACING SYSTEM - Perfect Fifth Scale (1:1.5 ratio)
+     Base: 16px (1rem)
+     ========================================================================== */
   --spacing-xs: 0.5rem;      /* 8px */
   --spacing-sm: 0.75rem;     /* 12px */
   --spacing-base: 1rem;      /* 16px */
@@ -12,7 +18,9 @@
   --spacing-2xl: 5.063rem;   /* 81px */
   --spacing-3xl: 7.625rem;   /* 122px */
   
-  /* === BORDER RADIUS === */
+  /* ==========================================================================
+     BORDER RADIUS
+     ========================================================================== */
   --radius-none: 0;
   --radius-xs: 0.125rem;     /* 2px */
   --radius-sm: 0.25rem;      /* 4px */
@@ -20,53 +28,118 @@
   --radius-md: 0.75rem;      /* 12px */
   --radius-lg: 1rem;         /* 16px */
   
-  /* === TYPOGRAPHY - Font Families === */
-  --font-heading: 'JetBrains Mono', monospace;
+  /* ==========================================================================
+     TYPOGRAPHY - Font Families
+     ========================================================================== */
+  --font-heading: 'JetBrains Mono', 'Courier New', monospace;
   --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   
-  /* === TYPOGRAPHY - Font Sizes === */
-  --font-size-hero: 7.594rem;     /* 121.5px */
-  --font-size-display: 4rem;      /* 64px */
-  --font-size-h1: 3rem;           /* 48px */
-  --font-size-h2: 2rem;           /* 32px */
-  --font-size-h3: 1.5rem;         /* 24px */
+  /* ==========================================================================
+     TYPOGRAPHY - Font Sizes
+     Capped system to prevent excessive scaling
+     ========================================================================== */
+  --font-size-hero: 3.125rem;     /* 50px - hero display only */
+  --font-size-display: 1.75rem;   /* 28px - capped maximum */
+  --font-size-h1: 1.75rem;        /* 28px - capped maximum */
+  --font-size-h2: 1.5rem;         /* 24px */
+  --font-size-h3: 1.25rem;        /* 20px */
   --font-size-h4: 1.125rem;       /* 18px */
   --font-size-body-lg: 1.125rem;  /* 18px */
-  --font-size-body: 1rem;         /* 16px */
+  --font-size-body: 1rem;         /* 16px - base */
   --font-size-body-sm: 0.875rem;  /* 14px */
   --font-size-caption: 0.75rem;   /* 12px */
   
-  /* === TYPOGRAPHY - Font Weights === */
+  /* ==========================================================================
+     TYPOGRAPHY - Font Weights
+     ========================================================================== */
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   
-  /* === TYPOGRAPHY - Line Heights === */
+  /* ==========================================================================
+     TYPOGRAPHY - Line Heights
+     ========================================================================== */
   --line-height-tight: 1.2;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.6;
-}
+  
+  /* ==========================================================================
+     COLOR PALETTE - Keyboard Industrial Theme
+     Base colors inspired by vintage keyboard aesthetics
+     ========================================================================== */
+  
+  /* Base Palette */
+  --color-dark-brown: #3E2723;
+  --color-dark-brown-rgb: 62, 39, 35;
+  
+  --color-cream: #F5F5DC;
+  --color-cream-rgb: 245, 245, 220;
+  
+  --color-orange: #FF6B35;
+  --color-orange-rgb: 255, 107, 53;
+  
+  --color-teal: #4ECDC4;
+  --color-teal-rgb: 78, 205, 196;
 
-/* === INDUSTRIAL DARK THEME (Default) === */
-:root {
-  --color-bg-primary: #1A1917;      /* Dark warm brown */
-  --color-bg-secondary: #222018;    /* Slightly lighter brown */
-  --color-bg-elevated: #2A2620;     /* Card/elevated surfaces */
+  /* ==========================================================================
+     SEMANTIC COLOR TOKENS - Background
+     ========================================================================== */
+  --color-bg-primary: var(--color-dark-brown);
+  --color-bg-primary-rgb: var(--color-dark-brown-rgb);
   
-  /* Text Colors */
-  --color-text-primary: #EDE9DB;  /* Keyboard cream/off-white */
-  --color-text-secondary: #B8B0A0; /* Muted tan */
-  --color-text-tertiary: #8A8272;  /* Darker muted tan */
+  --color-bg-secondary: #2C1810;
+  --color-bg-secondary-rgb: 44, 24, 16;
   
-  /* Accent Colors - Warm Copper/Orange */
-  --color-accent-primary: #E89A5E;   /* Keyboard warm orange */
-  --color-accent-primary-hover: #F5AB75; /* Lighter orange on hover */
-  --color-accent-secondary: #9B8B78;  /* Muted brown */
-  --color-accent-secondary-hover: #ADA090; /* Lighter brown on hover */
+  --color-bg-elevated: #4A3229;
+  --color-bg-elevated-rgb: 74, 50, 41;
+
+  /* ==========================================================================
+     SEMANTIC COLOR TOKENS - Text
+     ========================================================================== */
+  --color-text-primary: var(--color-cream);
+  --color-text-primary-rgb: var(--color-cream-rgb);
   
-  /* Border Colors */
-  --color-border-default: #3A3530;  /* Subtle border */
-  --color-border-subtle: #2A2620;   /* Very subtle */
-  --color-border-emphasis: #E89A5E; /* Accent border */
+  --color-text-secondary: #D4C5B9;
+  --color-text-secondary-rgb: 212, 197, 185;
+  
+  --color-text-tertiary: #9B8B7E;
+  --color-text-tertiary-rgb: 155, 139, 126;
+
+  /* ==========================================================================
+     SEMANTIC COLOR TOKENS - Accent
+     ========================================================================== */
+  --color-accent-primary: var(--color-orange);
+  --color-accent-primary-rgb: var(--color-orange-rgb);
+  
+  --color-accent-primary-hover: #E85A2A;
+  --color-accent-primary-hover-rgb: 232, 90, 42;
+  
+  --color-accent-alt: var(--color-teal);
+  --color-accent-alt-rgb: var(--color-teal-rgb);
+
+  /* ==========================================================================
+     SEMANTIC COLOR TOKENS - Borders
+     ========================================================================== */
+  --color-border-subtle: rgba(var(--color-cream-rgb), 0.1);
+  --color-border-default: rgba(var(--color-cream-rgb), 0.2);
+  --color-border-emphasis: rgba(var(--color-orange-rgb), 0.5);
+
+  /* ==========================================================================
+     SEMANTIC COLOR TOKENS - Special
+     ========================================================================== */
+  --color-logo-primary: var(--color-cream);
+  --color-logo-primary-rgb: var(--color-cream-rgb);
+  
+  /* ==========================================================================
+     RAINBOW GRADIENT - Signature brand element
+     ========================================================================== */
+  --gradient-rainbow: linear-gradient(to right, 
+    #E74C3C 0%, #E74C3C 16.66%,
+    #F39C12 16.66%, #F39C12 33.33%,
+    #F1C40F 33.33%, #F1C40F 50%,
+    #2ECC71 50%, #2ECC71 66.66%,
+    #3498DB 66.66%, #3498DB 83.33%,
+    #9B59B6 83.33%, #9B59B6 100%
+  );
 }
