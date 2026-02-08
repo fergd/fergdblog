@@ -38,7 +38,7 @@
      TYPOGRAPHY - Font Sizes
      Capped system to prevent excessive scaling
      ========================================================================== */
-  --font-size-hero: 3.125rem;     /* 50px - hero display only */
+  --font-size-hero: 4.125rem;     /* 50px - hero display only */
   --font-size-display: 1.75rem;   /* 28px - capped maximum */
   --font-size-h1: 1.75rem;        /* 28px - capped maximum */
   --font-size-h2: 1.5rem;         /* 24px */
@@ -70,8 +70,11 @@
      ========================================================================== */
   
   /* Base Palette */
-  --color-dark-brown: #3E2723;
+  --color-dark-brown: #3E2723;        /* Lighter brown (used for secondary bg) */
   --color-dark-brown-rgb: 62, 39, 35;
+  
+  --color-darker-brown: #2C1810;      /* Darker brown (used for primary bg) */
+  --color-darker-brown-rgb: 44, 24, 16;
   
   --color-cream: #F5F5DC;
   --color-cream-rgb: 245, 245, 220;
@@ -84,12 +87,14 @@
 
   /* ==========================================================================
      SEMANTIC COLOR TOKENS - Background
+     Primary (body/odd sections): Darker brown #2C1810
+     Secondary (even sections): Lighter brown #3E2723
      ========================================================================== */
-  --color-bg-primary: var(--color-dark-brown);
-  --color-bg-primary-rgb: var(--color-dark-brown-rgb);
+  --color-bg-primary: #2C1810;
+  --color-bg-primary-rgb: 44, 24, 16;
   
-  --color-bg-secondary: #2C1810;
-  --color-bg-secondary-rgb: 44, 24, 16;
+  --color-bg-secondary: #3E2723;
+  --color-bg-secondary-rgb: 62, 39, 35;
   
   --color-bg-elevated: #4A3229;
   --color-bg-elevated-rgb: 74, 50, 41;
@@ -135,11 +140,19 @@
      RAINBOW GRADIENT - Signature brand element
      ========================================================================== */
   --gradient-rainbow: linear-gradient(to right, 
-    #E74C3C 0%, #E74C3C 16.66%,
-    #F39C12 16.66%, #F39C12 33.33%,
-    #F1C40F 33.33%, #F1C40F 50%,
-    #2ECC71 50%, #2ECC71 66.66%,
-    #3498DB 66.66%, #3498DB 83.33%,
-    #9B59B6 83.33%, #9B59B6 100%
+     #E74C3C 0%, #E74C3C 14.28%,
+    #F39C12 14.28%, #F39C12 28.57%,
+    #F1C40F 28.57%, #F1C40F 42.85%,
+    #4ECDC4 42.85%, #4ECDC4 57.14%,
+    #F1C40F 57.14%, #F1C40F 71.42%,
+    #F39C12 71.42%, #F39C12 85.71%,
+    #E74C3C 85.71%, #E74C3C 100%
   );
+
+/* ==========================================================================
+     BOX SHADOWS
+     ========================================================================== */
+  --default-shadow: 5px 5px 20px 0 rgba(var(--color-bg-primary-rgb), 0.5);
+
 }
+

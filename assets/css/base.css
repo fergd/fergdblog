@@ -160,3 +160,22 @@ li {
   background-color: var(--color-accent-primary);
   color: var(--color-bg-primary);
 }
+
+/* ==========================================================================
+   AUTOMATIC SECTION BACKGROUND ALTERNATION
+   Sections automatically alternate between primary and secondary backgrounds
+   regardless of order. Uses :nth-of-type to count only <section> elements,
+   ignoring headers, navs, or other elements.
+   ========================================================================== */
+
+section.bg-override-primary {
+  background-color: var(--color-bg-primary) !important;
+}
+
+section.bg-override-secondary {
+  background-color: var(--color-bg-secondary) !important;
+}
+
+section.bg-override-elevated {
+  background-color: var(--color-bg-elevated) !important;
+}
