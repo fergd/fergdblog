@@ -131,7 +131,8 @@
 }
 
 /* Rainbow stripe - signature brand element */
-.nav::before {
+.nav::before,
+footer::before {
   content: '';
   position: absolute;
   top: calc(var(--spacing-md) * -1);
@@ -724,6 +725,10 @@
   height: auto;
 }
 
+.figma img{
+  height: 42px;
+  border-radius: var(--radius-lg);
+}
 /* ==========================================================================
    CTA SECTION
    Special section with background image - overrides alternation
@@ -1058,4 +1063,5 @@
 
 .dot-background{
   background-image: url(../images/dot.png);
+  background-attachment: fixed;
 }
