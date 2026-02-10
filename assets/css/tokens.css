@@ -154,5 +154,9 @@
      ========================================================================== */
   --default-shadow: 5px 5px 20px 0 rgba(var(--color-bg-primary-rgb), 0.5);
 
+  /* ==========================================================================
+     CONTENT WIDTH CONSTRAINTS
+     ========================================================================== */
+  --content-narrow: 48rem;           /* 768px - reading-optimized width */
+  --container-narrow: var(--content-narrow);
 }
-

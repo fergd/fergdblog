@@ -8,11 +8,16 @@
    ========================================================================== */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -25,17 +30,9 @@
 /* ==========================================================================
    SECTION SPACING
    ========================================================================== */
-.section {
-  padding-top: var(--spacing-xl);
-  padding-bottom: var(--spacing-xl);
-}
-
-@media (min-width: 768px) {
-  .section {
-    padding-top: var(--spacing-2xl);
-    padding-bottom: var(--spacing-2xl);
-  }
-}
+/* .section, section {
+  padding: var(--spacing-md) 0;
+} */
 
 /* ==========================================================================
    GRID SYSTEM
@@ -73,6 +70,10 @@
   }
 }
 
+.grid--reverse {
+  direction: rtl;
+}
+
 /* ==========================================================================
    FLEXBOX UTILITIES
    ========================================================================== */
@@ -89,6 +90,9 @@
 }
 
 /* Alignment */
+.flex-reverse{
+  flex-direction: row-reverse;
+}
 .items-center {
   align-items: center;
 }

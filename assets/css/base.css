@@ -31,6 +31,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* ==========================================================================
    TYPOGRAPHY - Headings
    ========================================================================== */
@@ -178,4 +183,55 @@ section.bg-override-secondary {
 
 section.bg-override-elevated {
   background-color: var(--color-bg-elevated) !important;
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+@media print {
+  .resume-actions,
+  nav,
+  footer,
+  .logo-container {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  h1, h2, h3, h4,
+  .job-title,
+  .competency-category p,
+  .education-item p,
+  .styled-list li {
+    color: black !important;
+  }
+
+  .section-title--bordered {
+    border-bottom: 2px solid #000;
+  }
+
+  .impact-title,
+  .job-company,
+  .competency-category h4 {
+    color: #333 !important;
+  }
+
+  .impact-item {
+    border: 1px solid #ddd;
+    background: #f9f9f9 !important;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .job {
+    page-break-inside: avoid;
+  }
+
+  .impact-grid,
+  .competencies-grid {
+    break-inside: avoid;
+  }
 }
