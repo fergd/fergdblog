@@ -208,12 +208,16 @@ footer::before {
 }
 
 .hero__name {
-  font-size: 7em;
+  font-size: var(--font-size-hero);
   line-height: var(--line-height-tight);
   /* margin-bottom: var(--spacing-md); */
   letter-spacing: -0.05em;
 }
-
+@media all and (min-width: 768px){
+  .hero__name{
+  font-size: 7em;
+}
+}
 .hero__subtitle {
   font-size: var(--font-size-body-lg);
   color: var(--color-text-secondary);
@@ -372,6 +376,27 @@ footer::before {
   
   .stat-divider {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Fix the about-section__content glass panel on mobile */
+@media (max-width: 768px) {
+  .about-section__header {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-base);
+  }
+
+  .about-section__content {
+    width: 100%;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .stat-divider {
+    display: none;
   }
 }
 
