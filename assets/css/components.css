@@ -207,15 +207,20 @@ footer::before {
   background: none;
 }
 
-.hero__name {
-  font-size: var(--font-size-hero);
-  line-height: var(--line-height-tight);
-  /* margin-bottom: var(--spacing-md); */
-  letter-spacing: -0.05em;
-}
+  h1.hero__name {
+    font-size: var(--font-size-hero);
+    font-family:  var(--font-display);
+    font-weight: 400;
+    line-height: var(--line-height-tight);
+    /* margin-bottom: var(--spacing-md); */
+    letter-spacing: -0.05em;
+    color: rgba(255,255,255,0.7);
+  }
 @media all and (min-width: 768px){
-  .hero__name{
+  h1.hero__name{
   font-size: 7em;
+  color: rgba(255,255,255,0.7);
+
 }
 }
 .hero__subtitle {
@@ -223,6 +228,7 @@ footer::before {
   color: var(--color-text-secondary);
   font-family: var(--font-body);
   font-weight: var(--font-weight-regular);
+  max-width: 768px;
 }
 
 .hero__actions {
@@ -681,7 +687,7 @@ footer::before {
   top: 10%;
   left: 10%;
   width: 500px;
-  height: 500px;
+  height: 900px;
   background: radial-gradient(circle, rgba(255, 107, 53, 0.6) 0%, transparent 60%);
   animation: orb-float-1 10s ease-in-out infinite;
 }
@@ -706,7 +712,7 @@ footer::before {
 
 @keyframes orb-float-2 {
   0%, 100% {
-    transform: translate(0, 0) scale(1);
+    transform: translate(90px, 0) scale(1);
   }
   50% {
     transform: translate(-120px, 60px) scale(0.9);
@@ -720,7 +726,7 @@ footer::before {
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(78, 205, 196, 0.5) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(78, 205, 196, 0.4) 0%, transparent 70%);
   filter: blur(80px);
   animation: orb-float-3 10s ease-in-out infinite;
   pointer-events: none;
@@ -852,7 +858,7 @@ footer::before {
 
 @supports (backdrop-filter: blur(10px)) {
   .impact-section {
-    background-image: url(../images/dithered/bg_pond.png);
+    background-image: url(../images/dithered/bg_pond.png),;
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: soft-light;
@@ -866,6 +872,7 @@ footer::before {
     border: 1px solid var(--color-border-subtle);
     box-shadow: var(--default-shadow);
   }
+
 }
 
 .impact-grid {
@@ -1362,4 +1369,42 @@ footer::before {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin:  0;
+}
+
+
+/* ==========================================================================
+   FADE IN ANIMATION
+   ========================================================================== */
+
+/* Hero animation - subtle fade-up on load */
+.hero {
+  animation: fadeUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Stagger child elements for more polish */
+.hero h1 {
+  animation: fadeUp 0.6s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.hero p {
+  animation: fadeUp 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.hero .btn {
+  animation: fadeUp 0.9s ease-out 0.6s forwards;
+  opacity: 0;
 }

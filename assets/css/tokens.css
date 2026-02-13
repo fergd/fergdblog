@@ -33,7 +33,7 @@
      ========================================================================== */
   --font-heading: 'JetBrains Mono', 'Courier New', monospace;
   --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  
+  --font-display:  var(--font-body);
   /* ==========================================================================
      TYPOGRAPHY - Font Sizes
      Capped system to prevent excessive scaling
