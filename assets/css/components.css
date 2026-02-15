@@ -46,21 +46,29 @@
     color: var(--color-bg-primary);
 }
 
-/* External link icon */
+/* External link icon - Lucide square-arrow-out-up-right */
 a[target="_blank"]::after {
     content: '';
     display: inline-block;
-    width: 0.95em;
-    height: 0.95em;
-    margin-left: 0.2em;
-    vertical-align: baseline;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    vertical-align: -0.125em;
     background-color: currentColor;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E");
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/%3E%3Cpath d='m21 3-9 9'/%3E%3Cpath d='M15 3h6v6'/%3E%3C/svg%3E");
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E");
+    -webkit-mask-position: center;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/%3E%3Cpath d='m21 3-9 9'/%3E%3Cpath d='M15 3h6v6'/%3E%3C/svg%3E");
     mask-size: contain;
     mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+/* Button-specific external link icon adjustments - perfect centering */
+.btn[target="_blank"]::after {
+    vertical-align: 0;
+    margin-left: 0;
 }
 
 /* ==========================================================================
@@ -128,10 +136,19 @@ footer::before {
     color: var(--color-text-secondary);
     text-decoration: none;
     transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
 }
 
 .nav__link:hover {
     color: var(--color-accent-primary);
+}
+
+/* Navigation external link icons - perfect center alignment */
+.nav__link[target="_blank"]::after {
+    vertical-align: 0;
+    margin-left: 0;
 }
 
 /* ==========================================================================
@@ -931,6 +948,18 @@ h1.hero__name {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.footer__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
+/* Footer external link icons - perfect alignment */
+.footer__links a[target="_blank"]::after {
+    vertical-align: 0;
+    margin-left: 0;
 }
 
 /* ==========================================================================
