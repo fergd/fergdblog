@@ -618,16 +618,16 @@ h1.hero__name {
 /* Visual/Phone mockup (right column on desktop) */
 .current-role-visual {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding: var(--spacing-lg) 0;
+    padding-bottom: var(--spacing-lg);
     position: relative;
 }
 
 @media (min-width: 992px) {
     .current-role-visual {
-        justify-content: flex-end;
-        padding: 0;
+       
+
     }
 }
 
@@ -651,18 +651,18 @@ h1.hero__name {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 50%;   
     transform: translateX(-50%);
-    width: 60%;
-    max-width: 200px;
+    width: 80%;
+    max-width: 300px;
     height: 30px;
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 40%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6 ) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 70%);
     border-radius: 50%;
     z-index: 1;
 }
 
 @media (min-width: 992px) {
-    .current-role-visual::after {
+    .current-role-visual__phone::after {
         max-width: 100%;
         height: 35px;
         right: 25%;
@@ -1516,3 +1516,12 @@ HERO ANIMATION
         transform: translate(-120px, 60px) scale(2.9);
     }
 }
+
+
+
+
+
+
+
+
+
