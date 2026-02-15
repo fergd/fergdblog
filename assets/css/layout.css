@@ -18,12 +18,18 @@
 .container-narrow {
   max-width: var(--container-narrow);
   margin: 0 auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
 }
 
 @media (min-width: 768px) {
   .container {
     padding-left: var(--spacing-lg);
     padding-right: var(--spacing-lg);
+  }
+  .container-narrow {
+    max-width: var(--container-narrow);
+    margin: 0 auto;
   }
 }
 

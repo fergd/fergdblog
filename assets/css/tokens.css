@@ -39,6 +39,7 @@
      Capped system to prevent excessive scaling
      ========================================================================== */
   --font-size-hero: 4.125rem;     /* 50px - hero display only */
+  --font-size-subtitle: 1.75em;
   --font-size-display: 1.75rem;   /* 28px - capped maximum */
   --font-size-h1: 1.75rem;        /* 28px - capped maximum */
   --font-size-h2: 1.5rem;         /* 24px */
